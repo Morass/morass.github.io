@@ -1,0 +1,319 @@
+/* Morass Games — shared site styles. */
+
+:root {
+  --bg-deep: #08090f;
+  --bg-card: #13141d;
+  --bg-elev: #1c1e2a;
+  --gold: #f4dea8;
+  --gold-glow: #ffb450;
+  --text: #e0e0e8;
+  --text-dim: #9090a8;
+  --border: #2a2c3c;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg-deep);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a { color: var(--gold); text-decoration: none; }
+a:hover { color: var(--gold-glow); }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+nav.site-nav {
+  background: rgba(8, 9, 15, 0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 16px 0;
+}
+
+nav.site-nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+nav.site-nav .brand {
+  font-family: "Luminari", "Trattatello", "Papyrus", serif;
+  font-size: 1.5rem;
+  color: var(--gold);
+  letter-spacing: 0.05em;
+}
+
+nav.site-nav .nav-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+nav.site-nav .nav-links a { color: var(--text-dim); font-size: 0.95rem; }
+nav.site-nav .nav-links a:hover { color: var(--gold); }
+
+footer.site-footer {
+  border-top: 1px solid var(--border);
+  margin-top: 80px;
+  padding: 32px 0;
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+footer.site-footer a { color: var(--text-dim); }
+footer.site-footer a:hover { color: var(--gold); }
+
+/* Studio landing */
+
+.studio-hero {
+  text-align: center;
+  padding: 120px 0 80px;
+}
+
+.studio-hero h1 {
+  font-family: "Luminari", "Trattatello", "Papyrus", serif;
+  font-size: clamp(3rem, 8vw, 6rem);
+  color: var(--gold);
+  text-shadow: 0 0 24px rgba(255, 180, 80, 0.3);
+  letter-spacing: 0.06em;
+}
+
+.studio-hero p {
+  color: var(--text-dim);
+  font-size: 1.25rem;
+  margin-top: 16px;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  margin: 48px 0;
+}
+
+.game-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.game-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--gold);
+}
+
+.game-card img {
+  width: 100%;
+  height: 169px;
+  object-fit: cover;
+  display: block;
+}
+
+.game-card-body {
+  padding: 20px;
+}
+
+.game-card h3 {
+  font-family: "Luminari", "Trattatello", serif;
+  color: var(--gold);
+  margin-bottom: 8px;
+  font-size: 1.4rem;
+}
+
+.game-card .meta {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.game-card.placeholder {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.game-card.placeholder:hover { transform: none; border-color: var(--border); }
+
+/* Game page */
+
+.game-hero {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  min-height: 480px;
+  overflow: hidden;
+}
+
+.game-hero .hero-bg {
+  position: absolute; inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.65);
+}
+
+.game-hero .hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(8,9,15,0.4) 50%, var(--bg-deep) 100%);
+}
+
+.game-hero .hero-content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+}
+
+.game-hero .logo {
+  max-width: 720px;
+  width: 80%;
+  height: auto;
+  filter: drop-shadow(0 8px 32px rgba(0,0,0,0.6));
+}
+
+.cta-row {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: transform 0.15s, box-shadow 0.15s;
+  border: 1px solid transparent;
+}
+
+.cta-primary {
+  background: var(--gold);
+  color: var(--bg-deep);
+  box-shadow: 0 4px 24px rgba(244,222,168,0.25);
+}
+
+.cta-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(244,222,168,0.4);
+  color: var(--bg-deep);
+}
+
+.cta-secondary {
+  background: transparent;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+}
+
+.cta-secondary:hover {
+  background: rgba(244,222,168,0.1);
+  color: var(--gold-glow);
+  border-color: var(--gold-glow);
+}
+
+section.game-section {
+  padding: 80px 0;
+}
+
+section.game-section h2 {
+  font-family: "Luminari", "Trattatello", serif;
+  color: var(--gold);
+  font-size: 2rem;
+  margin-bottom: 24px;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.feature {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.feature h4 {
+  color: var(--gold);
+  margin-bottom: 8px;
+  font-family: "Luminari", "Trattatello", serif;
+  font-size: 1.2rem;
+}
+
+.feature p { color: var(--text-dim); font-size: 0.95rem; }
+
+.trailer-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: black;
+}
+
+.trailer-wrap video { width: 100%; display: block; }
+
+.screenshots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.screenshots-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  display: block;
+  transition: transform 0.2s;
+  cursor: zoom-in;
+}
+
+.screenshots-grid img:hover { transform: scale(1.02); border-color: var(--gold); }
+
+.about-text {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.about-text p { margin-bottom: 16px; }
+
+@media (max-width: 600px) {
+  .studio-hero { padding: 60px 0 40px; }
+  .game-hero { height: 50vh; min-height: 360px; }
+  section.game-section { padding: 48px 0; }
+}
