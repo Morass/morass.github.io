@@ -144,5 +144,34 @@
   </div>
 </footer>
 
+<script>
+// Lightbox — open clicked screenshots in an overlay instead of a new tab.
+// Falls back to the anchor's default (new tab) if JS is disabled.
+(function () {
+  function openLightbox(src, alt) {
+    var lb = document.createElement('div');
+    lb.className = 'lightbox';
+    lb.innerHTML =
+      '<button class="lightbox-close" aria-label="Close">&times;</button>' +
+      '<img src="' + src + '" alt="' + (alt || '') + '">';
+    function close() {
+      lb.remove();
+      document.removeEventListener('keydown', onKey);
+    }
+    function onKey(e) { if (e.key === 'Escape') close(); }
+    lb.addEventListener('click', close);
+    document.addEventListener('keydown', onKey);
+    document.body.appendChild(lb);
+  }
+  document.querySelectorAll('.screenshots-grid a').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      var img = a.querySelector('img');
+      openLightbox(a.getAttribute('href'), img && img.alt);
+    });
+  });
+})();
+</script>
+
 </body>
 </html>
