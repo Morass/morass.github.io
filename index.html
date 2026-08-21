@@ -11,46 +11,78 @@
 </head>
 <body>
 
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="steam-glyph" viewBox="0 0 24 24">
+    <path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.41-2.455 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"/>
+  </symbol>
+</svg>
+
 <header class="studio-hero">
   <div class="container">
     <h1>MORASS GAMES</h1>
+    <div class="studio-cta">
+      <a class="steam-btn ghost" href="https://store.steampowered.com/search/?developer=Morass" target="_blank" rel="noopener">
+        <svg><use href="#steam-glyph"/></svg>All our games on Steam
+      </a>
+    </div>
   </div>
 </header>
 
 <main class="container">
   <section id="games">
     <div class="games-grid">
-      <a class="game-card" href="pyrewarden/">
-        <img src="pyrewarden/assets/capsule.png" alt="Pyrewarden header art">
-        <div class="game-card-body">
-          <h3>Pyrewarden</h3>
-          <div class="meta">Out Now on Steam · Tower Defense</div>
-          <p>36 upgrade paths across 12 magic schools, 66 emergent synergy combos, 26 hand-built maps, endless waves and 1–6 player co-op.</p>
+      <article class="game-card">
+        <a class="game-card-link" href="pyrewarden/">
+          <img src="pyrewarden/assets/capsule.png" alt="Pyrewarden header art">
+          <div class="game-card-body">
+            <h3>Pyrewarden</h3>
+            <div class="meta">Out Now on Steam · Tower Defense</div>
+            <p>36 upgrade paths across 12 magic schools, 66 emergent synergy combos, 26 hand-built maps, endless waves and 1–6 player co-op.</p>
+          </div>
+        </a>
+        <div class="game-card-actions">
+          <a class="steam-btn" href="https://store.steampowered.com/app/4774690/Pyrewarden/" target="_blank" rel="noopener">
+            <svg><use href="#steam-glyph"/></svg>Get it on Steam
+          </a>
         </div>
-      </a>
-      <a class="game-card" href="concord/">
-        <img src="concord/assets/capsule.png" alt="The Concord Quarter header art">
-        <div class="game-card-body">
-          <h3>The Concord Quarter</h3>
-          <div class="meta">Coming Soon to Steam · City-Life Sim</div>
-          <p>Start as nobody in a medieval city. Trade, undercut, bribe, smuggle, and lend your way up — buy shops, court three rival powers, and seize a civic seat before you die.</p>
+      </article>
+      <article class="game-card">
+        <a class="game-card-link" href="concord/">
+          <img src="concord/assets/capsule.png" alt="The Concord Quarter header art">
+          <div class="game-card-body">
+            <h3>The Concord Quarter</h3>
+            <div class="meta">Out Now on Steam · City-Life Sim</div>
+            <p>Start as nobody in a medieval city. Trade, undercut, bribe, smuggle, and lend your way up — buy shops, court three rival powers, and seize a civic seat before you die.</p>
+          </div>
+        </a>
+        <div class="game-card-actions">
+          <a class="steam-btn" href="https://store.steampowered.com/app/4893010/Concord_Quarter/" target="_blank" rel="noopener">
+            <svg><use href="#steam-glyph"/></svg>Get it on Steam
+          </a>
         </div>
-      </a>
-      <a class="game-card" href="wardenmark/">
-        <img src="wardenmark/assets/capsule.png" alt="Wardenmark header art">
-        <div class="game-card-body">
-          <h3>Wardenmark</h3>
-          <div class="meta">Out Now on Steam · Survivors Roguelite</div>
-          <p>One Concord Warden against the swarm. Draft auto-casting spells as you level, carry your build across six-node expeditions to fell each warlord, then climb into the endless Dread.</p>
+      </article>
+      <article class="game-card">
+        <a class="game-card-link" href="wardenmark/">
+          <img src="wardenmark/assets/capsule.png" alt="Wardenmark header art">
+          <div class="game-card-body">
+            <h3>Wardenmark</h3>
+            <div class="meta">Out Now on Steam · Survivors Roguelite</div>
+            <p>One Concord Warden against the swarm. Draft auto-casting spells as you level, carry your build across six-node expeditions to fell each warlord, then climb into the endless Dread.</p>
+          </div>
+        </a>
+        <div class="game-card-actions">
+          <a class="steam-btn" href="https://store.steampowered.com/app/5003530/Wardenmark/" target="_blank" rel="noopener">
+            <svg><use href="#steam-glyph"/></svg>Get it on Steam
+          </a>
         </div>
-      </a>
+      </article>
     </div>
   </section>
 </main>
 
 <footer class="site-footer">
   <div class="container">
-    <p>© 2026 Morass Games</p>
+    <p>© 2026 Morass Games · <a href="https://store.steampowered.com/search/?developer=Morass" target="_blank" rel="noopener">Our games on Steam</a></p>
   </div>
 </footer>
 
