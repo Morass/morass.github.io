@@ -437,3 +437,7 @@ section.game-section h2 {
   fill: currentColor;
   flex: none;
 }
+
+/* Home: one section per platform */
+.platform-section { margin-top: 2.5rem; }
+.platform-title { font-size: 1.1rem; letter-spacing: .12em; text-transform: uppercase; opacity: .75; margin: 0 0 1rem; }
