@@ -1,3 +1,1 @@
-# Authorized sellers for Morass Games mobile apps (IAB app-ads.txt).
-# Publisher ID line is added once the AdMob account exists:
-# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+google.com, pub-8570534713415094, DIRECT, f08c47fec0942fa0
