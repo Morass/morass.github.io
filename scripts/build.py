@@ -2,15 +2,45 @@
 """Build the public hub from curated projects and the prints export. No dependencies."""
 import html
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = 'https://morass.github.io'
 P = json.loads((ROOT / 'content/projects.json').read_text())
 PRINTS = json.loads((ROOT / 'content/prints.json').read_text())['items']
+TAXONOMY = json.loads((ROOT / 'content/print-collections.json').read_text())
+assignments = {}
+for collection, identifiers in TAXONOMY['collections'].items():
+    if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*(?:/[a-z0-9]+(?:-[a-z0-9]+)*)*', collection):
+        raise ValueError(f'Invalid collection path: {collection}')
+    for identifier in identifiers:
+        if identifier in assignments:
+            raise ValueError(f'Print assigned twice: {identifier}')
+        assignments[identifier] = collection
+for item in PRINTS:
+    collection = item.get('collection') or assignments.get(item['id'])
+    if not collection:
+        raise ValueError(f"Choose a collection for {item['id']} in content/print-collections.json or model.toml [website].category")
+    if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*(?:/[a-z0-9]+(?:-[a-z0-9]+)*)*', collection):
+        raise ValueError(f'Invalid collection path: {collection}')
+    item['collection'] = collection
+    item['path'] = TAXONOMY.get('modelPaths', {}).get(item['id'], item['id'])
+    if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*(?:/[a-z0-9]+(?:-[a-z0-9]+)*)*', item['path']):
+        raise ValueError(f"Invalid model route: {item['path']}")
+# A category must never overwrite an existing model page.
+leaf_ids = {i['path'] for i in PRINTS}
+if len(leaf_ids) != len(PRINTS):
+    raise ValueError('Duplicate model URLs')
+for item in PRINTS:
+    parts = item['collection'].split('/')
+    for depth in range(1, len(parts) + 1):
+        if '/'.join(parts[:depth]) in leaf_ids:
+            raise ValueError(f"Collection collides with a model URL: {item['collection']}")
 GENERATED = set()
 NAV = [('games', 'Morass Games'), ('small-games', 'Small Games'), ('mobile', 'Mobile'), ('youtube', 'YouTube'), ('prints', 'Prints')]
 LABELS = {'boardgames': 'Board games', 'desk': 'Desk & office', 'decorations': 'Decorations', 'containers': 'Boxes & storage', 'bathroom': 'Bathroom', 'kitchen': 'Kitchen', 'home': 'Around the home', 'outdoor': 'Outdoors', 'footwear': 'Footwear', 'general': 'Original & general', 'mtg': 'Magic: The Gathering', 'spirit-island': 'Spirit Island', 'frosthaven': 'Frosthaven'}
+LABELS.update({'jewelry':'Jewelry & accessories', 'earrings':'Earrings', 'brooches':'Brooches', 'pendants':'Pendants', 'displays':'Jewelry displays', 'buttons':'Sewing buttons', 'by-game':'Find your game', 'dnd':'Dungeons & Dragons', 'mtg':'Magic: The Gathering', 'original-games':'Original games', 'classic-games':'Classic games', 'dice':'Dice', 'terrain':'Terrain & dungeon tiles', 'tokens-stands':'Tokens & stands', 'card-care':'Deck boxes & card care', 'keepsake-boxes':'Keepsake boxes', 'tools-parts':'Tools & small parts', 'trays-banks':'Catch-alls & coin banks', 'reading-writing':'Reading & writing', 'washing-care':'Washing & personal care', 'toys':'Toys & mechanisms', 'coasters':'Coasters', 'makeup-organizers':'Makeup organizers'})
 E = lambda value: html.escape(str(value), quote=True)
 
 def name(part):
@@ -83,9 +113,9 @@ page('/small-games/borrowed-ink/', 'Borrowed Ink', 'Play a gentle, free ink-exch
 # Category pages only show the next level; listing links live on model leaves.
 def category(prefix=''):
     depth = len(prefix.split('/')) if prefix else 0
-    items = [i for i in PRINTS if not prefix or i['id'].startswith(prefix+'/')]
-    children = sorted({i['id'].split('/')[depth] for i in items if len(i['id'].split('/')) > depth+1})
-    direct = [i for i in items if len(i['id'].split('/')) == depth+1]
+    items = [i for i in PRINTS if not prefix or i['collection'] == prefix or i['collection'].startswith(prefix+'/')]
+    children = sorted({i['collection'].split('/')[depth] for i in items if len(i['collection'].split('/')) > depth})
+    direct = [i for i in items if i['collection'] == prefix]
     title = name(prefix.split('/')[-1]) if prefix else 'Things worth making.'
     body = heading('THE PRINT COLLECTION', title, f'{len(items)} designs to explore. Find your next object, tabletop companion or useful little invention.')
     if not prefix:
@@ -94,34 +124,48 @@ def category(prefix=''):
     body += '<div class="cards print-cards">'
     for child in children:
         child_prefix = '/'.join(filter(None, [prefix, child]))
-        subset = [i for i in items if i['id'].startswith(child_prefix+'/')]
+        subset = [i for i in items if i['collection'] == child_prefix or i['collection'].startswith(child_prefix+'/')]
         representative = next((i for i in subset if i.get('image')), subset[0])
         body += card(name(child), '/prints/'+child_prefix+'/', 'Explore the collection', print_image(representative), f'{len(subset)} designs')
     for item in direct:
-        body += card(item['title'], '/prints/'+item['id']+'/', item['summary'], print_image(item), ' / '.join(name(p) for p in item['id'].split('/')[:-1]))
+        body += card(item['title'], '/prints/'+item['path']+'/', item['summary'], print_image(item), ' / '.join(name(p) for p in item['collection'].split('/')))
     body += '</div>'
     crumbs = [('Prints','/prints/')]+[(name(p), '/prints/'+'/'.join(prefix.split('/')[:i+1])+'/') for i,p in enumerate(prefix.split('/')) if p]
     page('/prints/'+(prefix+'/' if prefix else ''), title if prefix else 'Prints', f'Explore {len(items)} Morass print designs'+(f' in {title}.' if prefix else '.'), body, 'prints', crumbs, print_image(items[0]) or '/assets/projects/pyrewarden.webp')
     for child in children: category('/'.join(filter(None, [prefix, child])))
 category()
 for item in PRINTS:
-    parts = item['id'].split('/')
+    parts = item['collection'].split('/') + [item['id'].split('/')[-1]]
     crumbs = [('Prints', '/prints/')]+[(name(p), '/prints/'+'/'.join(parts[:i+1])+'/') for i,p in enumerate(parts[:-1])]
     art = f'<img class="print-hero-art" src="{E(item["image"])}" width="960" height="720" alt="{E(item["title"])}">' if item.get('image') else '<div class="art-placeholder">'+icon('stamp')+'</div>'
     links = ''.join(button({'cults3d':'View on Cults','printables':'View on Printables','makerworld':'View on MakerWorld'}[l['platform']],l['url'], True) for l in item['links'])
     body = '<section class="product-hero print-product">'+art+'<div>'+heading(name(parts[0]), item['title'], item['summary'])+'<div class="listing-links">'+links+'</div><p class="small-note">Files, assembly instructions, licenses and print settings are available on the model listings.</p></div></section>'
     body += '<section class="related"><div class="section-title"><h2>More in '+E(name(parts[-2]))+'</h2><a class="text-link" href="/prints/'+'/'.join(parts[:-1])+'/">View collection ↗</a></div><div class="cards">'
-    siblings = [i for i in PRINTS if i['id'].rsplit('/',1)[0] == item['id'].rsplit('/',1)[0] and i != item][:3]
-    body += ''.join(card(i['title'], '/prints/'+i['id']+'/', '', print_image(i), name(parts[-2])) for i in siblings)+'</div></section>'
-    page('/prints/'+item['id']+'/', item['title'], item['summary'] or item['title'], body, 'prints', crumbs, item.get('image') or '/assets/projects/pyrewarden.webp')
+    siblings = [i for i in PRINTS if i['collection'] == item['collection'] and i != item][:3]
+    body += ''.join(card(i['title'], '/prints/'+i['path']+'/', '', print_image(i), name(parts[-2])) for i in siblings)+'</div></section>'
+    page('/prints/'+item['path']+'/', item['title'], item['summary'] or item['title'], body, 'prints', crumbs, item.get('image') or '/assets/projects/pyrewarden.webp')
 
 body = heading('THE PRINT COLLECTION', 'Find your next print.', 'Search titles, categories and tags across the collection.')
 body += '<form class="search-form" role="search"><label for="q">Search prints</label><div><input id="q" name="q" type="search" placeholder="What would you like to make?" maxlength="120"><button class="button" type="submit">Search</button></div></form><p id="search-status" role="status" class="small-note">All designs are shown below. Enable JavaScript to filter them.</p><div class="cards print-cards" id="search-results">'
 for i in PRINTS:
-    text = ' '.join([i['title'],i['summary'],i['id'].replace('-',' ')]+[str(t).replace('_',' ') for t in i['tags']])
-    body += '<div class="search-item" data-search="'+E(text.lower())+'">'+card(i['title'],'/prints/'+i['id']+'/', '', print_image(i), name(i['id'].split('/')[0]))+'</div>'
+    text = ' '.join([i['title'],i['summary'],i['id'].replace('-',' '), i['collection'].replace('-', ' ')]+[str(t).replace('_',' ') for t in i['tags']])
+    body += '<div class="search-item" data-search="'+E(text.lower())+'">'+card(i['title'],'/prints/'+i['path']+'/', '', print_image(i), ' / '.join(name(part) for part in i['collection'].split('/')))+'</div>'
 body += '</div><p id="search-empty" hidden>No prints match that search. Try a shorter word, or <a href="/prints/">browse the categories</a>.</p>'
 page('/prints/search/','Search prints','Find Morass print designs by name, category or tag.',body,'prints',[('Prints','/prints/'),('Search','/prints/search/')])
+# Keep earlier category bookmarks working as the public taxonomy becomes deeper.
+REDIRECTS = set()
+for old, new in TAXONOMY.get('redirects', {}).items():
+    relative = 'prints/' + old + '/index.html'
+    destination = '/prints/' + new + '/'
+    if relative in GENERATED:
+        continue
+    if 'prints/' + new + '/index.html' not in GENERATED:
+        raise ValueError(f'Redirect target is missing: {destination}')
+    target = ROOT / relative
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Collection moved — Morass</title><link rel="canonical" href="' + SITE + destination + '"><meta http-equiv="refresh" content="0;url=' + destination + '"></head><body><p>This collection has moved. <a href="' + destination + '">Browse the collection</a>.</p></body></html>')
+    GENERATED.add(relative)
+    REDIRECTS.add(relative)
 # Only delete paths this builder previously owned; leave hand-authored game pages alone.
 manifest = ROOT / 'content/generated-pages.json'
 previous = json.loads(manifest.read_text()) if manifest.exists() else []
@@ -129,7 +173,7 @@ for old in set(previous)-GENERATED:
     p = ROOT / old
     if p.is_relative_to(ROOT) and '..' not in Path(old).parts and p.name == 'index.html': p.unlink(missing_ok=True)
 manifest.write_text(json.dumps(sorted(GENERATED),indent=2)+'\n')
-urls = sorted({SITE+'/'+p.removesuffix('index.html') for p in GENERATED} | {SITE+p['path'] for key in ['games','mobile'] for p in P[key]})
+urls = sorted({SITE+'/'+p.removesuffix('index.html') for p in GENERATED-REDIRECTS} | {SITE+p['path'] for key in ['games','mobile'] for p in P[key]})
 (ROOT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+E(u)+'</loc></url>' for u in urls)+'</urlset>\n')
 (ROOT/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+SITE+'/sitemap.xml\n')
 print(f'Built {len(GENERATED)} pages, {len(PRINTS)} prints')

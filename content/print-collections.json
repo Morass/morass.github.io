@@ -1,0 +1,376 @@
+{
+  "collections": {
+    "bathroom/drains": [
+      "bathroom/drain-hair-snake",
+      "bathroom/shower-hair-catcher"
+    ],
+    "bathroom/makeup-organizers": [
+      "bathroom/apothecary-drying-rack",
+      "bathroom/cauldron-organizer",
+      "bathroom/dragon-wing-palette-rack",
+      "bathroom/frost-crystal-casket",
+      "bathroom/great-helm-organizer",
+      "bathroom/moonwake-vanity",
+      "bathroom/wizard-tower-organizer"
+    ],
+    "bathroom/washing-care": [
+      "bathroom/qtip-cup",
+      "bathroom/soap-dish",
+      "bathroom/toothbrush-case",
+      "bathroom/toothpaste-squeezer",
+      "desk/comb"
+    ],
+    "boardgames/accessories/dice-storage": [
+      "boardgames/general/mimic-vault"
+    ],
+    "boardgames/accessories/timers": [
+      "boardgames/general/escapement-timer"
+    ],
+    "boardgames/accessories/tokens-stands": [
+      "boardgames/general/diamond-token",
+      "boardgames/general/meeple-stand-base",
+      "boardgames/general/meeples"
+    ],
+    "boardgames/by-game/cascadia": [
+      "boardgames/cascadia/market-rack"
+    ],
+    "boardgames/by-game/catan": [
+      "boardgames/general/catan",
+      "boardgames/general/catan-event-die"
+    ],
+    "boardgames/by-game/dnd": [
+      "boardgames/dnd/adventurer-dial-base",
+      "boardgames/dnd/death-save-slider",
+      "boardgames/general/spell-slot-abacus"
+    ],
+    "boardgames/by-game/frosthaven": [
+      "boardgames/frosthaven/cassandra-rifts",
+      "boardgames/frosthaven/kill-counter"
+    ],
+    "boardgames/by-game/mtg/card-care": [
+      "boardgames/mtg/card-box",
+      "boardgames/mtg/mana-press"
+    ],
+    "boardgames/by-game/mtg/counters": [
+      "boardgames/mtg/amass-army-dial",
+      "boardgames/mtg/barrel-counter",
+      "boardgames/mtg/creature-tracker",
+      "boardgames/mtg/mana-counter",
+      "boardgames/mtg/map-counter",
+      "boardgames/mtg/plus-counter-die",
+      "boardgames/mtg/ring-tempts-tracker",
+      "boardgames/mtg/saga-chapter-dial",
+      "boardgames/mtg/treasure-chest"
+    ],
+    "boardgames/by-game/mtg/tokens": [
+      "boardgames/mtg/city-blessing-counter",
+      "boardgames/mtg/day-night-token",
+      "boardgames/mtg/food-blood-clue-tokens",
+      "boardgames/mtg/marit-lage",
+      "boardgames/mtg/monarch-token",
+      "boardgames/mtg/payment-scroll",
+      "boardgames/mtg/powerstone-token",
+      "boardgames/mtg/undercity-dungeon"
+    ],
+    "boardgames/by-game/spirit-island": [
+      "boardgames/spirit-island/dahan",
+      "boardgames/spirit-island/energy-counter",
+      "boardgames/spirit-island/token-set"
+    ],
+    "boardgames/by-game/terraforming-mars": [
+      "boardgames/terraforming-mars/track-figures"
+    ],
+    "boardgames/by-game/wingspan": [
+      "boardgames/wingspan/card-holder",
+      "boardgames/wingspan/dice-nest",
+      "boardgames/wingspan/twigs-nest"
+    ],
+    "boardgames/classic-games/cribbage": [
+      "boardgames/cribbage/travel-peg-track"
+    ],
+    "boardgames/classic-games/dominoes": [
+      "boardgames/general/domino-box",
+      "boardgames/general/domino-set"
+    ],
+    "boardgames/dice": [
+      "boardgames/general/blank-dice",
+      "boardgames/general/crit-dice",
+      "boardgames/general/crooked-dice",
+      "boardgames/general/d12-custom",
+      "boardgames/general/d20-custom",
+      "boardgames/general/go-first-dice",
+      "boardgames/general/ogham-dice",
+      "boardgames/general/pasa-dice",
+      "boardgames/general/pumpkin-die",
+      "boardgames/general/reaction-die",
+      "boardgames/general/rounded-dice",
+      "boardgames/general/rune-dice",
+      "boardgames/general/teetotum",
+      "boardgames/general/tengwar-d6",
+      "boardgames/general/vial-dice"
+    ],
+    "boardgames/original-games": [
+      "boardgames/general/baby-dragons-secret-picnic",
+      "boardgames/general/goblin-night-market",
+      "boardgames/general/harbour-light",
+      "boardgames/general/older-current",
+      "boardgames/general/the-answering",
+      "boardgames/general/the-everfruit-vale",
+      "boardgames/general/watchfires"
+    ],
+    "boardgames/terrain": [
+      "boardgames/breach",
+      "boardgames/breach/marsh"
+    ],
+    "containers/keepsake-boxes/fantasy": [
+      "containers/alexandria-library-box",
+      "containers/castle-keep-box",
+      "containers/coffin-pencil-case",
+      "containers/elven-motif-box",
+      "containers/grimoire-box",
+      "containers/pirate-chest",
+      "containers/potion-organizer",
+      "containers/sugar-skull-box",
+      "containers/trojan-horse-box"
+    ],
+    "containers/keepsake-boxes/geometric": [
+      "containers/decorative-box",
+      "containers/heart-box-forge",
+      "containers/rhombic-dodeca-box",
+      "containers/star-box-forge",
+      "containers/tube"
+    ],
+    "containers/keepsake-boxes/nature": [
+      "containers/capybara-lock-box",
+      "containers/coffee-bean-box",
+      "containers/rose-drawer-box",
+      "containers/rut-box",
+      "decorations/parasaurolophus-capsule",
+      "decorations/toadstool-cottage-capsule"
+    ],
+    "containers/lunch-boxes": [
+      "containers/composition-lunch-book"
+    ],
+    "containers/organizers/baskets": [
+      "containers/basket-weave-box-large",
+      "containers/lattice-basket",
+      "containers/lego-box",
+      "containers/stackable-basket",
+      "containers/truchet-bucket-box"
+    ],
+    "containers/organizers/drawers": [
+      "containers/carousel-drawer-tower",
+      "containers/cubby-shelf"
+    ],
+    "containers/organizers/tools-parts": [
+      "containers/battery-dispenser",
+      "containers/rasp-organizer"
+    ],
+    "containers/trays-banks": [
+      "decorations/cat-key-bowl",
+      "decorations/piggy-bank"
+    ],
+    "decorations/clocks": [
+      "decorations/tengwar-clock"
+    ],
+    "decorations/coasters": [
+      "decorations/animal-coasters",
+      "decorations/biohazard-coasters",
+      "decorations/chain-coaster",
+      "decorations/coasters",
+      "decorations/rune-coasters"
+    ],
+    "decorations/magnets": [
+      "decorations/deathly-hallows-magnet",
+      "decorations/weather-dial-magnet",
+      "decorations/wiz-magnet"
+    ],
+    "decorations/planters": [
+      "decorations/cyclo-planter"
+    ],
+    "decorations/sculptures": [
+      "decorations/monk-pangolin",
+      "decorations/strigoi-bust",
+      "desk/controller-throne"
+    ],
+    "decorations/seasonal": [
+      "decorations/snowflake-set"
+    ],
+    "desk/display-stands": [
+      "desk/cyclo-turntable"
+    ],
+    "desk/electronics/cables": [
+      "desk/cable-holder",
+      "desk/cable-rack",
+      "desk/usb-drive-caddy"
+    ],
+    "desk/electronics/stands": [
+      "containers/stackable-server-rack",
+      "desk/keyboard-riser"
+    ],
+    "desk/organizers/modular": [
+      "desk/magnetic-dock",
+      "desk/moku-iris-box"
+    ],
+    "desk/organizers/paper-notes": [
+      "desk/card-holder",
+      "desk/classroom-name-plate",
+      "desk/letter-tray",
+      "desk/moku-memo-stand",
+      "desk/paper-block-organizer"
+    ],
+    "desk/organizers/pen-holders": [
+      "decorations/kangaroo-organizer",
+      "decorations/owlbear-planter",
+      "desk/amphora-pen-pot",
+      "desk/hedgehog-pen-holder",
+      "desk/sunflower-pen-cup",
+      "desk/tape-deck-caddy",
+      "desk/tardis-pencup",
+      "desk/wizard-tower-penholder"
+    ],
+    "desk/reading-writing": [
+      "decorations/bookmarks",
+      "decorations/trident-bookmark",
+      "desk/letter-opener",
+      "desk/ruler"
+    ],
+    "footwear": [
+      "footwear/lace-dubrae",
+      "footwear/traveling-shoe-horns"
+    ],
+    "home/hooks": [
+      "decorations/bat-ceiling-hook",
+      "decorations/cerberus-leash-hook",
+      "decorations/gargoyle-hook",
+      "desk/radiator-hook",
+      "home/cap-magnet-hook",
+      "home/chair-bag-hook"
+    ],
+    "home/small-tools": [
+      "decorations/auxetic-grip-pad",
+      "decorations/socket-plug-acdc",
+      "desk/adjustable-support",
+      "desk/spring-carabiner"
+    ],
+    "jewelry/brooches": [
+      "decorations/half-amphora-brooch",
+      "decorations/hollow-face-vase-brooch"
+    ],
+    "jewelry/buttons": [
+      "boardgames/mtg/mana-buttons",
+      "decorations/yggdrasil-buttons"
+    ],
+    "jewelry/displays": [
+      "decorations/patronus-stag",
+      "desk/moku-watch-stand"
+    ],
+    "jewelry/earrings": [
+      "decorations/antler-earrings",
+      "decorations/anvil-earring",
+      "decorations/articulated-worm-earring",
+      "decorations/baroque-pearl-earring",
+      "decorations/capybara-charm",
+      "decorations/dachshund-earring",
+      "decorations/dendrite-earring",
+      "decorations/femur-earring",
+      "decorations/fiddlehead-earring",
+      "decorations/flower-earrings",
+      "decorations/fly-agaric-earring",
+      "decorations/giraffe-earring",
+      "decorations/grizzly-bear-earring",
+      "decorations/kakapo-earring",
+      "decorations/longship-earring",
+      "decorations/luna-moth-earring",
+      "decorations/melting-candle-earring",
+      "decorations/mobius-hoop-earring",
+      "decorations/morse-earring",
+      "decorations/panda-earring",
+      "decorations/phoenix-earring",
+      "decorations/pomeranian-earring",
+      "decorations/raven-skull-earring",
+      "decorations/remembrall-earring",
+      "decorations/seal-earrings",
+      "decorations/shark-earring",
+      "decorations/spider-drop-earring",
+      "decorations/strix-earrings",
+      "decorations/sushi-maki-earring",
+      "decorations/sushi-nigiri-earring",
+      "decorations/tiny-book-earring",
+      "decorations/trex-skull-earring",
+      "decorations/trojan-horse-earring",
+      "decorations/victrola-earring",
+      "decorations/waterwheel-earring",
+      "decorations/wednesday-earrings",
+      "decorations/winged-sandal-earring",
+      "decorations/zebra-earring"
+    ],
+    "jewelry/pendants": [
+      "decorations/amber-mosquito-pendant"
+    ],
+    "kitchen/drink-holders": [
+      "desk/bone-tankard",
+      "desk/cup-holder-car",
+      "desk/cup-holder-chain",
+      "desk/cup-holder-tulip",
+      "desk/cup-holder-turntable"
+    ],
+    "kitchen/sink-organizers": [
+      "kitchen/sink-sponge-tray"
+    ],
+    "kitchen/tableware": [
+      "kitchen/horn-shot-set",
+      "kitchen/napkin-ring",
+      "kitchen/napkin-tray"
+    ],
+    "kitchen/tools": [
+      "kitchen/lemon-squeezer",
+      "kitchen/utensil-rest"
+    ],
+    "outdoor/beach-games": [
+      "outdoor/beach-washer-toss",
+      "outdoor/sea-memory-tiles",
+      "outdoor/tictactoe-shells"
+    ],
+    "outdoor/sand-play": [
+      "outdoor/sandcastle-set"
+    ],
+    "toys/fidgets": [
+      "decorations/flexi-snake",
+      "decorations/infinity-cube",
+      "decorations/oldham-fidget",
+      "decorations/trammel"
+    ],
+    "toys/mechanical": [
+      "decorations/climbing-monkey",
+      "decorations/marble-run-pip",
+      "decorations/pop-up-toaster",
+      "decorations/pythagorean-cup",
+      "decorations/tank-shooter",
+      "desk/gyroscope",
+      "home/lazy-tongs-dragon",
+      "outdoor/trigger-breeze-fan"
+    ],
+    "toys/puzzles": [
+      "decorations/tower-of-hanoi"
+    ],
+    "toys/whistles": [
+      "decorations/beaver-whistle",
+      "decorations/narwhal-whistle"
+    ]
+  },
+  "redirects": {
+    "boardgames/cascadia": "boardgames/by-game/cascadia",
+    "boardgames/frosthaven": "boardgames/by-game/frosthaven",
+    "boardgames/spirit-island": "boardgames/by-game/spirit-island",
+    "boardgames/terraforming-mars": "boardgames/by-game/terraforming-mars",
+    "boardgames/wingspan": "boardgames/by-game/wingspan",
+    "boardgames/dnd": "boardgames/by-game/dnd",
+    "boardgames/mtg": "boardgames/by-game/mtg",
+    "boardgames/general": "boardgames",
+    "boardgames/cribbage": "boardgames/classic-games/cribbage"
+  },
+  "modelPaths": {
+    "decorations/coasters": "decorations/coasters/mandala-coasters"
+  }
+}

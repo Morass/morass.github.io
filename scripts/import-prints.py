@@ -72,6 +72,8 @@ def export(source, destination):
         item = {'id': identifier, 'title': config.get('title') or meta.get('title') or folder.name.replace('_', ' ').title(),
                 'summary': config.get('summary') or meta.get('summary', ''),
                 'tags': meta.get('tags', []), 'links': links}
+        if config.get('category'):
+            item['collection'] = config['category']
         custom = config.get('image')
         images = [folder / custom] if custom else []
         images += sorted(folder.glob('photo*.jpg')) + sorted(folder.glob('photo*.png'))

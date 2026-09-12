@@ -11,6 +11,8 @@ without a featured-game hero. Existing game routes and `app-ads.txt` remain stab
 
 - `content/projects.json`: curated game/project cards, public channels and profiles.
 - `content/prints.json`: exported listing metadata; do not hand-maintain a second catalogue.
+- `content/print-collections.json`: curated browsing hierarchy, model-to-collection
+  assignments, category redirects and exceptional model routes.
 - `scripts/build.py`: hub, category and print leaf pages, sitemap and generated-page manifest.
 - `hub.css`, `hub.js`: responsive hub UI and progressive search, without runtime dependencies.
 - `theme.js`: dark by default; the header toggle remembers a light/dark choice in
@@ -34,15 +36,17 @@ package download, browser install or hosted search service is needed.
 ## Publishing updates
 
 After an authorized print upload, verify the public listing and record it in the
-model's `published_urls.json`. Then run the commands above, inspect the changed
+model's `published_urls.json`. Choose its deepest useful collection in
+`content/print-collections.json` (or set `[website].category` in model.toml).
+Then run the commands above, inspect the changed
 leaf and its category, stage **only the resulting site paths**, commit and push.
 For an all-platform upload, run this once after the completed platform audits.
 If a platform is still reviewing, export its public model URL only after it is
 actually public; editor, profile/verifying and signed preview URLs are rejected.
 Website publication never authorizes uploading an unpublished model elsewhere.
 
-The importer preserves the prints repo's directory hierarchy, converts underscores
-to kebab-case routes, uses only explicitly selected public metadata, and makes
+The importer uses the prints repo's directory path as the stable model identity,
+converts underscores to kebab-case, exports selected public metadata, and makes
 960×720-or-smaller WebP derivatives. It exports no STL, source, private notes or
 EXIF. Multiple published variants keep all their distinct links. Catalogue cards
 link inward; marketplace model links appear on leaves. Profile links live on the
@@ -56,8 +60,25 @@ Optional overrides in a model's `model.toml`:
 title = "A short display title"
 summary = "A short introduction for the catalogue."
 image = "photo_closed.jpg"
+category = "jewelry/earrings"  # Optional override of the curated collection.
 # hidden = true  # Remove the item from the next export.
 ```
+
+Browsing categories are independent of source folders and can be as deep as useful:
+`jewelry/earrings`, `decorations/coasters`, `containers/keepsake-boxes/fantasy`,
+`boardgames/by-game/mtg/counters`. Existing prints are explicitly assigned in
+`print-collections.json`; a new unassigned print stops the build with its ID so the
+publisher chooses its proper collection rather than silently filing it elsewhere.
+Create subcategories for a useful distinction, not merely to add another level.
+Use kebab-case paths. Each print has one primary collection; search also uses its
+other tags and full collection path. Cards, breadcrumbs and related items all
+follow this hierarchy. Folder names in the prints repo need not move.
+
+Model URLs normally remain stable when their collection changes. The old
+`decorations/coasters` model URL now serves the requested Coasters collection;
+Mandala Coasters lives at `decorations/coasters/mandala-coasters`, explicitly
+recorded in `modelPaths`. Preserve category redirects when reshaping the tree.
+The builder rejects duplicate assignments or category/model route collisions.
 
 Otherwise the importer uses title/summary, the first photo, then a preview.
 A renamed source directory changes the route: keep a redirect at the old public
