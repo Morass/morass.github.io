@@ -4,7 +4,8 @@
 
 Public crossroads at <https://morass.github.io/>: **Morass Games** (Steam),
 **Small Games** (browser), **Mobile**, **YouTube**, and **Prints**. Pushing `main`
-deploys GitHub Pages. Existing game routes and `app-ads.txt` remain stable.
+deploys GitHub Pages. The homepage opens directly on the five project cards,
+without a featured-game hero. Existing game routes and `app-ads.txt` remain stable.
 
 ## Sources and build
 
@@ -12,6 +13,9 @@ deploys GitHub Pages. Existing game routes and `app-ads.txt` remain stable.
 - `content/prints.json`: exported listing metadata; do not hand-maintain a second catalogue.
 - `scripts/build.py`: hub, category and print leaf pages, sitemap and generated-page manifest.
 - `hub.css`, `hub.js`: responsive hub UI and progressive search, without runtime dependencies.
+- `theme.js`: dark by default; the header toggle remembers a light/dark choice in
+  local storage and restores it before styles load. Storage-disabled and no-JS
+  browsers retain a usable dark default. Game runtimes keep their own artwork/UI.
 - Existing `<game>/index.html`: authored game pages, using `style.css`.
 - `assets/ui/manifest.json`: reused warehouse printshop icons and paper texture provenance.
 - `small-games/borrowed-ink/play/`: released standalone bundle with its license and version receipt.
@@ -67,8 +71,8 @@ Add the public card to `content/projects.json`, create its detail page and reduc
 art, and rebuild. Categories already appear on the home crossroads; do not add
 cards manually to generated HTML. Keep unreleased Android entries marked coming
 soon; link a public Play listing only when verified. YouTube channels use public
-handles/IDs, never Studio URLs. The book channel is awaiting its confirmed public
-link; add it to `channels` when identified.
+handles/IDs, never Studio URLs. Orenvalt Archive (`@orenvaltarchive`) is the books channel; Morass Prints
+(`@morass_prints`) is the making channel.
 
 For browser games, copy only the tested **standalone** release into a `play/`
 subdirectory, including its license and release receipt. Keep it ad-free unless

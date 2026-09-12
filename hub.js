@@ -1,3 +1,26 @@
+const themeToggle = document.querySelector('.theme-toggle');
+if (themeToggle) {
+  function updateThemeButton() {
+    const next = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+    themeToggle.textContent = next === 'light' ? 'Light mode' : 'Dark mode';
+    themeToggle.setAttribute('aria-label', `Switch to ${next} mode`);
+  }
+  themeToggle.hidden = false;
+  updateThemeButton();
+  themeToggle.addEventListener('click', () => {
+    const theme = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+    window.setMorassTheme(theme);
+    try { localStorage.setItem('morass-theme', theme); } catch (_) { /* Storage may be disabled. */ }
+    updateThemeButton();
+  });
+  window.addEventListener('storage', event => {
+    if (event.key === 'morass-theme') {
+      window.setMorassTheme(event.newValue);
+      updateThemeButton();
+    }
+  });
+}
+
 /* Progressive enhancement: the catalogue remains browsable without JavaScript. */
 const results = document.querySelector('#search-results');
 if (results) {

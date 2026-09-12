@@ -1,22 +1,78 @@
 {
   "games": [
-    {"title":"Pyrewarden","path":"/pyrewarden/","image":"/pyrewarden/assets/capsule.png","label":"Tower defense · Steam","summary":"Build a defense from twelve schools of magic. Discover spell synergies and hold the line together in co-op."},
-    {"title":"The Concord Quarter","path":"/concord/","image":"/concord/assets/capsule.png","label":"City-life sim · Steam","summary":"Start as nobody in a medieval city. Trade, bargain and scheme your way into a life of your own."},
-    {"title":"Wardenmark","path":"/wardenmark/","image":"/wardenmark/assets/capsule.png","label":"Survivors roguelite · Steam","summary":"One Warden against the swarm. Draft spells, shape your build and survive an expedition into the Dread."},
-    {"title":"The Hushed Ledger","path":"/hushed-ledger/","image":"/hushed-ledger/assets/capsule.png","label":"Detective RPG · Coming soon","summary":"A river town with something to hide. Question its people, follow the evidence and reach your own conclusion."}
+    {
+      "title": "Pyrewarden",
+      "path": "/pyrewarden/",
+      "image": "/pyrewarden/assets/capsule.png",
+      "label": "Tower defense · Steam",
+      "summary": "Build a defense from twelve schools of magic. Discover spell synergies and hold the line together in co-op."
+    },
+    {
+      "title": "The Concord Quarter",
+      "path": "/concord/",
+      "image": "/concord/assets/capsule.png",
+      "label": "City-life sim · Steam",
+      "summary": "Start as nobody in a medieval city. Trade, bargain and scheme your way into a life of your own."
+    },
+    {
+      "title": "Wardenmark",
+      "path": "/wardenmark/",
+      "image": "/wardenmark/assets/capsule.png",
+      "label": "Survivors roguelite · Steam",
+      "summary": "One Warden against the swarm. Draft spells, shape your build and survive an expedition into the Dread."
+    },
+    {
+      "title": "The Hushed Ledger",
+      "path": "/hushed-ledger/",
+      "image": "/hushed-ledger/assets/capsule.png",
+      "label": "Detective RPG · Coming soon",
+      "summary": "A river town with something to hide. Question its people, follow the evidence and reach your own conclusion."
+    }
   ],
   "mobile": [
-    {"title":"Lanternward","path":"/lanternward/","image":"/lanternward/assets/capsule.png","label":"Android · Coming soon","summary":"Light the night streets of Veldrenmar, one carefully reasoned lantern at a time. A quiet logic puzzle with a single solution."}
+    {
+      "title": "Lanternward",
+      "path": "/lanternward/",
+      "image": "/lanternward/assets/capsule.png",
+      "label": "Android · Coming soon",
+      "summary": "Light the night streets of Veldrenmar, one carefully reasoned lantern at a time. A quiet logic puzzle with a single solution."
+    }
   ],
   "small-games": [
-    {"title":"Borrowed Ink","path":"/small-games/borrowed-ink/","image":"/assets/projects/borrowed-ink.webp","label":"Puzzle · Play in your browser","summary":"A little stamp, a sheet of paper and thirty ink-exchange puzzles. Match the pattern and leave the stamp empty."}
+    {
+      "title": "Borrowed Ink",
+      "path": "/small-games/borrowed-ink/",
+      "image": "/assets/projects/borrowed-ink.webp",
+      "label": "Puzzle · Play in your browser",
+      "summary": "A little stamp, a sheet of paper and thirty ink-exchange puzzles. Match the pattern and leave the stamp empty."
+    }
   ],
   "channels": [
-    {"title":"Morass Prints","url":"https://www.youtube.com/@morass_prints","summary":"Printed objects, tabletop games and the stories behind them.","label":"Prints & making"}
+    {
+      "title": "Orenvalt Archive",
+      "url": "https://www.youtube.com/@orenvaltarchive",
+      "summary": "Books and stories from Orenvalt.",
+      "label": "Books & stories"
+    },
+    {
+      "title": "Morass Prints",
+      "url": "https://www.youtube.com/@morass_prints",
+      "summary": "Printed objects, tabletop games and the stories behind them.",
+      "label": "Prints & making"
+    }
   ],
   "profiles": [
-    {"title":"Printables","url":"https://www.printables.com/@Morass_1762615/models"},
-    {"title":"Cults","url":"https://cults3d.com/en/users/Morass/3d-models"},
-    {"title":"MakerWorld","url":"https://makerworld.com/en/@Morass"}
+    {
+      "title": "Printables",
+      "url": "https://www.printables.com/@Morass_1762615/models"
+    },
+    {
+      "title": "Cults",
+      "url": "https://cults3d.com/en/users/Morass/3d-models"
+    },
+    {
+      "title": "MakerWorld",
+      "url": "https://makerworld.com/en/@Morass"
+    }
   ]
 }

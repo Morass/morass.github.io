@@ -30,11 +30,11 @@ def page(path, title, description, body, active='', crumbs=None, image='/assets/
     if crumbs:
         breadcrumb = '<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a>' + ''.join(f'<span aria-hidden="true">/</span><a href="{E(url)}">{E(label)}</a>' for label, url in crumbs) + '</nav>'
     target.write_text(f'''<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{E(title)} — Morass</title><meta name="description" content="{E(description)}">
 <link rel="canonical" href="{SITE}{path}"><meta property="og:title" content="{E(title)} — Morass"><meta property="og:description" content="{E(description)}"><meta property="og:type" content="website"><meta property="og:url" content="{SITE}{path}"><meta property="og:image" content="{SITE}{image}">
-<meta name="theme-color" content="#f5f3ec"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/hub.css"><script src="/hub.js" defer></script></head>
-<body><a class="skip" href="#main">Skip to content</a><header class="header"><div class="shell header-inner"><a class="brand" href="/" aria-label="Morass home"><span class="brand-mark" aria-hidden="true">m.</span>MORASS<span class="brand-note">PLAY · MAKE · EXPLORE</span></a><nav aria-label="Main">{nav}</nav></div></header>
+<meta name="theme-color" content="#111917"><script src="/theme.js"></script><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/hub.css"><script src="/hub.js" defer></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header class="header"><div class="shell header-inner"><a class="brand" href="/" aria-label="Morass home"><span class="brand-mark" aria-hidden="true">m.</span>MORASS<span class="brand-note">PLAY · MAKE · EXPLORE</span></a><nav aria-label="Main">{nav}</nav><button class="theme-toggle" type="button" aria-label="Switch to light mode" hidden>Light mode</button></div></header>
 <main id="main" class="shell">{breadcrumb}{body}</main><footer class="footer shell"><a class="brand" href="/">morass<span class="accent">.</span></a><p>Games, objects and other curiosities.<br>Made with care. Made to be explored.</p><nav aria-label="Footer"><a href="/prints/">Prints</a><a href="/games/">Games</a><a href="/privacy.html">Privacy</a></nav><small>© 2026 Morass</small></footer></body></html>''')
     GENERATED.add(str(target.relative_to(ROOT)))
 
@@ -53,8 +53,7 @@ def print_image(item):
 
 # Homepage: five distinct destinations, each with its own collection.
 print_cover = next((i for i in PRINTS if i['id'] == 'containers/pirate-chest'), PRINTS[0])
-home = '''<section class="home-hero"><div><p class="eyebrow">THE MORASS COLLECTION</p><h1>A little curiosity.<br><em>A lot to discover.</em></h1><p class="lede">Worlds to get lost in. Puzzles to pause with. <br>Objects to bring to life. Pick a path.</p><a class="text-link" href="#explore">Explore the projects <span aria-hidden="true">↓</span></a></div><a class="hero-feature" href="/small-games/borrowed-ink/"><img src="/assets/projects/borrowed-ink.webp" alt="Borrowed Ink, a gentle stamp-and-paper puzzle" width="960" height="600" fetchpriority="high"><div><span class="eyebrow">A SMALL GAME FOR A QUIET MOMENT</span><strong>Borrowed Ink</strong><span>Play thirty little puzzles <b aria-hidden="true">↗</b></span></div></a></section>'''
-home += '<section id="explore" class="collection"><div class="section-title"><div><p class="eyebrow">FIVE WAYS IN</p><h2>Find your next curiosity.</h2></div><span class="section-note">Digital worlds. Tangible things.</span></div><div class="crossroads">'
+home = '<section id="explore" class="collection home-crossroads"><div class="section-title"><div><p class="eyebrow">THE MORASS COLLECTION</p><h1>Explore the projects.</h1></div><span class="section-note">Games. Prints. Stories.</span></div><div class="crossroads">'
 home += card('Morass Games', '/games/', 'Strategy, strange worlds and stories worth getting lost in. Explore the Steam collection.', '/assets/projects/pyrewarden.webp', '01 / GAMES ON STEAM', True)
 home += card('Prints', '/prints/', 'Useful objects, playful mechanisms and tabletop companions. Find something to make.', print_image(print_cover), f'02 / {len(PRINTS)} DESIGNS', True)
 home += card('Small Games', '/small-games/', 'A little play, straight from your browser.', '/assets/projects/borrowed-ink.webp', '03 / NO INSTALL NEEDED')
