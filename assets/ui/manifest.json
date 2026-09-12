@@ -1,0 +1,45 @@
+{
+  "source": "Morass printshop warehouse UI kit",
+  "files": [
+    {
+      "file": "assets/ui/album.svg",
+      "sha256": "1c8fdcd400923b72b27059ac46f457eb1de536b0c00a4c612270eb01f9826fac",
+      "warehousePath": "2d_assets/pictures/ui_elements/printshop/tactile/vector/controls/album.svg",
+      "origin": "Morass original code-authored vector",
+      "recipe": "scripts/ui-assets.mjs",
+      "copiedFrom": "borrowed-ink/assets/ui/album.svg"
+    },
+    {
+      "file": "assets/ui/arrow.svg",
+      "sha256": "c5d9ef6402bc7d3ccbfe00916dc1305ed68ea05a8408bda904eb2482655f2f92",
+      "warehousePath": "2d_assets/pictures/ui_elements/printshop/tactile/vector/controls/arrow.svg",
+      "origin": "Morass original code-authored vector",
+      "recipe": "scripts/ui-assets.mjs",
+      "copiedFrom": "borrowed-ink/assets/ui/arrow.svg"
+    },
+    {
+      "file": "assets/ui/leaf.svg",
+      "sha256": "92efd7089e3b4877e6d9ce8f031a7a246f3d783aaf756d3b159683349d579eac",
+      "warehousePath": "2d_assets/pictures/ui_elements/printshop/tactile/vector/controls/leaf.svg",
+      "origin": "Morass original code-authored vector",
+      "recipe": "scripts/ui-assets.mjs",
+      "copiedFrom": "borrowed-ink/assets/ui/leaf.svg"
+    },
+    {
+      "file": "assets/ui/paper.svg",
+      "sha256": "9a9d3d0e8d6ca7cc916657989f54e88c93f0459fb8bfa16eede60341d6da4bdb",
+      "warehousePath": "2d_assets/pictures/ui_elements/printshop/tactile/vector/controls/paper.svg",
+      "origin": "Morass original code-authored vector",
+      "recipe": "scripts/ui-assets.mjs",
+      "copiedFrom": "borrowed-ink/assets/ui/paper.svg"
+    },
+    {
+      "file": "assets/ui/stamp.svg",
+      "sha256": "29cbb8e28ba67276fed74bff0697c353c337200d434ee186537fae243075a619",
+      "warehousePath": "2d_assets/pictures/ui_elements/printshop/tactile/vector/controls/stamp.svg",
+      "origin": "Morass original code-authored vector",
+      "recipe": "scripts/ui-assets.mjs",
+      "copiedFrom": "borrowed-ink/assets/ui/stamp.svg"
+    }
+  ]
+}

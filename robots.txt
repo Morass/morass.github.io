@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://morass.github.io/sitemap.xml
