@@ -1,5 +1,5 @@
 {
-  "source": "Morass printshop warehouse UI kit",
+  "source": "Morass warehouse UI assets and typography",
   "files": [
     {
       "file": "assets/ui/album.svg",
@@ -40,6 +40,16 @@
       "origin": "Morass original code-authored vector",
       "recipe": "scripts/ui-assets.mjs",
       "copiedFrom": "borrowed-ink/assets/ui/stamp.svg"
+    },
+    {
+      "file": "assets/ui/garamond.ttf",
+      "sha256": "f8ff7e06f7a8ef361fbf4454ccd254a84bddf125a9cae76606b77b414bffd9d0",
+      "warehousePath": "2d_assets/fonts/eb_garamond/EB Garamond.ttf",
+      "origin": "EB Garamond",
+      "license": "assets/ui/OFL.txt",
+      "transform": "fontTools subset: U+0020-007E,U+00A0-00FF,U+2010-2027,U+2190-2193; TrueType",
+      "masterSha256": "684fcc0db2239b43497341d596d68422ea60ef7522cf2e857071ad84e4ade2a4",
+      "copiedFrom": "borrowed-ink/assets/garamond.ttf"
     }
   ]
 }

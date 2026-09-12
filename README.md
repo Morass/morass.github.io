@@ -5,7 +5,9 @@
 Public crossroads at <https://morass.github.io/>: **Morass Games** (Steam),
 **Small Games** (browser), **Mobile**, **YouTube**, and **Prints**. Pushing `main`
 deploys GitHub Pages. The homepage opens directly on the five project cards,
-without a featured-game hero. Existing game routes and `app-ads.txt` remain stable.
+without a featured-game hero. The visual direction is restrained fantasy:
+book typography, dark forest/ivory surfaces, muted gold and engraved borders.
+Existing game routes and `app-ads.txt` remain stable.
 
 ## Sources and build
 
@@ -18,8 +20,12 @@ without a featured-game hero. Existing game routes and `app-ads.txt` remain stab
 - `theme.js`: dark by default; the header toggle remembers a light/dark choice in
   local storage and restores it before styles load. Storage-disabled and no-JS
   browsers retain a usable dark default. Game runtimes keep their own artwork/UI.
-- Existing `<game>/index.html`: authored game pages, using `style.css`.
-- `assets/ui/manifest.json`: reused warehouse printshop icons and paper texture provenance.
+- Existing `<game>/index.html`: authored game content; the builder refreshes
+  marked shared header/footer blocks. `style.css` supplies game-specific layout,
+  and `hub.css` supplies the same typography, colors, controls and theme as the hub.
+  `privacy.html` uses the same shell. The playable minigame bundle is excluded.
+- `assets/ui/manifest.json`: warehouse printshop icons, paper texture and
+  subset EB Garamond provenance; font license is `assets/ui/OFL.txt`.
 - `small-games/borrowed-ink/play/`: released standalone bundle with its license and version receipt.
 
 ```bash
@@ -102,6 +108,12 @@ Keep saved-game origins/routes stable. Portal links are added when their recorde
 `publicUrl` is verified, never while only a developer preview is available.
 
 ## Validation and release
+
+Every public page family uses the shared shell and light/dark preference,
+including Steam game leaves, Android leaves and the privacy page. Keep game art
+and game-specific content layouts; do not style the playable minigame runtime.
+The builder refreshes marked chrome blocks in authored pages, preserving their
+body content. Avoid independent copies of site navigation or theme CSS.
 
 Run the importer tests and link checker, then inspect changed layouts in the
 installed Chrome at desktop and phone widths. Test search, empty results, keyboard

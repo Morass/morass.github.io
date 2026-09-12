@@ -52,10 +52,16 @@ def icon(which):
 def button(label, url, secondary=False):
     return f'<a class="button{" secondary" if secondary else ""}" href="{E(url)}">{E(label)} <span aria-hidden="true">↗</span></a>'
 
+def site_header(active=""):
+    nav = ''.join(f'<a href="/{key}/"'+ (' aria-current="page"' if key == active else '') + f'>{label}</a>' for key, label in NAV)
+    return f'<a class="skip" href="#main">Skip to content</a><header class="header"><div class="shell header-inner"><a class="brand" href="/" aria-label="Morass home"><span class="brand-mark" aria-hidden="true">m.</span>MORASS<span class="brand-note">PLAY · MAKE · EXPLORE</span></a><nav aria-label="Main">{nav}</nav><button class="theme-toggle" type="button" aria-label="Switch to light mode" hidden>Light mode</button></div></header>'
+
+def site_footer():
+    return '<footer class="footer shell"><a class="brand" href="/">morass<span class="accent">.</span></a><p>Games, objects and other curiosities.<br>Made with care. Made to be explored.</p><nav aria-label="Footer"><a href="/prints/">Prints</a><a href="/games/">Games</a><a href="/privacy.html">Privacy</a></nav><small>© 2026 Morass</small></footer>'
+
 def page(path, title, description, body, active='', crumbs=None, image='/assets/projects/pyrewarden.webp'):
     target = ROOT / path.strip('/') / 'index.html' if path != '/' else ROOT / 'index.html'
     target.parent.mkdir(parents=True, exist_ok=True)
-    nav = ''.join(f'<a href="/{key}/"'+ (' aria-current="page"' if key == active else '') + f'>{label}</a>' for key, label in NAV)
     breadcrumb = ''
     if crumbs:
         breadcrumb = '<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a>' + ''.join(f'<span aria-hidden="true">/</span><a href="{E(url)}">{E(label)}</a>' for label, url in crumbs) + '</nav>'
@@ -63,9 +69,9 @@ def page(path, title, description, body, active='', crumbs=None, image='/assets/
 <html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{E(title)} — Morass</title><meta name="description" content="{E(description)}">
 <link rel="canonical" href="{SITE}{path}"><meta property="og:title" content="{E(title)} — Morass"><meta property="og:description" content="{E(description)}"><meta property="og:type" content="website"><meta property="og:url" content="{SITE}{path}"><meta property="og:image" content="{SITE}{image}">
-<meta name="theme-color" content="#111917"><script src="/theme.js"></script><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/hub.css"><script src="/hub.js" defer></script></head>
-<body><a class="skip" href="#main">Skip to content</a><header class="header"><div class="shell header-inner"><a class="brand" href="/" aria-label="Morass home"><span class="brand-mark" aria-hidden="true">m.</span>MORASS<span class="brand-note">PLAY · MAKE · EXPLORE</span></a><nav aria-label="Main">{nav}</nav><button class="theme-toggle" type="button" aria-label="Switch to light mode" hidden>Light mode</button></div></header>
-<main id="main" class="shell">{breadcrumb}{body}</main><footer class="footer shell"><a class="brand" href="/">morass<span class="accent">.</span></a><p>Games, objects and other curiosities.<br>Made with care. Made to be explored.</p><nav aria-label="Footer"><a href="/prints/">Prints</a><a href="/games/">Games</a><a href="/privacy.html">Privacy</a></nav><small>© 2026 Morass</small></footer></body></html>''')
+<meta name="theme-color" content="#101713"><script src="/theme.js"></script><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/hub.css"><script src="/hub.js" defer></script></head>
+<body>{site_header(active)}
+<main id="main" class="shell">{breadcrumb}{body}</main>{site_footer()}</body></html>''')
     GENERATED.add(str(target.relative_to(ROOT)))
 
 def heading(eyebrow, title, description):
@@ -80,6 +86,40 @@ def project_cards(key):
 
 def print_image(item):
     return item.get('image')
+
+def sync_authored_page(relative, active):
+    target = ROOT / relative
+    source = target.read_text()
+    start, end = '<!-- shared-header:start -->', '<!-- shared-header:end -->'
+    shared_header = start + site_header(active) + end
+    shared_footer = '<!-- shared-footer:start -->' + site_footer() + '<!-- shared-footer:end -->'
+    if start in source:
+        source = re.sub(r'<!-- shared-header:start -->.*?<!-- shared-header:end -->', lambda _: shared_header, source, flags=re.S)
+        source = re.sub(r'<!-- shared-footer:start -->.*?<!-- shared-footer:end -->', lambda _: shared_footer, source, flags=re.S)
+    else:
+        source = source.replace('<html lang="en">', '<html lang="en" data-theme="dark">')
+        source = source.replace('<body>', '<body class="game-site">')
+        source = source.replace('<link rel="stylesheet"', '<meta name="theme-color" content="#101713"><script src="/theme.js"></script>\n<link rel="stylesheet"', 1)
+        source = source.replace('</head>', '<link rel="stylesheet" href="/hub.css"><script src="/hub.js" defer></script>\n</head>')
+        if relative == 'privacy.html':
+            source = source.replace('<body class="game-site">', '<body class="game-site">' + shared_header)
+            source = source.replace('<main class="container game-section" style="max-width:800px">', '<main id="main" class="shell legal-page">')
+            source = source.replace('</body>', shared_footer + '</body>')
+        else:
+            source = re.sub(r'<nav class="site-nav">.*?</nav>', lambda _: shared_header, source, count=1, flags=re.S)
+            label = dict(NAV)[active]
+            trail = '<main id="main" class="game-detail"><nav class="breadcrumbs shell" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/' + active + '/">' + label + '</a></nav>'
+            source = re.sub(r'<div class="container project-trail">.*?</div>', lambda _: trail, source, count=1, flags=re.S)
+            if '<h1' not in source:
+                title = next(project['title'] for project in P[active] if project['path'].strip('/') == relative.split('/')[0])
+                source = source.replace('<section class="game-hero">', '<h1 class="visually-hidden">' + E(title) + '</h1><section class="game-hero">', 1)
+            source = re.sub(r'<footer class="site-footer">.*?</footer>', lambda _: '</main>' + shared_footer, source, count=1, flags=re.S)
+    target.write_text(source)
+
+for group in ['games', 'mobile']:
+    for project in P[group]:
+        sync_authored_page(project['path'].strip('/') + '/index.html', group)
+sync_authored_page('privacy.html', 'mobile')
 
 # Homepage: five distinct destinations, each with its own collection.
 print_cover = next((i for i in PRINTS if i['id'] == 'containers/pirate-chest'), PRINTS[0])

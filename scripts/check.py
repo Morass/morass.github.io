@@ -8,17 +8,26 @@ from urllib.parse import urlsplit, unquote
 ROOT = Path(__file__).resolve().parents[1]
 class Links(HTMLParser):
     def __init__(self):
-        super().__init__(); self.links=[]; self.cards=[]; self.h1=0
+        super().__init__(); self.links=[]; self.cards=[]; self.h1=0; self.headers=0; self.footers=0; self.mains=0
     def handle_starttag(self, tag, attrs):
         attrs=dict(attrs)
         if tag=='h1': self.h1+=1
+        if tag=='header' and 'header' in attrs.get('class','').split(): self.headers+=1
+        if tag=='footer' and 'footer' in attrs.get('class','').split(): self.footers+=1
+        if tag=='main' and attrs.get('id')=='main': self.mains+=1
         if tag=='a' and 'card' in attrs.get('class','').split(): self.cards.append(attrs.get('href',''))
         for attr in ['href','src','poster']:
             if attr in attrs: self.links.append(attrs[attr])
 errors=[]
 for p in ROOT.rglob('*.html'):
     if '.git' in p.parts: continue
-    parsed=Links();parsed.feed(p.read_text())
+    source=p.read_text()
+    parsed=Links();parsed.feed(source)
+    relative=p.relative_to(ROOT).as_posix()
+    is_runtime=relative.startswith('small-games/') and '/play/' in relative
+    if not is_runtime and 'http-equiv="refresh"' not in source:
+        if (parsed.headers,parsed.footers,parsed.mains)!=(1,1,1) or '/theme.js' not in source or '/hub.css' not in source:
+            errors.append(f'{relative}: shared site shell/theme missing or duplicated')
     for value in parsed.links:
         link=urlsplit(value)
         if link.scheme or link.netloc or not link.path: continue
