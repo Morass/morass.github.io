@@ -57,7 +57,7 @@ def site_header(active=""):
     return f'<a class="skip" href="#main">Skip to content</a><header class="header"><div class="shell header-inner"><a class="brand" href="/" aria-label="Morass home"><span class="brand-mark" aria-hidden="true">m.</span>MORASS<span class="brand-note">PLAY · MAKE · EXPLORE</span></a><nav aria-label="Main">{nav}</nav><button class="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch to light mode" hidden><svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></g></svg><svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 14.6A7.8 7.8 0 0 1 9.4 4.5a7.8 7.8 0 1 0 10.1 10.1Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M17 4.5l.6 1.4 1.4.6-1.4.6-.6 1.4-.6-1.4-1.4-.6 1.4-.6Z" fill="currentColor"/></svg></button></div></header>'
 
 def site_footer():
-    return '<footer class="footer shell"><a class="brand" href="/">morass<span class="accent">.</span></a><p>Games, objects and other curiosities.<br>Made with care. Made to be explored.</p><nav aria-label="Footer"><a href="/prints/">Prints</a><a href="/games/">Games</a><a href="/privacy.html">Privacy</a></nav><small>© 2026 Morass</small></footer>'
+    return '<footer class="footer shell"><a class="brand" href="/">morass<span class="accent">.</span></a><p>Games, objects and other curiosities.<br>Made with care. Made to be explored.</p><nav aria-label="Footer"><a href="/prints/">Prints</a><a href="/games/">Games</a><a href="'+E(P['community']['url'])+'" rel="noopener">Discord</a><a href="/privacy.html">Privacy</a></nav><small>© 2026 Morass</small></footer>'
 
 def page(path, title, description, body, active='', crumbs=None, image='/assets/projects/pyrewarden.webp'):
     target = ROOT / path.strip('/') / 'index.html' if path != '/' else ROOT / 'index.html'
@@ -140,7 +140,7 @@ for key, title, description in [
     ('small-games', 'Small games. Good company.', 'Thoughtful little games you can play right here, in your browser.'),
     ('mobile', 'A little wonder, to go.', 'Games and projects for Android. Explore what is taking shape.')]:
     body = heading(dict(NAV)[key], title, description) + project_cards(key)
-    if key == 'games': body += '<div class="section-end">'+button('Explore Morass on Steam', 'https://store.steampowered.com/search/?developer=Morass', True)+'</div>'
+    if key == 'games': body += '<div class="section-end">'+button('Explore Morass on Steam', 'https://store.steampowered.com/search/?developer=Morass', True)+'<p class="small-note">Playing one of them? Come say hello in the <a href="'+E(P['community']['url'])+'" rel="noopener">'+E(P['community']['label'])+'</a>.</p></div>'
     page('/'+key+'/', dict(NAV)[key], description, body, key, [(dict(NAV)[key], '/'+key+'/')])
 
 body = heading('YOUTUBE', 'A closer look.', 'Stories and making, from the Morass collection.')

@@ -88,6 +88,7 @@ body:after{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;back
 .breadcrumbs{font-size:14px}
 .footer p,.footer nav,.footer small{font-size:14px}
 .small-note{font-size:15px}
+.small-note a{text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}.small-note a:hover{color:var(--accent);text-decoration-color:var(--accent)}
 .profile-links{font-size:15px}
 .search-form label{font-size:15px}
 .search-form input{font-size:17px}
