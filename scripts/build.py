@@ -77,8 +77,12 @@ def page(path, title, description, body, active='', crumbs=None, image='/assets/
 def heading(eyebrow, title, description):
     return f'<header class="page-heading"><p class="eyebrow">{E(eyebrow)}</p><h1>{E(title)}</h1><p class="lede">{E(description)}</p></header>'
 
-def card(title, url, summary, image=None, label='', feature=False):
-    art = f'<img src="{E(image)}" alt="" loading="lazy" width="960" height="600">' if image else f'<div class="art-placeholder">{icon("stamp")}</div>'
+def channel_mark(channel, size=96):
+    return f'<img class="channel-mark" src="{E(channel["icon"])}" alt="" loading="lazy" width="{size}" height="{size}">'
+
+def card(title, url, summary, image=None, label='', feature=False, art=None):
+    if art is None:
+        art = f'<img src="{E(image)}" alt="" loading="lazy" width="960" height="600">' if image else f'<div class="art-placeholder">{icon("stamp")}</div>'
     return f'<a class="card{" featured" if feature else ""}" href="{E(url)}"><div class="card-art">{art}<span class="card-arrow" aria-hidden="true">↗</span></div><div class="card-copy"><p class="eyebrow">{E(label)}</p><h2>{E(title)}</h2><p>{E(summary)}</p></div></a>'
 
 def project_cards(key):
@@ -128,7 +132,7 @@ home += card('Games', '/games/', 'Strategy, strange worlds and stories worth get
 home += card('Prints', '/prints/', 'Useful objects, playful mechanisms and tabletop companions. Find something to make.', print_image(print_cover), f'02 / {len(PRINTS)} DESIGNS', True)
 home += card('Small Games', '/small-games/', 'A little play, straight from your browser.', '/assets/projects/borrowed-ink.webp', '03 / NO INSTALL NEEDED')
 home += card('Mobile', '/mobile/', 'Games and projects made for your pocket.', '/assets/projects/lanternward.webp', '04 / ANDROID')
-home += card('YouTube', '/youtube/', 'Stories, objects and a look behind the projects.', '/assets/ui/album.svg', '05 / WATCH & DISCOVER')
+home += card('YouTube', '/youtube/', 'Stories, objects and a look behind the projects.', label='05 / WATCH & DISCOVER', art='<div class="channel-marks">'+''.join(channel_mark(c) for c in P['channels'])+'</div>')
 home += '</div></section><section class="closing-note">'+icon('leaf')+'<p>Different projects.<br><strong>The same curious spirit.</strong></p><a class="text-link" href="/prints/">Take a look around ↗</a></section>'
 page('/', 'Games, prints & curious projects', 'Explore Morass: Steam games, free browser puzzles, Android projects, YouTube and an organized catalogue of 3D prints.', home)
 for key, title, description in [
@@ -142,7 +146,7 @@ for key, title, description in [
 body = heading('YOUTUBE', 'A closer look.', 'Stories and making, from the Morass collection.')
 body += '<div class="channel-list">'
 for channel in P['channels']:
-    body += f'<article class="channel">{icon("album")}<div><p class="eyebrow">{E(channel["label"])}</p><h2>{E(channel["title"])}</h2><p>{E(channel["summary"])}</p></div>{button("Visit the channel",channel["url"])}</article>'
+    body += f'<article class="channel">{channel_mark(channel)}<div><p class="eyebrow">{E(channel["label"])}</p><h2>{E(channel["title"])}</h2><p>{E(channel["summary"])}</p></div>{button("Visit the channel",channel["url"])}</article>'
 body += '</div>'
 page('/youtube/', 'YouTube', 'Watch stories and making from Morass.', body, 'youtube', [('YouTube','/youtube/')])
 

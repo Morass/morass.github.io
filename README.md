@@ -24,6 +24,8 @@ Existing game routes and `app-ads.txt` remain stable.
   marked shared header/footer blocks. `style.css` supplies game-specific layout,
   and `hub.css` supplies the same typography, colors, controls and theme as the hub.
   `privacy.html` uses the same shell. The playable minigame bundle is excluded.
+- `assets/ui/channel-*.svg`: vector redraws of each YouTube channel's avatar, named by
+  `icon` in `content/projects.json`; redraw one when a channel changes its avatar.
 - `assets/ui/manifest.json`: warehouse printshop icons, paper texture and
   subset EB Garamond provenance; font license is `assets/ui/OFL.txt`.
 - `small-games/borrowed-ink/play/`: released standalone bundle with its license and version receipt.
