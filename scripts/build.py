@@ -133,7 +133,7 @@ home += card('Prints', '/prints/', 'Useful objects, playful mechanisms and table
 home += card('Small Games', '/small-games/', 'A little play, straight from your browser.', '/assets/projects/borrowed-ink.webp', '03 / NO INSTALL NEEDED')
 home += card('Mobile', '/mobile/', 'Games and projects made for your pocket.', '/assets/projects/lanternward.webp', '04 / ANDROID')
 home += card('YouTube', '/youtube/', 'Stories, objects and a look behind the projects.', label='05 / WATCH & DISCOVER', art='<div class="channel-marks">'+''.join(channel_mark(c) for c in P['channels'])+'</div>')
-home += '</div></section><section class="closing-note">'+icon('leaf')+'<p>Different projects.<br><strong>The same curious spirit.</strong></p><a class="text-link" href="/prints/">Take a look around ↗</a></section>'
+home += '</div></section>'
 page('/', 'Games, prints & curious projects', 'Explore Morass: Steam games, free browser puzzles, Android projects, YouTube and an organized catalogue of 3D prints.', home)
 for key, title, description in [
     ('games', 'Worlds worth getting lost in.', 'The Morass Games collection. Strategy, survival and stories on Steam.'),
