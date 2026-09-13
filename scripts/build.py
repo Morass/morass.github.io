@@ -38,7 +38,7 @@ for item in PRINTS:
         if '/'.join(parts[:depth]) in leaf_ids:
             raise ValueError(f"Collection collides with a model URL: {item['collection']}")
 GENERATED = set()
-NAV = [('games', 'Morass Games'), ('small-games', 'Small Games'), ('mobile', 'Mobile'), ('youtube', 'YouTube'), ('prints', 'Prints')]
+NAV = [('games', 'Games'), ('small-games', 'Small Games'), ('mobile', 'Mobile'), ('youtube', 'YouTube'), ('prints', 'Prints')]
 LABELS = {'boardgames': 'Board games', 'desk': 'Desk & office', 'decorations': 'Decorations', 'containers': 'Boxes & storage', 'bathroom': 'Bathroom', 'kitchen': 'Kitchen', 'home': 'Around the home', 'outdoor': 'Outdoors', 'footwear': 'Footwear', 'general': 'Original & general', 'mtg': 'Magic: The Gathering', 'spirit-island': 'Spirit Island', 'frosthaven': 'Frosthaven'}
 LABELS.update({'jewelry':'Jewelry & accessories', 'earrings':'Earrings', 'brooches':'Brooches', 'pendants':'Pendants', 'displays':'Jewelry displays', 'buttons':'Sewing buttons', 'by-game':'Find your game', 'dnd':'Dungeons & Dragons', 'mtg':'Magic: The Gathering', 'original-games':'Original games', 'classic-games':'Classic games', 'dice':'Dice', 'terrain':'Terrain & dungeon tiles', 'tokens-stands':'Tokens & stands', 'card-care':'Deck boxes & card care', 'keepsake-boxes':'Keepsake boxes', 'tools-parts':'Tools & small parts', 'trays-banks':'Catch-alls & coin banks', 'reading-writing':'Reading & writing', 'washing-care':'Washing & personal care', 'toys':'Toys & mechanisms', 'coasters':'Coasters', 'makeup-organizers':'Makeup organizers'})
 E = lambda value: html.escape(str(value), quote=True)
@@ -124,7 +124,7 @@ sync_authored_page('privacy.html', 'mobile')
 # Homepage: five distinct destinations, each with its own collection.
 print_cover = next((i for i in PRINTS if i['id'] == 'containers/pirate-chest'), PRINTS[0])
 home = '<section id="explore" class="collection home-crossroads"><div class="section-title"><div><p class="eyebrow">THE MORASS COLLECTION</p><h1>Explore the projects.</h1></div><span class="section-note">Games. Prints. Stories.</span></div><div class="crossroads">'
-home += card('Morass Games', '/games/', 'Strategy, strange worlds and stories worth getting lost in. Explore the Steam collection.', '/assets/projects/pyrewarden.webp', '01 / GAMES ON STEAM', True)
+home += card('Games', '/games/', 'Strategy, strange worlds and stories worth getting lost in. Explore the Steam collection.', '/assets/projects/pyrewarden.webp', '01 / GAMES ON STEAM', True)
 home += card('Prints', '/prints/', 'Useful objects, playful mechanisms and tabletop companions. Find something to make.', print_image(print_cover), f'02 / {len(PRINTS)} DESIGNS', True)
 home += card('Small Games', '/small-games/', 'A little play, straight from your browser.', '/assets/projects/borrowed-ink.webp', '03 / NO INSTALL NEEDED')
 home += card('Mobile', '/mobile/', 'Games and projects made for your pocket.', '/assets/projects/lanternward.webp', '04 / ANDROID')

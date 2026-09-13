@@ -2,7 +2,7 @@
 
 [website] [publishing] [static]
 
-Public crossroads at <https://morass.github.io/>: **Morass Games** (Steam),
+Public crossroads at <https://morass.github.io/>: **Games** (Steam),
 **Small Games** (browser), **Mobile**, **YouTube**, and **Prints**. Pushing `main`
 deploys GitHub Pages. The homepage opens directly on the five project cards,
 without a featured-game hero. The visual direction is restrained fantasy:
