@@ -2,8 +2,8 @@ const themeToggle = document.querySelector('.theme-toggle');
 if (themeToggle) {
   function updateThemeButton() {
     const next = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
-    themeToggle.textContent = next === 'light' ? 'Light mode' : 'Dark mode';
     themeToggle.setAttribute('aria-label', `Switch to ${next} mode`);
+    themeToggle.title = `Switch to ${next} mode`;
   }
   themeToggle.hidden = false;
   updateThemeButton();

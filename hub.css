@@ -19,7 +19,7 @@
 .home-crossroads{border-top:0;padding-top:42px}.home-crossroads h1{font-family:var(--serif);font-size:36px;font-weight:400;margin:0;letter-spacing:-.025em}
 @media(max-width:760px){.home-crossroads{padding-top:28px}.home-crossroads h1{font-size:30px}}
 /* A quiet fantasy treatment: book typography, brass details and engraved edges. */
-@font-face{font-family:'Morass Garamond';src:url('/assets/ui/garamond.ttf') format('truetype');font-display:swap;font-style:normal;font-weight:400}
+@font-face{font-family:'Morass Garamond';src:url('/assets/ui/garamond.ttf') format('truetype');font-display:swap;font-style:normal;font-weight:400 800}
 :root{--serif:'Morass Garamond',Georgia,serif;--paper:#101713;--ink:#eee7d6;--muted:#aeb6a5;--accent:#d2b27b;--line:#3b4536;--card:#19251f;--header:#101713f2;--green:#c5b17c;--button-bg:#c5b17c;--button-hover:#dcc997;--engraving:#b99b6055}
 :root[data-theme="light"]{--serif:'Morass Garamond',Georgia,serif;--paper:#f5f0e4;--ink:#303b2c;--muted:#64705c;--accent:#8d6934;--line:#d3c9ae;--card:#fffaf0;--header:#f5f0e4f2;--green:#405437;--button-bg:#405437;--button-hover:#526947;--engraving:#a1895355}
 .header{box-shadow:0 3px 0 var(--paper),0 4px 0 var(--engraving)}
@@ -66,3 +66,64 @@
 @media(max-width:760px){.channel>.channel-mark{width:64px;height:64px}}
 @media(max-width:430px){.channel-marks{height:180px}.channel-marks .channel-mark{width:92px;height:92px}}
 @media(prefers-reduced-motion:reduce){.card:hover .channel-mark,.card:hover .channel-mark+.channel-mark{transform:none}}
+
+/* Fantasy pass: book type throughout, brass-cornered frames, lamplit parchment. */
+:root{--corner-tl:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 38'%3E%3Cg transform='matrix(1 0 0 1 0 0)'%3E%3Cpath d='M0 0H38V1.8H0Z'/%3E%3Cpath d='M0 0H1.8V38H0Z'/%3E%3Cpath fill-rule='evenodd' d='M0 0H18C16.5 5.5 13.5 9.5 9.5 9.5 9.5 13.5 5.5 16.5 0 18ZM3.2 5a1.8 1.8 0 1 0 3.6 0a1.8 1.8 0 1 0-3.6 0Z'/%3E%3Cpath d='M14.5 11.2l2.3 2.3-2.3 2.3-2.3-2.3Z'/%3E%3C/g%3E%3C/svg%3E");--corner-tr:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 38'%3E%3Cg transform='matrix(-1 0 0 1 38 0)'%3E%3Cpath d='M0 0H38V1.8H0Z'/%3E%3Cpath d='M0 0H1.8V38H0Z'/%3E%3Cpath fill-rule='evenodd' d='M0 0H18C16.5 5.5 13.5 9.5 9.5 9.5 9.5 13.5 5.5 16.5 0 18ZM3.2 5a1.8 1.8 0 1 0 3.6 0a1.8 1.8 0 1 0-3.6 0Z'/%3E%3Cpath d='M14.5 11.2l2.3 2.3-2.3 2.3-2.3-2.3Z'/%3E%3C/g%3E%3C/svg%3E");--corner-bl:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 38'%3E%3Cg transform='matrix(1 0 0 -1 0 38)'%3E%3Cpath d='M0 0H38V1.8H0Z'/%3E%3Cpath d='M0 0H1.8V38H0Z'/%3E%3Cpath fill-rule='evenodd' d='M0 0H18C16.5 5.5 13.5 9.5 9.5 9.5 9.5 13.5 5.5 16.5 0 18ZM3.2 5a1.8 1.8 0 1 0 3.6 0a1.8 1.8 0 1 0-3.6 0Z'/%3E%3Cpath d='M14.5 11.2l2.3 2.3-2.3 2.3-2.3-2.3Z'/%3E%3C/g%3E%3C/svg%3E");--corner-br:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 38'%3E%3Cg transform='matrix(-1 0 0 -1 38 38)'%3E%3Cpath d='M0 0H38V1.8H0Z'/%3E%3Cpath d='M0 0H1.8V38H0Z'/%3E%3Cpath fill-rule='evenodd' d='M0 0H18C16.5 5.5 13.5 9.5 9.5 9.5 9.5 13.5 5.5 16.5 0 18ZM3.2 5a1.8 1.8 0 1 0 3.6 0a1.8 1.8 0 1 0-3.6 0Z'/%3E%3Cpath d='M14.5 11.2l2.3 2.3-2.3 2.3-2.3-2.3Z'/%3E%3C/g%3E%3C/svg%3E");--flourish:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 24'%3E%3Cg id='h'%3E%3Cpath d='M131 11.4L236 12 131 12.6Z'/%3E%3Cpath fill='none' stroke='black' stroke-width='1.3' stroke-linecap='round' d='M129 12c7 0 9-6.5 15.5-6.5 5 0 7 4.2 4.3 6.4-2.4 2-5.3-.2-4-2.3M150 12c6 0 7.5 4.5 13 4.5 3.6 0 4.6-2.8 2.8-4'/%3E%3Ccircle cx='175' cy='12' r='1.6'/%3E%3Ccircle cx='197' cy='12' r='1.1'/%3E%3C/g%3E%3Cuse href='%23h' transform='matrix(-1 0 0 1 240 0)'/%3E%3Cpath d='M120 3.5l8.5 8.5-8.5 8.5-8.5-8.5Zm0 4.3L115.8 12l4.2 4.2 4.2-4.2Z' fill-rule='evenodd'/%3E%3Cpath d='M120 10.2l1.8 1.8-1.8 1.8-1.8-1.8Z'/%3E%3C/svg%3E");--seal:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath d='M47.32 24.00L48.13 26.54L48.19 29.14L47.31 31.57L45.67 33.65L43.71 35.38L41.86 36.98L40.33 38.71L39.03 40.69L37.64 42.77L35.88 44.58L33.68 45.74L31.18 46.11L28.65 45.88L26.26 45.49L24.00 45.37L21.72 45.69L19.27 46.25L16.65 46.61L14.07 46.30L11.80 45.13L10.00 43.26L8.63 41.08L7.39 38.96L5.98 37.09L4.29 35.38L2.51 33.57L1.05 31.46L0.32 29.03L0.48 26.47L1.32 24.00L2.38 21.73L3.19 19.58L3.56 17.36L3.65 14.94L3.87 12.38L4.65 9.94L6.15 7.93L8.25 6.50L10.60 5.55L12.88 4.74L14.97 3.72L16.97 2.36L19.09 0.89L21.45 -0.26L24.00 -0.63L26.53 -0.06L28.83 1.26L30.87 2.86L32.78 4.28L34.80 5.30L37.04 6.05L39.41 6.89L41.57 8.18L43.19 10.05L44.13 12.38L44.53 14.86L44.80 17.24L45.32 19.47L46.23 21.66Z'/%3E%3C/svg%3E");--speck:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .78 0 0 0 0 .66 0 0 0 0 .45 .5 0 0 0 -.18'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");--mottle:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='1000'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.009' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .05 0 0 0 0 .04 0 0 0 0 .02 0 0 .9 0 -.38'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+:root{--sans:'Morass Garamond',Georgia,serif;--frame:#b99b6070;--brass-hi:#f3dca4;--brass-lo:#8a6b37;--glow:#e0b46a2e;--lamplight:#e9c27c14;--vignette:#000000b0;--mottle-opacity:1;--band:#0a0f0c70}
+:root[data-theme="light"]{--sans:'Morass Garamond',Georgia,serif;--frame:#a1895390;--brass-hi:#c8a35c;--brass-lo:#5c4420;--glow:#a0772f24;--lamplight:#fffaeb99;--vignette:#6b4b1c38;--mottle-opacity:.18;--band:#fffaf080}
+body{background-image:var(--speck),url('/assets/ui/paper.svg');font-size:17px}
+body:before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(110% 60% at 50% -8%,var(--lamplight),transparent 70%),radial-gradient(150% 115% at 50% 40%,transparent 50%,var(--vignette))}
+body:after{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background:var(--mottle) center/cover no-repeat;opacity:var(--mottle-opacity)}
+
+.header nav a{font-size:17px;font-weight:500;font-variant-caps:small-caps;letter-spacing:.05em}
+.brand{font-size:21px;font-weight:600;letter-spacing:.2em}
+.brand-note{font-size:10px;font-weight:500}
+.brand-mark{width:48px;height:48px;padding:0 0 5px;border-radius:0;outline:0;font-size:30px;letter-spacing:-.04em;color:#f1d79c;text-shadow:0 1px 0 #3a0d09,0 -1px 0 #ffffff26;background:radial-gradient(circle,transparent 0 16px,#0000002e 16.5px 17.5px,#ffffff1c 18px,transparent 18.5px),radial-gradient(circle at 36% 30%,#b4463b,#86281f 52%,#551510);-webkit-mask:var(--seal) center/contain no-repeat;mask:var(--seal) center/contain no-repeat;filter:drop-shadow(0 2px 3px #0006)}
+.eyebrow{font-size:17px;font-weight:600;letter-spacing:.14em;font-variant-caps:all-small-caps}
+.card-copy .eyebrow{font-size:15px}
+.section-note{font-size:16px;font-style:italic}
+.card p:not(.eyebrow){font-size:16.5px;line-height:1.6}
+.lede{font-size:20px;line-height:1.65}
+.text-link,.button,.game-detail .cta{font-size:16px;font-variant-caps:small-caps;letter-spacing:.05em;font-weight:600}
+.breadcrumbs{font-size:14px}
+.footer p,.footer nav,.footer small{font-size:14px}
+.small-note{font-size:15px}
+.profile-links{font-size:15px}
+.search-form label{font-size:15px}
+.search-form input{font-size:17px}
+.channel p{font-size:17px}
+
+/* Frames: gilt border, engraved inner rule, image set in a matte, brass corners. */
+.card,.channel,.game-detail .feature{position:relative;border-color:var(--frame)}
+.card{padding:8px}
+.card,.channel,.game-detail .feature{box-shadow:inset 0 0 0 3px var(--card),inset 0 0 0 4px var(--engraving)}
+.card-art{border:1px solid var(--engraving);border-radius:1px}
+.card-copy:after{display:none}
+.card:after,.channel:after,.game-detail .feature:after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(135deg,var(--brass-hi),var(--accent) 45%,var(--brass-lo));-webkit-mask:var(--corner-tl) top left/38px no-repeat,var(--corner-tr) top right/38px no-repeat,var(--corner-bl) bottom left/38px no-repeat,var(--corner-br) bottom right/38px no-repeat;mask:var(--corner-tl) top left/38px no-repeat,var(--corner-tr) top right/38px no-repeat,var(--corner-bl) bottom left/38px no-repeat,var(--corner-br) bottom right/38px no-repeat}
+.card:hover{border-color:var(--accent);box-shadow:inset 0 0 0 3px var(--card),inset 0 0 0 4px var(--engraving),0 14px 30px #0004,0 0 42px var(--glow)}
+
+/* Dividers: an engraved scroll instead of a lone star. */
+.home-crossroads .section-title{border-bottom:0}
+.home-crossroads .section-title:before{content:'';position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,var(--engraving) 6%,var(--engraving) calc(50% - 104px),transparent calc(50% - 100px),transparent calc(50% + 100px),var(--engraving) calc(50% + 104px),var(--engraving) 94%,transparent)}
+.home-crossroads .section-title:after,.page-heading:after{content:'';position:absolute;width:240px;height:24px;background:var(--accent);-webkit-mask:var(--flourish) center/contain no-repeat;mask:var(--flourish) center/contain no-repeat}
+.home-crossroads .section-title:after{bottom:-12px;left:calc(50% - 120px);padding:0}
+.page-heading{position:relative}
+.page-heading:after{position:static;display:block;margin-top:30px;width:180px;height:18px}
+.page-heading>.eyebrow:before{content:'◆';font-size:11px;vertical-align:2px}
+.game-detail .game-section[style]{background:var(--band)!important;border-color:var(--engraving)!important}
+
+/* Theme toggle: a sun or a moon. */
+.theme-toggle{min-width:44px;width:44px;padding:0;display:grid;place-content:center;color:var(--accent)}
+.theme-toggle svg{width:22px;height:22px}
+:root[data-theme="light"] .theme-toggle .icon-sun,:root:not([data-theme="light"]) .theme-toggle .icon-moon{display:none}
+
+@media(max-width:760px){.header nav a{font-size:15px}
+.brand{font-size:17px}
+.brand-mark{width:38px;height:38px;font-size:24px;padding-bottom:4px}
+.lede{font-size:18px}
+.card{padding:6px}
+.card:after,.channel:after,.game-detail .feature:after{-webkit-mask-size:30px;mask-size:30px}
+.theme-toggle{min-width:40px;width:40px}
+}
+@media(max-width:430px){.header nav a{font-size:14px}
+}

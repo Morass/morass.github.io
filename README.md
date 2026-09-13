@@ -5,8 +5,12 @@
 Public crossroads at <https://morass.github.io/>: **Games** (Steam),
 **Small Games** (browser), **Mobile**, **YouTube**, and **Prints**. Pushing `main`
 deploys GitHub Pages. The homepage opens directly on the five project cards,
-without a featured-game hero. The visual direction is restrained fantasy:
-book typography, dark forest/ivory surfaces, muted gold and engraved borders.
+without a featured-game hero. The visual direction is fantasy, because most
+projects come from fantasy worlds: EB Garamond throughout (small caps for nav,
+labels and buttons), a wax-seal brand mark, lamplit grained parchment/leather
+grounds, gilt card frames with brass book-corners, scroll dividers, Roman-numeral
+card labels and a sun/moon theme toggle. The ornaments are inline SVG data URIs
+in the "Fantasy pass" block of `hub.css`, masked so they follow the theme colours.
 Existing game routes and `app-ads.txt` remain stable.
 
 ## Sources and build
