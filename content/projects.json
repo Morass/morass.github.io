@@ -152,13 +152,6 @@
    "group": "apps-and-scripts",
    "label": "Desktop app",
    "summary": "Track a Magic: The Gathering collection with Scryfall search and CardMarket prices."
-  },
-  {
-   "title": "tools",
-   "url": "https://github.com/Morass/tools",
-   "group": "apps-and-scripts",
-   "label": "Shell & Python",
-   "summary": "Mini scripts, including an arrow-key conventional committer."
   }
  ],
  "toolGroups": [
