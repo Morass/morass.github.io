@@ -27,6 +27,13 @@
    "image": "/hushed-ledger/assets/capsule.png",
    "label": "Detective RPG · Steam",
    "summary": "A river town with something to hide. Question its people, follow the evidence and reach your own conclusion."
+  },
+  {
+   "title": "Bressnath",
+   "path": "/bressnath/",
+   "image": "/bressnath/assets/capsule.png",
+   "label": "Settlement builder · Coming soon",
+   "summary": "Refound a holding in the drowned fens. Haul every load home, hold off what crawls out of the Sundered Places and win by laying a causeway."
   }
  ],
  "mobile": [
