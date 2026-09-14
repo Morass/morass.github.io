@@ -88,5 +88,97 @@
   "title": "Discord",
   "url": "https://discord.gg/KTKarn46yq",
   "label": "Morass Games Discord"
- }
+ },
+ "tools": [
+  {
+   "title": "spoor",
+   "url": "https://github.com/Morass/spoor",
+   "group": "command-line",
+   "label": "Go · macOS & Linux",
+   "summary": "See what a command did to your machine, review every change with real diffs and undo any of it. Records Homebrew upgrades file by file."
+  },
+  {
+   "title": "repo-grepo.nvim",
+   "url": "https://github.com/Morass/repo-grepo.nvim",
+   "group": "neovim-plugins",
+   "label": "Lua · C++",
+   "summary": "Repository-wide grep in a multi-window overlay, with a small C++ backend for speed."
+  },
+  {
+   "title": "conventional-push.nvim",
+   "url": "https://github.com/Morass/conventional-push.nvim",
+   "group": "neovim-plugins",
+   "label": "Lua",
+   "summary": "Pick changed files, write a conventional commit and push, without leaving Neovim."
+  },
+  {
+   "title": "history-git-diff.nvim",
+   "url": "https://github.com/Morass/history-git-diff.nvim",
+   "group": "neovim-plugins",
+   "label": "Lua",
+   "summary": "Step through a file's history as diffs, using git's own diff."
+  },
+  {
+   "title": "simple-todo.nvim",
+   "url": "https://github.com/Morass/simple-todo.nvim",
+   "group": "neovim-plugins",
+   "label": "Lua",
+   "summary": "A lightweight popup TODO list with severities, tags and JSON storage."
+  },
+  {
+   "title": "aggressive-logs-coloring.nvim",
+   "url": "https://github.com/Morass/aggressive-logs-coloring.nvim",
+   "group": "neovim-plugins",
+   "label": "Vim script",
+   "summary": "Bold whole-line colouring for log files, so errors and warnings jump out."
+  },
+  {
+   "title": "picture-scatch.nvim",
+   "url": "https://github.com/Morass/picture-scatch.nvim",
+   "group": "neovim-plugins",
+   "label": "Lua",
+   "summary": "Show images inside Neovim as coloured blocks, in terminals without graphics support."
+  },
+  {
+   "title": "floodfill-bg",
+   "url": "https://github.com/Morass/floodfill-bg",
+   "group": "apps-and-scripts",
+   "label": "Python · command line",
+   "summary": "Remove a flat image background by flood-filling from seed points."
+  },
+  {
+   "title": "cards_table",
+   "url": "https://github.com/Morass/cards_table",
+   "group": "apps-and-scripts",
+   "label": "Desktop app",
+   "summary": "Track a Magic: The Gathering collection with Scryfall search and CardMarket prices."
+  },
+  {
+   "title": "tools",
+   "url": "https://github.com/Morass/tools",
+   "group": "apps-and-scripts",
+   "label": "Shell & Python",
+   "summary": "Mini scripts, including an arrow-key conventional committer."
+  }
+ ],
+ "toolGroups": [
+  {
+   "slug": "command-line",
+   "title": "Command line",
+   "mark": "$_",
+   "summary": "Tools for the terminal: see and undo what installers do to your machine."
+  },
+  {
+   "slug": "neovim-plugins",
+   "title": "Neovim plugins",
+   "mark": "nvim",
+   "summary": "Grep, git, TODOs, logs and even pictures, without leaving the editor."
+  },
+  {
+   "slug": "apps-and-scripts",
+   "title": "Small apps & scripts",
+   "mark": "{ }",
+   "summary": "Little helpers for images, card collections and everyday git."
+  }
+ ]
 }

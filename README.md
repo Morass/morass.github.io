@@ -114,6 +114,16 @@ that release explicitly implements ads; portal SDK builds belong on portals.
 Keep saved-game origins/routes stable. Portal links are added when their recorded
 `publicUrl` is verified, never while only a developer preview is available.
 
+## Adding free tools
+
+Free tools is one section, split into groups like the print collection: `/tools/`
+shows a card per group and `/tools/<group>/` lists that group's tools. The band under
+the home crossroads links to it. Groups live in `toolGroups` in
+`content/projects.json` (`slug`, `title`, a short monospace `mark`, `summary`); add a
+tool to `tools` with `title`, public GitHub `url`, `group` (a group slug), a short
+`label` and a one-sentence `summary`, then rebuild. The builder rejects a tool whose
+group does not exist. List only public repositories, never private or archived ones.
+
 ## Validation and release
 
 Every public page family uses the shared shell and light/dark preference,

@@ -57,7 +57,7 @@ def site_header(active=""):
     return f'<a class="skip" href="#main">Skip to content</a><header class="header"><div class="shell header-inner"><a class="brand" href="/" aria-label="Morass home"><span class="brand-mark" aria-hidden="true">m.</span>MORASS<span class="brand-note">PLAY · MAKE · EXPLORE</span></a><nav aria-label="Main">{nav}</nav><button class="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch to light mode" hidden><svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></g></svg><svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 14.6A7.8 7.8 0 0 1 9.4 4.5a7.8 7.8 0 1 0 10.1 10.1Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M17 4.5l.6 1.4 1.4.6-1.4.6-.6 1.4-.6-1.4-1.4-.6 1.4-.6Z" fill="currentColor"/></svg></button></div></header>'
 
 def site_footer():
-    return '<footer class="footer shell"><a class="brand" href="/">morass<span class="accent">.</span></a><p>Games, objects and other curiosities.<br>Made with care. Made to be explored.</p><nav aria-label="Footer"><a href="/prints/">Prints</a><a href="/games/">Games</a><a href="'+E(P['community']['url'])+'" rel="noopener">Discord</a><a href="/privacy.html">Privacy</a></nav><small>© 2026 Morass</small></footer>'
+    return '<footer class="footer shell"><a class="brand" href="/">morass<span class="accent">.</span></a><p>Games, objects and other curiosities.<br>Made with care. Made to be explored.</p><nav aria-label="Footer"><a href="/prints/">Prints</a><a href="/games/">Games</a><a href="/tools/">Tools</a><a href="'+E(P['community']['url'])+'" rel="noopener">Discord</a><a href="/privacy.html">Privacy</a></nav><small>© 2026 Morass</small></footer>'
 
 def page(path, title, description, body, active='', crumbs=None, image='/assets/projects/pyrewarden.webp'):
     target = ROOT / path.strip('/') / 'index.html' if path != '/' else ROOT / 'index.html'
@@ -134,6 +134,8 @@ home += card('Small Games', '/small-games/', 'A little play, straight from your 
 home += card('Mobile', '/mobile/', 'Games and projects made for your pocket.', '/assets/projects/lanternward.webp', 'IV · ANDROID')
 home += card('YouTube', '/youtube/', 'Stories, objects and a look behind the projects.', label='V · WATCH & DISCOVER', art='<div class="channel-marks">'+''.join(channel_mark(c) for c in P['channels'])+'</div>')
 home += '</div></section>'
+# A quiet sixth destination: free tools are not a project family, so a band, not a card.
+home += '<section class="home-tools"><div><p class="eyebrow">VI · FREE TOOLS</p><h2>Small tools, free to use.</h2><p>A command-line tool and a handful of Neovim plugins, all open source.</p></div><a class="button secondary" href="/tools/">See the tools <span aria-hidden="true">→</span></a></section>'
 page('/', 'Games, prints & curious projects', 'Explore Morass: Steam games, free browser puzzles, Android projects, YouTube and an organized catalogue of 3D prints.', home)
 for key, title, description in [
     ('games', 'Worlds worth getting lost in.', 'The Morass Games collection. Strategy, survival and stories on Steam.'),
@@ -149,6 +151,26 @@ for channel in P['channels']:
     body += f'<article class="channel">{channel_mark(channel)}<div><p class="eyebrow">{E(channel["label"])}</p><h2>{E(channel["title"])}</h2><p>{E(channel["summary"])}</p></div>{button("Visit the channel",channel["url"])}</article>'
 body += '</div>'
 page('/youtube/', 'YouTube', 'Watch stories and making from Morass.', body, 'youtube', [('YouTube','/youtube/')])
+
+# Free tools: one section, split into groups like the print collection.
+unknown = {t['group'] for t in P['tools']} - {g['slug'] for g in P['toolGroups']}
+if unknown:
+    raise ValueError(f'Tools reference unknown groups: {sorted(unknown)}')
+def tool_mark(group):
+    return f'<div class="tool-mark-art"><span class="tool-mark">{E(group["mark"])}</span></div>'
+body = heading('FREE TOOLS', 'Small tools, free to use.', 'Open-source command-line tools and Neovim plugins, made along the way. Use them, change them, share them.')
+body += '<div class="cards tool-cards">'
+for group in P['toolGroups']:
+    count = sum(t['group'] == group['slug'] for t in P['tools'])
+    body += card(group['title'], f"/tools/{group['slug']}/", group['summary'], label=f"{count} {'tool' if count == 1 else 'tools'}", art=tool_mark(group))
+body += '</div>'
+page('/tools/', 'Free tools', 'Free, open-source command-line tools and Neovim plugins by Morass.', body, 'tools', [('Free tools','/tools/')])
+for group in P['toolGroups']:
+    body = heading('FREE TOOLS · ' + group['title'], group['title'] + '.', group['summary']) + '<div class="channel-list">'
+    for tool in (t for t in P['tools'] if t['group'] == group['slug']):
+        body += f'<article class="channel tool">{tool_mark(group).replace("tool-mark-art", "tool-mark-inline")}<div><p class="eyebrow">{E(tool["label"])}</p><h2>{E(tool["title"])}</h2><p>{E(tool["summary"])}</p></div>{button("View on GitHub", tool["url"], True)}</article>'
+    body += '</div>'
+    page(f"/tools/{group['slug']}/", group['title'] + ' — Free tools', group['summary'], body, 'tools', [('Free tools','/tools/'), (group['title'], f"/tools/{group['slug']}/")])
 
 body = '<section class="product-hero"><div>'+heading('SMALL GAMES / PUZZLE', 'Borrowed Ink', 'A little stamp. A sheet of paper. Thirty gentle puzzles about moving ink.')+button('Play now', '/small-games/borrowed-ink/play/')+'<p class="small-note">Free to play · No account · No ads in this edition</p></div><img src="/assets/projects/borrowed-ink.webp" width="960" height="600" alt="The Borrowed Ink puzzle desk"></section>'
 body += '<section class="rules"><p class="eyebrow">HOW TO PLAY</p><h2>Make an impression.</h2><ol><li>Select two neighboring cells on the paper.</li><li>Press <strong>Make impression</strong> to exchange the ink in those cells with the stamp.</li><li>Match the target picture and leave the stamp empty.</li></ol><p>Turn the stamp to switch between horizontal and vertical pairs. Undo, restart and hints are always free. Your progress is saved in this browser.</p><p class="small-note">Keyboard: arrows to move, Enter to select, Space to press, R to turn, Z to undo, H for a hint.</p></section>'
