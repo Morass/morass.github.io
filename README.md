@@ -4,7 +4,8 @@
 
 Public crossroads at <https://morass.github.io/>: **Games** (Steam),
 **Small Games** (browser), **Mobile**, **YouTube**, and **Prints**. Pushing `main`
-deploys GitHub Pages. The homepage opens directly on the five project cards,
+deploys GitHub Pages (the repo's only Actions run is GitHub's own
+`pages-build-deployment`; `.nojekyll` makes it copy files as-is, no Jekyll). The homepage opens directly on the five project cards,
 without a featured-game hero. The visual direction is fantasy, because most
 projects come from fantasy worlds: EB Garamond throughout (small caps for nav,
 labels and buttons), a wax-seal brand mark, lamplit grained parchment/leather
