@@ -34,6 +34,13 @@
    "image": "/bressnath/assets/capsule.png",
    "label": "Settlement builder · Coming soon",
    "summary": "Refound a holding in the drowned fens. Haul every load home, hold off what crawls out of the Sundered Places and win by laying a causeway."
+  },
+  {
+   "title": "Krevholt",
+   "path": "/krevholt/",
+   "image": "/krevholt/assets/capsule.png",
+   "label": "Roguelite tomb-delve · Coming soon",
+   "summary": "Rob the famous Krevorn tombs of the Iron-Fog Coast. Draft your abilities, wear what you loot and go down as far as your build allows."
   }
  ],
  "mobile": [
