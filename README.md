@@ -50,6 +50,10 @@ package download, browser install or hosted search service is needed.
 
 ## Publishing updates
 
+**Every** print deployment ends here (owner rule, 2026-09-15): one platform, all
+three, a re-upload or a listing edit that changes what a leaf shows. It is not done
+until `https://morass.github.io/prints/<id>/` is live with every confirmed link;
+the full procedure is in [PUBLISHING.md](../prints/publisher/PUBLISHING.md#keep-the-public-project-hub-current).
 After an authorized print upload, verify the public listing and record it in the
 model's `published_urls.json`. Choose its deepest useful collection in
 `content/print-collections.json` (or set `[website].category` in model.toml).
