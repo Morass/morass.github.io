@@ -1,8 +1,0 @@
-{
- "title": "Lanternward",
- "version": "1.0.4",
- "sourceCommit": "f7b8151",
- "edition": "web-nothreads",
- "ads": "none (null backend)",
- "save": "browser-local IndexedDB (Godot user://)"
-}

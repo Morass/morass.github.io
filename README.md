@@ -34,6 +34,8 @@ Existing game routes and `app-ads.txt` remain stable.
 - `assets/ui/manifest.json`: warehouse printshop icons, paper texture and
   subset EB Garamond provenance; font license is `assets/ui/OFL.txt`.
 - `small-games/borrowed-ink/play/`: released standalone bundle with its license and version receipt.
+  Lanternward has no bundle here (owner, 2026-09-15): a 45 MB Godot runtime would grow the repo
+  on every update, and the portals pay; its page links the approved portals instead.
 
 ```bash
 python3.13 scripts/import-prints.py --source ../prints
