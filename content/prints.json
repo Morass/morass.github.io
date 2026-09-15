@@ -4777,6 +4777,38 @@
       "image": "/assets/prints/decorations/dendrite-earring/c5fcad8b161c8d2a.webp"
     },
     {
+      "id": "decorations/dragon-ring-holder",
+      "title": "Sleeping Dragon Ring Holder — crystal spire, 3 colours, no supports",
+      "summary": "A small dragon asleep in a coil around a crystal spire on a rock. Rings slide over the crystal and rest on the dragon's back. Three separate prints in three colours that drop together with no glue and no hardware, or one print-in-place 3-colour file for an AMS. 53 x 53 x 64 mm, about 46 g, no supports.",
+      "tags": [
+        "dragon",
+        "sleepingdragon",
+        "ringholder",
+        "ringstand",
+        "ringdish",
+        "jewelry",
+        "jewelryholder",
+        "jewelrydisplay",
+        "crystal",
+        "fantasy",
+        "decor",
+        "gift",
+        "multicolor",
+        "nosupports"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/home/sleeping-dragon-ring-holder-crystal-spire-3-colours-no-supports"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1843670-sleeping-dragon-ring-holder-crystal-spire-3-colour"
+        }
+      ],
+      "image": "/assets/prints/decorations/dragon-ring-holder/3d7f44eb9ca19270.webp"
+    },
+    {
       "id": "decorations/femur-earring",
       "title": "Dino Femur Bone Earring Charm — Mirrored Pair",
       "summary": "A tiny dinosaur femur bone charm with a built-in jump-ring loop on the upper knuckle. Ships as a mirrored pair for earrings. About 20 mm tall, prints standing with no supports. Companion to the T-rex skull charm.",
