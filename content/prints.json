@@ -394,6 +394,42 @@
       "image": "/assets/prints/bathroom/soap-dish/415389f45ca66233.webp"
     },
     {
+      "id": "bathroom/tenshu-organizer",
+      "title": "Tenshu Makeup Organizer — Japanese castle keep, 3 lift-off storeys",
+      "summary": "A Japanese castle keep (tenshu) that sorts makeup. Every roof is the lid of the storey under it: the base holds four compacts on edge in a lift-out comb plus a polish bay, the second storey has three coved lanes for a mascara, lipsticks and pencils lying down, the third a tweezer lane and two cells for lashes, pins and rings. Every pocket is a hull of four spheres, so the floor meets the wall on a 4 mm cove and nothing is a square corner or a blind hole: lift, lift, lift, tip, rinse. Five parts, no supports, no glue, no hardware — each lid seats on a 2.4 mm ring so the stack does not rock, and magnets are an option, not a need. Ships as one-colour STLs and, for a multi-filament printer, as one three-colour STL per part that Split to Parts divides into exactly three: cream plaster, dark timber, slate stone-and-tile. A five-colour split-to-parts STL per part ships too, if you have the slots for a separate plinth grey and gold shachihoko.",
+      "tags": [
+        "makeup",
+        "makeuporganizer",
+        "organizer",
+        "vanity",
+        "bathroom",
+        "cosmetics",
+        "lipstick",
+        "mascara",
+        "palette",
+        "castle",
+        "japanese",
+        "tenshu",
+        "himeji",
+        "pagoda",
+        "box",
+        "nosupports",
+        "openscad",
+        "parametric"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/home/tenshu-makeup-organizer-japanese-castle-keep-3-lift-off-storeys"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1843237-tenshu-makeup-organizer-japanese-castle-keep-3-lif"
+        }
+      ],
+      "image": "/assets/prints/bathroom/tenshu-organizer/11de7d55b96aa3d2.webp"
+    },
+    {
       "id": "bathroom/toothbrush-case",
       "title": "Toothbrush Travel Case — Print-in-Place Hinged Box with Snap Latch",
       "summary": "200 × 25 × 25 mm hinged toothbrush travel case. Single print-in-place — body, lid, hinge, and front snap latch all come off the bed as one assembled piece. Fold the lid 90° forward; thumb tab clicks into the catch.",
