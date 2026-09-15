@@ -28,16 +28,29 @@ if (results) {
   const form = input.form;
   const status = document.querySelector('#search-status');
   const items = [...results.querySelectorAll('.search-item')];
-  input.value = (new URLSearchParams(location.search).get('q') || '').slice(0, 120);
+  const params = new URLSearchParams(location.search);
+  input.value = (params.get('q') || '').slice(0, 120);
+  let tag = (params.get('tag') || '').toLocaleLowerCase().replace(/[^a-z0-9-]/g, '').slice(0, 60);
+  const tagNote = document.querySelector('#search-tag');
   function filter(updateUrl) {
     const query = input.value.trim().toLocaleLowerCase();
-    const words = query.split(/\s+/).filter(Boolean);
+    /* `tag:no-supports` in the box filters by exact tag; plain words match anywhere. */
+    const words = [], tags = tag ? [tag] : [];
+    for (const word of query.split(/\s+/).filter(Boolean)) {
+      if (word.startsWith('tag:') && word.length > 4) tags.push(word.slice(4)); else words.push(word);
+    }
     let count = 0;
     for (const item of items) {
-      item.hidden = !words.every(word => item.dataset.search.includes(word));
+      const itemTags = item.dataset.tags.split(' ');
+      item.hidden = !(words.every(word => item.dataset.search.includes(word)) && tags.every(t => itemTags.includes(t)));
       if (!item.hidden) count++;
     }
-    status.textContent = `${count} ${count === 1 ? 'design' : 'designs'}${query ? ` matching “${input.value.trim()}”` : ' in the collection'}.`;
+    const what = [query ? `matching “${input.value.trim()}”` : '', tag ? `tagged “${tag}”` : ''].filter(Boolean).join(' and ');
+    status.textContent = `${count} ${count === 1 ? 'design' : 'designs'}${what ? ' ' + what : ' in the collection'}.`;
+    if (tagNote) {
+      tagNote.hidden = !tag;
+      document.querySelector('#search-tag-label').textContent = tag;
+    }
     document.querySelector('#search-empty').hidden = count !== 0;
     if (updateUrl) {
       const url = new URL(location.href);

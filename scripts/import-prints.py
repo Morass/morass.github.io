@@ -71,7 +71,7 @@ def export(source, destination):
         config = meta.get('website', {})
         item = {'id': identifier, 'title': config.get('title') or meta.get('title') or folder.name.replace('_', ' ').title(),
                 'summary': config.get('summary') or meta.get('summary', ''),
-                'tags': meta.get('tags', []), 'links': links}
+                'tags': [str(t) for t in list(meta.get('tags', [])) + list(config.get('tags', []))], 'links': links}
         if config.get('category'):
             item['collection'] = config['category']
         custom = config.get('image')

@@ -3,13 +3,22 @@
 import html
 import json
 import re
+import sys
 from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import print_tags
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = 'https://morass.github.io'
 P = json.loads((ROOT / 'content/projects.json').read_text())
 PRINTS = json.loads((ROOT / 'content/prints.json').read_text())['items']
 TAXONOMY = json.loads((ROOT / 'content/print-collections.json').read_text())
+VOCAB = print_tags.load(ROOT / 'content/print-tags.json', [t for i in PRINTS for t in i.get('tags', [])])
+for item in PRINTS:
+    item['tags'] = VOCAB.tags(item.get('tags', []))
+TAG_COUNTS = print_tags.counts(PRINTS, VOCAB)
+# A tag page needs company; a tag carried by one print links to the search instead.
+TAG_PAGES = sorted((t for t, n in TAG_COUNTS.items() if n >= 2), key=lambda t: (-TAG_COUNTS[t], t))
 assignments = {}
 for collection, identifiers in TAXONOMY['collections'].items():
     if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*(?:/[a-z0-9]+(?:-[a-z0-9]+)*)*', collection):
@@ -28,6 +37,8 @@ for item in PRINTS:
     item['path'] = TAXONOMY.get('modelPaths', {}).get(item['id'], item['id'])
     if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*(?:/[a-z0-9]+(?:-[a-z0-9]+)*)*', item['path']):
         raise ValueError(f"Invalid model route: {item['path']}")
+    if item['path'].split('/')[0] in {'search', 'tags'} or item['collection'].split('/')[0] in {'search', 'tags'}:
+        raise ValueError(f"Route reserved for the catalogue itself: {item['path']}")
 # A category must never overwrite an existing model page.
 leaf_ids = {i['path'] for i in PRINTS}
 if len(leaf_ids) != len(PRINTS):
@@ -90,6 +101,19 @@ def project_cards(key):
 
 def print_image(item):
     return item.get('image')
+
+def tag_url(tag):
+    return f'/prints/tags/{tag}/' if TAG_COUNTS.get(tag, 0) >= 2 else f'/prints/search/?tag={tag}'
+
+def tag_chip(tag, count=False):
+    label = VOCAB.label(tag)
+    extra = f' <span class="tag-count">{TAG_COUNTS[tag]}</span>' if count else ''
+    return f'<a class="tag" href="{E(tag_url(tag))}">{E(label)}{extra}</a>'
+
+def tag_list(tags, lead='Tagged', count=False):
+    if not tags:
+        return ''
+    return f'<div class="tag-list"><span>{E(lead)}</span>' + ''.join(tag_chip(t, count) for t in tags) + '</div>'
 
 def sync_authored_page(relative, active):
     target = ROOT / relative
@@ -205,19 +229,33 @@ for item in PRINTS:
     crumbs = [('Prints', '/prints/')]+[(name(p), '/prints/'+'/'.join(parts[:i+1])+'/') for i,p in enumerate(parts[:-1])]
     art = f'<img class="print-hero-art" src="{E(item["image"])}" width="960" height="720" alt="{E(item["title"])}">' if item.get('image') else '<div class="art-placeholder">'+icon('stamp')+'</div>'
     links = ''.join(button({'cults3d':'View on Cults','printables':'View on Printables','makerworld':'View on MakerWorld'}[l['platform']],l['url'], True) for l in item['links'])
-    body = '<section class="product-hero print-product">'+art+'<div>'+heading(name(parts[0]), item['title'], item['summary'])+'<div class="listing-links">'+links+'</div><p class="small-note">Files, assembly instructions, licenses and print settings are available on the model listings.</p></div></section>'
+    body = '<section class="product-hero print-product">'+art+'<div>'+heading(name(parts[0]), item['title'], item['summary'])+'<div class="listing-links">'+links+'</div><p class="small-note">Files, assembly instructions, licenses and print settings are available on the model listings.</p>'+tag_list(item['tags'])+'</div></section>'
     body += '<section class="related"><div class="section-title"><h2>More in '+E(name(parts[-2]))+'</h2><a class="text-link" href="/prints/'+'/'.join(parts[:-1])+'/">View collection ↗</a></div><div class="cards">'
     siblings = [i for i in PRINTS if i['collection'] == item['collection'] and i != item][:3]
     body += ''.join(card(i['title'], '/prints/'+i['path']+'/', '', print_image(i), name(parts[-2])) for i in siblings)+'</div></section>'
     page('/prints/'+item['path']+'/', item['title'], item['summary'] or item['title'], body, 'prints', crumbs, item.get('image') or '/assets/projects/pyrewarden.webp')
 
 body = heading('THE PRINT COLLECTION', 'Find your next print.', 'Search titles, categories and tags across the collection.')
-body += '<form class="search-form" role="search"><label for="q">Search prints</label><div><input id="q" name="q" type="search" placeholder="What would you like to make?" maxlength="120"><button class="button" type="submit">Search</button></div></form><p id="search-status" role="status" class="small-note">All designs are shown below. Enable JavaScript to filter them.</p><div class="cards print-cards" id="search-results">'
+body += '<form class="search-form" role="search"><label for="q">Search prints</label><div><input id="q" name="q" type="search" placeholder="What would you like to make?" maxlength="120"><button class="button" type="submit">Search</button></div></form>'
+body += tag_list(TAG_PAGES[:24], 'Popular tags') + '<p class="small-note tag-note"><a href="/prints/tags/">Browse every tag ↗</a></p>'
+body += '<p id="search-status" role="status" class="small-note">All designs are shown below. Enable JavaScript to filter them.</p><p id="search-tag" class="small-note" hidden>Showing prints tagged <strong id="search-tag-label"></strong>. <a href="/prints/search/">Clear the tag</a></p><div class="cards print-cards" id="search-results">'
 for i in PRINTS:
-    text = ' '.join([i['title'],i['summary'],i['id'].replace('-',' '), i['collection'].replace('-', ' ')]+[str(t).replace('_',' ') for t in i['tags']])
-    body += '<div class="search-item" data-search="'+E(text.lower())+'">'+card(i['title'],'/prints/'+i['path']+'/', '', print_image(i), ' / '.join(name(part) for part in i['collection'].split('/')))+'</div>'
+    text = ' '.join([i['title'],i['summary'],i['id'].replace('-',' '), i['collection'].replace('-', ' ')]+[VOCAB.label(t) for t in i['tags']])
+    body += '<div class="search-item" data-search="'+E(text.lower())+'" data-tags="'+E(' '.join(i['tags']))+'">'+card(i['title'],'/prints/'+i['path']+'/', '', print_image(i), ' / '.join(name(part) for part in i['collection'].split('/')))+'</div>'
 body += '</div><p id="search-empty" hidden>No prints match that search. Try a shorter word, or <a href="/prints/">browse the categories</a>.</p>'
 page('/prints/search/','Search prints','Find Morass print designs by name, category or tag.',body,'prints',[('Prints','/prints/'),('Search','/prints/search/')])
+# Tag pages: one index of every shared tag, one page per tag carried by two or more prints.
+body = heading('THE PRINT COLLECTION', 'Browse by tag.', f'{len(TAG_PAGES)} tags shared by two or more designs. Sorted by how many prints carry each tag.')
+body += tag_list(TAG_PAGES, 'Every tag', count=True)
+page('/prints/tags/', 'Tags', 'Browse Morass print designs by tag: features like no supports or print-in-place, games, themes and rooms.', body, 'prints', [('Prints','/prints/'),('Tags','/prints/tags/')])
+for tag in TAG_PAGES:
+    tagged = [i for i in PRINTS if tag in i['tags']]
+    label = VOCAB.label(tag)
+    body = heading('TAGGED', label, f'{len(tagged)} designs tagged “{label}”.')
+    body += '<div class="cards print-cards">' + ''.join(card(i['title'], '/prints/'+i['path']+'/', i['summary'], print_image(i), ' / '.join(name(p) for p in i['collection'].split('/'))) for i in tagged) + '</div>'
+    related = [t for t in TAG_PAGES if t != tag and any(t in i['tags'] for i in tagged)][:16]
+    body += tag_list(related, 'Related tags', count=True)
+    page(f'/prints/tags/{tag}/', label + ' — Tags', f'{len(tagged)} Morass print designs tagged {label}.', body, 'prints', [('Prints','/prints/'),('Tags','/prints/tags/'),(label, f'/prints/tags/{tag}/')], next((i['image'] for i in tagged if i.get('image')), '/assets/projects/pyrewarden.webp'))
 # Keep earlier category bookmarks working as the public taxonomy becomes deeper.
 REDIRECTS = set()
 for old, new in TAXONOMY.get('redirects', {}).items():

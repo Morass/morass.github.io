@@ -20,6 +20,12 @@ Existing game routes and `app-ads.txt` remain stable.
 - `content/prints.json`: exported listing metadata; do not hand-maintain a second catalogue.
 - `content/print-collections.json`: curated browsing hierarchy, model-to-collection
   assignments, category redirects and exceptional model routes.
+- `content/print-tags.json`: the tag vocabulary. Marketplace tags arrive in every
+  spelling (`nosupports`, `no-supports`, `no supports`); the builder folds them to one
+  kebab-case tag per idea via this file's `drop` (workflow words such as `openscad`),
+  `aliases` (synonyms and plurals) and `labels` (acronyms and brands). Leaves show
+  their tags as chips, `/prints/tags/` lists every tag two or more prints share, and a
+  tag carried by one print links to `/prints/search/?tag=<tag>` instead.
 - `scripts/build.py`: hub, category and print leaf pages, sitemap and generated-page manifest.
 - `hub.css`, `hub.js`: responsive hub UI and progressive search, without runtime dependencies.
 - `theme.js`: dark by default; the header toggle remembers a light/dark choice in
@@ -41,6 +47,7 @@ Existing game routes and `app-ads.txt` remain stable.
 python3.13 scripts/import-prints.py --source ../prints
 python3.13 scripts/build.py
 python3.13 scripts/test-import-prints.py
+python3.13 scripts/test-print-tags.py
 python3.13 scripts/check.py
 ```
 
@@ -80,8 +87,14 @@ title = "A short display title"
 summary = "A short introduction for the catalogue."
 image = "photo_closed.jpg"
 category = "jewelry/earrings"  # Optional override of the curated collection.
+tags = ["himeji", "castle"]     # Extra site tags, added to the marketplace tags.
 # hidden = true  # Remove the item from the next export.
 ```
+
+Search matches words anywhere in a title, summary, collection or tag; `tag:no-supports`
+in the box (or `?tag=`) filters by exact tag. When a new spelling of an existing tag
+appears, add it to `aliases` rather than a second tag page; the tag test fails on an
+alias that points at a dropped or re-aliased tag.
 
 Browsing categories are independent of source folders and can be as deep as useful:
 `jewelry/earrings`, `decorations/coasters`, `containers/keepsake-boxes/fantasy`,
