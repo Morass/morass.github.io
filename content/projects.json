@@ -54,6 +54,13 @@
   ],
   "small-games": [
     {
+      "title": "Nonogram",
+      "path": "/small-games/nonogram/",
+      "image": "/assets/projects/nonogram.webp",
+      "label": "Puzzle · Play in your browser",
+      "summary": "Picture logic puzzles by candlelight. 240 hand-drawn pictures and a daily, one folio from our novel The Cistern Heresy. Never a guess."
+    },
+    {
       "title": "Sudoku",
       "path": "/small-games/sudoku/",
       "image": "/assets/projects/sudoku.webp",
