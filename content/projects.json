@@ -54,6 +54,13 @@
   ],
   "small-games": [
     {
+      "title": "Ninefold",
+      "path": "/small-games/ninefold/",
+      "image": "/assets/projects/ninefold.webp",
+      "label": "Puzzle · Play in your browser",
+      "summary": "Sudoku under two moons. 480 boards in four technique tiers and a daily ward, one answer each, never a guess, with hints that explain why."
+    },
+    {
       "title": "Lanternward",
       "path": "/small-games/lanternward/",
       "image": "/assets/projects/lanternward-web.webp",
