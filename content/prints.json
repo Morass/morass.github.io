@@ -3554,6 +3554,37 @@
       "image": "/assets/prints/containers/lego-box/6c77a8869ed6ad7b.webp"
     },
     {
+      "id": "containers/mead-hall-box",
+      "title": "Mead hall box — a Viking longhouse whose whole roof lifts off",
+      "summary": "A 199 mm Viking longhouse whose whole shingled roof lifts off, leaving a 177 x 83 x 31 mm box with the hollow roof above it. Two prints in one wood-fill filament, no supports, no hardware, nothing to glue. Every plank, knot and shingle is cut and jittered from one seed, so it reads hand-built. The roof rests on a tongue, it does not latch, so it is a table box, not a travelling one.",
+      "tags": [
+        "viking",
+        "longhouse",
+        "meadhall",
+        "norse",
+        "heorot",
+        "box",
+        "storage",
+        "dicebox",
+        "cardbox",
+        "decor",
+        "woodfill",
+        "nosupports",
+        "house"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/home/mead-hall-box-a-viking-longhouse-whose-whole-roof-lifts-off"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1843955-mead-hall-box-a-viking-longhouse-whose-whole-roof"
+        }
+      ],
+      "image": "/assets/prints/containers/mead-hall-box/58cac983fa61b516.webp"
+    },
+    {
       "id": "containers/pirate-chest",
       "title": "Pirate treasure chest — print-in-place hinged trinket box, two colour",
       "summary": "A 100 mm barrel-top pirate chest that comes off the bed as one working unit. The piano hinge prints in place, so there is no assembly, no pin to fit and no glue. Two-colour for the AMS: wood planks plus iron straps, banding, corner brackets, lock plate and hasp.",
@@ -7548,8 +7579,8 @@
     },
     {
       "id": "desk/keyboard-riser",
-      "title": "Keyboard Riser — Split, Dovetail-Joined, Parametric (60 mm Lift)",
-      "summary": "Open-frame stand that lifts a 440 × 135 mm keyboard 60 mm off the desk, leaving the space underneath clear. A 3 mm rim keeps the board from sliding off; a honeycomb deck spreads its weight. Too long for a 256 mm bed, so it splits into two halves that re-join with a drop-in dovetail key — no glue, no tools. Fully parametric: change one variable to fit a different board.",
+      "title": "Keyboard Riser — Split, Dovetail-Joined, Parametric (60 / 100 / 180 mm Lift)",
+      "summary": "Open-frame stand that lifts a keyboard off the desk, leaving the space underneath clear. Three ready-to-print configurations: 60 and 100 mm lift for a 440 × 135 mm board, and 180 mm for a 313 × 123 mm 75 % board (Keychron K2 size). A 3 mm rim keeps the board from sliding off; a honeycomb deck spreads its weight. Too long for a 256 mm bed, so it splits into two halves that re-join with a drop-in dovetail key — no glue, no tools. Fully parametric: change one variable for any other board or height.",
       "tags": [
         "keyboard-riser",
         "keyboard-stand",
