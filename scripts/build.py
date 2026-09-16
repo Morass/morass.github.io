@@ -99,6 +99,23 @@ def card(title, url, summary, image=None, label='', feature=False, art=None):
 def project_cards(key):
     return '<div class="cards">'+''.join(card(p['title'], p['path'], p['summary'], p['image'], p['label']) for p in P[key])+'</div>'
 
+# Small games are bucketed by type; buckets and the games in each are A-Z by title,
+# so a new game only needs its entry and its type, never a hand-picked position.
+def small_game_sections():
+    types = {t['slug']: t for t in P['smallGameTypes']}
+    unknown = {g.get('type') for g in P['small-games']} - set(types)
+    if unknown:
+        raise ValueError(f'Small games reference unknown types: {sorted(map(str, unknown))}')
+    out = ''
+    for kind in sorted(types.values(), key=lambda t: t['title'].casefold()):
+        games = sorted((g for g in P['small-games'] if g['type'] == kind['slug']), key=lambda g: g['title'].casefold())
+        if not games:
+            continue
+        count = f"{len(games)} {'game' if len(games) == 1 else 'games'}"
+        out += f'<section id="{E(kind["slug"])}" class="collection"><div class="section-title"><h2>{E(kind["title"])}</h2><span class="section-note">{count}</span></div>'
+        out += '<div class="cards">'+''.join(card(g['title'], g['path'], g['summary'], g['image'], kind['label']+' · Play in your browser') for g in games)+'</div></section>'
+    return out
+
 def print_image(item):
     return item.get('image')
 
@@ -165,7 +182,7 @@ for key, title, description in [
     ('games', 'Worlds worth getting lost in.', 'The Morass Games collection. Strategy, survival and stories on Steam.'),
     ('small-games', 'Small games. Good company.', 'Thoughtful little games you can play right here, in your browser.'),
     ('mobile', 'A little wonder, to go.', 'Games and projects for Android. Explore what is taking shape.')]:
-    body = heading(dict(NAV)[key], title, description) + project_cards(key)
+    body = heading(dict(NAV)[key], title, description) + (small_game_sections() if key == 'small-games' else project_cards(key))
     if key == 'games': body += '<div class="section-end">'+button('Explore Morass on Steam', 'https://store.steampowered.com/search/?developer=Morass', True)+'<p class="small-note">Playing one of them? Come say hello in the <a href="'+E(P['community']['url'])+'" rel="noopener">'+E(P['community']['label'])+'</a>.</p></div>'
     page('/'+key+'/', dict(NAV)[key], description, body, key, [(dict(NAV)[key], '/'+key+'/')])
 

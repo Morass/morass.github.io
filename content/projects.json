@@ -57,36 +57,43 @@
       "title": "Minesweeper",
       "path": "/small-games/minesweeper/",
       "image": "/assets/projects/minesweeper.webp",
-      "label": "Puzzle · Play in your browser",
-      "summary": "Minesweeper on a Sundered floor. The first stone is always safe, and you never have to guess."
+      "summary": "Minesweeper on a Sundered floor. The first stone is always safe, and you never have to guess.",
+      "type": "puzzle"
     },
     {
       "title": "Nonogram",
       "path": "/small-games/nonogram/",
       "image": "/assets/projects/nonogram.webp",
-      "label": "Puzzle · Play in your browser",
-      "summary": "Picture logic puzzles by candlelight. 240 hand-drawn pictures and a daily, one folio from our novel The Cistern Heresy. Never a guess."
+      "summary": "Picture logic puzzles by candlelight. 240 hand-drawn pictures and a daily, one folio from our novel The Cistern Heresy. Never a guess.",
+      "type": "puzzle"
     },
     {
       "title": "Sudoku",
       "path": "/small-games/sudoku/",
       "image": "/assets/projects/sudoku.webp",
-      "label": "Puzzle · Play in your browser",
-      "summary": "Sudoku under two moons. 480 boards and a daily, one answer each, never a guess."
+      "summary": "Sudoku under two moons. 480 boards and a daily, one answer each, never a guess.",
+      "type": "puzzle"
     },
     {
       "title": "Lanternward",
       "path": "/small-games/lanternward/",
       "image": "/assets/projects/lanternward-web.webp",
-      "label": "Puzzle · Play in your browser",
-      "summary": "Light every street of Veldrenmar. An Akari logic puzzle with 300 graded levels and a daily, one solution each, never a guess."
+      "summary": "Light every street of Veldrenmar. An Akari logic puzzle with 300 graded levels and a daily, one solution each, never a guess.",
+      "type": "puzzle"
     },
     {
       "title": "Borrowed Ink",
       "path": "/small-games/borrowed-ink/",
       "image": "/assets/projects/borrowed-ink.webp",
-      "label": "Puzzle · Play in your browser",
-      "summary": "A little stamp, a sheet of paper and thirty ink-exchange puzzles. Match the pattern and leave the stamp empty."
+      "summary": "A little stamp, a sheet of paper and thirty ink-exchange puzzles. Match the pattern and leave the stamp empty.",
+      "type": "puzzle"
+    }
+  ],
+  "smallGameTypes": [
+    {
+      "slug": "puzzle",
+      "title": "Puzzles",
+      "label": "Puzzle"
     }
   ],
   "channels": [

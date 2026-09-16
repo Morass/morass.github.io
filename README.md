@@ -17,6 +17,10 @@ Existing game routes and `app-ads.txt` remain stable.
 ## Sources and build
 
 - `content/projects.json`: curated game/project cards, public channels and profiles.
+  Small games are **never ordered by hand**: each `small-games` entry names a `type`
+  from `smallGameTypes` (slug, bucket title, card label). `/small-games/` shows one
+  section per type, buckets A–Z by title and games A–Z within each; an unknown type
+  fails the build. A new kind of game (arcade, word, card…) adds its type there.
 - `content/prints.json`: exported listing metadata; do not hand-maintain a second catalogue.
 - `content/print-collections.json`: curated browsing hierarchy, model-to-collection
   assignments, category redirects and exceptional model routes.
