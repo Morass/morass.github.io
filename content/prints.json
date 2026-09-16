@@ -5191,6 +5191,41 @@
       "image": "/assets/prints/decorations/hollow-face-vase-brooch/6d7d6ee1cbfde46e.webp"
     },
     {
+      "id": "decorations/hyperbola-wand",
+      "title": "Wand Through the Wall — a Straight Wand Passes Through a Curved Slit",
+      "summary": "A dead-straight wand on a little turntable swings clean through two CURVED slits in a wall, twice per turn, without bending. The wand is skew to the axis, so it sweeps a hyperboloid; the wall cuts that in a hyperbola, and that is the slit. Four flat supportless parts, formula engraved on the base.",
+      "tags": [
+        "magic",
+        "magictrick",
+        "illusion",
+        "hyperboloid",
+        "hyperbola",
+        "ruledsurface",
+        "geometry",
+        "math",
+        "science",
+        "stem",
+        "toy",
+        "kids",
+        "desktoy",
+        "mechanism",
+        "parametric",
+        "openscad",
+        "nosupports"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/game/wand-through-the-wall-a-straight-wand-passes-through-a-curved-slit"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1844059-wand-through-the-wall-a-straight-wand-passes-throu"
+        }
+      ],
+      "image": "/assets/prints/decorations/hyperbola-wand/1dba5afb36ef5eb4.webp"
+    },
+    {
       "id": "decorations/infinity-cube",
       "title": "Infinity Cube — Animal Fidget (folding magic cube, 48 engraved animals, two-colour)",
       "summary": "A folding infinity cube (magic cube) fidget toy: eight cubelets linked so you can fold it end over end forever. Every one of the 48 faces carries a different animal silhouette. Prints fully assembled — the links are captured by the cube geometry, not glued — and the animals come as a separate inlay STL so you can print them in a contrast colour. Confirmed printed and everting on a real machine.",

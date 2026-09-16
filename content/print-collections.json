@@ -346,6 +346,7 @@
     ],
     "toys/mechanical": [
       "decorations/climbing-monkey",
+      "decorations/hyperbola-wand",
       "decorations/marble-run-pip",
       "decorations/pop-up-toaster",
       "decorations/pythagorean-cup",
