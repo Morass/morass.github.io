@@ -54,6 +54,13 @@
   ],
   "small-games": [
     {
+      "title": "Minesweeper",
+      "path": "/small-games/minesweeper/",
+      "image": "/assets/projects/minesweeper.webp",
+      "label": "Puzzle · Play in your browser",
+      "summary": "Minesweeper on a Sundered floor. The first stone is always safe, and you never have to guess."
+    },
+    {
       "title": "Nonogram",
       "path": "/small-games/nonogram/",
       "image": "/assets/projects/nonogram.webp",
