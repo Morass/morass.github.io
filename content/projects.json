@@ -119,6 +119,13 @@
       "summary": "See what a command did to your machine, review every change with real diffs and undo any of it. Records Homebrew upgrades file by file."
     },
     {
+      "title": "hostdiff",
+      "url": "https://github.com/Morass/hostdiff",
+      "group": "command-line",
+      "label": "Go · macOS & Linux",
+      "summary": "Why does it work on my other machine? Compare two machines side by side, from Homebrew and apps to settings and libraries, then install, update or remove the difference on either one."
+    },
+    {
       "title": "repo-grepo.nvim",
       "url": "https://github.com/Morass/repo-grepo.nvim",
       "group": "neovim-plugins",
@@ -180,7 +187,7 @@
       "slug": "command-line",
       "title": "Command line",
       "mark": "$_",
-      "summary": "Tools for the terminal: see and undo what installers do to your machine."
+      "summary": "Tools for the terminal: compare two machines, and see and undo what installers do to yours."
     },
     {
       "slug": "neovim-plugins",
