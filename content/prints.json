@@ -5221,6 +5221,10 @@
         {
           "platform": "printables",
           "url": "https://www.printables.com/model/1844059-wand-through-the-wall-a-straight-wand-passes-throu"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3314502"
         }
       ],
       "image": "/assets/prints/decorations/hyperbola-wand/1dba5afb36ef5eb4.webp"
@@ -6770,6 +6774,45 @@
         }
       ],
       "image": "/assets/prints/decorations/victrola-earring/4f6db214f2d9eb1e.webp"
+    },
+    {
+      "id": "decorations/viola-earring",
+      "title": "Viola Earring — 4-Color AMS Pansy Blossom, Print-in-One",
+      "summary": "Viola (pansy) blossom charm, 28 mm, hanging from a ring above the upper petals. Four coordinate-locked colour solids in one STL: split to parts, assign magenta, violet, yellow, dark, print flat with no supports.",
+      "tags": [
+        "viola",
+        "pansy",
+        "violet",
+        "flower",
+        "blossom",
+        "floral",
+        "garden",
+        "spring",
+        "earring",
+        "charm",
+        "pendant",
+        "jewelry",
+        "ams",
+        "multicolor",
+        "multimaterial",
+        "nosupports",
+        "gift"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/jewelry/viola-earring-4-color-ams-pansy-blossom-print-in-one"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1844125-viola-earring-4-color-ams-pansy-blossom-print-in-o"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3314837"
+        }
+      ],
+      "image": "/assets/prints/decorations/viola-earring/25eb53d56cfc8e92.webp"
     },
     {
       "id": "decorations/waterwheel-earring",
