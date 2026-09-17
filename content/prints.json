@@ -1230,6 +1230,38 @@
       "image": "/assets/prints/boardgames/general/domino-set/c434904af9cbb0ff.webp"
     },
     {
+      "id": "boardgames/general/dragons-nap",
+      "title": "Dragon's Nap — a co-op heist board game round a sleeping dragon, all printed",
+      "summary": "A co-op heist for 1-4. Lift gems from under a sleeping dragon whose head really turns, and get out before it wakes.",
+      "tags": [
+        "board game",
+        "cooperative",
+        "co-op",
+        "family game",
+        "dragon",
+        "stealth",
+        "dice game",
+        "solo",
+        "heist",
+        "no supports"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/game/dragon-s-nap-a-co-op-heist-board-game-round-a-sleeping-dragon-all-printed"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1845375-dragons-nap-a-co-op-heist-board-game-round-a-sleep"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3320635-dragon-s-nap-co-op-heist-board-game-1-4"
+        }
+      ],
+      "image": "/assets/prints/boardgames/general/dragons-nap/82e5790c297f46e1.webp"
+    },
+    {
       "id": "boardgames/general/escapement-timer",
       "title": "Ticking Turn Timer — wind-up escapement, no electronics, no metal parts",
       "summary": "A real mechanical escapement you can print: wind the knob, let go, and a foliot bar rocks tick-tick-tick while an arrow creeps back over the dial — silence means the turn is over. All 7 parts print flat and supportless; the only non-printed items are two coins used as tuning weights. NOTE: this is a mechanism demonstrator / desk toy, NOT an accurate timer — see the description.",
