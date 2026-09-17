@@ -101,6 +101,13 @@
    "image": "/assets/projects/block-fit.webp",
    "summary": "A warding tablet broken into shards. Forty-eight tablets and a daily — every one proved to fit back together exactly one way.",
    "type": "puzzle"
+  },
+  {
+   "title": "Tetromino",
+   "path": "/small-games/tetromino/",
+   "image": "/assets/projects/tetromino.webp",
+   "summary": "The falling-block puzzle by the published rules, in a Korthen descent shaft. Marathon, Sprint and Ultra — and a top ten where every place is a replay you can watch.",
+   "type": "puzzle"
   }
  ],
  "smallGameTypes": [
