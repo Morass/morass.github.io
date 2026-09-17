@@ -4,42 +4,42 @@
    "title": "Pyrewarden",
    "path": "/pyrewarden/",
    "image": "/pyrewarden/assets/capsule.png",
-   "label": "Tower defense · Steam",
+   "label": "Tower defense \u00b7 Steam",
    "summary": "Build a defense from twelve schools of magic. Discover spell synergies and hold the line together in co-op."
   },
   {
    "title": "The Concord Quarter",
    "path": "/concord/",
    "image": "/concord/assets/capsule.png",
-   "label": "City-life sim · Steam",
+   "label": "City-life sim \u00b7 Steam",
    "summary": "Start as nobody in a medieval city. Trade, bargain and scheme your way into a life of your own."
   },
   {
    "title": "Wardenmark",
    "path": "/wardenmark/",
    "image": "/wardenmark/assets/capsule.png",
-   "label": "Survivors roguelite · Steam",
+   "label": "Survivors roguelite \u00b7 Steam",
    "summary": "One Warden against the swarm. Draft spells, shape your build and survive an expedition into the Dread."
   },
   {
    "title": "The Hushed Ledger",
    "path": "/hushed-ledger/",
    "image": "/hushed-ledger/assets/capsule.png",
-   "label": "Detective RPG · Steam",
+   "label": "Detective RPG \u00b7 Steam",
    "summary": "A river town with something to hide. Question its people, follow the evidence and reach your own conclusion."
   },
   {
    "title": "Bressnath",
    "path": "/bressnath/",
    "image": "/bressnath/assets/capsule.png",
-   "label": "Settlement builder · Coming soon",
+   "label": "Settlement builder \u00b7 Coming soon",
    "summary": "Refound a holding in the drowned fens. Haul every load home, hold off what crawls out of the Sundered Places and win by laying a causeway."
   },
   {
    "title": "Krevholt",
    "path": "/krevholt/",
    "image": "/krevholt/assets/capsule.png",
-   "label": "Roguelite tomb-delve · Coming soon",
+   "label": "Roguelite tomb-delve \u00b7 Coming soon",
    "summary": "Rob the famous Krevorn tombs of the Iron-Fog Coast. Draft your abilities, wear what you loot and go down as far as your build allows."
   }
  ],
@@ -48,7 +48,7 @@
    "title": "Lanternward",
    "path": "/lanternward/",
    "image": "/lanternward/assets/capsule.png",
-   "label": "Android · Coming soon",
+   "label": "Android \u00b7 Coming soon",
    "summary": "Light the night streets of Veldrenmar, one carefully reasoned lantern at a time. A quiet logic puzzle with a single solution."
   }
  ],
@@ -92,7 +92,14 @@
    "title": "Sliding Puzzle",
    "path": "/small-games/sliding-puzzle/",
    "image": "/assets/projects/sliding-puzzle.webp",
-   "summary": "The 15 puzzle on a keeper's ward-tablet. Ten measured boards per size and a daily — every board tells you its shortest way home.",
+   "summary": "The 15 puzzle on a keeper's ward-tablet. Ten measured boards per size and a daily \u2014 every board tells you its shortest way home.",
+   "type": "puzzle"
+  },
+  {
+   "title": "Block Fit",
+   "path": "/small-games/block-fit/",
+   "image": "/assets/projects/block-fit.webp",
+   "summary": "Fit the scattered runestones perfectly back into the warding tablet.",
    "type": "puzzle"
   }
  ],
@@ -143,21 +150,21 @@
    "title": "spoor",
    "url": "https://github.com/Morass/spoor",
    "group": "command-line",
-   "label": "Go · macOS & Linux",
+   "label": "Go \u00b7 macOS & Linux",
    "summary": "See what a command did to your machine, review every change with real diffs and undo any of it. Records Homebrew upgrades file by file."
   },
   {
    "title": "hostdiff",
    "url": "https://github.com/Morass/hostdiff",
    "group": "command-line",
-   "label": "Go · macOS & Linux",
+   "label": "Go \u00b7 macOS & Linux",
    "summary": "Why does it work on my other machine? Compare two machines side by side, from Homebrew and apps to settings and libraries, then install, update or remove the difference on either one."
   },
   {
    "title": "repo-grepo.nvim",
    "url": "https://github.com/Morass/repo-grepo.nvim",
    "group": "neovim-plugins",
-   "label": "Lua · C++",
+   "label": "Lua \u00b7 C++",
    "summary": "Repository-wide grep in a multi-window overlay, with a small C++ backend for speed."
   },
   {
@@ -199,7 +206,7 @@
    "title": "floodfill-bg",
    "url": "https://github.com/Morass/floodfill-bg",
    "group": "apps-and-scripts",
-   "label": "Python · command line",
+   "label": "Python \u00b7 command line",
    "summary": "Remove a flat image background by flood-filling from seed points."
   },
   {
