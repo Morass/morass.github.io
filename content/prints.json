@@ -5644,6 +5644,45 @@
       "image": "/assets/prints/decorations/narwhal-whistle/4b6f7e8225f583c7.webp"
     },
     {
+      "id": "decorations/nudibranch-earring",
+      "title": "Nudibranch Earring — 4-Color AMS Sea Slug, Print-in-One",
+      "summary": "Blue-and-orange aeolid sea slug charm, 36 mm, hanging head-up from a ring on its head. Four coordinate-locked colour solids in one STL: split to parts, assign white, blue, orange, brown, print flat with no supports.",
+      "tags": [
+        "nudibranch",
+        "seaslug",
+        "slug",
+        "ocean",
+        "sea",
+        "marine",
+        "animal",
+        "diver",
+        "earring",
+        "charm",
+        "pendant",
+        "jewelry",
+        "ams",
+        "multicolor",
+        "multimaterial",
+        "nosupports",
+        "gift"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/jewelry/nudibranch-earring-4-color-ams-sea-slug-print-in-one"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1845428-nudibranch-earring-4-color-ams-sea-slug-print-in-one"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3320854-nudibranch-earring-4-color-ams-sea-slug"
+        }
+      ],
+      "image": "/assets/prints/decorations/nudibranch-earring/69e96542e467b3a3.webp"
+    },
+    {
       "id": "decorations/oldham-fidget",
       "title": "Oldham Coupling Fidget — Offset-Shaft Constant-Velocity Demo Toy",
       "summary": "A desk fidget that demos the Oldham coupling: spin the bottom knob and the top knob tracks it 1:1 even though the two shafts are parallel but laterally offset. A floating middle disc carries the rotation while its centre orbits a little circle. Five printed parts (4 unique designs), all flat and supportless. Useless, just fun.",
