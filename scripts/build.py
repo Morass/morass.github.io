@@ -235,6 +235,12 @@ body = '<section class="product-hero"><div>'+heading('SMALL GAMES / PUZZLE', 'Bo
 body += '<section class="rules"><p class="eyebrow">HOW TO PLAY</p><h2>Make an impression.</h2><ol><li>Select two neighboring cells on the paper.</li><li>Press <strong>Make impression</strong> to exchange the ink in those cells with the stamp.</li><li>Match the target picture and leave the stamp empty.</li></ol><p>Turn the stamp to switch between horizontal and vertical pairs. Undo, restart and hints are always free. Your progress is saved in this browser.</p><p class="small-note">Keyboard: arrows to move, Enter to select, Space to press, R to turn, Z to undo, H for a hint.</p></section>'
 page('/small-games/borrowed-ink/', 'Borrowed Ink', 'Play a gentle, free ink-exchange puzzle with thirty levels. No download, account or ads.', body, 'small-games', [('Small Games','/small-games/'),('Borrowed Ink','/small-games/borrowed-ink/')], '/assets/projects/borrowed-ink.webp')
 
+body = '<section class="product-hero"><div>'+heading('SMALL GAMES / PUZZLE', 'Block Fit', 'Fit the scattered runestones perfectly back into the warding tablet.')+button('Play now', 'https://morassgames.com/games/block-fit/')+'<p class="small-note">Free to play · No account · Plays on morassgames.com</p></div><img src="/assets/projects/block-fit.webp" width="960" height="600" alt="The Block Fit puzzle desk"></section>'
+body += '<section class="rules"><p class="eyebrow">HOW TO PLAY</p><h2>Restore the ward.</h2><ol><li>Drag pieces from the tray onto the board.</li><li>Fit all pieces perfectly with no gaps to complete the puzzle.</li><li>Pieces cannot be rotated.</li></ol><p>Progress is saved in your browser.</p></section>'
+page('/small-games/block-fit/', 'Block Fit', 'Play a free block packing puzzle. No download, account or ads.', body, 'small-games', [('Small Games','/small-games/'),('Block Fit','/small-games/block-fit/')], '/assets/projects/block-fit.webp')
+
+# Category pages only show the next level
+
 # Category pages only show the next level; listing links live on model leaves.
 def category(prefix=''):
     depth = len(prefix.split('/')) if prefix else 0
