@@ -142,7 +142,14 @@
             "path": "/small-games/snake/",
             "image": "/assets/projects/snake.webp",
             "summary": "Steer a ward-serpent across a Sundered cistern floor: three chamber sizes, walls of stone or walls of seam-light, and six public boards of ten.",
-            "type": "puzzle"
+            "type": "arcade"
+        },
+        {
+            "title": "Brick Breaker",
+            "path": "/small-games/brick-breaker/",
+            "image": "/assets/projects/brick-breaker.webp",
+            "summary": "Hold a shield at the threshold of a sealed armoury and keep a forge-spark alive: sixteen hand-cut vaults, no power-downs, a heat multiplier that pays for the tunnel, and nineteen public boards of ten that re-play every run.",
+            "type": "arcade"
         }
     ],
   "smallGameTypes": [
@@ -155,6 +162,11 @@
       "slug": "card",
       "title": "Card Games",
       "label": "Card game"
+    },
+    {
+      "slug": "arcade",
+      "title": "Arcade",
+      "label": "Arcade"
     }
   ],
   "channels": [
