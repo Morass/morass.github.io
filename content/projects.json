@@ -157,6 +157,13 @@
       "image": "/assets/projects/pairs.webp",
       "summary": "The matching game on a scholar's sorting table: six tray sizes up to seventy-two marks, no flip-back timer to sit through, two numbers that are both lower-is-better, and a finish card that tells you what a perfect memory would have spent on your own deal.",
       "type": "puzzle"
+    },
+    {
+      "title": "Jigsaw",
+      "path": "/small-games/jigsaw/",
+      "image": "/assets/projects/jigsaw.webp",
+      "summary": "Set the shards of a broken window back into the lead: twelve painted places, four cuts up to ninety-six shards, drops that take when they are merely near, and a pane that survives a closed tab.",
+      "type": "puzzle"
     }
   ],
   "smallGameTypes": [
