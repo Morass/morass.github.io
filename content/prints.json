@@ -8359,6 +8359,50 @@
       "image": "/assets/prints/desk/tardis-pencup/cc87c7e23041fce9.webp"
     },
     {
+      "id": "desk/twist-rib-cup",
+      "title": "Twisted Ribbed Pen Cup — one part, no supports",
+      "summary": "A rounded-square desk cup whose whole surface is fine ribs turning through 90 degrees from the base to the rim. The cavity twists at the same rate as the shell, so the wall stays 1.6 mm the whole way up and nothing inside collects dust in a corner. 50 x 50 x 70 mm, 63 mm across the twisted corners, about 40 g, one part, no supports, no glue. Parametric OpenSCAD source included — twist angle, rib pitch, rib depth, corner radius and height are all named variables at the top.",
+      "tags": [
+        "pencup",
+        "penholder",
+        "pencilholder",
+        "pencilcup",
+        "deskorganizer",
+        "desktoporganizer",
+        "officeorganizer",
+        "brushholder",
+        "makeupbrushholder",
+        "toothbrushholder",
+        "vase",
+        "vasemode",
+        "twisted",
+        "twist",
+        "ribbed",
+        "spiral",
+        "textured",
+        "nosupports",
+        "noglue",
+        "parametric",
+        "openscad"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/home/twisted-ribbed-pen-cup-one-part-no-supports"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1846485-twisted-ribbed-pen-cup-one-part-no-supports"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3325836-twisted-ribbed-pen-cup"
+        }
+      ],
+      "collection": "desk/organizers/pen-holders",
+      "image": "/assets/prints/desk/twist-rib-cup/6ac426349105c9bf.webp"
+    },
+    {
       "id": "desk/usb-drive-caddy",
       "title": "USB Drive Caddy — Hex-Grill Open-Front Cubby",
       "summary": "N×M open-front cubby for low-profile USB-C 'disc' drives. Drives lay flat and slide in from the front; ~4 mm sticks out for pinch removal. Decorative hex perforation on top + sides. Ships pre-rotated — open face prints UP, back wall on the bed, zero supports.",
