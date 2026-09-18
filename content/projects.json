@@ -201,6 +201,13 @@
       "summary": "Why does it work on my other machine? Compare two machines side by side, from Homebrew and apps to settings and libraries, then install, update or remove the difference on either one."
     },
     {
+      "title": "dnswhy",
+      "url": "https://github.com/Morass/dnswhy",
+      "group": "command-line",
+      "label": "Go · macOS",
+      "summary": "Why did that name resolve like that? Shows which resolver macOS picks for a hostname and why, then checks the answer against the nameserver itself."
+    },
+    {
       "title": "repo-grepo.nvim",
       "url": "https://github.com/Morass/repo-grepo.nvim",
       "group": "neovim-plugins",
@@ -262,7 +269,7 @@
       "slug": "command-line",
       "title": "Command line",
       "mark": "$_",
-      "summary": "Tools for the terminal: compare two machines, and see and undo what installers do to yours."
+      "summary": "Tools for the terminal: compare two machines, see and undo what installers do to yours, and find out why a name resolves the way it does."
     },
     {
       "slug": "neovim-plugins",
