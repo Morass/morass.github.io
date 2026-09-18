@@ -1,2 +1,8 @@
 .DS_Store
 *.swp
+
+# Trailers live on R2 (https://morassgames.com/media/trailers/), never in this repo:
+# a GitHub Pages repo keeps every version of a binary forever, and a re-encode is
+# a new 20-65 MB blob. Upload with aws s3 cp to s3://morass-games/media/trailers/
+# and reference the absolute URL.
+*.mp4
