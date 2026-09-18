@@ -4,42 +4,42 @@
       "title": "Pyrewarden",
       "path": "/pyrewarden/",
       "image": "/pyrewarden/assets/capsule.png",
-      "label": "Tower defense · Steam",
+      "label": "Tower defense \u00b7 Steam",
       "summary": "Build a defense from twelve schools of magic. Discover spell synergies and hold the line together in co-op."
     },
     {
       "title": "The Concord Quarter",
       "path": "/concord/",
       "image": "/concord/assets/capsule.png",
-      "label": "City-life sim · Steam",
+      "label": "City-life sim \u00b7 Steam",
       "summary": "Start as nobody in a medieval city. Trade, bargain and scheme your way into a life of your own."
     },
     {
       "title": "Wardenmark",
       "path": "/wardenmark/",
       "image": "/wardenmark/assets/capsule.png",
-      "label": "Survivors roguelite · Steam",
+      "label": "Survivors roguelite \u00b7 Steam",
       "summary": "One Warden against the swarm. Draft spells, shape your build and survive an expedition into the Dread."
     },
     {
       "title": "The Hushed Ledger",
       "path": "/hushed-ledger/",
       "image": "/hushed-ledger/assets/capsule.png",
-      "label": "Detective RPG · Steam",
+      "label": "Detective RPG \u00b7 Steam",
       "summary": "A river town with something to hide. Question its people, follow the evidence and reach your own conclusion."
     },
     {
       "title": "Bressnath",
       "path": "/bressnath/",
       "image": "/bressnath/assets/capsule.png",
-      "label": "Settlement builder · Coming soon",
+      "label": "Settlement builder \u00b7 Coming soon",
       "summary": "Refound a holding in the drowned fens. Haul every load home, hold off what crawls out of the Sundered Places and win by laying a causeway."
     },
     {
       "title": "Krevholt",
       "path": "/krevholt/",
       "image": "/krevholt/assets/capsule.png",
-      "label": "Roguelite tomb-delve · Coming soon",
+      "label": "Roguelite tomb-delve \u00b7 Coming soon",
       "summary": "Rob the famous Krevorn tombs of the Iron-Fog Coast. Draft your abilities, wear what you loot and go down as far as your build allows."
     }
   ],
@@ -48,7 +48,7 @@
       "title": "Lanternward",
       "path": "/lanternward/",
       "image": "/lanternward/assets/capsule.png",
-      "label": "Android · Coming soon",
+      "label": "Android \u00b7 Coming soon",
       "summary": "Light the night streets of Veldrenmar, one carefully reasoned lantern at a time. A quiet logic puzzle with a single solution."
     }
   ],
@@ -92,21 +92,21 @@
       "title": "Sliding Puzzle",
       "path": "/small-games/sliding-puzzle/",
       "image": "/assets/projects/sliding-puzzle.webp",
-      "summary": "The 15 puzzle on a keeper's ward-tablet. Ten measured boards per size and a daily — every board tells you its shortest way home.",
+      "summary": "The 15 puzzle on a keeper's ward-tablet. Ten measured boards per size and a daily \u2014 every board tells you its shortest way home.",
       "type": "puzzle"
     },
     {
       "title": "Block Fit",
       "path": "/small-games/block-fit/",
       "image": "/assets/projects/block-fit.webp",
-      "summary": "A warding tablet broken into shards. Forty-eight tablets and a daily — every one proved to fit back together exactly one way.",
+      "summary": "A warding tablet broken into shards. Forty-eight tablets and a daily \u2014 every one proved to fit back together exactly one way.",
       "type": "puzzle"
     },
     {
       "title": "Tetromino",
       "path": "/small-games/tetromino/",
       "image": "/assets/projects/tetromino.webp",
-      "summary": "The falling-block puzzle by the published rules, in a Korthen descent shaft. Marathon, Sprint and Ultra — and a top ten where every place is a replay you can watch.",
+      "summary": "The falling-block puzzle by the published rules, in a Korthen descent shaft. Marathon, Sprint and Ultra \u2014 and a top ten where every place is a replay you can watch.",
       "type": "puzzle"
     },
     {
@@ -120,7 +120,7 @@
       "title": "Match Three",
       "path": "/small-games/match-three/",
       "image": "/assets/projects/match-three.webp",
-      "summary": "A match-three gem swapper on a Korthen cutting bench — and the chutes above every column show the next three stones, so a cascade is something you build rather than something you were handed.",
+      "summary": "A match-three gem swapper on a Korthen cutting bench \u2014 and the chutes above every column show the next three stones, so a cascade is something you build rather than something you were handed.",
       "type": "puzzle"
     },
     {
@@ -137,21 +137,28 @@
       "summary": "Aim carved glass wards through an Aurensh observatory: real bank-shot previews, thirty-six proved chambers and a shared daily vault.",
       "type": "puzzle"
     },
-        {
-            "title": "Snake",
-            "path": "/small-games/snake/",
-            "image": "/assets/projects/snake.webp",
-            "summary": "Steer a ward-serpent across a Sundered cistern floor: three chamber sizes, walls of stone or walls of seam-light, and six public boards of ten.",
-            "type": "arcade"
-        },
-        {
-            "title": "Brick Breaker",
-            "path": "/small-games/brick-breaker/",
-            "image": "/assets/projects/brick-breaker.webp",
-            "summary": "Hold a shield at the threshold of a sealed armoury and keep a forge-spark alive: sixteen hand-cut vaults, no power-downs, a heat multiplier that pays for the tunnel, and nineteen public boards of ten that re-play every run.",
-            "type": "arcade"
-        }
-    ],
+    {
+      "title": "Snake",
+      "path": "/small-games/snake/",
+      "image": "/assets/projects/snake.webp",
+      "summary": "Steer a ward-serpent across a Sundered cistern floor: three chamber sizes, walls of stone or walls of seam-light, and six public boards of ten.",
+      "type": "arcade"
+    },
+    {
+      "title": "Brick Breaker",
+      "path": "/small-games/brick-breaker/",
+      "image": "/assets/projects/brick-breaker.webp",
+      "summary": "Hold a shield at the threshold of a sealed armoury and keep a forge-spark alive: sixteen hand-cut vaults, no power-downs, a heat multiplier that pays for the tunnel, and nineteen public boards of ten that re-play every run.",
+      "type": "arcade"
+    },
+    {
+      "title": "Pairs",
+      "path": "/small-games/pairs/",
+      "image": "/assets/projects/pairs.webp",
+      "summary": "The matching game on a scholar's sorting table: six tray sizes up to seventy-two marks, no flip-back timer to sit through, two numbers that are both lower-is-better, and a finish card that tells you what a perfect memory would have spent on your own deal.",
+      "type": "puzzle"
+    }
+  ],
   "smallGameTypes": [
     {
       "slug": "puzzle",
@@ -209,28 +216,28 @@
       "title": "spoor",
       "url": "https://github.com/Morass/spoor",
       "group": "command-line",
-      "label": "Go · macOS & Linux",
+      "label": "Go \u00b7 macOS & Linux",
       "summary": "See what a command did to your machine, review every change with real diffs and undo any of it. Records Homebrew upgrades file by file."
     },
     {
       "title": "hostdiff",
       "url": "https://github.com/Morass/hostdiff",
       "group": "command-line",
-      "label": "Go · macOS & Linux",
+      "label": "Go \u00b7 macOS & Linux",
       "summary": "Why does it work on my other machine? Compare two machines side by side, from Homebrew and apps to settings and libraries, then install, update or remove the difference on either one."
     },
     {
       "title": "dnswhy",
       "url": "https://github.com/Morass/dnswhy",
       "group": "command-line",
-      "label": "Go · macOS",
+      "label": "Go \u00b7 macOS",
       "summary": "Why did that name resolve like that? Shows which resolver macOS picks for a hostname and why, then checks the answer against the nameserver itself."
     },
     {
       "title": "repo-grepo.nvim",
       "url": "https://github.com/Morass/repo-grepo.nvim",
       "group": "neovim-plugins",
-      "label": "Lua · C++",
+      "label": "Lua \u00b7 C++",
       "summary": "Repository-wide grep in a multi-window overlay, with a small C++ backend for speed."
     },
     {
@@ -272,7 +279,7 @@
       "title": "floodfill-bg",
       "url": "https://github.com/Morass/floodfill-bg",
       "group": "apps-and-scripts",
-      "label": "Python · command line",
+      "label": "Python \u00b7 command line",
       "summary": "Remove a flat image background by flood-filling from seed points."
     },
     {
