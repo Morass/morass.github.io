@@ -136,8 +136,15 @@
       "image": "/assets/projects/bubble-shooter.webp",
       "summary": "Aim carved glass wards through an Aurensh observatory: real bank-shot previews, thirty-six proved chambers and a shared daily vault.",
       "type": "puzzle"
-    }
-  ],
+    },
+        {
+            "title": "Snake",
+            "path": "/small-games/snake/",
+            "image": "/assets/projects/snake.webp",
+            "summary": "Steer a ward-serpent across a Sundered cistern floor: three chamber sizes, walls of stone or walls of seam-light, and six public boards of ten.",
+            "type": "puzzle"
+        }
+    ],
   "smallGameTypes": [
     {
       "slug": "puzzle",
