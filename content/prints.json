@@ -3741,6 +3741,36 @@
       "image": "/assets/prints/containers/potion-organizer/69c3753d0d8d5c63.webp"
     },
     {
+      "id": "containers/pumpkin-box",
+      "title": "Pumpkin Box — Realistic Two-Colour Lidded Pumpkin, Holds a Ø80 × 70 mm Jar",
+      "summary": "Ten-lobe pumpkin box, 131 mm wide, sculpted lobes and a gnarled green stem. Lid lifts off at the shoulder; the body swallows an 80 mm jar or candle. Two colours in one lid file, no supports. The lobes are uneven, so the lid matches the body in one rotation only.",
+      "tags": [
+        "pumpkin",
+        "halloween",
+        "box",
+        "container",
+        "jar",
+        "candy",
+        "candle",
+        "autumn",
+        "fall",
+        "decor",
+        "lid",
+        "ams",
+        "multicolor",
+        "nosupports",
+        "cultsoween"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/home/pumpkin-box-realistic-two-colour-lidded-pumpkin-holds-a-o80-x-70-mm-jar"
+        }
+      ],
+      "collection": "containers/keepsake-boxes/nature",
+      "image": "/assets/prints/containers/pumpkin-box/cbbe33f1f8f2e709.webp"
+    },
+    {
       "id": "containers/rasp-organizer",
       "title": "Tool Organizer — 4x4 Hex-Window Stand (parametric OpenSCAD)",
       "summary": "Upright stand with 16 slots (4x4) for rasps, files, screwdrivers, pens, bits. Hex windows in the middle band let you see what's inside; solid top/bottom keep tools separated.",
