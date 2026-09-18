@@ -115,6 +115,13 @@
       "image": "/assets/projects/mahjong.webp",
       "summary": "Mahjong solitaire on a warden's counting table: thirty hand-built layouts, a best time on each, and every deal proved solvable before it is dealt. No shuffle button, because it never needs one.",
       "type": "puzzle"
+    },
+    {
+      "title": "Match Three",
+      "path": "/small-games/match-three/",
+      "image": "/assets/projects/match-three.webp",
+      "summary": "A match-three gem swapper on a Korthen cutting bench — and the chutes above every column show the next three stones, so a cascade is something you build rather than something you were handed.",
+      "type": "puzzle"
     }
   ],
   "smallGameTypes": [
