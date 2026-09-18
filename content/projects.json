@@ -122,6 +122,13 @@
       "image": "/assets/projects/match-three.webp",
       "summary": "A match-three gem swapper on a Korthen cutting bench — and the chutes above every column show the next three stones, so a cascade is something you build rather than something you were handed.",
       "type": "puzzle"
+    },
+    {
+      "title": "Solitaire",
+      "path": "/small-games/solitaire/",
+      "image": "/assets/projects/solitaire.webp",
+      "summary": "Klondike on a warden's counting table: 120 shuffled deals, each solver-proved from its opening layout, with Draw 1 and Draw 3 tables, unlimited undo and a gentle hint when the ward goes quiet.",
+      "type": "card"
     }
   ],
   "smallGameTypes": [
@@ -129,6 +136,11 @@
       "slug": "puzzle",
       "title": "Puzzles",
       "label": "Puzzle"
+    },
+    {
+      "slug": "card",
+      "title": "Card Games",
+      "label": "Card game"
     }
   ],
   "channels": [
