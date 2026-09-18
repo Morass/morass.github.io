@@ -253,6 +253,50 @@
       "image": "/assets/prints/bathroom/great-helm-organizer/b3edba996d5ec9d0.webp"
     },
     {
+      "id": "bathroom/medieval-well-organizer",
+      "title": "Medieval Well Makeup Organizer — no supports",
+      "summary": "A stone draw-well with a winding gantry, a gable roof and a bucket on a string — and a makeup organizer inside it. The coping stone is a lift-off plate carrying all 11 bores, and not one of them is blind: a brush handle hangs free down the shaft, a mascara rests in a 45° seat cone instead of bottoming out, and loose powder falls straight past into a rinse dish in the plinth. Cleaning is lift, lift, tip, rinse. 5 parts, Ø144 × 176 mm, 420 g, no supports, no hardware, no glue — just ~120 mm of twine for the bucket.",
+      "tags": [
+        "makeup",
+        "makeuporganizer",
+        "makeupbrush",
+        "brushholder",
+        "makeupstorage",
+        "cosmetics",
+        "vanity",
+        "bathroom",
+        "bathroomorganizer",
+        "desktoporganizer",
+        "penholder",
+        "organizer",
+        "storage",
+        "well",
+        "medieval",
+        "fantasy",
+        "castle",
+        "nosupports",
+        "noglue",
+        "parametric",
+        "openscad"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/home/medieval-well-makeup-organizer-no-supports"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1846191-medieval-well-makeup-organizer-no-supports"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3324673-medieval-well-makeup-organizer"
+        }
+      ],
+      "collection": "bathroom/makeup-organizers",
+      "image": "/assets/prints/bathroom/medieval-well-organizer/883df3eeb7c8710c.webp"
+    },
+    {
       "id": "bathroom/moonwake-vanity",
       "title": "Moonwake Makeup Wardrobe — a 240 mm two-door cabinet with printed hinges and lift-off door bins",
       "summary": "A 240 x 200 x 228 mm cabinet for makeup and hygiene: two engraved doors on four printed pins that swing to 160 degrees, four lift-off bins on the door panels, and two removable organizers inside for brushes, tubes and palettes. 13 parts, no hardware, no glue, no supports.",
@@ -8861,6 +8905,14 @@
         {
           "platform": "cults3d",
           "url": "https://cults3d.com/en/3d-model/game/beach-ring-toss-lawn-game-scoring-target-board-tossing-rings-sand-resting"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1845881-beach-ring-toss-lawn-game-scoring-target-board-tos"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3323416-beach-ring-toss-lawn-game"
         }
       ],
       "image": "/assets/prints/outdoor/beach-washer-toss/4a88154dda933854.webp"
@@ -8890,6 +8942,14 @@
         {
           "platform": "cults3d",
           "url": "https://cults3d.com/en/3d-model/game/beach-sandcastle-kit-8-piece-mould-tool-set-castle-buckets-sieve-rake-s-morass-2"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1845857-beach-sandcastle-kit-8-piece-mould-tool-set-castle"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3323372-beach-sandcastle-kit-8-piece-mould-tool-set"
         }
       ],
       "image": "/assets/prints/outdoor/sandcastle-set/e23b069204c0f3ea.webp"
@@ -8918,6 +8978,14 @@
         {
           "platform": "cults3d",
           "url": "https://cults3d.com/en/3d-model/game/floating-memory-tiles-pool-beach-sea-creature-match-game"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1845901-floating-memory-tiles-pool-beach-sea-creature-matc"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3323541-floating-memory-tiles"
         }
       ],
       "image": "/assets/prints/outdoor/sea-memory-tiles/a856ef436a992b84.webp"
@@ -8946,6 +9014,10 @@
         {
           "platform": "cults3d",
           "url": "https://cults3d.com/en/3d-model/game/beach-tic-tac-toe-in-a-scallop-shell-box-sea-creature-peg-game-starfish-vs-sh"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1845884-beach-tic-tac-toe-in-a-scallop-shell-box-sea-creat"
         }
       ],
       "image": "/assets/prints/outdoor/tictactoe-shells/bab8f8ce6ae4f03a.webp"
@@ -8973,6 +9045,14 @@
         {
           "platform": "cults3d",
           "url": "https://cults3d.com/en/3d-model/game/squeeze-breeze-trigger-spun-fan-toy-no-batteries-mechanical-novelty-morass"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1845907-squeeze-breeze-trigger-spun-fan-toy-no-batteries-m"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3323548-squeeze-breeze-trigger-spun-fan-toy"
         }
       ],
       "image": "/assets/prints/outdoor/trigger-breeze-fan/104365d2a23cbf12.webp"
