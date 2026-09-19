@@ -323,6 +323,13 @@
       "group": "apps-and-scripts",
       "label": "Swift · macOS app & command",
       "summary": "Read offline documentation sets on a Mac — and turn any project into one: its README, its code and its pictures, browsable as a tree and searchable from the terminal."
+    },
+    {
+      "title": "restorable",
+      "url": "https://github.com/Morass/restorable",
+      "group": "command-line",
+      "label": "Go · macOS & Linux",
+      "summary": "Is this machine actually backed up? Lists what no backup keeps, says when each destination last ran, and restores a sample to prove the bytes come back."
     }
   ],
   "toolGroups": [
