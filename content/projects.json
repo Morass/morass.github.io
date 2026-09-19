@@ -131,6 +131,13 @@
       "type": "card"
     },
     {
+      "title": "FreeCell",
+      "path": "/small-games/freecell/",
+      "image": "/assets/projects/freecell.webp",
+      "summary": "FreeCell at a warden's table, with the deal numbers everybody already argues about: 1,000 of the real Microsoft deals, every one solved and its winning line replayed before it shipped, four tiers cut on how much searching the position really demands, and a best time and fewest moves on each.",
+      "type": "card"
+    },
+    {
       "title": "Bubble Shooter",
       "path": "/small-games/bubble-shooter/",
       "image": "/assets/projects/bubble-shooter.webp",
