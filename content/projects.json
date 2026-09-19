@@ -178,6 +178,13 @@
       "image": "/assets/projects/kakuro.webp",
       "summary": "The crossword of sums, on a merchant's ledger: 320 pages in five sizes plus a daily, every one proven to need no guess, a table of combinations under the board, and a public best time on every page.",
       "type": "puzzle"
+    },
+    {
+      "title": "Hearts",
+      "path": "/small-games/hearts/",
+      "image": "/assets/projects/hearts.webp",
+      "summary": "Hearts against three opponents that cannot see your cards — and a table you can open afterwards to check.",
+      "type": "card"
     }
   ],
   "smallGameTypes": [
