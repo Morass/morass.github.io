@@ -3570,6 +3570,36 @@
       "image": "/assets/prints/containers/grimoire-box/89815717084a7e5d.webp"
     },
     {
+      "id": "containers/haunted-house-organizer",
+      "title": "Haunted House Screw Organizer — 3 Drawer Floors, Crooked Mansard Roof",
+      "summary": "A crooked Victorian mansard house whose three floors are pull-out drawers for screws, nuts and bits. Five parts, no hardware, no glue, no supports; the pumpkin face and glowing windows are a second colour on the drawer fronts.",
+      "tags": [
+        "halloween",
+        "haunted house",
+        "organizer",
+        "screw organizer",
+        "drawer",
+        "storage",
+        "small parts",
+        "victorian",
+        "mansard",
+        "pumpkin",
+        "bats",
+        "spooky",
+        "multicolor",
+        "openscad",
+        "parametric",
+        "cultsoween"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/home/haunted-house-screw-organizer-3-drawer-floors-crooked-mansard-roof"
+        }
+      ],
+      "image": "/assets/prints/containers/haunted-house-organizer/f461c6e4dab46d90.webp"
+    },
+    {
       "id": "containers/heart-box-forge",
       "title": "Heart Trinket Box — Friction-Fit Lid (Two Fits)",
       "summary": "A little heart-shaped box with a plug-in friction-fit lid. Two lid versions included — a relaxed fit and a firmer one — so you can pick how tightly it holds. Fully parametric OpenSCAD source.",

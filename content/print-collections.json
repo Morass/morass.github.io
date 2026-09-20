@@ -167,6 +167,7 @@
     ],
     "containers/organizers/tools-parts": [
       "containers/battery-dispenser",
+      "containers/haunted-house-organizer",
       "containers/rasp-organizer"
     ],
     "containers/trays-banks": [
