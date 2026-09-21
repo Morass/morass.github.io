@@ -7053,6 +7053,47 @@
       "image": "/assets/prints/decorations/trojan-horse-earring/235fc25456c24334.webp"
     },
     {
+      "id": "decorations/twist-vortex-bowl",
+      "title": "Twisted Vortex Bowl — one part, no supports",
+      "summary": "A catch-all bowl whose flutes spiral out of a small foot into a wide rim. The flutes climb at the same angle everywhere, so nothing on the outside of the bowl overhangs past 36 degrees and it prints with no supports and no brim. 46 mm foot, 78 mm rim, 45 mm tall, holds about 115 ml, around 30 g. Parametric OpenSCAD source included — twist, flare, flute pitch and depth are all named variables at the top.",
+      "tags": [
+        "bowl",
+        "catchall",
+        "keybowl",
+        "trinketdish",
+        "trinketbowl",
+        "coindish",
+        "jewellerydish",
+        "desktidy",
+        "homedecor",
+        "decorativebowl",
+        "vase",
+        "vasemode",
+        "twisted",
+        "twist",
+        "vortex",
+        "spiral",
+        "fluted",
+        "ribbed",
+        "textured",
+        "nosupports",
+        "parametric",
+        "openscad"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/home/twisted-vortex-bowl-one-part-no-supports"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1849990-twisted-vortex-bowl-one-part-no-supports"
+        }
+      ],
+      "collection": "home/bowls",
+      "image": "/assets/prints/decorations/twist-vortex-bowl/02c1da3389838005.webp"
+    },
+    {
       "id": "decorations/victrola-earring",
       "title": "Gramophone Trinket Box + Matching Charm — Victrola Horn Phonograph",
       "summary": "A horn-gramophone trinket box with a front-loading drawer hidden in the cabinet, plus the same phonograph shrunk into a wearable charm. Print the 66 mm box, the 34 mm earring, or both — no supports on either.",
