@@ -173,6 +173,13 @@
       "type": "arcade"
     },
     {
+      "title": "2048",
+      "path": "/small-games/2048/",
+      "image": "/assets/projects/2048.webp",
+      "summary": "The classic four-by-four number puzzle on an ember forge: fuse coal, flame and starfire until the Phoenix wakes at 2048.",
+      "type": "puzzle"
+    },
+    {
       "title": "Pairs",
       "path": "/small-games/pairs/",
       "image": "/assets/projects/pairs.webp",
