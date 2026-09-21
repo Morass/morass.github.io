@@ -201,6 +201,13 @@
       "type": "arcade"
     },
     {
+      "title": "Pyramid Solitaire",
+      "path": "/small-games/pyramid-solitaire/",
+      "image": "/assets/projects/pyramid-solitaire.webp",
+      "summary": "Pair exposed cards to thirteen across 120 open, replay-proven fantasy deals with named records for time and moves.",
+      "type": "card"
+    },
+    {
       "title": "Word Search",
       "path": "/small-games/word-search/",
       "image": "/assets/projects/word-search.webp",
