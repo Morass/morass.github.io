@@ -201,6 +201,13 @@
       "type": "arcade"
     },
     {
+      "title": "Word Search",
+      "path": "/small-games/word-search/",
+      "image": "/assets/projects/word-search.webp",
+      "summary": "Trace themed English words across forty-eight open pages of an enchanted archive, from calm four-direction grids to dense eight-direction folios.",
+      "type": "puzzle"
+    },
+    {
       "title": "Pairs",
       "path": "/small-games/pairs/",
       "image": "/assets/projects/pairs.webp",
