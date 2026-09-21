@@ -180,6 +180,13 @@
       "type": "puzzle"
     },
     {
+      "title": "Water Sort",
+      "path": "/small-games/water-sort/",
+      "image": "/assets/projects/water-sort.webp",
+      "summary": "Sort luminous reagents across 120 open alchemical formulae, all proved completable, with separate public records for time and moves.",
+      "type": "puzzle"
+    },
+    {
       "title": "Pairs",
       "path": "/small-games/pairs/",
       "image": "/assets/projects/pairs.webp",
