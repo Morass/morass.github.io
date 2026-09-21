@@ -145,6 +145,13 @@
       "type": "puzzle"
     },
     {
+      "title": "Marble Shooter",
+      "path": "/small-games/marble-shooter/",
+      "image": "/assets/projects/marble-shooter.webp",
+      "summary": "Fire engraved rune-stones into a moving Aurensh circuit: twelve open, solver-checked boards with recoil chains and separate records for time and shots.",
+      "type": "puzzle"
+    },
+    {
       "title": "Snake",
       "path": "/small-games/snake/",
       "image": "/assets/projects/snake.webp",
