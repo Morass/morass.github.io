@@ -8275,6 +8275,34 @@
       "image": "/assets/prints/desk/paper-block-organizer/57319bae4eec73ac.webp"
     },
     {
+      "id": "desk/pretzel-cable-clip",
+      "title": "Pretzel Cable Clip — Two-Colour Desk Cable Holder",
+      "summary": "A 58 x 44 mm pretzel-shaped desk clip for one small charging cable, with white salt accents. Flat print, no supports.",
+      "tags": [
+        "pretzel",
+        "cable",
+        "clip",
+        "desk",
+        "organizer",
+        "charger",
+        "multicolor",
+        "ams",
+        "nosupports"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/home/pretzel-cable-clip-two-colour-desk-cable-holder"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1850080-pretzel-cable-clip-two-colour-desk-cable-holder"
+        }
+      ],
+      "collection": "desk/electronics/cables",
+      "image": "/assets/prints/desk/pretzel-cable-clip/d664fd4367aa3af6.webp"
+    },
+    {
       "id": "desk/radiator-hook",
       "title": "Radiator Hook — S-Hook for Towel Radiators (No Drilling, No Hardware)",
       "summary": "A chunky plastic S-hook that slips over the top rail of a heated towel radiator and carries a towel, glove, bag, or keys on the bottom. No drilling, no adhesives, no metal hardware — one-piece print, flat on the bed, no supports.",
