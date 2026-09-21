@@ -187,6 +187,13 @@
       "type": "puzzle"
     },
     {
+      "title": "Sokoban",
+      "path": "/small-games/sokoban/",
+      "image": "/assets/projects/sokoban.webp",
+      "summary": "Restore rune-bound reliquaries across 72 open fantasy vaults, every chamber solver-proven, with public records for time and steps.",
+      "type": "puzzle"
+    },
+    {
       "title": "Pairs",
       "path": "/small-games/pairs/",
       "image": "/assets/projects/pairs.webp",
