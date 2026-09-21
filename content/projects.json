@@ -194,6 +194,13 @@
       "type": "puzzle"
     },
     {
+      "title": "Mini Golf",
+      "path": "/small-games/mini-golf/",
+      "image": "/assets/projects/mini-golf.webp",
+      "summary": "Putt an awakened pearl across eighteen open fantasy courses, all solver-proven, with public records for time and strokes.",
+      "type": "arcade"
+    },
+    {
       "title": "Pairs",
       "path": "/small-games/pairs/",
       "image": "/assets/projects/pairs.webp",
