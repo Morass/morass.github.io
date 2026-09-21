@@ -847,6 +847,37 @@
       "image": "/assets/prints/boardgames/frosthaven/cassandra-rifts/0952578e37ba2596.webp"
     },
     {
+      "id": "boardgames/frosthaven/ghost-falcon",
+      "title": "Ghost Falcon Summon Standee with Life Dial — Frosthaven",
+      "summary": "A 37.5 mm hex standee for Cassandra's Ghost Falcon summon. The captive ring turns to show 1–4 life; the pedestal shows 2 damage, 4 health and 3 movement. One print, no assembly.",
+      "tags": [
+        "frosthaven",
+        "gloomhaven",
+        "ghostfalcon",
+        "cassandra",
+        "summon",
+        "standee",
+        "lifedial",
+        "boardgame",
+        "tabletop",
+        "printinplace",
+        "multicolor",
+        "nosupports"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/game/ghost-falcon-summon-standee-with-life-dial-frosthaven"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1849385-ghost-falcon-summon-standee-with-life-dial-frostha"
+        }
+      ],
+      "collection": "boardgames/by-game/frosthaven",
+      "image": "/assets/prints/boardgames/frosthaven/ghost-falcon/82be83baea14b080.webp"
+    },
+    {
       "id": "boardgames/frosthaven/kill-counter",
       "title": "Frosthaven Lurker Deepwraith Kill Counter",
       "summary": "Snap-together rotating dial that tracks kills through a window under a skull. Sized for the Lurker (Deepwraith) Frosthaven personal quest. Also ships a 0-9 variant for any game that wants a tiny mechanical counter.",
