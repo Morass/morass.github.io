@@ -166,6 +166,13 @@
       "type": "arcade"
     },
     {
+      "title": "Space Shooter",
+      "path": "/small-games/space-shooter/",
+      "image": "/assets/projects/space-shooter.webp",
+      "summary": "Fly an Aurensh moonwing through twenty-four finite sorties: dodge violet spells, break the incoming flock and bring down its captain under two haunted moons.",
+      "type": "arcade"
+    },
+    {
       "title": "Pairs",
       "path": "/small-games/pairs/",
       "image": "/assets/projects/pairs.webp",
