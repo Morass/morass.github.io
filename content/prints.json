@@ -5392,6 +5392,31 @@
       "image": "/assets/prints/decorations/half-amphora-brooch/1ebe9b9f91baf50f.webp"
     },
     {
+      "id": "decorations/halloween-coasters",
+      "title": "Halloween Coasters — six motifs that hold the glass 0.6 mm off the coaster, plus a pumpkin caddy",
+      "summary": "Ø90 mm Halloween coaster set: jack-o'-lantern, ghost, bat across a full moon, spider web, skull and cauldron. Every motif stands 0.6 mm PROUD of the drink face, so a cold wet glass rests on it with air underneath and never sticks and lifts the coaster with it. Two-colour AMS files that split into exactly two parts, a single-colour version of each, and a ribbed pumpkin caddy that stacks five fully, with the sixth above the rim. No supports anywhere.",
+      "tags": [
+        "halloween",
+        "coaster",
+        "coasters",
+        "caddy",
+        "jackolantern",
+        "ghost",
+        "skull",
+        "bat",
+        "spiderweb",
+        "cauldron"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/home/halloween-coasters-six-motifs-that-hold-the-glass-0-6-mm-off-the-coaster-plus"
+        }
+      ],
+      "collection": "decorations/coasters",
+      "image": "/assets/prints/decorations/halloween-coasters/9f7da53949fdd7a2.webp"
+    },
+    {
       "id": "decorations/hollow-face-vase-brooch",
       "title": "Hollow-Face Vase Brooch — the vase is a hole, and it follows you",
       "summary": "A magnetic brooch, 47 x 55 mm. The vase is not raised — it is the exact mould of a vase, sunk 5.2 mm into the plaque. Your eye refuses to read it as hollow, so it bulges out instead, and appears to turn and follow whoever walks past. Nothing moves; the viewer does. Two printed pieces, four colours in one 0.6 mm band, sealed magnets, no pin.",
