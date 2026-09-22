@@ -304,6 +304,13 @@
       "image": "/assets/projects/shikaku.webp",
       "summary": "Charter 120 open enchanted survey maps into rectangular provinces, each with one exact answer and a named fastest-time record.",
       "type": "puzzle"
+    },
+    {
+      "title": "Tents and Trees",
+      "path": "/small-games/tents-and-trees/",
+      "image": "/assets/projects/tents-and-trees.webp",
+      "summary": "Billet 120 open moonlit groves: one pavilion beside every heartwood elder, none touching, with a named fastest-time record on each.",
+      "type": "puzzle"
     }
   ],
   "smallGameTypes": [
