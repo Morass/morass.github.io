@@ -222,6 +222,13 @@
       "type": "puzzle"
     },
     {
+      "title": "Pipe Connect",
+      "path": "/small-games/pipe-connect/",
+      "image": "/assets/projects/pipe-connect.webp",
+      "summary": "Turn rune-cut stones across 120 open, unique-solution moonwell chambers with named records for time and quarter-turns.",
+      "type": "puzzle"
+    },
+    {
       "title": "Word Search",
       "path": "/small-games/word-search/",
       "image": "/assets/projects/word-search.webp",
