@@ -304,6 +304,13 @@
   ],
   "channels": [
     {
+      "title": "Morass Games",
+      "url": "https://www.youtube.com/@morassgames",
+      "summary": "Guides, walkthroughs and worlds from Morass Games.",
+      "label": "Games & guides",
+      "icon": "/assets/ui/channel-morass-games.svg"
+    },
+    {
       "title": "Orenvalt Archive",
       "url": "https://www.youtube.com/@orenvaltarchive",
       "summary": "Books and stories from Orenvalt.",
