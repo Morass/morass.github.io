@@ -297,6 +297,13 @@
       "image": "/assets/projects/peg-solitaire.webp",
       "summary": "Leap star-jewels through 120 open celestial challenges, each solver-proven to finish on its marked shrine with a named fastest-time record.",
       "type": "puzzle"
+    },
+    {
+      "title": "Shikaku",
+      "path": "/small-games/shikaku/",
+      "image": "/assets/projects/shikaku.webp",
+      "summary": "Charter 120 open enchanted survey maps into rectangular provinces, each with one exact answer and a named fastest-time record.",
+      "type": "puzzle"
     }
   ],
   "smallGameTypes": [
