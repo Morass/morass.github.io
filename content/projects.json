@@ -283,6 +283,13 @@
       "image": "/assets/projects/nurikabe.webp",
       "summary": "Raise sanctuary islands through 120 open tidal charts, each with exactly one proven answer and a named fastest-time record.",
       "type": "puzzle"
+    },
+    {
+      "title": "Numberlink",
+      "path": "/small-games/numberlink/",
+      "image": "/assets/projects/numberlink.webp",
+      "summary": "Join paired mana springs across 120 open full-cover wards, each with one exact answer and named records for time and moves.",
+      "type": "puzzle"
     }
   ],
   "smallGameTypes": [
