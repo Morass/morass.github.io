@@ -269,6 +269,13 @@
       "image": "/assets/projects/hearts.webp",
       "summary": "Hearts against three opponents that cannot see your cards — and a table you can open afterwards to check.",
       "type": "card"
+    },
+    {
+      "title": "Bridges",
+      "path": "/small-games/bridges/",
+      "image": "/assets/projects/bridges.webp",
+      "summary": "Reconnect 120 open floating archipelagos with luminous bridges, each unique answer independently proved and each map keeping a named fastest time.",
+      "type": "puzzle"
     }
   ],
   "smallGameTypes": [
