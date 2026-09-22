@@ -290,6 +290,13 @@
       "image": "/assets/projects/numberlink.webp",
       "summary": "Join paired mana springs across 120 open full-cover wards, each with one exact answer and named records for time and moves.",
       "type": "puzzle"
+    },
+    {
+      "title": "Peg Solitaire",
+      "path": "/small-games/peg-solitaire/",
+      "image": "/assets/projects/peg-solitaire.webp",
+      "summary": "Leap star-jewels through 120 open celestial challenges, each solver-proven to finish on its marked shrine with a named fastest-time record.",
+      "type": "puzzle"
     }
   ],
   "smallGameTypes": [
