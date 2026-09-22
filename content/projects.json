@@ -276,6 +276,13 @@
       "image": "/assets/projects/bridges.webp",
       "summary": "Reconnect 120 open floating archipelagos with luminous bridges, each unique answer independently proved and each map keeping a named fastest time.",
       "type": "puzzle"
+    },
+    {
+      "title": "Nurikabe",
+      "path": "/small-games/nurikabe/",
+      "image": "/assets/projects/nurikabe.webp",
+      "summary": "Raise sanctuary islands through 120 open tidal charts, each with exactly one proven answer and a named fastest-time record.",
+      "type": "puzzle"
     }
   ],
   "smallGameTypes": [
