@@ -229,6 +229,13 @@
       "type": "puzzle"
     },
     {
+      "title": "Slitherlink",
+      "path": "/small-games/slitherlink/",
+      "image": "/assets/projects/slitherlink.webp",
+      "summary": "Ink one unbroken ward across 120 open, unique-solution cartographer maps with named records for fastest time.",
+      "type": "puzzle"
+    },
+    {
       "title": "Word Search",
       "path": "/small-games/word-search/",
       "image": "/assets/projects/word-search.webp",
