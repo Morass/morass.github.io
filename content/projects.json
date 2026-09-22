@@ -215,6 +215,13 @@
       "type": "puzzle"
     },
     {
+      "title": "Mastermind",
+      "path": "/small-games/mastermind/",
+      "image": "/assets/projects/mastermind.webp",
+      "summary": "Crack 120 open potion formulae from gold exact-vial and silver wrong-vial assay marks, with named records for time and guesses.",
+      "type": "puzzle"
+    },
+    {
       "title": "Word Search",
       "path": "/small-games/word-search/",
       "image": "/assets/projects/word-search.webp",
