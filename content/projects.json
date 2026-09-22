@@ -424,6 +424,14 @@
       "summary": "Explore Mac app crashes and Apple installation history on a calendar, with hourly graphs and links to original reports."
     },
     {
+      "title": "Steamfolio",
+      "url": "https://github.com/Morass/steamfolio",
+      "group": "apps-and-scripts",
+      "icon": "/assets/ui/steamfolio.svg",
+      "label": "Chrome extension · Steamworks",
+      "summary": "See a chosen Steamworks sales or wishlist statistic across any selection of your games."
+    },
+    {
       "title": "restorable",
       "url": "https://github.com/Morass/restorable",
       "group": "command-line",
