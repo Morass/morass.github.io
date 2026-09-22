@@ -384,6 +384,7 @@
       "title": "faultday",
       "url": "https://github.com/Morass/faultday",
       "group": "apps-and-scripts",
+      "icon": "/assets/ui/faultday.svg",
       "label": "Swift · macOS app",
       "summary": "Explore Mac app crashes and Apple installation history on a calendar, with hourly graphs and links to original reports."
     },

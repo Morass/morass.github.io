@@ -199,6 +199,10 @@ if unknown:
     raise ValueError(f'Tools reference unknown groups: {sorted(unknown)}')
 def tool_mark(group):
     return f'<div class="tool-mark-art"><span class="tool-mark">{E(group["mark"])}</span></div>'
+def tool_inline_mark(tool, group):
+    if icon_path := tool.get('icon'):
+        return f'<div class="tool-mark-inline"><img class="tool-app-icon" src="{E(icon_path)}" alt="" loading="lazy" width="64" height="64"></div>'
+    return tool_mark(group).replace('tool-mark-art', 'tool-mark-inline')
 body = heading('FREE TOOLS', 'Small tools, free to use.', 'Open-source apps, command-line tools and Neovim plugins. Use them, change them, share them.')
 body += '<div class="cards tool-cards">'
 for group in P['toolGroups']:
@@ -209,7 +213,7 @@ page('/tools/', 'Free tools', 'Free, open-source command-line tools and Neovim p
 for group in P['toolGroups']:
     body = heading('FREE TOOLS · ' + group['title'], group['title'] + '.', group['summary']) + '<div class="channel-list">'
     for tool in (t for t in P['tools'] if t['group'] == group['slug']):
-        body += f'<article class="channel tool">{tool_mark(group).replace("tool-mark-art", "tool-mark-inline")}<div><p class="eyebrow">{E(tool["label"])}</p><h2>{E(tool["title"])}</h2><p>{E(tool["summary"])}</p></div>{button("View on GitHub", tool["url"], True)}</article>'
+        body += f'<article class="channel tool">{tool_inline_mark(tool, group)}<div><p class="eyebrow">{E(tool["label"])}</p><h2>{E(tool["title"])}</h2><p>{E(tool["summary"])}</p></div>{button("View on GitHub", tool["url"], True)}</article>'
     body += '</div>'
     page(f"/tools/{group['slug']}/", group['title'] + ' — Free tools', group['summary'], body, 'tools', [('Free tools','/tools/'), (group['title'], f"/tools/{group['slug']}/")])
 
