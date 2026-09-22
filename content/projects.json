@@ -208,6 +208,13 @@
       "type": "card"
     },
     {
+      "title": "Reversi",
+      "path": "/small-games/reversi/",
+      "image": "/assets/projects/reversi.webp",
+      "summary": "Turn sun and moon seals across 120 open, exact-solver-proven observatory trials, plus three computer rivals and same-device play.",
+      "type": "puzzle"
+    },
+    {
       "title": "Word Search",
       "path": "/small-games/word-search/",
       "image": "/assets/projects/word-search.webp",
