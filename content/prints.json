@@ -5520,6 +5520,35 @@
       "image": "/assets/prints/decorations/infinity-cube/21da8e451141381d.webp"
     },
     {
+      "id": "decorations/jonah-whale",
+      "title": "Jonah Whale - Press the Blowhole to Open the Jaw",
+      "summary": "A print-in-place whale toy. Press its blowhole and the jaw drops open to reveal a tiny diver.",
+      "tags": [
+        "whale",
+        "jonah",
+        "diver",
+        "ocean",
+        "toy",
+        "mechanical",
+        "printinplace",
+        "hinge",
+        "button",
+        "nosupports"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/game/jonah-whale-press-the-blowhole-to-open-the-jaw"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1850669-jonah-whale-press-the-blowhole-to-open-the-jaw"
+        }
+      ],
+      "collection": "toys/mechanical",
+      "image": "/assets/prints/decorations/jonah-whale/eea893884b1d0887.webp"
+    },
+    {
       "id": "decorations/kakapo-earring",
       "title": "Kakapo Earring Charm — Chubby NZ Parrot Pendant",
       "summary": "Chubby kakapo (ground parrot from NZ) charm with hanging loop — earring, necklace, or keychain-mini. Heads-up: the jump-ring loop is thin and can snap under rough handling.",
