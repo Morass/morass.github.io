@@ -381,6 +381,13 @@
       "summary": "Read offline documentation sets on a Mac — and turn any project into one: its README, its code and its pictures, browsable as a tree and searchable from the terminal."
     },
     {
+      "title": "faultday",
+      "url": "https://github.com/Morass/faultday",
+      "group": "apps-and-scripts",
+      "label": "Swift · macOS app",
+      "summary": "Explore Mac app crashes and Apple installation history on a calendar, with hourly graphs and links to original reports."
+    },
+    {
       "title": "restorable",
       "url": "https://github.com/Morass/restorable",
       "group": "command-line",
