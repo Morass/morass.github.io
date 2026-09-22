@@ -199,7 +199,7 @@ if unknown:
     raise ValueError(f'Tools reference unknown groups: {sorted(unknown)}')
 def tool_mark(group):
     return f'<div class="tool-mark-art"><span class="tool-mark">{E(group["mark"])}</span></div>'
-body = heading('FREE TOOLS', 'Small tools, free to use.', 'Open-source command-line tools and Neovim plugins, made along the way. Use them, change them, share them.')
+body = heading('FREE TOOLS', 'Small tools, free to use.', 'Open-source apps, command-line tools and Neovim plugins. Use them, change them, share them.')
 body += '<div class="cards tool-cards">'
 for group in P['toolGroups']:
     count = sum(t['group'] == group['slug'] for t in P['tools'])
