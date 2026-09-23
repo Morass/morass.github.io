@@ -131,6 +131,13 @@
       "type": "card"
     },
     {
+      "title": "Spider Solitaire",
+      "path": "/small-games/spider-solitaire/",
+      "image": "/assets/projects/spider-solitaire.webp",
+      "summary": "Spider at a warden's table in one, two or four suits: 1,454 deals, every one won by our solver before it shipped, a Day's Deal for everyone, and a named best time and fewest moves on each.",
+      "type": "card"
+    },
+    {
       "title": "FreeCell",
       "path": "/small-games/freecell/",
       "image": "/assets/projects/freecell.webp",
