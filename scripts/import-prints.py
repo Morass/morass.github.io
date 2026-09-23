@@ -14,6 +14,7 @@ PLATFORMS = {
     'cults3d': ('cults3d.com', r'/[a-z]{2}/3d-model/[^/]+/[^/]+/?'),
     'printables': ('www.printables.com', r'/(?:[a-z]{2}/)?model/[0-9]+(?:-[^/]+)?/?'),
     'makerworld': ('makerworld.com', r'/[a-z]{2}/models/[0-9]+(?:-[^/]+)?/?'),
+    'snapmaker': ('space.snapmaker.com', r'/[a-z]{2}/model/[0-9]+(?:-[^/]+)?/?'),
 }
 
 def public_url(platform, value):
@@ -34,7 +35,7 @@ def links_for(record):
             rows = [rows]
         for row in rows:
             if isinstance(row, dict):
-                if row.get('deleted') or row.get('withdrawn') or row.get('status') in {'draft', 'private', 'deleted'}:
+                if row.get('deleted') or row.get('withdrawn') or row.get('status') in {'draft', 'private', 'deleted', 'review', 'rejected', 'missing', 'unknown'}:
                     continue
                 row = row.get('url')
             url = public_url(platform, row)

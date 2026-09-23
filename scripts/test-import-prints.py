@@ -11,6 +11,11 @@ class ExportTests(unittest.TestCase):
     def test_mixed_legacy_records_and_deduplication(self):
         rows={'printables':'https://www.printables.com/model/123-thing','makerworld':[{'url':'https://makerworld.com/en/models/456','draft':'123'},{'url':'https://makerworld.com/en/models/456'},{'url':'https://makerworld.com/en/models/789','status':'private'}]}
         self.assertEqual(len(m.links_for(rows)),2)
+    def test_snapmaker_live_only(self):
+        # A submitted Space listing is recorded at once but is public only after review.
+        rows={'snapmaker':[{'url':'https://space.snapmaker.com/en/model/35773'},{'url':'https://space.snapmaker.com/en/model/35785','status':'review'},{'url':'https://space.snapmaker.com/en/model/35786','status':'rejected'}]}
+        self.assertEqual(m.links_for(rows),[{'platform':'snapmaker','url':'https://space.snapmaker.com/en/model/35773'}])
+        self.assertIsNone(m.public_url('snapmaker','https://space.snapmaker.com/en/creator/upload'))
     def test_hierarchy(self):
         self.assertEqual(m.slug(Path('boardgames/spirit_island/token_set')),'boardgames/spirit-island/token-set')
 unittest.main()

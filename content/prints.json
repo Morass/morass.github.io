@@ -3514,6 +3514,10 @@
         {
           "platform": "makerworld",
           "url": "https://makerworld.com/en/models/2643405"
+        },
+        {
+          "platform": "snapmaker",
+          "url": "https://space.snapmaker.com/en/model/35773"
         }
       ],
       "image": "/assets/prints/containers/decorative-box/a21431e0276e1d5f.webp"

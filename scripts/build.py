@@ -396,7 +396,7 @@ for item in PRINTS:
     parts = item['collection'].split('/') + [item['id'].split('/')[-1]]
     crumbs = [('Prints', '/prints/')]+[(name(p), '/prints/'+'/'.join(parts[:i+1])+'/') for i,p in enumerate(parts[:-1])]
     art = f'<img class="print-hero-art" src="{E(item["image"])}" width="960" height="720" alt="{E(item["title"])}">' if item.get('image') else '<div class="art-placeholder">'+icon('stamp')+'</div>'
-    links = ''.join(button({'cults3d':'View on Cults','printables':'View on Printables','makerworld':'View on MakerWorld'}[l['platform']],l['url'], True) for l in item['links'])
+    links = ''.join(button({'cults3d':'View on Cults','printables':'View on Printables','makerworld':'View on MakerWorld','snapmaker':'View on Snapmaker'}[l['platform']],l['url'], True) for l in item['links'])
     body = '<section class="product-hero print-product">'+art+'<div>'+heading(name(parts[0]), item['title'], item['summary'])+'<div class="listing-links">'+links+'</div><p class="small-note">Files, assembly instructions, licenses and print settings are available on the model listings.</p>'+tag_list(item['tags'])+'</div></section>'
     body += '<section class="related"><div class="section-title"><h2>More in '+E(name(parts[-2]))+'</h2><a class="text-link" href="/prints/'+'/'.join(parts[:-1])+'/">View collection ↗</a></div><div class="cards">'
     siblings = [i for i in PRINTS if i['collection'] == item['collection'] and i != item][:3]
