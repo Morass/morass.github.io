@@ -306,6 +306,13 @@
       "type": "puzzle"
     },
     {
+      "title": "Word Guess",
+      "path": "/small-games/word-guess/",
+      "image": "/assets/projects/word-guess.webp",
+      "summary": "Guess the hidden word in six tries: a new lock every day for everyone, and 240 hand-picked themed locks of four to seven letters.",
+      "type": "puzzle"
+    },
+    {
       "title": "Star Battle",
       "path": "/small-games/star-battle/",
       "image": "/assets/projects/star-battle.webp",
