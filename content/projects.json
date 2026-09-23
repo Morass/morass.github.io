@@ -311,6 +311,13 @@
       "image": "/assets/projects/tents-and-trees.webp",
       "summary": "Billet 120 open moonlit groves: one pavilion beside every heartwood elder, none touching, with a named fastest-time record on each.",
       "type": "puzzle"
+    },
+    {
+      "title": "Tower Stack",
+      "path": "/small-games/tower-stack/",
+      "image": "/assets/projects/tower-stack.webp",
+      "summary": "Set the swinging course of stone on a rising watchtower. Thirteen walls, each keeping the ten tallest climbs with their replays.",
+      "type": "arcade"
     }
   ],
   "smallGameTypes": [
