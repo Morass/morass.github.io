@@ -222,6 +222,13 @@
       "type": "puzzle"
     },
     {
+      "title": "Four in a Row",
+      "path": "/small-games/four-in-a-row/",
+      "image": "/assets/projects/four-in-a-row.webp",
+      "summary": "Outwit four keepers at an ember-and-frost rack, or solve 120 open exact forced-win Trials with named fastest-time records.",
+      "type": "puzzle"
+    },
+    {
       "title": "Mastermind",
       "path": "/small-games/mastermind/",
       "image": "/assets/projects/mastermind.webp",
