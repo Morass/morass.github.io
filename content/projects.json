@@ -306,6 +306,13 @@
       "type": "puzzle"
     },
     {
+      "title": "Hitori",
+      "path": "/small-games/hitori/",
+      "image": "/assets/projects/hitori.webp",
+      "summary": "Sink the rune stones that echo across 120 open moonlit crossings, each proved unique and guess-free, with a named fastest-time record.",
+      "type": "puzzle"
+    },
+    {
       "title": "Tents and Trees",
       "path": "/small-games/tents-and-trees/",
       "image": "/assets/projects/tents-and-trees.webp",
