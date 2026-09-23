@@ -306,6 +306,13 @@
       "type": "puzzle"
     },
     {
+      "title": "Star Battle",
+      "path": "/small-games/star-battle/",
+      "image": "/assets/projects/star-battle.webp",
+      "summary": "Set the stars on 160 open star-charts, one-star to two-star, each proved unique and solvable by reasoning, with a named fastest-time record.",
+      "type": "puzzle"
+    },
+    {
       "title": "Hitori",
       "path": "/small-games/hitori/",
       "image": "/assets/projects/hitori.webp",
