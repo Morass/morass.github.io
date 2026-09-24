@@ -355,6 +355,13 @@
       "type": "opponent"
     },
     {
+      "title": "Nine Men's Morris",
+      "path": "/small-games/nine-mens-morris/",
+      "image": "/assets/projects/nine-mens-morris.webp",
+      "summary": "Classic Nine Men's Morris on a ward-table: four keepers, same-device play and 120 mill-finding Trials with fastest-time records.",
+      "type": "opponent"
+    },
+    {
       "title": "Tower Stack",
       "path": "/small-games/tower-stack/",
       "image": "/assets/projects/tower-stack.webp",
