@@ -348,6 +348,13 @@
       "type": "puzzle"
     },
     {
+      "title": "Checkers",
+      "path": "/small-games/checkers/",
+      "image": "/assets/projects/checkers.webp",
+      "summary": "Standard Checkers on an enchanted oath-table: four keepers, same-device play and 120 tactical Trials with time and move records.",
+      "type": "puzzle"
+    },
+    {
       "title": "Tower Stack",
       "path": "/small-games/tower-stack/",
       "image": "/assets/projects/tower-stack.webp",
