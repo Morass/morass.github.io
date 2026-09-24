@@ -219,14 +219,14 @@
       "path": "/small-games/reversi/",
       "image": "/assets/projects/reversi.webp",
       "summary": "Turn sun and moon seals across 120 open, exact-solver-proven observatory trials, plus three computer rivals and same-device play.",
-      "type": "puzzle"
+      "type": "opponent"
     },
     {
       "title": "Four in a Row",
       "path": "/small-games/four-in-a-row/",
       "image": "/assets/projects/four-in-a-row.webp",
       "summary": "Outwit four keepers at an ember-and-frost rack, or solve 120 open exact forced-win Trials with named fastest-time records.",
-      "type": "puzzle"
+      "type": "opponent"
     },
     {
       "title": "Mastermind",
@@ -282,7 +282,7 @@
       "path": "/small-games/hearts/",
       "image": "/assets/projects/hearts.webp",
       "summary": "Hearts against three opponents that cannot see your cards — and a table you can open afterwards to check.",
-      "type": "card"
+      "type": "opponent"
     },
     {
       "title": "Bridges",
@@ -352,7 +352,7 @@
       "path": "/small-games/checkers/",
       "image": "/assets/projects/checkers.webp",
       "summary": "Standard Checkers on an enchanted oath-table: four keepers, same-device play and 120 tactical Trials with time and move records.",
-      "type": "puzzle"
+      "type": "opponent"
     },
     {
       "title": "Tower Stack",
@@ -363,6 +363,11 @@
     }
   ],
   "smallGameTypes": [
+    {
+      "slug": "opponent",
+      "title": "Against an Opponent",
+      "label": "Versus"
+    },
     {
       "slug": "puzzle",
       "title": "Puzzles",
