@@ -362,6 +362,13 @@
       "type": "opponent"
     },
     {
+      "title": "Pinball",
+      "path": "/small-games/pinball/",
+      "image": "/assets/projects/pinball.webp",
+      "summary": "Pinball on ten Orenvalt tables: a plunger, two flippers, a quest on every table and a replay-verified Top 10 for each.",
+      "type": "arcade"
+    },
+    {
       "title": "Tower Stack",
       "path": "/small-games/tower-stack/",
       "image": "/assets/projects/tower-stack.webp",
