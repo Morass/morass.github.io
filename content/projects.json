@@ -376,6 +376,13 @@
       "type": "opponent"
     },
     {
+      "title": "Calcudoku",
+      "path": "/small-games/calcudoku/",
+      "image": "/assets/projects/calcudoku.webp",
+      "summary": "The KenKen-style number puzzle on an iron-foundry casting floor: 240 plates from 4×4 to 9×9, each with one answer found by reasoning, and fastest-time records.",
+      "type": "puzzle"
+    },
+    {
       "title": "Tower Stack",
       "path": "/small-games/tower-stack/",
       "image": "/assets/projects/tower-stack.webp",
