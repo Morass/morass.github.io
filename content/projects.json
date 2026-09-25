@@ -369,6 +369,13 @@
       "type": "arcade"
     },
     {
+      "title": "Chess",
+      "path": "/small-games/chess/",
+      "image": "/assets/projects/chess.webp",
+      "summary": "Classic Chess in a candlelit war room: ten measured computer keepers, same-device play, and 220 Trials (mates and endgame drills) with fastest-time records.",
+      "type": "opponent"
+    },
+    {
       "title": "Tower Stack",
       "path": "/small-games/tower-stack/",
       "image": "/assets/projects/tower-stack.webp",
