@@ -383,6 +383,13 @@
       "type": "puzzle"
     },
     {
+      "title": "Backgammon",
+      "path": "/small-games/backgammon/",
+      "image": "/assets/projects/backgammon.webp",
+      "summary": "Backgammon at a fog-bound harbour wayhouse: seven measured computer keepers, dice sealed before the first roll that you can check afterwards, matches with the doubling cube, and 120 exact bear-off Trials with fastest-time records.",
+      "type": "opponent"
+    },
+    {
       "title": "Tower Stack",
       "path": "/small-games/tower-stack/",
       "image": "/assets/projects/tower-stack.webp",
