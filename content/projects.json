@@ -411,6 +411,13 @@
       "type": "arcade"
     },
     {
+      "title": "Traffic Jam",
+      "path": "/small-games/traffic-jam/",
+      "image": "/assets/projects/traffic-jam.webp",
+      "summary": "The Rush Hour sliding-block puzzle in the caravan yards of a merchant house: roll painted hand-carts and drays aside until the red wagon can leave the gate, across 180 yards and a daily caravan, each showing its fewest possible moves, proved by search, with records for fewest moves and time.",
+      "type": "puzzle"
+    },
+    {
       "title": "Tower Stack",
       "path": "/small-games/tower-stack/",
       "image": "/assets/projects/tower-stack.webp",
