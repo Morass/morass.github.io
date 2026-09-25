@@ -390,6 +390,13 @@
       "type": "opponent"
     },
     {
+      "title": "Battleships",
+      "path": "/small-games/battleships/",
+      "image": "/assets/projects/battleships.webp",
+      "summary": "Battleships in the fog off the Iron Coast: hide five Salt-Wyrms, then out-hunt six measured sea-witches whose brood is sealed before your first cast, or solve 120 Hunts from the fishers' soundings with records for time and fewest casts.",
+      "type": "opponent"
+    },
+    {
       "title": "Tower Stack",
       "path": "/small-games/tower-stack/",
       "image": "/assets/projects/tower-stack.webp",
