@@ -404,6 +404,13 @@
       "type": "opponent"
     },
     {
+      "title": "Merge Drop",
+      "path": "/small-games/merge-drop/",
+      "image": "/assets/projects/merge-drop.webp",
+      "summary": "The merge-drop game in an alchemist's crucible: drop glowing elemental orbs, fuse two alike from Ember to the Philosopher's Stone, and chase the Ten — every run re-played by the site before it is ranked — on the endless and the daily crucible.",
+      "type": "arcade"
+    },
+    {
       "title": "Tower Stack",
       "path": "/small-games/tower-stack/",
       "image": "/assets/projects/tower-stack.webp",
