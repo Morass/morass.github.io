@@ -425,6 +425,13 @@
       "type": "arcade"
     },
     {
+      "title": "Word Hunt",
+      "path": "/small-games/word-hunt/",
+      "image": "/assets/projects/word-hunt.webp",
+      "summary": "The letter-grid word game on the survey sheets of a fantasy map-makers' commission: trace words through touching letter-stones on fifteen shaped maps in three difficulties, 450 boards, three daily hunts and endless Wander boards, before the sand runs out — every hunt on the Ten re-traced by the site before it is ranked.",
+      "type": "puzzle"
+    },
+    {
       "title": "Tower Stack",
       "path": "/small-games/tower-stack/",
       "image": "/assets/projects/tower-stack.webp",
