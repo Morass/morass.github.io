@@ -17,10 +17,12 @@ Existing game routes and `app-ads.txt` remain stable.
 ## Sources and build
 
 - `content/projects.json`: curated game/project cards, public channels and profiles.
-  Small games are **never ordered by hand**: each `small-games` entry names a `type`
-  from `smallGameTypes` (slug, bucket title, card label). `/small-games/` shows one
-  section per type, buckets A–Z by title and games A–Z within each; an unknown type
-  fails the build. A new kind of game (arcade, word, card…) adds its type there.
+  **Small games are not listed here** (owner, 2026-09-26): they live on
+  <https://morassgames.com/>, and the hub would outgrow GitHub Pages carrying a second
+  catalogue. `/small-games/` and the homepage card are a shortcut there. `arcade.forwards`
+  names every retired `/small-games/<slug>/`; each is a generated noindex forwarding page to
+  `morassgames.com/games/<slug>/` (a value renames the target, e.g. `ninefold` → `sudoku`),
+  kept out of the sitemap. **A new game adds nothing to this repo.**
 - `content/prints.json`: exported listing metadata; do not hand-maintain a second catalogue.
 - `content/print-collections.json`: curated browsing hierarchy, model-to-collection
   assignments, category redirects and exceptional model routes.
@@ -43,8 +45,8 @@ Existing game routes and `app-ads.txt` remain stable.
   `icon` in `content/projects.json`; redraw one when a channel changes its avatar.
 - `assets/ui/manifest.json`: warehouse printshop icons, paper texture and
   subset EB Garamond provenance; font license is `assets/ui/OFL.txt`.
-- `small-games/borrowed-ink/play/`: released standalone bundle with its license and version receipt.
-  Lanternward has no bundle here (owner, 2026-09-15): a 45 MB Godot runtime would grow the repo
+- No game bundles live here: Borrowed Ink's old `small-games/borrowed-ink/play/` forwards to
+  morassgames.com. Lanternward has no bundle either (owner, 2026-09-15): a 45 MB Godot runtime would grow the repo
   on every update, and the portals pay; its page links the approved portals instead.
 
 ```bash

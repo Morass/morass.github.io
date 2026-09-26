@@ -52,422 +52,6 @@
       "summary": "Light the night streets of Veldrenmar, one carefully reasoned lantern at a time. A quiet logic puzzle with a single solution."
     }
   ],
-  "small-games": [
-    {
-      "title": "Minesweeper",
-      "path": "/small-games/minesweeper/",
-      "image": "/assets/projects/minesweeper.webp",
-      "summary": "Minesweeper on a Sundered floor. The first stone is always safe, and you never have to guess.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Nonogram",
-      "path": "/small-games/nonogram/",
-      "image": "/assets/projects/nonogram.webp",
-      "summary": "Picture logic puzzles by candlelight. 240 hand-drawn pictures and a daily, one folio from our novel The Cistern Heresy. Never a guess.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Sudoku",
-      "path": "/small-games/sudoku/",
-      "image": "/assets/projects/sudoku.webp",
-      "summary": "Sudoku under two moons. 480 boards and a daily, one answer each, never a guess.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Lanternward",
-      "path": "/small-games/lanternward/",
-      "image": "/assets/projects/lanternward-web.webp",
-      "summary": "Light every street of Veldrenmar. An Akari logic puzzle with 300 graded levels and a daily, one solution each, never a guess.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Borrowed Ink",
-      "path": "/small-games/borrowed-ink/",
-      "image": "/assets/projects/borrowed-ink.webp",
-      "summary": "A little stamp, a sheet of paper and thirty ink-exchange puzzles. Match the pattern and leave the stamp empty.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Sliding Puzzle",
-      "path": "/small-games/sliding-puzzle/",
-      "image": "/assets/projects/sliding-puzzle.webp",
-      "summary": "The 15 puzzle on a keeper's ward-tablet. Ten measured boards per size and a daily — every board tells you its shortest way home.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Block Fit",
-      "path": "/small-games/block-fit/",
-      "image": "/assets/projects/block-fit.webp",
-      "summary": "A warding tablet broken into shards. Forty-eight tablets and a daily — every one proved to fit back together exactly one way.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Tetromino",
-      "path": "/small-games/tetromino/",
-      "image": "/assets/projects/tetromino.webp",
-      "summary": "The falling-block puzzle by the published rules, in a Korthen descent shaft. Marathon, Sprint and Ultra — and a top ten where every place is a replay you can watch.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Mahjong",
-      "path": "/small-games/mahjong/",
-      "image": "/assets/projects/mahjong.webp",
-      "summary": "Mahjong solitaire on a warden's counting table: thirty hand-built layouts, a best time on each, and every deal proved solvable before it is dealt. No shuffle button, because it never needs one.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Match Three",
-      "path": "/small-games/match-three/",
-      "image": "/assets/projects/match-three.webp",
-      "summary": "A match-three gem swapper on a Korthen cutting bench — and the chutes above every column show the next three stones, so a cascade is something you build rather than something you were handed.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Solitaire",
-      "path": "/small-games/solitaire/",
-      "image": "/assets/projects/solitaire.webp",
-      "summary": "Klondike on a warden's counting table: 120 shuffled deals, each solver-proved from its opening layout, with Draw 1 and Draw 3 tables, unlimited undo and a gentle hint when the ward goes quiet.",
-      "type": "card"
-    },
-    {
-      "title": "Spider Solitaire",
-      "path": "/small-games/spider-solitaire/",
-      "image": "/assets/projects/spider-solitaire.webp",
-      "summary": "Spider at a warden's table in one, two or four suits: 1,454 deals, every one won by our solver before it shipped, a Day's Deal for everyone, and a named best time and fewest moves on each.",
-      "type": "card"
-    },
-    {
-      "title": "TriPeaks Solitaire",
-      "path": "/small-games/tripeaks-solitaire/",
-      "image": "/assets/projects/tripeaks-solitaire.webp",
-      "summary": "TriPeaks at a highland shrine-station lodge: play a card one higher or lower and clear three peaks — 1,000 numbered deals in four measured ranges, every one proved winnable, a Day's Deal, and a named best time and fewest moves on each.",
-      "type": "card"
-    },
-    {
-      "title": "FreeCell",
-      "path": "/small-games/freecell/",
-      "image": "/assets/projects/freecell.webp",
-      "summary": "FreeCell at a warden's table, with the deal numbers everybody already argues about: 1,000 of the real Microsoft deals, every one solved and its winning line replayed before it shipped, four tiers cut on how much searching the position really demands, and a best time and fewest moves on each.",
-      "type": "card"
-    },
-    {
-      "title": "Bubble Shooter",
-      "path": "/small-games/bubble-shooter/",
-      "image": "/assets/projects/bubble-shooter.webp",
-      "summary": "Aim carved glass wards through an Aurensh observatory: real bank-shot previews, thirty-six proved chambers and a shared daily vault.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Marble Shooter",
-      "path": "/small-games/marble-shooter/",
-      "image": "/assets/projects/marble-shooter.webp",
-      "summary": "Fire engraved rune-stones into a moving Aurensh circuit: twelve open, solver-checked boards with recoil chains and separate records for time and shots.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Snake",
-      "path": "/small-games/snake/",
-      "image": "/assets/projects/snake.webp",
-      "summary": "Steer a ward-serpent across a Sundered cistern floor: three chamber sizes, walls of stone or walls of seam-light, and six public boards of ten.",
-      "type": "arcade"
-    },
-    {
-      "title": "Brick Breaker",
-      "path": "/small-games/brick-breaker/",
-      "image": "/assets/projects/brick-breaker.webp",
-      "summary": "Hold a shield at the threshold of a sealed armoury and keep a forge-spark alive: sixteen hand-cut vaults, no power-downs, a heat multiplier that pays for the tunnel, and nineteen public boards of ten that re-play every run.",
-      "type": "arcade"
-    },
-    {
-      "title": "Space Shooter",
-      "path": "/small-games/space-shooter/",
-      "image": "/assets/projects/space-shooter.webp",
-      "summary": "Fly an Aurensh moonwing through twenty-four finite sorties: dodge violet spells, break the incoming flock and bring down its captain under two haunted moons.",
-      "type": "arcade"
-    },
-    {
-      "title": "2048",
-      "path": "/small-games/2048/",
-      "image": "/assets/projects/2048.webp",
-      "summary": "The classic four-by-four number puzzle on an ember forge: fuse coal, flame and starfire until the Phoenix wakes at 2048.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Water Sort",
-      "path": "/small-games/water-sort/",
-      "image": "/assets/projects/water-sort.webp",
-      "summary": "Sort luminous reagents across 120 open alchemical formulae, all proved completable, with separate public records for time and moves.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Sokoban",
-      "path": "/small-games/sokoban/",
-      "image": "/assets/projects/sokoban.webp",
-      "summary": "Restore rune-bound reliquaries across 72 open fantasy vaults, every chamber solver-proven, with public records for time and steps.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Mini Golf",
-      "path": "/small-games/mini-golf/",
-      "image": "/assets/projects/mini-golf.webp",
-      "summary": "Putt an awakened pearl across eighteen open fantasy courses, all solver-proven, with public records for time and strokes.",
-      "type": "arcade"
-    },
-    {
-      "title": "Pyramid Solitaire",
-      "path": "/small-games/pyramid-solitaire/",
-      "image": "/assets/projects/pyramid-solitaire.webp",
-      "summary": "Pair exposed cards to thirteen across 120 open, replay-proven fantasy deals with named records for time and moves.",
-      "type": "card"
-    },
-    {
-      "title": "Reversi",
-      "path": "/small-games/reversi/",
-      "image": "/assets/projects/reversi.webp",
-      "summary": "Turn sun and moon seals across 120 open, exact-solver-proven observatory trials, plus three computer rivals and same-device play.",
-      "type": "opponent"
-    },
-    {
-      "title": "Four in a Row",
-      "path": "/small-games/four-in-a-row/",
-      "image": "/assets/projects/four-in-a-row.webp",
-      "summary": "Outwit four keepers at an ember-and-frost rack, or solve 120 open exact forced-win Trials with named fastest-time records.",
-      "type": "opponent"
-    },
-    {
-      "title": "Mastermind",
-      "path": "/small-games/mastermind/",
-      "image": "/assets/projects/mastermind.webp",
-      "summary": "Crack 120 open potion formulae from gold exact-vial and silver wrong-vial assay marks, with named records for time and guesses.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Pipe Connect",
-      "path": "/small-games/pipe-connect/",
-      "image": "/assets/projects/pipe-connect.webp",
-      "summary": "Turn rune-cut stones across 120 open, unique-solution moonwell chambers with named records for time and quarter-turns.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Slitherlink",
-      "path": "/small-games/slitherlink/",
-      "image": "/assets/projects/slitherlink.webp",
-      "summary": "Ink one unbroken ward across 120 open, unique-solution cartographer maps with named records for fastest time.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Word Search",
-      "path": "/small-games/word-search/",
-      "image": "/assets/projects/word-search.webp",
-      "summary": "Trace themed English words across forty-eight open pages of an enchanted archive, from calm four-direction grids to dense eight-direction folios.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Pairs",
-      "path": "/small-games/pairs/",
-      "image": "/assets/projects/pairs.webp",
-      "summary": "The matching game on a scholar's sorting table: six tray sizes up to seventy-two marks, no flip-back timer to sit through, two numbers that are both lower-is-better, and a finish card that tells you what a perfect memory would have spent on your own deal.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Jigsaw",
-      "path": "/small-games/jigsaw/",
-      "image": "/assets/projects/jigsaw.webp",
-      "summary": "Set the shards of a broken window back into the lead: 228 painted places on nine shelves, four cuts up to ninety-six shards, drops that take when they are merely near, and a pane that survives a closed tab.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Kakuro",
-      "path": "/small-games/kakuro/",
-      "image": "/assets/projects/kakuro.webp",
-      "summary": "The crossword of sums, on a merchant's ledger: 320 pages in five sizes plus a daily, every one proven to need no guess, a table of combinations under the board, and a public best time on every page.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Hearts",
-      "path": "/small-games/hearts/",
-      "image": "/assets/projects/hearts.webp",
-      "summary": "Hearts against three opponents that cannot see your cards — and a table you can open afterwards to check.",
-      "type": "opponent"
-    },
-    {
-      "title": "Bridges",
-      "path": "/small-games/bridges/",
-      "image": "/assets/projects/bridges.webp",
-      "summary": "Reconnect 120 open floating archipelagos with luminous bridges, each unique answer independently proved and each map keeping a named fastest time.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Nurikabe",
-      "path": "/small-games/nurikabe/",
-      "image": "/assets/projects/nurikabe.webp",
-      "summary": "Raise sanctuary islands through 120 open tidal charts, each with exactly one proven answer and a named fastest-time record.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Numberlink",
-      "path": "/small-games/numberlink/",
-      "image": "/assets/projects/numberlink.webp",
-      "summary": "Join paired mana springs across 120 open full-cover wards, each with one exact answer and named records for time and moves.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Peg Solitaire",
-      "path": "/small-games/peg-solitaire/",
-      "image": "/assets/projects/peg-solitaire.webp",
-      "summary": "Leap star-jewels through 120 open celestial challenges, each solver-proven to finish on its marked shrine with a named fastest-time record.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Shikaku",
-      "path": "/small-games/shikaku/",
-      "image": "/assets/projects/shikaku.webp",
-      "summary": "Charter 120 open enchanted survey maps into rectangular provinces, each with one exact answer and a named fastest-time record.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Word Guess",
-      "path": "/small-games/word-guess/",
-      "image": "/assets/projects/word-guess.webp",
-      "summary": "Guess the hidden word in six tries: a new lock every day for everyone, and 240 hand-picked themed locks of four to seven letters.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Star Battle",
-      "path": "/small-games/star-battle/",
-      "image": "/assets/projects/star-battle.webp",
-      "summary": "Set the stars on 160 open star-charts, one-star to two-star, each proved unique and solvable by reasoning, with a named fastest-time record.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Hitori",
-      "path": "/small-games/hitori/",
-      "image": "/assets/projects/hitori.webp",
-      "summary": "Sink the rune stones that echo across 120 open moonlit crossings, each proved unique and guess-free, with a named fastest-time record.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Tents and Trees",
-      "path": "/small-games/tents-and-trees/",
-      "image": "/assets/projects/tents-and-trees.webp",
-      "summary": "Billet 120 open moonlit groves: one pavilion beside every heartwood elder, none touching, with a named fastest-time record on each.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Checkers",
-      "path": "/small-games/checkers/",
-      "image": "/assets/projects/checkers.webp",
-      "summary": "Standard Checkers on an enchanted oath-table: four keepers, same-device play and 120 tactical Trials with time and move records.",
-      "type": "opponent"
-    },
-    {
-      "title": "Nine Men's Morris",
-      "path": "/small-games/nine-mens-morris/",
-      "image": "/assets/projects/nine-mens-morris.webp",
-      "summary": "Classic Nine Men's Morris on a ward-table: four keepers, same-device play and 120 mill-finding Trials with fastest-time records.",
-      "type": "opponent"
-    },
-    {
-      "title": "Pinball",
-      "path": "/small-games/pinball/",
-      "image": "/assets/projects/pinball.webp",
-      "summary": "Pinball on ten Orenvalt tables: a plunger, two flippers, a quest on every table and a replay-verified Top 10 for each.",
-      "type": "arcade"
-    },
-    {
-      "title": "Chess",
-      "path": "/small-games/chess/",
-      "image": "/assets/projects/chess.webp",
-      "summary": "Classic Chess in a candlelit war room: ten measured computer keepers, same-device play, and 220 Trials (mates and endgame drills) with fastest-time records.",
-      "type": "opponent"
-    },
-    {
-      "title": "Calcudoku",
-      "path": "/small-games/calcudoku/",
-      "image": "/assets/projects/calcudoku.webp",
-      "summary": "The KenKen-style number puzzle on an iron-foundry casting floor: 240 plates from 4×4 to 9×9, each with one answer found by reasoning, and fastest-time records.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Backgammon",
-      "path": "/small-games/backgammon/",
-      "image": "/assets/projects/backgammon.webp",
-      "summary": "Backgammon at a fog-bound harbour wayhouse: seven measured computer keepers, dice sealed before the first roll that you can check afterwards, matches with the doubling cube, and 120 exact bear-off Trials with fastest-time records.",
-      "type": "opponent"
-    },
-    {
-      "title": "Battleships",
-      "path": "/small-games/battleships/",
-      "image": "/assets/projects/battleships.webp",
-      "summary": "Battleships in the fog off the Iron Coast: hide five Salt-Wyrms, then out-hunt six measured sea-witches whose brood is sealed before your first cast, or solve 120 Hunts from the fishers' soundings with records for time and fewest casts.",
-      "type": "opponent"
-    },
-    {
-      "title": "Mancala",
-      "path": "/small-games/mancala/",
-      "image": "/assets/projects/mancala.webp",
-      "summary": "Mancala (Kalah) on the tithe-board of a grain-merchant house: five hands-on lessons teach every rule on the real board, six measured opponents explain their choices, and 120 endgame Trials against a perfect defender keep records for time and fewest sowings.",
-      "type": "opponent"
-    },
-    {
-      "title": "Merge Drop",
-      "path": "/small-games/merge-drop/",
-      "image": "/assets/projects/merge-drop.webp",
-      "summary": "The merge-drop game in an alchemist's crucible: drop glowing elemental orbs, fuse two alike from Ember to the Philosopher's Stone, and chase the Ten — every run re-played by the site before it is ranked — on the endless and the daily crucible.",
-      "type": "arcade"
-    },
-    {
-      "title": "Traffic Jam",
-      "path": "/small-games/traffic-jam/",
-      "image": "/assets/projects/traffic-jam.webp",
-      "summary": "The Rush Hour sliding-block puzzle in the caravan yards of a merchant house: roll painted hand-carts and drays aside until the red wagon can leave the gate, across 180 yards and a daily caravan, each showing its fewest possible moves, proved by search, with records for fewest moves and time.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Warding Towers",
-      "path": "/small-games/warding-towers/",
-      "image": "/assets/projects/warding-towers.webp",
-      "summary": "Missile Command on the wardens' wall of a fantasy city at night: tap the sky to throw ward-bolts from three crystal towers, burn falling comets out with rune wards that chain from comet to comet, and chase the Ten — every night re-played by the site before it is ranked.",
-      "type": "arcade"
-    },
-    {
-      "title": "Word Hunt",
-      "path": "/small-games/word-hunt/",
-      "image": "/assets/projects/word-hunt.webp",
-      "summary": "The letter-grid word game on the survey sheets of a fantasy map-makers' commission: trace words through touching letter-stones on fifteen shaped maps in three difficulties, 450 boards, three daily hunts and endless Wander boards, before the sand runs out — every hunt on the Ten re-traced by the site before it is ranked.",
-      "type": "puzzle"
-    },
-    {
-      "title": "Tower Stack",
-      "path": "/small-games/tower-stack/",
-      "image": "/assets/projects/tower-stack.webp",
-      "summary": "Set the swinging course of stone on a rising watchtower. Thirteen walls, each keeping the ten tallest climbs with their replays.",
-      "type": "arcade"
-    }
-  ],
-  "smallGameTypes": [
-    {
-      "slug": "opponent",
-      "title": "Against an Opponent",
-      "label": "Versus"
-    },
-    {
-      "slug": "puzzle",
-      "title": "Puzzles",
-      "label": "Puzzle"
-    },
-    {
-      "slug": "card",
-      "title": "Card Games",
-      "label": "Card game"
-    },
-    {
-      "slug": "arcade",
-      "title": "Arcade",
-      "label": "Arcade"
-    }
-  ],
   "channels": [
     {
       "title": "Morass Games",
@@ -638,5 +222,67 @@
       "mark": "{ }",
       "summary": "Mac apps and small helpers for images and collections."
     }
-  ]
+  ],
+  "arcade": {
+    "url": "https://morassgames.com/",
+    "forwards": {
+      "2048": null,
+      "backgammon": null,
+      "battleships": null,
+      "block-fit": null,
+      "borrowed-ink": null,
+      "brick-breaker": null,
+      "bridges": null,
+      "bubble-shooter": null,
+      "calcudoku": null,
+      "checkers": null,
+      "chess": null,
+      "four-in-a-row": null,
+      "freecell": null,
+      "hearts": null,
+      "hitori": null,
+      "jigsaw": null,
+      "kakuro": null,
+      "lanternward": null,
+      "mahjong": null,
+      "mancala": null,
+      "marble-shooter": null,
+      "mastermind": null,
+      "match-three": null,
+      "merge-drop": null,
+      "minesweeper": null,
+      "mini-golf": null,
+      "nine-mens-morris": null,
+      "ninefold": "sudoku",
+      "nonogram": null,
+      "numberlink": null,
+      "nurikabe": null,
+      "pairs": null,
+      "peg-solitaire": null,
+      "pinball": null,
+      "pipe-connect": null,
+      "pyramid-solitaire": null,
+      "reversi": null,
+      "shikaku": null,
+      "sliding-puzzle": null,
+      "slitherlink": null,
+      "snake": null,
+      "sokoban": null,
+      "solitaire": null,
+      "space-shooter": null,
+      "spider-solitaire": null,
+      "star-battle": null,
+      "sudoku": null,
+      "tents-and-trees": null,
+      "tetromino": null,
+      "tower-stack": null,
+      "traffic-jam": null,
+      "tripeaks-solitaire": null,
+      "warding-towers": null,
+      "water-sort": null,
+      "word-guess": null,
+      "word-hunt": null,
+      "word-search": null
+    }
+  }
 }
