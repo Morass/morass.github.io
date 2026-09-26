@@ -418,6 +418,13 @@
       "type": "puzzle"
     },
     {
+      "title": "Warding Towers",
+      "path": "/small-games/warding-towers/",
+      "image": "/assets/projects/warding-towers.webp",
+      "summary": "Missile Command on the wardens' wall of a fantasy city at night: tap the sky to throw ward-bolts from three crystal towers, burn falling comets out with rune wards that chain from comet to comet, and chase the Ten — every night re-played by the site before it is ranked.",
+      "type": "arcade"
+    },
+    {
       "title": "Tower Stack",
       "path": "/small-games/tower-stack/",
       "image": "/assets/projects/tower-stack.webp",
