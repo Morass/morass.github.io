@@ -138,6 +138,13 @@
       "type": "card"
     },
     {
+      "title": "TriPeaks Solitaire",
+      "path": "/small-games/tripeaks-solitaire/",
+      "image": "/assets/projects/tripeaks-solitaire.webp",
+      "summary": "TriPeaks at a highland shrine-station lodge: play a card one higher or lower and clear three peaks — 1,000 numbered deals in four measured ranges, every one proved winnable, a Day's Deal, and a named best time and fewest moves on each; stuck, and it shows you the line that wins.",
+      "type": "card"
+    },
+    {
       "title": "FreeCell",
       "path": "/small-games/freecell/",
       "image": "/assets/projects/freecell.webp",
