@@ -9193,6 +9193,43 @@
       "image": "/assets/prints/desk/moku-watch-stand/94636fa59b9865f2.webp"
     },
     {
+      "id": "desk/monstera-phone-stand",
+      "title": "Monstera Phone Stand — cable-ready desk holder",
+      "summary": "A one-piece leaf phone stand with open charging access, corner ledges, and an 11 mm slot for slim cases.",
+      "tags": [
+        "phone",
+        "stand",
+        "phone stand",
+        "monstera",
+        "leaf",
+        "charging",
+        "cable",
+        "desk",
+        "office",
+        "holder",
+        "iphone",
+        "smartphone",
+        "no supports",
+        "one piece"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/gadget/monstera-phone-stand-cable-ready-desk-holder"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1856895-monstera-phone-stand-cable-ready-desk-holder"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3363544-monstera-phone-stand-cable-ready-holder"
+        }
+      ],
+      "collection": "desk/electronics/stands",
+      "image": "/assets/prints/desk/monstera-phone-stand/be979ecc8ce23388.webp"
+    },
+    {
       "id": "desk/paper-block-organizer",
       "title": "Paper Block Desk Organizer — Sticky-Note Tray + Pen/Scissor Column + Slot",
       "summary": "Three-zone desk organizer: thin slot for a phone or notebook on the left, a 90 × 90 mm paper-pad well in the middle (tall back, sloped sides, low front lip with finger-gap), and a pen/scissor column on the right with two-color pencil + scissors icon inlays.",
