@@ -203,6 +203,13 @@
       "summary": "See a chosen Steamworks sales or wishlist statistic across any selection of your games."
     },
     {
+      "title": "Další díl",
+      "url": "https://github.com/Morass/dalsidil",
+      "group": "browser-extensions",
+      "label": "Chrome extension · ČSFD",
+      "summary": "Keep the next episode of every series you rate on ČSFD one click away."
+    },
+    {
       "title": "Snagbook",
       "url": "https://github.com/Morass/snagbook-desktop",
       "group": "apps-and-scripts",
