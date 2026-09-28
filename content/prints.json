@@ -2055,6 +2055,36 @@
       "image": "/assets/prints/boardgames/general/rune-dice/6f1889ac28a9a94e.webp"
     },
     {
+      "id": "boardgames/general/scarwalk",
+      "title": "Scarwalk — complete cooperative printed dungeon crawl",
+      "summary": "A complete 1–4 player cooperative crawl: six classes, a shuffled three-act map, shared-element combos, loot, bosses and a fitted storage box.",
+      "tags": [
+        "boardgame",
+        "cooperative",
+        "dungeoncrawl",
+        "tabletop",
+        "printandplay",
+        "multicolor",
+        "openscad",
+        "parametric",
+        "storagebox",
+        "dicegame",
+        "rpg"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/game/scarwalk-complete-cooperative-printed-dungeon-crawl"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1858831-scarwalk-complete-cooperative-printed-dungeon-craw"
+        }
+      ],
+      "collection": "boardgames/original-games",
+      "image": "/assets/prints/boardgames/general/scarwalk/b20cadd363a99213.webp"
+    },
+    {
       "id": "boardgames/general/spell-slot-abacus",
       "title": "Spell-Slot Abacus — print-in-place D&D spell-slot tracker",
       "summary": "A print-in-place abacus for tracking D&D spell slots: 9 rails (spell levels 1–9) of captive sliding crystal beads (4/3/3/3/3/2/2/1/1 = full-caster max). Slide a bead to burn a slot, sweep back on a long rest. A tilt-lock detent at mid-span keeps the count from scrambling when you pick the board up. ~107 × 130 × 8 mm, zero supports.",
