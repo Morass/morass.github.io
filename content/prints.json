@@ -1291,6 +1291,10 @@
           "url": "https://www.printables.com/model/1828879-custom-d12-a-fair-gaming-die-and-a-spindown-counte"
         },
         {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3242486-custom-d12-fair-die-spindown-counter"
+        },
+        {
           "platform": "snapmaker",
           "url": "https://space.snapmaker.com/en/model/35932"
         }
@@ -1890,6 +1894,10 @@
           "url": "https://www.printables.com/model/1825247-pasa-indian-long-dice-the-d4-you-can-actually-roll"
         },
         {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3227663-pasa-long-dice-the-d4-you-can-roll"
+        },
+        {
           "platform": "snapmaker",
           "url": "https://space.snapmaker.com/en/model/35827"
         }
@@ -2048,6 +2056,10 @@
           "url": "https://www.printables.com/model/1825576-rune-die-a-d6-numbered-in-real-runic-numerals"
         },
         {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3229533-rune-die-d6-in-real-runic-numerals"
+        },
+        {
           "platform": "snapmaker",
           "url": "https://space.snapmaker.com/en/model/35831"
         }
@@ -2079,6 +2091,14 @@
         {
           "platform": "printables",
           "url": "https://www.printables.com/model/1858831-scarwalk-complete-cooperative-printed-dungeon-craw"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3367877-scarwalk-cooperative-printed-dungeon-crawl"
+        },
+        {
+          "platform": "snapmaker",
+          "url": "https://space.snapmaker.com/en/model/37368"
         }
       ],
       "collection": "boardgames/original-games",
@@ -2621,6 +2641,10 @@
         {
           "platform": "printables",
           "url": "https://www.printables.com/model/1858907-eiganjo-castle-commander-deck-box"
+        },
+        {
+          "platform": "snapmaker",
+          "url": "https://space.snapmaker.com/en/model/37433"
         }
       ],
       "collection": "boardgames/accessories",
@@ -6233,6 +6257,10 @@
           "url": "https://www.printables.com/model/1744691-infinity-cube-animal-fidget-folding-magic-cube-48"
         },
         {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/2889246-animal-infinity-cube-fidget"
+        },
+        {
           "platform": "snapmaker",
           "url": "https://space.snapmaker.com/en/model/35974"
         }
@@ -7434,6 +7462,10 @@
           "url": "https://www.printables.com/model/1825176-spider-drop-earring-the-spider-actually-swings-on"
         },
         {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3227256-spider-drop-earring-spider-swings-on-a-dragline"
+        },
+        {
           "platform": "snapmaker",
           "url": "https://space.snapmaker.com/en/model/36001"
         }
@@ -8082,7 +8114,7 @@
         },
         {
           "platform": "makerworld",
-          "url": "https://makerworld.com/en/models/3314837"
+          "url": "https://makerworld.com/en/models/3314837-viola-earring-4-color-ams-pansy-print-in-one"
         },
         {
           "platform": "snapmaker",
@@ -9314,6 +9346,10 @@
         {
           "platform": "makerworld",
           "url": "https://makerworld.com/en/models/3363544-monstera-phone-stand-cable-ready-holder"
+        },
+        {
+          "platform": "snapmaker",
+          "url": "https://space.snapmaker.com/en/model/37113"
         }
       ],
       "collection": "desk/electronics/stands",
@@ -10403,6 +10439,10 @@
         {
           "platform": "printables",
           "url": "https://www.printables.com/model/1845884-beach-tic-tac-toe-in-a-scallop-shell-box-sea-creat"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3323556-beach-tic-tac-toe-in-a-scallop-shell-box"
         },
         {
           "platform": "snapmaker",
