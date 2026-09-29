@@ -4117,6 +4117,35 @@
       "image": "/assets/prints/containers/heart-box-forge/e1d5cd30d87eb9c6.webp"
     },
     {
+      "id": "containers/hvezda-box",
+      "title": "Letohrádek Hvězda — star-shaped building box",
+      "summary": "Prague’s star-shaped palace as a storage box with a loose roof cover. Not suitable for travel packaging.",
+      "tags": [
+        "box",
+        "architecture",
+        "prague",
+        "hvezda",
+        "storage",
+        "parametric"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/home/letohradek-hvezda-star-shaped-building-box"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1859866-letohradek-hvezda-star-shaped-building-box"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3371505-letohradek-hvezda-star-palace-box"
+        }
+      ],
+      "collection": "containers/keepsake-boxes/geometric",
+      "image": "/assets/prints/containers/hvezda-box/c8a8f8f0b3236ae7.webp"
+    },
+    {
       "id": "containers/lattice-basket",
       "title": "Lattice Basket — Parametric Desk Organiser",
       "summary": "A 15 × 10 × 5 cm open-lattice basket with 45° crosshatch walls, solid corner columns, and a flat rim. No supports needed.",
