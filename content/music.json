@@ -25,7 +25,8 @@
     "Hymn over the Ashes"
    ],
    "links": {},
-   "embeds": {}
+   "embeds": {},
+   "track_embeds": []
   },
   {
    "slug": "one-night-at-the-border-marks",
@@ -52,7 +53,49 @@
    },
    "embeds": {
     "apple": "https://embed.music.apple.com/us/album/one-night-at-the-border-marks/6818282986"
-   }
+   },
+   "track_embeds": [
+    {
+     "title": "Lanterns on the Wall",
+     "embed": "https://embed.music.apple.com/us/album/one-night-at-the-border-marks/6818282986?i=6818282987"
+    },
+    {
+     "title": "The Marches at Dusk",
+     "embed": "https://embed.music.apple.com/us/album/one-night-at-the-border-marks/6818282986?i=6818282989"
+    },
+    {
+     "title": "Riders on the Ridge",
+     "embed": "https://embed.music.apple.com/us/album/one-night-at-the-border-marks/6818282986?i=6818282990"
+    },
+    {
+     "title": "Vigil of the Watchmen",
+     "embed": "https://embed.music.apple.com/us/album/one-night-at-the-border-marks/6818282986?i=6818282991"
+    },
+    {
+     "title": "The Defenders' Rally",
+     "embed": "https://embed.music.apple.com/us/album/one-night-at-the-border-marks/6818282986?i=6818282992"
+    },
+    {
+     "title": "Fire at the North Gate",
+     "embed": "https://embed.music.apple.com/us/album/one-night-at-the-border-marks/6818282986?i=6818282993"
+    },
+    {
+     "title": "The Breach",
+     "embed": "https://embed.music.apple.com/us/album/one-night-at-the-border-marks/6818282986?i=6818282994"
+    },
+    {
+     "title": "Between Two Assaults",
+     "embed": "https://embed.music.apple.com/us/album/one-night-at-the-border-marks/6818282986?i=6818282995"
+    },
+    {
+     "title": "Last Charge Before Dawn",
+     "embed": "https://embed.music.apple.com/us/album/one-night-at-the-border-marks/6818282986?i=6818282996"
+    },
+    {
+     "title": "Dawn over Orenvalt",
+     "embed": "https://embed.music.apple.com/us/album/one-night-at-the-border-marks/6818282986?i=6818282997"
+    }
+   ]
   }
  ]
 }

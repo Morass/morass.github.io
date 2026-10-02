@@ -165,7 +165,8 @@ home += card('Small Games', ARCADE, 'A little play, straight from your browser, 
 home += card('Mobile', '/mobile/', 'Games and projects made for your pocket.', '/assets/projects/lanternward.webp', 'IV · ANDROID')
 home += card('YouTube', '/youtube/', 'Stories, objects and a look behind the projects.', label='V · WATCH & DISCOVER', art='<div class="channel-marks">'+''.join(channel_mark(c) for c in P['channels'])+'</div>')
 home += '</div></section>'
-home += '<section class="home-tools"><div><p class="eyebrow">VI · MUSIC</p><h2>Music from the worlds.</h2><p>Soundtrack albums of sieges, wars and long nights. Listen here or on your streaming service.</p></div><a class="button secondary" href="/music/">Listen <span aria-hidden="true">→</span></a></section>'
+COVERS = [a['cover'] for a in MUSIC]
+home += '<section class="home-tools home-music"><a class="home-music-cover" href="/music/" tabindex="-1"><img src="'+E(COVERS[0])+'" data-covers="'+E(json.dumps(COVERS))+'" alt="" width="160" height="160"></a><div><p class="eyebrow">VI · MUSIC</p><h2>Music from the worlds.</h2><p>Soundtrack albums of sieges, wars and long nights. Listen here or on your streaming service.</p></div><a class="button secondary" href="/music/">Listen <span aria-hidden="true">→</span></a></section>'
 # A quiet seventh destination: free tools are not a project family, so a band, not a card.
 home += '<section class="home-tools"><div><p class="eyebrow">VII · FREE TOOLS</p><h2>Small tools, free to use.</h2><p>A command-line tool and a handful of Neovim plugins, all open source.</p></div><a class="button secondary" href="/tools/">See the tools <span aria-hidden="true">→</span></a></section>'
 page('/', 'Games, prints & curious projects', 'Explore Morass: Steam games, free browser puzzles, Android projects, YouTube and an organized catalogue of 3D prints.', home)
@@ -215,11 +216,16 @@ def album_card(a):
 NOTE = '<p class="small-note music-note">Composed with the help of AI and performed with orchestral sample libraries. Every release is labelled as AI-assisted in the stores.</p>'
 
 body = heading('MUSIC', 'Music from the worlds.', 'Soundtrack albums from the lands behind our games and stories. Play them here, or follow the links to your streaming service.') + NOTE
-playable = [a for a in MUSIC if a['players']]
-if playable:
-    pool = [{'album': a['album'], 'artist': a['artist'], 'url': a['url'], 'cover': a['cover'], 'store': a['players'][0][0], 'embed': a['players'][0][1], 'label': STORE_NAMES[a['players'][0][0]]} for a in playable]
-    a = playable[0]
-    body += f'<section class="music-shuffle" data-pool="{E(json.dumps(pool))}">{player(a, False)}<div><p class="eyebrow">PLAY SOMETHING</p><h2><a class="shuffle-title" href="{E(a["url"])}">{E(a["album"])}</a></h2><p class="shuffle-artist">{E(a["artist"])}</p><p>Press play to listen right here. Each visit picks an album at random.</p>' + ('<button class="button secondary shuffle-next" type="button" hidden>Another album</button>' if len(pool) > 1 else '') + '</div></section>'
+# One entry per track where the store has single-song players, else one per album.
+pool = []
+for a in MUSIC:
+    meta = {'album': a['album'], 'artist': a['artist'], 'url': a['url']}
+    if a['track_embeds']:
+        pool += [dict(meta, title=t['title'], embed=t['embed'], store='apple-track') for t in a['track_embeds']]
+    elif a['players']:
+        pool.append(dict(meta, title=a['album'], embed=a['players'][0][1], store=a['players'][0][0]))
+if pool:
+    body += f'<section class="music-shuffle" data-pool="{E(json.dumps(pool))}"><div class="album-player"><div class="player-stage"><button class="play-cover mystery" type="button" aria-label="Play a random track"><span class="play-badge" aria-hidden="true"></span></button></div></div><div><p class="eyebrow">PLAY SOMETHING</p><h2 class="shuffle-heading">A random track</h2><p class="shuffle-hint">One track, picked at random from every album. You find out what it is once it plays.</p><p class="shuffle-now" hidden>From <a href="/music/"></a> by <span></span></p><button class="button secondary shuffle-next" type="button" hidden>Another random track</button></div></section>'
 body += '<div class="section-title music-artists"><h2>Artists</h2></div><div class="cards">'
 for artist in ARTISTS:
     albums = [a for a in MUSIC if a['artist'] == artist['name']]

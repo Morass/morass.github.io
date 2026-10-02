@@ -86,33 +86,32 @@ const shuffle = document.querySelector('.music-shuffle');
 if (shuffle) {
   const pool = JSON.parse(shuffle.dataset.pool);
   const stage = shuffle.querySelector('.player-stage');
-  const title = shuffle.querySelector('.shuffle-title');
+  const now = shuffle.querySelector('.shuffle-now');
   const next = shuffle.querySelector('.shuffle-next');
   let current = -1;
-  function pick() {
-    let i = Math.floor(Math.random() * pool.length);
-    if (pool.length > 1 && i === current) i = (i + 1) % pool.length;
-    current = i;
-    const a = pool[i];
-    const play = document.createElement('button');
-    play.type = 'button';
-    play.className = 'play-cover';
-    play.dataset.embed = a.embed;
-    play.dataset.store = a.store;
-    play.setAttribute('aria-label', `Play ${a.album} here on ${a.label}`);
-    const img = document.createElement('img');
-    img.src = a.cover; img.alt = `Cover of ${a.album}`; img.width = img.height = 480;
-    const badge = document.createElement('span');
-    badge.className = 'play-badge'; badge.setAttribute('aria-hidden', 'true');
-    play.append(img, badge);
-    stage.replaceChildren(play);
-    title.textContent = a.album;
-    title.href = a.url;
-    shuffle.querySelector('.shuffle-artist').textContent = a.artist;
+  function draw() {
+    const n = new Uint32Array(1);
+    let i;
+    do { crypto.getRandomValues(n); i = n[0] % pool.length; } while (pool.length > 1 && i === current);
+    return i;
   }
-  pick();
-  if (next) {
+  function play() {
+    current = draw();
+    const t = pool[current];
+    const control = document.createElement('span');
+    control.dataset.embed = t.embed;
+    control.dataset.store = t.store;
+    control.setAttribute('aria-label', `${t.title}, from ${t.album}`);
+    stage.append(control);
+    playHere(control);
+    shuffle.querySelector('.shuffle-heading').textContent = t.title;
+    shuffle.querySelector('.shuffle-hint').hidden = true;
+    now.querySelector('a').textContent = t.album;
+    now.querySelector('a').href = t.url;
+    now.querySelector('span').textContent = t.artist;
+    now.hidden = false;
     next.hidden = false;
-    next.addEventListener('click', pick);
   }
+  shuffle.querySelector('.mystery').addEventListener('click', play);
+  next.addEventListener('click', play);
 }
