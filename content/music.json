@@ -49,51 +49,78 @@
     "Dawn over Orenvalt"
    ],
    "links": {
-    "apple": "https://music.apple.com/us/album/one-night-at-the-border-marks/6818282986"
+    "apple": "https://music.apple.com/us/album/one-night-at-the-border-marks/6818282986",
+    "youtube_tracks": [
+     "OLAK5uy_mC0ggdMF0V28Qe4gvfcAO4vAIjqqMC3yI",
+     [
+      "DV7D-0dYyMc",
+      "G7QXdBweV-Y",
+      "YTH6j6OrFf0",
+      "RG6bUREBP8Q",
+      "lVAhcHqRNLM",
+      "ry4YrMdPLH4",
+      "id8VBMn0ZSw",
+      "HRmha728Nsc",
+      "ud9P4KlaAJ4",
+      "Z_Zw6ihLTbo"
+     ]
+    ],
+    "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_mC0ggdMF0V28Qe4gvfcAO4vAIjqqMC3yI"
    },
    "embeds": {
-    "apple": "https://embed.music.apple.com/us/album/one-night-at-the-border-marks/6818282986"
+    "apple": "https://embed.music.apple.com/us/album/one-night-at-the-border-marks/6818282986",
+    "youtube": "https://www.youtube-nocookie.com/embed/DV7D-0dYyMc?autoplay=1&list=OLAK5uy_mC0ggdMF0V28Qe4gvfcAO4vAIjqqMC3yI"
    },
    "track_embeds": [
     {
      "title": "Lanterns on the Wall",
-     "embed": "https://embed.music.apple.com/us/album/one-night-at-the-border-marks/6818282986?i=6818282987"
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/DV7D-0dYyMc?autoplay=1&list=OLAK5uy_mC0ggdMF0V28Qe4gvfcAO4vAIjqqMC3yI"
     },
     {
      "title": "The Marches at Dusk",
-     "embed": "https://embed.music.apple.com/us/album/one-night-at-the-border-marks/6818282986?i=6818282989"
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/G7QXdBweV-Y?autoplay=1&list=OLAK5uy_mC0ggdMF0V28Qe4gvfcAO4vAIjqqMC3yI"
     },
     {
      "title": "Riders on the Ridge",
-     "embed": "https://embed.music.apple.com/us/album/one-night-at-the-border-marks/6818282986?i=6818282990"
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/YTH6j6OrFf0?autoplay=1&list=OLAK5uy_mC0ggdMF0V28Qe4gvfcAO4vAIjqqMC3yI"
     },
     {
      "title": "Vigil of the Watchmen",
-     "embed": "https://embed.music.apple.com/us/album/one-night-at-the-border-marks/6818282986?i=6818282991"
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/RG6bUREBP8Q?autoplay=1&list=OLAK5uy_mC0ggdMF0V28Qe4gvfcAO4vAIjqqMC3yI"
     },
     {
      "title": "The Defenders' Rally",
-     "embed": "https://embed.music.apple.com/us/album/one-night-at-the-border-marks/6818282986?i=6818282992"
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/lVAhcHqRNLM?autoplay=1&list=OLAK5uy_mC0ggdMF0V28Qe4gvfcAO4vAIjqqMC3yI"
     },
     {
      "title": "Fire at the North Gate",
-     "embed": "https://embed.music.apple.com/us/album/one-night-at-the-border-marks/6818282986?i=6818282993"
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/ry4YrMdPLH4?autoplay=1&list=OLAK5uy_mC0ggdMF0V28Qe4gvfcAO4vAIjqqMC3yI"
     },
     {
      "title": "The Breach",
-     "embed": "https://embed.music.apple.com/us/album/one-night-at-the-border-marks/6818282986?i=6818282994"
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/id8VBMn0ZSw?autoplay=1&list=OLAK5uy_mC0ggdMF0V28Qe4gvfcAO4vAIjqqMC3yI"
     },
     {
      "title": "Between Two Assaults",
-     "embed": "https://embed.music.apple.com/us/album/one-night-at-the-border-marks/6818282986?i=6818282995"
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/HRmha728Nsc?autoplay=1&list=OLAK5uy_mC0ggdMF0V28Qe4gvfcAO4vAIjqqMC3yI"
     },
     {
      "title": "Last Charge Before Dawn",
-     "embed": "https://embed.music.apple.com/us/album/one-night-at-the-border-marks/6818282986?i=6818282996"
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/ud9P4KlaAJ4?autoplay=1&list=OLAK5uy_mC0ggdMF0V28Qe4gvfcAO4vAIjqqMC3yI"
     },
     {
      "title": "Dawn over Orenvalt",
-     "embed": "https://embed.music.apple.com/us/album/one-night-at-the-border-marks/6818282986?i=6818282997"
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/Z_Zw6ihLTbo?autoplay=1&list=OLAK5uy_mC0ggdMF0V28Qe4gvfcAO4vAIjqqMC3yI"
     }
    ]
   }

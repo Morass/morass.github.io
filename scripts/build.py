@@ -195,8 +195,8 @@ for a in MUSIC:
     a['artist_slug'] = next(x['slug'] for x in ARTISTS if x['name'] == a['artist'])
     a['url'] = f"/music/{a['artist_slug']}/{a['slug']}/"
     a['out'] = a['release_date'] <= TODAY
-    # Spotify first: most visitors are signed in there, so its player plays whole tracks.
-    a['players'] = sorted(a['embeds'].items(), key=lambda kv: list(STORE_NAMES).index(kv[0]))
+    # YouTube first: it plays whole tracks without an account; Spotify and Apple preview unless signed in.
+    a['players'] = sorted(a['embeds'].items(), key=lambda kv: (kv[0] != 'youtube', list(STORE_NAMES).index(kv[0])))
 def when(a):
     d = __import__('datetime').date.fromisoformat(a['release_date'])
     return ('Released ' if a['out'] else 'Out ') + f'{d.day} {d:%B %Y}'
@@ -221,7 +221,7 @@ pool = []
 for a in MUSIC:
     meta = {'album': a['album'], 'artist': a['artist'], 'url': a['url']}
     if a['track_embeds']:
-        pool += [dict(meta, title=t['title'], embed=t['embed'], store='apple-track') for t in a['track_embeds']]
+        pool += [dict(meta, title=t['title'], embed=t['embed'], store=t['store']) for t in a['track_embeds']]
     elif a['players']:
         pool.append(dict(meta, title=a['album'], embed=a['players'][0][1], store=a['players'][0][0]))
 if pool:
