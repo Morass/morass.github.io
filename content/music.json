@@ -1,0 +1,58 @@
+{
+ "albums": [
+  {
+   "slug": "the-fall-of-the-cinder-tyrant",
+   "artist": "Skralvoss",
+   "album": "The Fall of the Cinder Tyrant",
+   "release_date": "2026-10-09",
+   "summary": "Fourteen battle pieces telling the war against the Cinder Tyrant, from the drums at the Ashen Gate to the hymn over the ashes.",
+   "cover": "/assets/music/the-fall-of-the-cinder-tyrant.webp",
+   "hyperfollow": "https://distrokid.com/hyperfollow/skralvoss/the-fall-of-the-cinder-tyrant",
+   "tracks": [
+    "The Cinder Tyrant",
+    "Drums of the Ashen Gate",
+    "Blade, Bow and Book",
+    "Thunder of the Nine Banners",
+    "The Host on the Salt Stair",
+    "Riders from Beyond the Map",
+    "The Drums Speak on the Green Coast",
+    "The Husk-Bands Walk",
+    "The Storm-Yoke Comes Down",
+    "Longships against the Wrack",
+    "Steel Among the Falling Blossoms",
+    "The Champion and the Tyrant",
+    "The Old Gods Wake",
+    "Hymn over the Ashes"
+   ],
+   "links": {},
+   "embeds": {}
+  },
+  {
+   "slug": "one-night-at-the-border-marks",
+   "artist": "Orenvalt Archive",
+   "album": "One Night at the Border-marks",
+   "release_date": "2026-10-02",
+   "summary": "One night of siege on the border-marks of Orenvalt, from the first lanterns on the wall to dawn.",
+   "cover": "/assets/music/one-night-at-the-border-marks.webp",
+   "hyperfollow": "https://distrokid.com/hyperfollow/orenvaltarchive/one-night-at-the-border-marks",
+   "tracks": [
+    "Lanterns on the Wall",
+    "The Marches at Dusk",
+    "Riders on the Ridge",
+    "Vigil of the Watchmen",
+    "The Defenders' Rally",
+    "Fire at the North Gate",
+    "The Breach",
+    "Between Two Assaults",
+    "Last Charge Before Dawn",
+    "Dawn over Orenvalt"
+   ],
+   "links": {
+    "apple": "https://music.apple.com/us/album/one-night-at-the-border-marks/6818282986"
+   },
+   "embeds": {
+    "apple": "https://embed.music.apple.com/us/album/one-night-at-the-border-marks/6818282986"
+   }
+  }
+ ]
+}

@@ -62,3 +62,57 @@ if (results) {
   input.addEventListener('input', () => filter(true));
   filter(false);
 }
+
+/* Store players load only on request, so a visit sets no third-party cookies until then. */
+function playHere(control) {
+  const frame = document.createElement('iframe');
+  frame.src = control.dataset.embed;
+  frame.className = 'album-frame ' + control.dataset.store;
+  frame.title = control.getAttribute('aria-label') || control.textContent;
+  frame.allow = 'autoplay; encrypted-media; clipboard-write; fullscreen; picture-in-picture';
+  control.closest('.album-player').querySelector('.player-stage').replaceChildren(frame);
+}
+document.addEventListener('click', event => {
+  const control = event.target.closest('[data-embed]');
+  if (control) playHere(control);
+});
+
+for (const img of document.querySelectorAll('img[data-covers]')) {
+  const covers = JSON.parse(img.dataset.covers);
+  img.src = covers[Math.floor(Math.random() * covers.length)];
+}
+
+const shuffle = document.querySelector('.music-shuffle');
+if (shuffle) {
+  const pool = JSON.parse(shuffle.dataset.pool);
+  const stage = shuffle.querySelector('.player-stage');
+  const title = shuffle.querySelector('.shuffle-title');
+  const next = shuffle.querySelector('.shuffle-next');
+  let current = -1;
+  function pick() {
+    let i = Math.floor(Math.random() * pool.length);
+    if (pool.length > 1 && i === current) i = (i + 1) % pool.length;
+    current = i;
+    const a = pool[i];
+    const play = document.createElement('button');
+    play.type = 'button';
+    play.className = 'play-cover';
+    play.dataset.embed = a.embed;
+    play.dataset.store = a.store;
+    play.setAttribute('aria-label', `Play ${a.album} here on ${a.label}`);
+    const img = document.createElement('img');
+    img.src = a.cover; img.alt = `Cover of ${a.album}`; img.width = img.height = 480;
+    const badge = document.createElement('span');
+    badge.className = 'play-badge'; badge.setAttribute('aria-hidden', 'true');
+    play.append(img, badge);
+    stage.replaceChildren(play);
+    title.textContent = a.album;
+    title.href = a.url;
+    shuffle.querySelector('.shuffle-artist').textContent = a.artist;
+  }
+  pick();
+  if (next) {
+    next.hidden = false;
+    next.addEventListener('click', pick);
+  }
+}

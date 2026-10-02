@@ -12,6 +12,8 @@ ROOT = Path(__file__).resolve().parents[1]
 SITE = 'https://morass.github.io'
 P = json.loads((ROOT / 'content/projects.json').read_text())
 PRINTS = json.loads((ROOT / 'content/prints.json').read_text())['items']
+# Written by ambient-music's tools/release_links.py from each release's HyperFollow page.
+MUSIC = json.loads((ROOT / 'content/music.json').read_text())['albums']
 TAXONOMY = json.loads((ROOT / 'content/print-collections.json').read_text())
 VOCAB = print_tags.load(ROOT / 'content/print-tags.json', [t for i in PRINTS for t in i.get('tags', [])])
 for item in PRINTS:
@@ -50,7 +52,7 @@ for item in PRINTS:
             raise ValueError(f"Collection collides with a model URL: {item['collection']}")
 GENERATED = set()
 ARCADE = P['arcade']['url']
-NAV = [('games', 'Games'), ('small-games', 'Small Games'), ('mobile', 'Mobile'), ('youtube', 'YouTube'), ('prints', 'Prints')]
+NAV = [('games', 'Games'), ('small-games', 'Small Games'), ('mobile', 'Mobile'), ('youtube', 'YouTube'), ('music', 'Music'), ('prints', 'Prints')]
 LABELS = {'boardgames': 'Board games', 'desk': 'Desk & office', 'decorations': 'Decorations', 'containers': 'Boxes & storage', 'bathroom': 'Bathroom', 'kitchen': 'Kitchen', 'home': 'Around the home', 'outdoor': 'Outdoors', 'footwear': 'Footwear', 'general': 'Original & general', 'mtg': 'Magic: The Gathering', 'spirit-island': 'Spirit Island', 'frosthaven': 'Frosthaven'}
 LABELS.update({'jewelry':'Jewelry & accessories', 'earrings':'Earrings', 'brooches':'Brooches', 'pendants':'Pendants', 'displays':'Jewelry displays', 'buttons':'Sewing buttons', 'by-game':'Find your game', 'dnd':'Dungeons & Dragons', 'mtg':'Magic: The Gathering', 'original-games':'Original games', 'classic-games':'Classic games', 'dice':'Dice', 'terrain':'Terrain & dungeon tiles', 'tokens-stands':'Tokens & stands', 'card-care':'Deck boxes & card care', 'keepsake-boxes':'Keepsake boxes', 'tools-parts':'Tools & small parts', 'trays-banks':'Catch-alls & coin banks', 'reading-writing':'Reading & writing', 'washing-care':'Washing & personal care', 'toys':'Toys & mechanisms', 'coasters':'Coasters', 'makeup-organizers':'Makeup organizers'})
 E = lambda value: html.escape(str(value), quote=True)
@@ -163,8 +165,9 @@ home += card('Small Games', ARCADE, 'A little play, straight from your browser, 
 home += card('Mobile', '/mobile/', 'Games and projects made for your pocket.', '/assets/projects/lanternward.webp', 'IV · ANDROID')
 home += card('YouTube', '/youtube/', 'Stories, objects and a look behind the projects.', label='V · WATCH & DISCOVER', art='<div class="channel-marks">'+''.join(channel_mark(c) for c in P['channels'])+'</div>')
 home += '</div></section>'
-# A quiet sixth destination: free tools are not a project family, so a band, not a card.
-home += '<section class="home-tools"><div><p class="eyebrow">VI · FREE TOOLS</p><h2>Small tools, free to use.</h2><p>A command-line tool and a handful of Neovim plugins, all open source.</p></div><a class="button secondary" href="/tools/">See the tools <span aria-hidden="true">→</span></a></section>'
+home += '<section class="home-tools"><div><p class="eyebrow">VI · MUSIC</p><h2>Music from the worlds.</h2><p>Soundtrack albums of sieges, wars and long nights. Listen here or on your streaming service.</p></div><a class="button secondary" href="/music/">Listen <span aria-hidden="true">→</span></a></section>'
+# A quiet seventh destination: free tools are not a project family, so a band, not a card.
+home += '<section class="home-tools"><div><p class="eyebrow">VII · FREE TOOLS</p><h2>Small tools, free to use.</h2><p>A command-line tool and a handful of Neovim plugins, all open source.</p></div><a class="button secondary" href="/tools/">See the tools <span aria-hidden="true">→</span></a></section>'
 page('/', 'Games, prints & curious projects', 'Explore Morass: Steam games, free browser puzzles, Android projects, YouTube and an organized catalogue of 3D prints.', home)
 for key, title, description in [
     ('games', 'Worlds worth getting lost in.', 'The Morass Games collection. Strategy, survival and stories on Steam.'),
@@ -180,6 +183,66 @@ for channel in P['channels']:
     body += f'<article class="channel">{channel_mark(channel)}<div><p class="eyebrow">{E(channel["label"])}</p><h2>{E(channel["title"])}</h2><p>{E(channel["summary"])}</p></div>{button("Visit the channel",channel["url"])}</article>'
 body += '</div>'
 page('/youtube/', 'YouTube', 'Watch stories and making from Morass.', body, 'youtube', [('YouTube','/youtube/')])
+
+STORE_NAMES = {'spotify': 'Spotify', 'apple': 'Apple Music', 'youtube': 'YouTube Music', 'deezer': 'Deezer', 'tidal': 'TIDAL', 'amazon': 'Amazon Music', 'audiomack': 'Audiomack'}
+ARTISTS = json.loads((ROOT / 'content/music-artists.json').read_text())['artists']
+missing = {a['artist'] for a in MUSIC} - {a['name'] for a in ARTISTS}
+if missing:
+    raise ValueError(f'Add these artists to content/music-artists.json: {sorted(missing)}')
+TODAY = __import__('datetime').date.today().isoformat()
+for a in MUSIC:
+    a['artist_slug'] = next(x['slug'] for x in ARTISTS if x['name'] == a['artist'])
+    a['url'] = f"/music/{a['artist_slug']}/{a['slug']}/"
+    a['out'] = a['release_date'] <= TODAY
+    # Spotify first: most visitors are signed in there, so its player plays whole tracks.
+    a['players'] = sorted(a['embeds'].items(), key=lambda kv: list(STORE_NAMES).index(kv[0]))
+def when(a):
+    d = __import__('datetime').date.fromisoformat(a['release_date'])
+    return ('Released ' if a['out'] else 'Out ') + f'{d.day} {d:%B %Y}'
+def player(a, alts=True):
+    cover = f'<img src="{E(a["cover"])}" alt="Cover of {E(a["album"])}" width="480" height="480">'
+    if not a['players']:
+        return f'<div class="album-player"><div class="player-stage">{cover}</div></div>'
+    store, url = a['players'][0]
+    stage = f'<button class="play-cover" type="button" data-embed="{E(url)}" data-store="{store}" aria-label="Play {E(a["album"])} here on {STORE_NAMES[store]}">{cover}<span class="play-badge" aria-hidden="true"></span></button>'
+    others = ''.join(f'<button class="text-link" type="button" data-embed="{E(u)}" data-store="{s}">Play on {STORE_NAMES[s]}</button>' for s, u in a['players']) if alts and len(a['players']) > 1 else ''
+    return f'<div class="album-player"><div class="player-stage">{stage}</div>' + (f'<div class="player-alts">{others}</div>' if others else '') + '</div>'
+def store_links(a):
+    links = ''.join(button(STORE_NAMES[s], a['links'][s], True) for s in STORE_NAMES if s in a['links'])
+    return '<div class="listing-links">' + links + button('All stores' if a['out'] else 'Pre-save', a['hyperfollow'], True) + '</div>'
+def album_card(a):
+    return card(a['album'], a['url'], a['summary'], a['cover'], f"{a['artist']} · {when(a)}")
+NOTE = '<p class="small-note music-note">Composed with the help of AI and performed with orchestral sample libraries. Every release is labelled as AI-assisted in the stores.</p>'
+
+body = heading('MUSIC', 'Music from the worlds.', 'Soundtrack albums from the lands behind our games and stories. Play them here, or follow the links to your streaming service.') + NOTE
+playable = [a for a in MUSIC if a['players']]
+if playable:
+    pool = [{'album': a['album'], 'artist': a['artist'], 'url': a['url'], 'cover': a['cover'], 'store': a['players'][0][0], 'embed': a['players'][0][1], 'label': STORE_NAMES[a['players'][0][0]]} for a in playable]
+    a = playable[0]
+    body += f'<section class="music-shuffle" data-pool="{E(json.dumps(pool))}">{player(a, False)}<div><p class="eyebrow">PLAY SOMETHING</p><h2><a class="shuffle-title" href="{E(a["url"])}">{E(a["album"])}</a></h2><p class="shuffle-artist">{E(a["artist"])}</p><p>Press play to listen right here. Each visit picks an album at random.</p>' + ('<button class="button secondary shuffle-next" type="button" hidden>Another album</button>' if len(pool) > 1 else '') + '</div></section>'
+body += '<div class="section-title music-artists"><h2>Artists</h2></div><div class="cards">'
+for artist in ARTISTS:
+    albums = [a for a in MUSIC if a['artist'] == artist['name']]
+    if not albums:
+        continue
+    art = f'<img src="{E(albums[0]["cover"])}" data-covers="{E(json.dumps([a["cover"] for a in albums]))}" alt="" loading="lazy" width="960" height="960">'
+    body += card(artist['name'], f"/music/{artist['slug']}/", artist['summary'], label=('One album' if len(albums) == 1 else f'{len(albums)} albums'), art=art)
+body += '</div>'
+page('/music/', 'Music', 'Soundtrack albums from Morass: listen in the browser or on Spotify, Apple Music and more.', body, 'music', [('Music', '/music/')], MUSIC[0]['cover'] if MUSIC else '/assets/projects/pyrewarden.webp')
+for artist in ARTISTS:
+    albums = [a for a in MUSIC if a['artist'] == artist['name']]
+    if not albums:
+        continue
+    crumbs = [('Music', '/music/'), (artist['name'], f"/music/{artist['slug']}/")]
+    body = heading('MUSIC · ARTIST', artist['name'], artist['summary']) + '<div class="cards music-cards">' + ''.join(album_card(a) for a in albums) + '</div>'
+    page(f"/music/{artist['slug']}/", artist['name'], artist['summary'], body, 'music', crumbs, albums[0]['cover'])
+    for a in albums:
+        tracks = '<details class="tracklist" open><summary>' + str(len(a['tracks'])) + ' tracks</summary><ol>' + ''.join(f'<li>{E(t)}</li>' for t in a['tracks']) + '</ol></details>'
+        body = f'<section class="album-page">{player(a)}<div>' + heading(f"{a['artist']} · {when(a)}", a['album'], a['summary']) + store_links(a) + tracks + '</div></section>' + NOTE
+        more = [x for x in albums if x is not a][:3]
+        if more:
+            body += f'<section class="related"><div class="section-title"><h2>More from {E(artist["name"])}</h2><a class="text-link" href="/music/{artist["slug"]}/">All albums ↗</a></div><div class="cards music-cards">' + ''.join(album_card(x) for x in more) + '</div></section>'
+        page(a['url'], f"{a['album']} — {a['artist']}", a['summary'], body, 'music', crumbs + [(a['album'], a['url'])], a['cover'])
 
 # Free tools: one section, split into groups like the print collection.
 unknown = {t['group'] for t in P['tools']} - {g['slug'] for g in P['toolGroups']}
