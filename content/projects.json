@@ -211,9 +211,9 @@
     },
     {
       "title": "Snagbook",
-      "url": "https://github.com/Morass/snagbook-desktop",
+      "url": "https://github.com/Morass/snagbook",
       "group": "apps-and-scripts",
-      "label": "Linux & Windows app",
+      "label": "macOS, Linux & Windows app",
       "summary": "A notebook for testing sessions: numbered findings, each with a note, marked-up screenshots and screen recordings, kept as plain Markdown folders."
     },
     {
