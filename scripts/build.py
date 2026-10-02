@@ -203,14 +203,15 @@ def when(a):
 def player(a, alts=True):
     cover = f'<img src="{E(a["cover"])}" alt="Cover of {E(a["album"])}" width="480" height="480">'
     if not a['players']:
-        return f'<div class="album-player"><div class="player-stage">{cover}</div></div>'
+        note = 'The player appears here on release day. Until then, pre-save it to have it in your library when it lands.' if not a['out'] else 'The stores are still adding this album. The player appears here as soon as one of them has it.'
+        return f'<div class="album-player"><div class="player-stage">{cover}</div><p class="small-note">{note}</p></div>'
     store, url = a['players'][0]
     stage = f'<button class="play-cover" type="button" data-embed="{E(url)}" data-store="{store}" aria-label="Play {E(a["album"])} here on {STORE_NAMES[store]}">{cover}<span class="play-badge" aria-hidden="true"></span></button>'
     others = ''.join(f'<button class="text-link" type="button" data-embed="{E(u)}" data-store="{s}">Play on {STORE_NAMES[s]}</button>' for s, u in a['players']) if alts and len(a['players']) > 1 else ''
     return f'<div class="album-player"><div class="player-stage">{stage}</div>' + (f'<div class="player-alts">{others}</div>' if others else '') + '</div>'
 def store_links(a):
     links = ''.join(button(STORE_NAMES[s], a['links'][s], True) for s in STORE_NAMES if s in a['links'])
-    return '<div class="listing-links">' + links + button('All stores' if a['out'] else 'Pre-save', a['hyperfollow'], True) + '</div>'
+    return '<div class="listing-links">' + links + button('All stores' if a['out'] else 'Pre-save on Spotify', a['hyperfollow'], a['out']) + '</div>'
 def album_card(a):
     return card(a['album'], a['url'], a['summary'], a['cover'], f"{a['artist']} · {when(a)}")
 NOTE = '<p class="small-note music-note">Composed with the help of AI and performed with orchestral sample libraries. Every release is labelled as AI-assisted in the stores.</p>'
