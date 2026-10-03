@@ -65,10 +65,12 @@
       "Z_Zw6ihLTbo"
      ]
     ],
-    "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_mC0ggdMF0V28Qe4gvfcAO4vAIjqqMC3yI"
+    "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_mC0ggdMF0V28Qe4gvfcAO4vAIjqqMC3yI",
+    "spotify": "https://open.spotify.com/album/3fN7xRHY6gaRS8PLELl2qv"
    },
    "embeds": {
     "apple": "https://embed.music.apple.com/us/album/one-night-at-the-border-marks/6818282986",
+    "spotify": "https://open.spotify.com/embed/album/3fN7xRHY6gaRS8PLELl2qv?theme=0",
     "youtube": "https://www.youtube-nocookie.com/embed/DV7D-0dYyMc?autoplay=1&list=OLAK5uy_mC0ggdMF0V28Qe4gvfcAO4vAIjqqMC3yI"
    },
    "track_embeds": [
