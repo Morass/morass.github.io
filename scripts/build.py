@@ -203,7 +203,8 @@ def when(a):
 def player(a, alts=True):
     cover = f'<img src="{E(a["cover"])}" alt="Cover of {E(a["album"])}" width="480" height="480">'
     if not a['players']:
-        note = 'The player appears here on release day. Until then, pre-save it to have it in your library when it lands.' if not a['out'] else 'The stores are still adding this album. The player appears here as soon as one of them has it.'
+        d = __import__('datetime').date.fromisoformat(a['release_date'])
+        note = f'Release date: {d.day} {d:%B %Y}. The player appears here that day.' if not a['out'] else 'The stores are still adding this album. The player appears here as soon as one of them has it.'
         return f'<div class="album-player"><div class="player-stage">{cover}</div><p class="small-note">{note}</p></div>'
     store, url = a['players'][0]
     stage = f'<button class="play-cover" type="button" data-embed="{E(url)}" data-store="{store}" aria-label="Play {E(a["album"])} here on {STORE_NAMES[store]}">{cover}<span class="play-badge" aria-hidden="true"></span></button>'
@@ -211,7 +212,9 @@ def player(a, alts=True):
     return f'<div class="album-player"><div class="player-stage">{stage}</div>' + (f'<div class="player-alts">{others}</div>' if others else '') + '</div>'
 def store_links(a):
     links = ''.join(button(STORE_NAMES[s], a['links'][s], True) for s in STORE_NAMES if s in a['links'])
-    return '<div class="listing-links">' + links + button('All stores' if a['out'] else 'Pre-save on Spotify', a['hyperfollow'], a['out']) + '</div>'
+    if not a['out']:
+        return f'<div class="listing-links">{links}</div>' if links else ''
+    return '<div class="listing-links">' + links + button('All stores', a['hyperfollow'], True) + '</div>'
 def album_card(a):
     return card(a['album'], a['url'], a['summary'], a['cover'], f"{a['artist']} · {when(a)}")
 NOTE = '<p class="small-note music-note">Composed with the help of AI and performed with orchestral sample libraries. Every release is labelled as AI-assisted in the stores.</p>'
