@@ -4526,6 +4526,37 @@
       "image": "/assets/prints/containers/rose-drawer-box/93fafa857392f493.webp"
     },
     {
+      "id": "containers/rosenborg-castle-box",
+      "title": "Renaissance castle box — inspired by Rosenborg, the whole castle lifts off a hidden tray",
+      "summary": "A 240 x 108 x 250 mm Dutch Renaissance castle, inspired by Rosenborg in Copenhagen but not a 1:1 replica, that is a box: the whole four-colour castle is one print and lifts off a hidden tray. Almost three days of printing on a four-colour AMS. No supports, no hardware, no glue.",
+      "tags": [
+        "castle",
+        "renaissance",
+        "rosenborg",
+        "copenhagen",
+        "architecture",
+        "box",
+        "secretbox",
+        "hiddenstorage",
+        "storage",
+        "decor",
+        "multicolour",
+        "ams",
+        "nosupports"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/home/renaissance-castle-box-inspired-by-rosenborg-the-whole-castle-lifts-off-a-hid"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1866769-renaissance-castle-box-inspired-by-rosenborg-the-w"
+        }
+      ],
+      "image": "/assets/prints/containers/rosenborg-castle-box/292d532896e1c3a6.webp"
+    },
+    {
       "id": "containers/rut-box",
       "title": "Rut Box — a keepsake box locked shut by two stags' antlers",
       "summary": "A 108 x 62 x 84 mm hunting keepsake box with a 64 ml cavity. Four antler racks — two on the base, two on the lid — interleave when the box is closed, like two stags with their horns locked in the rut. A quarter turn sweeps the racks apart and releases a bayonet lock. No hardware, no supports, no glue.",
