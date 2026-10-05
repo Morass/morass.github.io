@@ -1,6 +1,35 @@
 {
  "albums": [
   {
+   "slug": "fires-at-midsummer",
+   "artist": "Corenveld Music Hall",
+   "album": "Fires at Midsummer",
+   "release_date": "2026-10-16",
+   "summary": "Fifteen fantasy orchestral pieces for the road out of Corenveld, from a morning allegro at the mill-ford through the shadow lands to the midsummer fires.",
+   "cover": "/assets/music/fires-at-midsummer.webp",
+   "hyperfollow": "https://distrokid.com/hyperfollow/corenveldmusichall/fires-at-midsummer",
+   "tracks": [
+    "Morning at the Mill-Ford",
+    "The Tinkers' Fair",
+    "Riders Under the Pines",
+    "The Barrel Race",
+    "The Grey Stair",
+    "Goblin Market Under the Hill",
+    "Rain on the Long Lake",
+    "The Barrow Road",
+    "Smoke over the Eastern Ridge",
+    "The Iron Gate",
+    "Pursuit Through the Black Wood",
+    "Wolves on the Snowfield",
+    "The Shadow's Muster",
+    "The Last Bridge",
+    "Midsummer Fires"
+   ],
+   "links": {},
+   "embeds": {},
+   "track_embeds": []
+  },
+  {
    "slug": "the-fall-of-the-cinder-tyrant",
    "artist": "Skralvoss",
    "album": "The Fall of the Cinder Tyrant",
