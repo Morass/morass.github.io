@@ -8363,6 +8363,44 @@
       "image": "/assets/prints/decorations/wiz-magnet/32a1ec1b0452aff9.webp"
     },
     {
+      "id": "decorations/wizard-lantern",
+      "title": "Wizard Lantern — stained-glass LED tealight lantern with six slide-in panes",
+      "summary": "Hexagonal gothic lantern for an LED tealight: six translucent stained-glass panes slide into channels behind the windows (moon, star, potion, wizard hat, crystal, toadstool), a pointed roof clips on with two release tabs and hangs by its cord eye. 8 prints, no supports, no glue.",
+      "tags": [
+        "halloween",
+        "lantern",
+        "wizard",
+        "tealight",
+        "stainedglass",
+        "gothic",
+        "fantasy",
+        "multicolor",
+        "hanging",
+        "decor",
+        "moon",
+        "potion",
+        "nightlight",
+        "led",
+        "nosupports"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/home/wizard-lantern-stained-glass-led-tealight-lantern-with-six-slide-in-panes"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1866584-wizard-lantern-stained-glass-led-tealight-lantern"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3397097"
+        }
+      ],
+      "collection": "decorations/seasonal",
+      "image": "/assets/prints/decorations/wizard-lantern/a53c6a5713584a67.webp"
+    },
+    {
       "id": "decorations/yggdrasil-buttons",
       "title": "Yggdrasil Buttons — Norse world-tree sewing buttons, 15 / 20 / 25 mm, shank or 2-hole",
       "summary": "Real, wearable sewing buttons with the Norse world-tree on the face. Five sizes/styles: Ø15, 20, 25 mm with a hidden thread tunnel in the underside (the face stays whole — no holes bored through the tree), plus classic 2-hole versions at Ø15 and 20. Each ships a named-solid 2-colour companion for AMS. Prints flat, face up, no supports, no brim. Fully parametric: any diameter renders with the motif's stroke widths automatically held at or above one nozzle width.",
