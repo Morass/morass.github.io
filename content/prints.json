@@ -4528,7 +4528,7 @@
     {
       "id": "containers/rosenborg-castle-box",
       "title": "Renaissance castle box — inspired by Rosenborg, the whole castle lifts off a hidden tray",
-      "summary": "A 240 x 108 x 250 mm Dutch Renaissance castle, inspired by Rosenborg in Copenhagen but not a 1:1 replica, that is a box: the whole four-colour castle is one print and lifts off a hidden tray. Almost three days of printing on a four-colour AMS. No supports, no hardware, no glue.",
+      "summary": "A 240 x 108 x 250 mm Dutch Renaissance castle, inspired by Rosenborg in Copenhagen but not a 1:1 replica, that is a box: the whole four-colour castle is one print and lifts off a hidden tray. Almost three days of printing with a four-slot automatic filament changer. No supports, no hardware, no glue.",
       "tags": [
         "castle",
         "renaissance",
@@ -4552,6 +4552,10 @@
         {
           "platform": "printables",
           "url": "https://www.printables.com/model/1866769-renaissance-castle-box-inspired-by-rosenborg-the-w"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3397689"
         }
       ],
       "image": "/assets/prints/containers/rosenborg-castle-box/292d532896e1c3a6.webp"
