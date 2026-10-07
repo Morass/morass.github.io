@@ -1,6 +1,30 @@
 {
  "albums": [
   {
+   "slug": "ten-breaths-before-the-voice",
+   "artist": "Vrendskarr Echo",
+   "album": "Ten Breaths Before the Voice",
+   "release_date": "2026-10-23",
+   "summary": "Ten pieces of neoclassical metal from the fjord where the echo arrives before the voice: solo violin against lead guitar, with organ, strings and wordless voices.",
+   "cover": "/assets/music/ten-breaths-before-the-voice.webp",
+   "hyperfollow": "https://distrokid.com/hyperfollow/vrendskarrecho/ten-breaths-before-the-voice",
+   "tracks": [
+    "Shrine on the Storm-Shelf",
+    "Ten Breaths Before the Voice",
+    "Through the Headland Passage",
+    "Fugue for the Answer-Skarr",
+    "Tarantella for a Mareth Night",
+    "Toccata on the Vrend-Count",
+    "Muster-Feast at Holdskarr",
+    "Concerto for Storm and Strings",
+    "Elegy: The Song That Waited",
+    "Beacons Along the Aevirfast"
+   ],
+   "links": {},
+   "embeds": {},
+   "track_embeds": []
+  },
+  {
    "slug": "fires-at-midsummer",
    "artist": "Corenveld Music Hall",
    "album": "Fires at Midsummer",
