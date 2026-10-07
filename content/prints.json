@@ -4591,6 +4591,10 @@
         {
           "platform": "makerworld",
           "url": "https://makerworld.com/en/models/3397689"
+        },
+        {
+          "platform": "snapmaker",
+          "url": "https://space.snapmaker.com/en/model/40231"
         }
       ],
       "image": "/assets/prints/containers/rosenborg-castle-box/292d532896e1c3a6.webp"
@@ -4942,6 +4946,10 @@
         {
           "platform": "printables",
           "url": "https://www.printables.com/model/1862913-tudor-house-box-half-timbered-town-house-whose-upp"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3389018"
         }
       ],
       "image": "/assets/prints/containers/tudor-house-box/a258a214711c2dda.webp"
@@ -6212,7 +6220,7 @@
         }
       ],
       "collection": "decorations/coasters",
-      "image": "/assets/prints/decorations/halloween-coasters/9f7da53949fdd7a2.webp"
+      "image": "/assets/prints/decorations/halloween-coasters/593344f05761f672.webp"
     },
     {
       "id": "decorations/hollow-face-vase-brooch",
@@ -10003,44 +10011,6 @@
       "image": "/assets/prints/desk/wizard-tower-penholder/69f92e169f480918.webp"
     },
     {
-      "id": "footwear/lace-dubrae",
-      "title": "Lace Dubrae — Custom Sneaker Lace Name Plates (parametric, 48 names + your own)",
-      "summary": "Sneaker lace dubraes — the little name plate that rides on your shoelaces. The lace runs hidden through one big channel that exits both ends, so the top stays a clean, curved name plate (it bows lengthwise like the real metal ones). One shared BODY hosts every name: print the body once, then drop any text plate on top in a contrast filament. Ships the body plus 48 ready-made names AND the full parametric .scad so you can type any word and re-render. Prints dead flat, no supports.",
-      "tags": [
-        "dubrae",
-        "shoelace",
-        "lacelock",
-        "sneaker",
-        "shoes",
-        "nameplate",
-        "lacecharm",
-        "footwear",
-        "lacejewelry",
-        "customizable",
-        "parametric",
-        "openscad"
-      ],
-      "links": [
-        {
-          "platform": "cults3d",
-          "url": "https://cults3d.com/en/3d-model/home/lace-dubrae-custom-sneaker-lace-name-plates-parametric-48-names-your-own"
-        },
-        {
-          "platform": "printables",
-          "url": "https://www.printables.com/model/1744505-lace-dubrae-custom-sneaker-lace-name-plates-parame"
-        },
-        {
-          "platform": "makerworld",
-          "url": "https://makerworld.com/en/models/2888121"
-        },
-        {
-          "platform": "snapmaker",
-          "url": "https://space.snapmaker.com/en/model/36061"
-        }
-      ],
-      "image": "/assets/prints/footwear/lace-dubrae/637ce3c36ead1413.webp"
-    },
-    {
       "id": "footwear/traveling-shoe-horns",
       "title": "Traveling Shoe Horns",
       "summary": "Three compact, packable shoe horns in one set — a thin bent-sheet spoon, a print-in-place folding one, and a rotating/pivoting one. All slim enough to drop in a bag, suitcase, or coat pocket. Print them solid and strong, and treat them with a little care.",
@@ -10699,6 +10669,44 @@
         }
       ],
       "image": "/assets/prints/outdoor/trigger-breeze-fan/104365d2a23cbf12.webp"
+    },
+    {
+      "id": "footwear/lace-dubrae",
+      "title": "Lace Dubrae — Custom Sneaker Lace Name Plates (parametric, 48 names + your own)",
+      "summary": "Sneaker lace dubraes — the little name plate that rides on your shoelaces. The lace runs hidden through one big channel that exits both ends, so the top stays a clean, curved name plate (it bows lengthwise like the real metal ones). One shared BODY hosts every name: print the body once, then drop any text plate on top in a contrast filament. Ships the body plus 48 ready-made names AND the full parametric .scad so you can type any word and re-render. Prints dead flat, no supports.",
+      "tags": [
+        "dubrae",
+        "shoelace",
+        "lacelock",
+        "sneaker",
+        "shoes",
+        "nameplate",
+        "lacecharm",
+        "footwear",
+        "lacejewelry",
+        "customizable",
+        "parametric",
+        "openscad"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/home/lace-dubrae-custom-sneaker-lace-name-plates-parametric-48-names-your-own"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1744505-lace-dubrae-custom-sneaker-lace-name-plates-parame"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/2888121"
+        },
+        {
+          "platform": "snapmaker",
+          "url": "https://space.snapmaker.com/en/model/36061"
+        }
+      ],
+      "image": "/assets/prints/footwear/lace-dubrae/637ce3c36ead1413.webp"
     }
   ]
 }
