@@ -649,6 +649,44 @@
       "image": "/assets/prints/bathroom/wizard-tower-organizer/5a968ccf469b5847.webp"
     },
     {
+      "id": "boardgames/breach/marsh",
+      "title": "Marsh — Backlit Modular LED Swamp Terrain Runner (28-32mm, chainable)",
+      "summary": "A backlit modular swamp runner for 28-32mm tabletop games. A winding translucent creek glows from below when a 30cm USB LED strip slides into a hidden channel. Two printed parts per segment (one is a two-colour terrain plate), no supports, no glue. Identical segments dovetail end-to-end so one strip threads straight through the whole run; the river, banks and bog texture flow continuously across every joint. Confirmed printed and lit.",
+      "tags": [
+        "terrain",
+        "tabletop",
+        "wargaming",
+        "dnd",
+        "swamp",
+        "marsh",
+        "led",
+        "backlit",
+        "modular",
+        "scatter",
+        "dungeon",
+        "openscad"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/game/marsh-backlit-modular-led-swamp-terrain-runner-28-32mm-chainable"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1761232-marsh-backlit-modular-led-swamp-terrain-runner-28"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/2962561"
+        },
+        {
+          "platform": "snapmaker",
+          "url": "https://space.snapmaker.com/en/model/35804"
+        }
+      ],
+      "image": "/assets/prints/boardgames/breach/marsh/2980670d9d148a5a.webp"
+    },
+    {
       "id": "boardgames/breach",
       "title": "Breach Dungeon Tiles — modular D&D base squares + drop-in terrain",
       "summary": "A modular dungeon-building kit of snap-together base square tiles plus everything that drops into them: floor-texture inserts (stone, cracked ground, cobbles, rubble, fissures), wall pieces, and scatter props (chests, barrels, statues, trees, crystals). Every insert, wall and prop sits on the same 27.9 mm square base. Prints support-free. Pairs with any 28 mm minis.",
@@ -688,44 +726,6 @@
         }
       ],
       "image": "/assets/prints/boardgames/breach/1208bac2da97e29a.webp"
-    },
-    {
-      "id": "boardgames/breach/marsh",
-      "title": "Marsh — Backlit Modular LED Swamp Terrain Runner (28-32mm, chainable)",
-      "summary": "A backlit modular swamp runner for 28-32mm tabletop games. A winding translucent creek glows from below when a 30cm USB LED strip slides into a hidden channel. Two printed parts per segment (one is a two-colour terrain plate), no supports, no glue. Identical segments dovetail end-to-end so one strip threads straight through the whole run; the river, banks and bog texture flow continuously across every joint. Confirmed printed and lit.",
-      "tags": [
-        "terrain",
-        "tabletop",
-        "wargaming",
-        "dnd",
-        "swamp",
-        "marsh",
-        "led",
-        "backlit",
-        "modular",
-        "scatter",
-        "dungeon",
-        "openscad"
-      ],
-      "links": [
-        {
-          "platform": "cults3d",
-          "url": "https://cults3d.com/en/3d-model/game/marsh-backlit-modular-led-swamp-terrain-runner-28-32mm-chainable"
-        },
-        {
-          "platform": "printables",
-          "url": "https://www.printables.com/model/1761232-marsh-backlit-modular-led-swamp-terrain-runner-28"
-        },
-        {
-          "platform": "makerworld",
-          "url": "https://makerworld.com/en/models/2962561"
-        },
-        {
-          "platform": "snapmaker",
-          "url": "https://space.snapmaker.com/en/model/35804"
-        }
-      ],
-      "image": "/assets/prints/boardgames/breach/marsh/2980670d9d148a5a.webp"
     },
     {
       "id": "boardgames/cascadia/market-rack",
@@ -6370,6 +6370,35 @@
         }
       ],
       "image": "/assets/prints/decorations/infinity-cube/21da8e451141381d.webp"
+    },
+    {
+      "id": "decorations/jack-lantern-magnet",
+      "title": "Jack-o-Lantern Fridge Magnet — LED Tealight Pumpkin",
+      "summary": "Pumpkin fridge lantern with four enclosed magnets, removable stem lid and space for a battery LED tealight.",
+      "tags": [
+        "halloween",
+        "pumpkin",
+        "magnet",
+        "fridgemagnet",
+        "lantern",
+        "tealight",
+        "led",
+        "jackolantern",
+        "decor",
+        "multicolor"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/home/jack-o-lantern-fridge-magnet-led-tealight-pumpkin"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1868830-jack-o-lantern-fridge-magnet-led-tealight-pumpkin"
+        }
+      ],
+      "collection": "decorations/seasonal",
+      "image": "/assets/prints/decorations/jack-lantern-magnet/281af4b6ee7be25d.webp"
     },
     {
       "id": "decorations/jonah-whale",
