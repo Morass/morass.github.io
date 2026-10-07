@@ -1741,6 +1741,37 @@
       "image": "/assets/prints/boardgames/general/meeples/526edbddd181f3ca.webp"
     },
     {
+      "id": "boardgames/general/midnight-candy-run",
+      "title": "Midnight Candy Run — Halloween family board game",
+      "summary": "A simultaneous Halloween candy hunt for 2–4 players, age 7+. Twelve rounds, three movement choices, no elimination.",
+      "tags": [
+        "board game",
+        "Halloween",
+        "family game",
+        "pumpkin",
+        "witch",
+        "bat",
+        "mummy",
+        "ghost",
+        "simultaneous",
+        "multicolor",
+        "kids game",
+        "print and play"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/game/midnight-candy-run-halloween-family-board-game"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1868662-midnight-candy-run-halloween-family-board-game"
+        }
+      ],
+      "collection": "boardgames/original-games",
+      "image": "/assets/prints/boardgames/general/midnight-candy-run/ada4e0ec3e963ee7.webp"
+    },
+    {
       "id": "boardgames/general/mimic-vault",
       "title": "Mimic Vault — dice drawer in a monster that eats the loot",
       "summary": "A ruined stone monument that's secretly a mimic: the front drawer is its maw and slides out to reveal your 7-die set, relief teeth grin under a translucent crystal bait pile on top. Prints upright, no supports. Includes a matching two-colour D6 with bone-femur Roman numerals.",
