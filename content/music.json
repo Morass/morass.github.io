@@ -77,9 +77,103 @@
     "The Old Gods Wake",
     "Hymn over the Ashes"
    ],
-   "links": {},
-   "embeds": {},
-   "track_embeds": []
+   "links": {
+    "youtube_tracks": [
+     "OLAK5uy_mqHKw2pR8R3HFapdJDE_EBcif1IKvJfdo",
+     [
+      "IZPzlaNxMPQ",
+      "3fHo35l0OjM",
+      "o7ClWO8OcJc",
+      "9K4CK5Hny2M",
+      "EW9xSYVIE8Q",
+      "4tU0K66VUsY",
+      "fw4fe6GSRRs",
+      "WZa2Woz0cR0",
+      "RW3SXlwyC74",
+      "HGDDwqDiZS0",
+      "b_GIKPtUclA",
+      "zNYITZLRxCI",
+      "M09imxwk3sw",
+      "UC5yPa4hz9w"
+     ]
+    ],
+    "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_mqHKw2pR8R3HFapdJDE_EBcif1IKvJfdo"
+   },
+   "embeds": {
+    "youtube": "https://www.youtube-nocookie.com/embed/IZPzlaNxMPQ?autoplay=1&list=OLAK5uy_mqHKw2pR8R3HFapdJDE_EBcif1IKvJfdo"
+   },
+   "track_embeds": [
+    {
+     "title": "The Cinder Tyrant",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/IZPzlaNxMPQ?autoplay=1&list=OLAK5uy_mqHKw2pR8R3HFapdJDE_EBcif1IKvJfdo"
+    },
+    {
+     "title": "Drums of the Ashen Gate",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/3fHo35l0OjM?autoplay=1&list=OLAK5uy_mqHKw2pR8R3HFapdJDE_EBcif1IKvJfdo"
+    },
+    {
+     "title": "Blade, Bow and Book",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/o7ClWO8OcJc?autoplay=1&list=OLAK5uy_mqHKw2pR8R3HFapdJDE_EBcif1IKvJfdo"
+    },
+    {
+     "title": "Thunder of the Nine Banners",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/9K4CK5Hny2M?autoplay=1&list=OLAK5uy_mqHKw2pR8R3HFapdJDE_EBcif1IKvJfdo"
+    },
+    {
+     "title": "The Host on the Salt Stair",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/EW9xSYVIE8Q?autoplay=1&list=OLAK5uy_mqHKw2pR8R3HFapdJDE_EBcif1IKvJfdo"
+    },
+    {
+     "title": "Riders from Beyond the Map",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/4tU0K66VUsY?autoplay=1&list=OLAK5uy_mqHKw2pR8R3HFapdJDE_EBcif1IKvJfdo"
+    },
+    {
+     "title": "The Drums Speak on the Green Coast",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/fw4fe6GSRRs?autoplay=1&list=OLAK5uy_mqHKw2pR8R3HFapdJDE_EBcif1IKvJfdo"
+    },
+    {
+     "title": "The Husk-Bands Walk",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/WZa2Woz0cR0?autoplay=1&list=OLAK5uy_mqHKw2pR8R3HFapdJDE_EBcif1IKvJfdo"
+    },
+    {
+     "title": "The Storm-Yoke Comes Down",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/RW3SXlwyC74?autoplay=1&list=OLAK5uy_mqHKw2pR8R3HFapdJDE_EBcif1IKvJfdo"
+    },
+    {
+     "title": "Longships against the Wrack",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/HGDDwqDiZS0?autoplay=1&list=OLAK5uy_mqHKw2pR8R3HFapdJDE_EBcif1IKvJfdo"
+    },
+    {
+     "title": "Steel Among the Falling Blossoms",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/b_GIKPtUclA?autoplay=1&list=OLAK5uy_mqHKw2pR8R3HFapdJDE_EBcif1IKvJfdo"
+    },
+    {
+     "title": "The Champion and the Tyrant",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/zNYITZLRxCI?autoplay=1&list=OLAK5uy_mqHKw2pR8R3HFapdJDE_EBcif1IKvJfdo"
+    },
+    {
+     "title": "The Old Gods Wake",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/M09imxwk3sw?autoplay=1&list=OLAK5uy_mqHKw2pR8R3HFapdJDE_EBcif1IKvJfdo"
+    },
+    {
+     "title": "Hymn over the Ashes",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/UC5yPa4hz9w?autoplay=1&list=OLAK5uy_mqHKw2pR8R3HFapdJDE_EBcif1IKvJfdo"
+    }
+   ]
   },
   {
    "slug": "one-night-at-the-border-marks",
