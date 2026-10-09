@@ -1,6 +1,32 @@
 {
  "albums": [
   {
+   "slug": "full-house-at-the-tholvaen",
+   "artist": "Taverns of Vorendia",
+   "album": "Full House at the Tholvaen",
+   "release_date": "2026-10-30",
+   "summary": "Twelve fast tavern dances from the Tholvaen, the bridge tavern of the salt port Drevmark: reels, jigs, a hornpipe, a polka and a last call for fiddle, whistle, recorders, harp and drum.",
+   "cover": "/assets/music/full-house-at-the-tholvaen.webp",
+   "hyperfollow": "https://distrokid.com/hyperfollow/tavernsofvorendia/full-house-at-the-tholvaen",
+   "tracks": [
+    "Boots on the Table",
+    "The Landlady's Jig",
+    "Saltarello for a Full House",
+    "The Juggler's Estampie",
+    "The Leaping Wager",
+    "Nine Steps to the Cellar",
+    "Spilled Ale Polka",
+    "Pipers on the Drev Bridge",
+    "The Salt Factor's Round",
+    "The Sailor's Debt",
+    "One More Round",
+    "Last Call"
+   ],
+   "links": {},
+   "embeds": {},
+   "track_embeds": []
+  },
+  {
    "slug": "ten-breaths-before-the-voice",
    "artist": "Vrendskarr Echo",
    "album": "Ten Breaths Before the Voice",
@@ -97,9 +123,11 @@
       "UC5yPa4hz9w"
      ]
     ],
-    "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_mqHKw2pR8R3HFapdJDE_EBcif1IKvJfdo"
+    "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_mqHKw2pR8R3HFapdJDE_EBcif1IKvJfdo",
+    "spotify": "https://open.spotify.com/album/1TDznl23IH4JLw7uu4igaS"
    },
    "embeds": {
+    "spotify": "https://open.spotify.com/embed/album/1TDznl23IH4JLw7uu4igaS?theme=0",
     "youtube": "https://www.youtube-nocookie.com/embed/IZPzlaNxMPQ?autoplay=1&list=OLAK5uy_mqHKw2pR8R3HFapdJDE_EBcif1IKvJfdo"
    },
    "track_embeds": [
