@@ -3937,6 +3937,31 @@
       "image": "/assets/prints/containers/composition-lunch-book/bdf99b50f3f5febd.webp"
     },
     {
+      "id": "containers/crumpled-paper-box",
+      "title": "Crumpled Paper Box — Magnetic Lid",
+      "summary": "Small crumpled-paper storage box with an enclosed magnetic lid. Two prints, eight 5 x 3 mm magnets.",
+      "tags": [
+        "box",
+        "storage",
+        "paper",
+        "crumpled",
+        "magnetic",
+        "container"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/home/crumpled-paper-box-magnetic-lid"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1870812-crumpled-paper-box-magnetic-lid"
+        }
+      ],
+      "collection": "containers/keepsake-boxes/geometric",
+      "image": "/assets/prints/containers/crumpled-paper-box/512b6dd13f9359ef.webp"
+    },
+    {
       "id": "containers/cubby-shelf",
       "title": "Parametric Apothecary Cabinet / Labelled Spice Rack",
       "summary": "Wall-mountable N×M grid of cubbies, each holding a drop-in drawer with a raised label. Includes ready-to-print 2×3 English spice rack (Salt, Pepper, Sugar, Cinnamon, Rosemary, Curry). Edit the OpenSCAD source to change grid, cubby size, frame style, or label text.",
