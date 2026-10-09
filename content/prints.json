@@ -649,44 +649,6 @@
       "image": "/assets/prints/bathroom/wizard-tower-organizer/5a968ccf469b5847.webp"
     },
     {
-      "id": "boardgames/breach/marsh",
-      "title": "Marsh — Backlit Modular LED Swamp Terrain Runner (28-32mm, chainable)",
-      "summary": "A backlit modular swamp runner for 28-32mm tabletop games. A winding translucent creek glows from below when a 30cm USB LED strip slides into a hidden channel. Two printed parts per segment (one is a two-colour terrain plate), no supports, no glue. Identical segments dovetail end-to-end so one strip threads straight through the whole run; the river, banks and bog texture flow continuously across every joint. Confirmed printed and lit.",
-      "tags": [
-        "terrain",
-        "tabletop",
-        "wargaming",
-        "dnd",
-        "swamp",
-        "marsh",
-        "led",
-        "backlit",
-        "modular",
-        "scatter",
-        "dungeon",
-        "openscad"
-      ],
-      "links": [
-        {
-          "platform": "cults3d",
-          "url": "https://cults3d.com/en/3d-model/game/marsh-backlit-modular-led-swamp-terrain-runner-28-32mm-chainable"
-        },
-        {
-          "platform": "printables",
-          "url": "https://www.printables.com/model/1761232-marsh-backlit-modular-led-swamp-terrain-runner-28"
-        },
-        {
-          "platform": "makerworld",
-          "url": "https://makerworld.com/en/models/2962561"
-        },
-        {
-          "platform": "snapmaker",
-          "url": "https://space.snapmaker.com/en/model/35804"
-        }
-      ],
-      "image": "/assets/prints/boardgames/breach/marsh/2980670d9d148a5a.webp"
-    },
-    {
       "id": "boardgames/breach",
       "title": "Breach Dungeon Tiles — modular D&D base squares + drop-in terrain",
       "summary": "A modular dungeon-building kit of snap-together base square tiles plus everything that drops into them: floor-texture inserts (stone, cracked ground, cobbles, rubble, fissures), wall pieces, and scatter props (chests, barrels, statues, trees, crystals). Every insert, wall and prop sits on the same 27.9 mm square base. Prints support-free. Pairs with any 28 mm minis.",
@@ -726,6 +688,44 @@
         }
       ],
       "image": "/assets/prints/boardgames/breach/1208bac2da97e29a.webp"
+    },
+    {
+      "id": "boardgames/breach/marsh",
+      "title": "Marsh — Backlit Modular LED Swamp Terrain Runner (28-32mm, chainable)",
+      "summary": "A backlit modular swamp runner for 28-32mm tabletop games. A winding translucent creek glows from below when a 30cm USB LED strip slides into a hidden channel. Two printed parts per segment (one is a two-colour terrain plate), no supports, no glue. Identical segments dovetail end-to-end so one strip threads straight through the whole run; the river, banks and bog texture flow continuously across every joint. Confirmed printed and lit.",
+      "tags": [
+        "terrain",
+        "tabletop",
+        "wargaming",
+        "dnd",
+        "swamp",
+        "marsh",
+        "led",
+        "backlit",
+        "modular",
+        "scatter",
+        "dungeon",
+        "openscad"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/game/marsh-backlit-modular-led-swamp-terrain-runner-28-32mm-chainable"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1761232-marsh-backlit-modular-led-swamp-terrain-runner-28"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/2962561"
+        },
+        {
+          "platform": "snapmaker",
+          "url": "https://space.snapmaker.com/en/model/35804"
+        }
+      ],
+      "image": "/assets/prints/boardgames/breach/marsh/2980670d9d148a5a.webp"
     },
     {
       "id": "boardgames/cascadia/market-rack",
@@ -4099,6 +4099,33 @@
         }
       ],
       "image": "/assets/prints/containers/grimoire-box/89815717084a7e5d.webp"
+    },
+    {
+      "id": "containers/haunted-castle-box",
+      "title": "Haunted Castle Magnetic Storage Box",
+      "summary": "Halloween castle storage box with a lift-off roof, hidden magnets and two printing routes: multicolour or separate parts.",
+      "tags": [
+        "halloween",
+        "castle",
+        "box",
+        "storage",
+        "magnets",
+        "pumpkin",
+        "ghost",
+        "multicolor"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/home/haunted-castle-magnetic-storage-box"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1870644-haunted-castle-magnetic-storage-box"
+        }
+      ],
+      "collection": "containers/keepsake-boxes/fantasy",
+      "image": "/assets/prints/containers/haunted-castle-box/9c7b721d8df726e8.webp"
     },
     {
       "id": "containers/haunted-house-organizer",
@@ -10015,6 +10042,44 @@
       "image": "/assets/prints/desk/wizard-tower-penholder/69f92e169f480918.webp"
     },
     {
+      "id": "footwear/lace-dubrae",
+      "title": "Lace Dubrae — Custom Sneaker Lace Name Plates (parametric, 48 names + your own)",
+      "summary": "Sneaker lace dubraes — the little name plate that rides on your shoelaces. The lace runs hidden through one big channel that exits both ends, so the top stays a clean, curved name plate (it bows lengthwise like the real metal ones). One shared BODY hosts every name: print the body once, then drop any text plate on top in a contrast filament. Ships the body plus 48 ready-made names AND the full parametric .scad so you can type any word and re-render. Prints dead flat, no supports.",
+      "tags": [
+        "dubrae",
+        "shoelace",
+        "lacelock",
+        "sneaker",
+        "shoes",
+        "nameplate",
+        "lacecharm",
+        "footwear",
+        "lacejewelry",
+        "customizable",
+        "parametric",
+        "openscad"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/home/lace-dubrae-custom-sneaker-lace-name-plates-parametric-48-names-your-own"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1744505-lace-dubrae-custom-sneaker-lace-name-plates-parame"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/2888121"
+        },
+        {
+          "platform": "snapmaker",
+          "url": "https://space.snapmaker.com/en/model/36061"
+        }
+      ],
+      "image": "/assets/prints/footwear/lace-dubrae/637ce3c36ead1413.webp"
+    },
+    {
       "id": "footwear/traveling-shoe-horns",
       "title": "Traveling Shoe Horns",
       "summary": "Three compact, packable shoe horns in one set — a thin bent-sheet spoon, a print-in-place folding one, and a rotating/pivoting one. All slim enough to drop in a bag, suitcase, or coat pocket. Print them solid and strong, and treat them with a little care.",
@@ -10673,44 +10738,6 @@
         }
       ],
       "image": "/assets/prints/outdoor/trigger-breeze-fan/104365d2a23cbf12.webp"
-    },
-    {
-      "id": "footwear/lace-dubrae",
-      "title": "Lace Dubrae — Custom Sneaker Lace Name Plates (parametric, 48 names + your own)",
-      "summary": "Sneaker lace dubraes — the little name plate that rides on your shoelaces. The lace runs hidden through one big channel that exits both ends, so the top stays a clean, curved name plate (it bows lengthwise like the real metal ones). One shared BODY hosts every name: print the body once, then drop any text plate on top in a contrast filament. Ships the body plus 48 ready-made names AND the full parametric .scad so you can type any word and re-render. Prints dead flat, no supports.",
-      "tags": [
-        "dubrae",
-        "shoelace",
-        "lacelock",
-        "sneaker",
-        "shoes",
-        "nameplate",
-        "lacecharm",
-        "footwear",
-        "lacejewelry",
-        "customizable",
-        "parametric",
-        "openscad"
-      ],
-      "links": [
-        {
-          "platform": "cults3d",
-          "url": "https://cults3d.com/en/3d-model/home/lace-dubrae-custom-sneaker-lace-name-plates-parametric-48-names-your-own"
-        },
-        {
-          "platform": "printables",
-          "url": "https://www.printables.com/model/1744505-lace-dubrae-custom-sneaker-lace-name-plates-parame"
-        },
-        {
-          "platform": "makerworld",
-          "url": "https://makerworld.com/en/models/2888121"
-        },
-        {
-          "platform": "snapmaker",
-          "url": "https://space.snapmaker.com/en/model/36061"
-        }
-      ],
-      "image": "/assets/prints/footwear/lace-dubrae/637ce3c36ead1413.webp"
     }
   ]
 }
