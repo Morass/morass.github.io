@@ -124,10 +124,12 @@
      ]
     ],
     "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_mqHKw2pR8R3HFapdJDE_EBcif1IKvJfdo",
-    "spotify": "https://open.spotify.com/album/1TDznl23IH4JLw7uu4igaS"
+    "spotify": "https://open.spotify.com/album/1TDznl23IH4JLw7uu4igaS",
+    "apple": "https://music.apple.com/us/album/the-fall-of-the-cinder-tyrant/6818465208"
    },
    "embeds": {
     "spotify": "https://open.spotify.com/embed/album/1TDznl23IH4JLw7uu4igaS?theme=0",
+    "apple": "https://embed.music.apple.com/us/album/the-fall-of-the-cinder-tyrant/6818465208",
     "youtube": "https://www.youtube-nocookie.com/embed/IZPzlaNxMPQ?autoplay=1&list=OLAK5uy_mqHKw2pR8R3HFapdJDE_EBcif1IKvJfdo"
    },
    "track_embeds": [
