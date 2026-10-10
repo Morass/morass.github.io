@@ -649,6 +649,44 @@
       "image": "/assets/prints/bathroom/wizard-tower-organizer/5a968ccf469b5847.webp"
     },
     {
+      "id": "boardgames/breach/marsh",
+      "title": "Marsh — Backlit Modular LED Swamp Terrain Runner (28-32mm, chainable)",
+      "summary": "A backlit modular swamp runner for 28-32mm tabletop games. A winding translucent creek glows from below when a 30cm USB LED strip slides into a hidden channel. Two printed parts per segment (one is a two-colour terrain plate), no supports, no glue. Identical segments dovetail end-to-end so one strip threads straight through the whole run; the river, banks and bog texture flow continuously across every joint. Confirmed printed and lit.",
+      "tags": [
+        "terrain",
+        "tabletop",
+        "wargaming",
+        "dnd",
+        "swamp",
+        "marsh",
+        "led",
+        "backlit",
+        "modular",
+        "scatter",
+        "dungeon",
+        "openscad"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/game/marsh-backlit-modular-led-swamp-terrain-runner-28-32mm-chainable"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1761232-marsh-backlit-modular-led-swamp-terrain-runner-28"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/2962561"
+        },
+        {
+          "platform": "snapmaker",
+          "url": "https://space.snapmaker.com/en/model/35804"
+        }
+      ],
+      "image": "/assets/prints/boardgames/breach/marsh/2980670d9d148a5a.webp"
+    },
+    {
       "id": "boardgames/breach",
       "title": "Breach Dungeon Tiles — modular D&D base squares + drop-in terrain",
       "summary": "A modular dungeon-building kit of snap-together base square tiles plus everything that drops into them: floor-texture inserts (stone, cracked ground, cobbles, rubble, fissures), wall pieces, and scatter props (chests, barrels, statues, trees, crystals). Every insert, wall and prop sits on the same 27.9 mm square base. Prints support-free. Pairs with any 28 mm minis.",
@@ -688,44 +726,6 @@
         }
       ],
       "image": "/assets/prints/boardgames/breach/1208bac2da97e29a.webp"
-    },
-    {
-      "id": "boardgames/breach/marsh",
-      "title": "Marsh — Backlit Modular LED Swamp Terrain Runner (28-32mm, chainable)",
-      "summary": "A backlit modular swamp runner for 28-32mm tabletop games. A winding translucent creek glows from below when a 30cm USB LED strip slides into a hidden channel. Two printed parts per segment (one is a two-colour terrain plate), no supports, no glue. Identical segments dovetail end-to-end so one strip threads straight through the whole run; the river, banks and bog texture flow continuously across every joint. Confirmed printed and lit.",
-      "tags": [
-        "terrain",
-        "tabletop",
-        "wargaming",
-        "dnd",
-        "swamp",
-        "marsh",
-        "led",
-        "backlit",
-        "modular",
-        "scatter",
-        "dungeon",
-        "openscad"
-      ],
-      "links": [
-        {
-          "platform": "cults3d",
-          "url": "https://cults3d.com/en/3d-model/game/marsh-backlit-modular-led-swamp-terrain-runner-28-32mm-chainable"
-        },
-        {
-          "platform": "printables",
-          "url": "https://www.printables.com/model/1761232-marsh-backlit-modular-led-swamp-terrain-runner-28"
-        },
-        {
-          "platform": "makerworld",
-          "url": "https://makerworld.com/en/models/2962561"
-        },
-        {
-          "platform": "snapmaker",
-          "url": "https://space.snapmaker.com/en/model/35804"
-        }
-      ],
-      "image": "/assets/prints/boardgames/breach/marsh/2980670d9d148a5a.webp"
     },
     {
       "id": "boardgames/cascadia/market-rack",
@@ -5002,10 +5002,6 @@
         {
           "platform": "printables",
           "url": "https://www.printables.com/model/1862913-tudor-house-box-half-timbered-town-house-whose-upp"
-        },
-        {
-          "platform": "makerworld",
-          "url": "https://makerworld.com/en/models/3389018"
         }
       ],
       "image": "/assets/prints/containers/tudor-house-box/a258a214711c2dda.webp"
@@ -5889,6 +5885,36 @@
       "image": "/assets/prints/decorations/dragon-ring-holder/3d7f44eb9ca19270.webp"
     },
     {
+      "id": "decorations/drowned-watchman",
+      "title": "Drowned Watchman — barnacle skull, four-colour anatomical decoration",
+      "summary": "Anatomical skull that looks pulled from the seabed: a broken temple, shallow cracks, six barnacles and patches of olive growth. One 89 × 128 × 94 mm print in four PLA colours, or one colour and paint. Fixed jaw, tree supports, no assembly. Anatomy by Dr Mariano Coretti, CC BY-SA 4.0.",
+      "tags": [
+        "skull",
+        "halloween",
+        "barnacle",
+        "anatomy",
+        "multicolor",
+        "ocean",
+        "pirate",
+        "gothic",
+        "sculpture",
+        "decor",
+        "anatomical",
+        "shipwreck",
+        "nautical",
+        "ams",
+        "mementomori"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/home/drowned-watchman-barnacle-skull-four-colour-anatomical-decoration"
+        }
+      ],
+      "collection": "decorations/sculptures",
+      "image": "/assets/prints/decorations/drowned-watchman/f4cd30cbed014ace.webp"
+    },
+    {
       "id": "decorations/femur-earring",
       "title": "Dino Femur Bone Earring Charm — Mirrored Pair",
       "summary": "A tiny dinosaur femur bone charm with a built-in jump-ring loop on the upper knuckle. Ships as a mirrored pair for earrings. About 20 mm tall, prints standing with no supports. Companion to the T-rex skull charm.",
@@ -6276,7 +6302,7 @@
         }
       ],
       "collection": "decorations/coasters",
-      "image": "/assets/prints/decorations/halloween-coasters/593344f05761f672.webp"
+      "image": "/assets/prints/decorations/halloween-coasters/9f7da53949fdd7a2.webp"
     },
     {
       "id": "decorations/hollow-face-vase-brooch",
