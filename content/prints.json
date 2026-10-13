@@ -4082,6 +4082,40 @@
       "image": "/assets/prints/containers/elven-motif-box/696af60838d44ecc.webp"
     },
     {
+      "id": "containers/elven-seed-archive",
+      "title": "Elven seed archive — four-colour drawer box, pinned roof, no glue",
+      "summary": "Four-colour elven drawer box, 240 x 200 x 70 mm closed, with a scalloped leaf roof, arched tracery windows and a full-width pull-out drawer. Three prints plus four friction pins, no glue, no supports, no hardware.",
+      "tags": [
+        "elven",
+        "elf",
+        "fantasy",
+        "drawer",
+        "box",
+        "storage",
+        "jewelrybox",
+        "multicolour",
+        "ams",
+        "nosupports",
+        "noglue",
+        "leaves"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/home/elven-seed-archive-four-colour-drawer-box-pinned-roof-no-glue"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1875358-elven-seed-archive-four-colour-drawer-box-pinned-r"
+        },
+        {
+          "platform": "snapmaker",
+          "url": "https://space.snapmaker.com/en/model/42538"
+        }
+      ],
+      "image": "/assets/prints/containers/elven-seed-archive/b73d9afccfd4beee.webp"
+    },
+    {
       "id": "containers/grimoire-box",
       "title": "Grimoire Box — a hinged spellbook with the magnets sealed inside",
       "summary": "A leather-bound tome that opens on a real barrel hinge. Two sizes, any word you like on the cover, and four magnets that end up fully enclosed in the plastic - nothing visible in any face. Three printed parts, no supports, no screws, no glue.",
