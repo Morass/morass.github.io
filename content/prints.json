@@ -3373,6 +3373,38 @@
       "image": "/assets/prints/boardgames/spirit-island/energy-counter/f6960582a6c0484a.webp"
     },
     {
+      "id": "boardgames/spirit-island/invaders",
+      "title": "Spirit Island Invaders — four-colour explorer, town and city, no supports",
+      "summary": "Full set of multicolour invader pieces for Spirit Island: a colonist explorer in a tricorn hat, a half-timbered town and a guild-hall city with a clock tower. Each piece prints complete and coloured in one go, no supports, no glue. Ready plates with the filaments already assigned.",
+      "tags": [
+        "spiritisland",
+        "boardgame",
+        "invaders",
+        "tokens",
+        "multicolor",
+        "explorer",
+        "town",
+        "city",
+        "ams",
+        "nosupports",
+        "miniatures",
+        "tabletop",
+        "upgrade",
+        "colonial"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/game/spirit-island-invaders-four-colour-explorer-town-and-city-no-supports"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1877737-spirit-island-invaders-four-colour-explorer-town-a"
+        }
+      ],
+      "image": "/assets/prints/boardgames/spirit-island/invaders/f031f28fa5376b09.webp"
+    },
+    {
       "id": "boardgames/spirit-island/token-set",
       "title": "Spirit Island Tokens — Amateur Set (5 pieces, two-color)",
       "summary": "Five simple fan-made Spirit Island board-game tokens (Beast, Wilds, Mountain, Strife, Beasts/Paw) designed in OpenSCAD for Bambu Lab AMS two-color printing. Rough and beginner-quality — functional, not display-grade.",
@@ -5036,6 +5068,10 @@
         {
           "platform": "printables",
           "url": "https://www.printables.com/model/1862913-tudor-house-box-half-timbered-town-house-whose-upp"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3389018"
         }
       ],
       "image": "/assets/prints/containers/tudor-house-box/a258a214711c2dda.webp"
@@ -6344,7 +6380,7 @@
         }
       ],
       "collection": "decorations/coasters",
-      "image": "/assets/prints/decorations/halloween-coasters/9f7da53949fdd7a2.webp"
+      "image": "/assets/prints/decorations/halloween-coasters/593344f05761f672.webp"
     },
     {
       "id": "decorations/hollow-face-vase-brooch",
