@@ -75,9 +75,109 @@
     "The Last Bridge",
     "Midsummer Fires"
    ],
-   "links": {},
-   "embeds": {},
-   "track_embeds": []
+   "links": {
+    "youtube_tracks": [
+     "OLAK5uy_m6xYSfXV3tAfpRyFHlChFES7HPbnZHOA0",
+     [
+      "6WXMPHxgdsA",
+      "w3OagGewzy8",
+      "HoRsGlBsipI",
+      "6wawSw4XJy0",
+      "yuvlk_L-xOU",
+      "JLgz7W4g82s",
+      "G4LfdfKUKuc",
+      "mLKCxak7nTA",
+      "F3dzkhtyFsA",
+      "JDUMUmKX21s",
+      "agymu3DUkRY",
+      "ishsXnKGKh8",
+      "2W2WcCBf2UU",
+      "qOzUfxCIz5Q",
+      "gWrF5JxPMkg"
+     ]
+    ],
+    "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_m6xYSfXV3tAfpRyFHlChFES7HPbnZHOA0"
+   },
+   "embeds": {
+    "youtube": "https://www.youtube-nocookie.com/embed/6WXMPHxgdsA?autoplay=1&list=OLAK5uy_m6xYSfXV3tAfpRyFHlChFES7HPbnZHOA0"
+   },
+   "track_embeds": [
+    {
+     "title": "Morning at the Mill-Ford",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/6WXMPHxgdsA?autoplay=1&list=OLAK5uy_m6xYSfXV3tAfpRyFHlChFES7HPbnZHOA0"
+    },
+    {
+     "title": "The Tinkers' Fair",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/w3OagGewzy8?autoplay=1&list=OLAK5uy_m6xYSfXV3tAfpRyFHlChFES7HPbnZHOA0"
+    },
+    {
+     "title": "Riders Under the Pines",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/HoRsGlBsipI?autoplay=1&list=OLAK5uy_m6xYSfXV3tAfpRyFHlChFES7HPbnZHOA0"
+    },
+    {
+     "title": "The Barrel Race",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/6wawSw4XJy0?autoplay=1&list=OLAK5uy_m6xYSfXV3tAfpRyFHlChFES7HPbnZHOA0"
+    },
+    {
+     "title": "The Grey Stair",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/yuvlk_L-xOU?autoplay=1&list=OLAK5uy_m6xYSfXV3tAfpRyFHlChFES7HPbnZHOA0"
+    },
+    {
+     "title": "Goblin Market Under the Hill",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/JLgz7W4g82s?autoplay=1&list=OLAK5uy_m6xYSfXV3tAfpRyFHlChFES7HPbnZHOA0"
+    },
+    {
+     "title": "Rain on the Long Lake",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/G4LfdfKUKuc?autoplay=1&list=OLAK5uy_m6xYSfXV3tAfpRyFHlChFES7HPbnZHOA0"
+    },
+    {
+     "title": "The Barrow Road",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/mLKCxak7nTA?autoplay=1&list=OLAK5uy_m6xYSfXV3tAfpRyFHlChFES7HPbnZHOA0"
+    },
+    {
+     "title": "Smoke over the Eastern Ridge",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/F3dzkhtyFsA?autoplay=1&list=OLAK5uy_m6xYSfXV3tAfpRyFHlChFES7HPbnZHOA0"
+    },
+    {
+     "title": "The Iron Gate",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/JDUMUmKX21s?autoplay=1&list=OLAK5uy_m6xYSfXV3tAfpRyFHlChFES7HPbnZHOA0"
+    },
+    {
+     "title": "Pursuit Through the Black Wood",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/agymu3DUkRY?autoplay=1&list=OLAK5uy_m6xYSfXV3tAfpRyFHlChFES7HPbnZHOA0"
+    },
+    {
+     "title": "Wolves on the Snowfield",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/ishsXnKGKh8?autoplay=1&list=OLAK5uy_m6xYSfXV3tAfpRyFHlChFES7HPbnZHOA0"
+    },
+    {
+     "title": "The Shadow's Muster",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/2W2WcCBf2UU?autoplay=1&list=OLAK5uy_m6xYSfXV3tAfpRyFHlChFES7HPbnZHOA0"
+    },
+    {
+     "title": "The Last Bridge",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/qOzUfxCIz5Q?autoplay=1&list=OLAK5uy_m6xYSfXV3tAfpRyFHlChFES7HPbnZHOA0"
+    },
+    {
+     "title": "Midsummer Fires",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/gWrF5JxPMkg?autoplay=1&list=OLAK5uy_m6xYSfXV3tAfpRyFHlChFES7HPbnZHOA0"
+    }
+   ]
   },
   {
    "slug": "the-fall-of-the-cinder-tyrant",
