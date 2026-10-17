@@ -3404,9 +3404,46 @@
         {
           "platform": "makerworld",
           "url": "https://makerworld.com/en/models/3442141"
+        },
+        {
+          "platform": "snapmaker",
+          "url": "https://space.snapmaker.com/en/model/43210"
         }
       ],
       "image": "/assets/prints/boardgames/spirit-island/invaders/f031f28fa5376b09.webp"
+    },
+    {
+      "id": "boardgames/spirit-island/jagged-tokens",
+      "title": "Spirit Island Branch & Claw / Jagged Earth Tokens (Multicolour)",
+      "summary": "Beasts, wilds, disease, badlands and strife tokens for Spirit Island, printed complete in 3-4 colours with no supports and the game icon underneath.",
+      "tags": [
+        "spiritisland",
+        "jaggedearth",
+        "branchandclaw",
+        "boardgame",
+        "tabletop",
+        "token",
+        "tokens",
+        "beasts",
+        "wilds",
+        "disease",
+        "badlands",
+        "strife",
+        "multicolor",
+        "ams",
+        "nosupports"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/game/spirit-island-branch-claw-jagged-earth-tokens-multicolour"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1880902-spirit-island-branch-claw-jagged-earth-tokens-mult"
+        }
+      ],
+      "image": "/assets/prints/boardgames/spirit-island/jagged-tokens/983139fcb0e0058b.webp"
     },
     {
       "id": "boardgames/spirit-island/token-set",
