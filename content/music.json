@@ -96,9 +96,13 @@
       "gWrF5JxPMkg"
      ]
     ],
-    "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_m6xYSfXV3tAfpRyFHlChFES7HPbnZHOA0"
+    "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_m6xYSfXV3tAfpRyFHlChFES7HPbnZHOA0",
+    "spotify": "https://open.spotify.com/album/4UCUtESfd4fh01gDREyhh7",
+    "apple": "https://music.apple.com/us/album/fires-at-midsummer/6819689974"
    },
    "embeds": {
+    "spotify": "https://open.spotify.com/embed/album/4UCUtESfd4fh01gDREyhh7?theme=0",
+    "apple": "https://embed.music.apple.com/us/album/fires-at-midsummer/6819689974",
     "youtube": "https://www.youtube-nocookie.com/embed/6WXMPHxgdsA?autoplay=1&list=OLAK5uy_m6xYSfXV3tAfpRyFHlChFES7HPbnZHOA0"
    },
    "track_embeds": [
