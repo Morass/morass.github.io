@@ -1,6 +1,30 @@
 {
  "albums": [
   {
+   "slug": "the-registry-of-sundered-places",
+   "artist": "Orenvalt Archive",
+   "album": "Sundered Places",
+   "release_date": "2026-11-06",
+   "summary": "Ten places of the old world where one ordinary rule stopped holding, each with its own tune and its own river, fire or sea.",
+   "cover": "/assets/music/the-registry-of-sundered-places.webp",
+   "hyperfollow": "https://distrokid.com/hyperfollow/orenvaltarchive/sundered-places",
+   "tracks": [
+    "The Ford That Runs Upstream",
+    "Where Words Do Not Leave",
+    "A Shadow Half a Pace Behind",
+    "Fire Without Heat",
+    "The Bridge That Cannot Stand",
+    "The Silent River",
+    "What You Speak Here Is Heard",
+    "The Unfinished Hour",
+    "Grain Without a Reaper",
+    "Two Seas at Once"
+   ],
+   "links": {},
+   "embeds": {},
+   "track_embeds": []
+  },
+  {
    "slug": "full-house-at-the-tholvaen",
    "artist": "Taverns of Vorendia",
    "album": "Full House at the Tholvaen",
