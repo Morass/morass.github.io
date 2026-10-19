@@ -3292,6 +3292,36 @@
       "image": "/assets/prints/boardgames/mtg/undercity-dungeon/5109ffed72a96200.webp"
     },
     {
+      "id": "boardgames/spirit-island/blight-token",
+      "title": "Spirit Island Blight Tokens, Sculpted Dead Tree (Multicolour)",
+      "summary": "Spirit Island blight as a small sculpture: a charred dead tree on grey ash with red cracks, a skull and bones, printed complete in four colours with no supports.",
+      "tags": [
+        "spiritisland",
+        "blight",
+        "boardgame",
+        "tabletop",
+        "token",
+        "tokens",
+        "deadtree",
+        "skull",
+        "multicolor",
+        "ams",
+        "nosupports",
+        "miniature"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/game/spirit-island-blight-tokens-sculpted-dead-tree-multicolour"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1883457-spirit-island-blight-tokens-sculpted-dead-tree-mul"
+        }
+      ],
+      "image": "/assets/prints/boardgames/spirit-island/blight-token/c22077eed7909ea8.webp"
+    },
+    {
       "id": "boardgames/spirit-island/dahan",
       "title": "Dahan — Spirit Island Tribal Hut Token (2-Colour, AMS Split-to-Parts)",
       "summary": "Spirit Island dahan tokens shaped like a Pacific-Islander tribal hut — woven body with low-relief door + tall conical thatched roof, Ø22 × 20 mm. Ships as a 2-named-solid combined STL (import → Split to Parts in Bambu Studio) for a 2-AMS-colour print (thatch tan + wall brown). Per-half binary STLs included for single-colour or mono-extruder users.",
@@ -3444,6 +3474,38 @@
         }
       ],
       "image": "/assets/prints/boardgames/spirit-island/jagged-tokens/983139fcb0e0058b.webp"
+    },
+    {
+      "id": "boardgames/spirit-island/scenario-relief-tokens",
+      "title": "Spirit Island Scenario Markers, Sculpted Figures (Multicolour)",
+      "summary": "Sculpted multicolour markers for six Spirit Island scenarios and the Habsburg Livestock Colony damage, printed complete with no supports.",
+      "tags": [
+        "spiritisland",
+        "scenario",
+        "boardgame",
+        "tabletop",
+        "token",
+        "tokens",
+        "marker",
+        "markers",
+        "jaggedearth",
+        "branchandclaw",
+        "multicolor",
+        "ams",
+        "nosupports",
+        "miniature"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/game/spirit-island-scenario-markers-sculpted-figures-multicolour"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1883315-spirit-island-scenario-markers-sculpted-figures-mu"
+        }
+      ],
+      "image": "/assets/prints/boardgames/spirit-island/scenario-relief-tokens/2a6f80f12392f073.webp"
     },
     {
       "id": "boardgames/spirit-island/token-set",

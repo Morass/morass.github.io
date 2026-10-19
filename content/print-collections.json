@@ -74,10 +74,12 @@
       "boardgames/mtg/undercity-dungeon"
     ],
     "boardgames/by-game/spirit-island": [
+      "boardgames/spirit-island/blight-token",
       "boardgames/spirit-island/dahan",
       "boardgames/spirit-island/energy-counter",
       "boardgames/spirit-island/invaders",
       "boardgames/spirit-island/jagged-tokens",
+      "boardgames/spirit-island/scenario-relief-tokens",
       "boardgames/spirit-island/token-set"
     ],
     "boardgames/by-game/terraforming-mars": [
