@@ -1,6 +1,33 @@
 {
  "albums": [
   {
+   "slug": "the-wrack",
+   "artist": "Skralvoss",
+   "album": "The Wrack",
+   "release_date": "2026-11-13",
+   "summary": "Thirteen battle pieces from the drowned shore, where a war host comes up with the tide, from the herald raven over the surf to the last ship out of Holdskarr.",
+   "cover": "/assets/music/the-wrack.webp",
+   "hyperfollow": "https://distrokid.com/hyperfollow/skralvoss/the-wrack",
+   "tracks": [
+    "The Wrack-Herald",
+    "Up with the Wrack-Line",
+    "Oars against the Tide",
+    "Corsairs of the Salt Road",
+    "Harpoons in the Shallows",
+    "Into the Sea-Cave",
+    "The Drowned Bells",
+    "The Siren over Open Water",
+    "The Holdskarr Muster",
+    "Anchors Down",
+    "Rain over the Breakwater",
+    "The Breakwater Holds",
+    "Last Ship out of Holdskarr"
+   ],
+   "links": {},
+   "embeds": {},
+   "track_embeds": []
+  },
+  {
    "slug": "the-registry-of-sundered-places",
    "artist": "Orenvalt Archive",
    "album": "Sundered Places",
