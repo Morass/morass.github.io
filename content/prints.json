@@ -3471,6 +3471,10 @@
         {
           "platform": "printables",
           "url": "https://www.printables.com/model/1880902-spirit-island-branch-claw-jagged-earth-tokens-mult"
+        },
+        {
+          "platform": "snapmaker",
+          "url": "https://space.snapmaker.com/en/model/43855"
         }
       ],
       "image": "/assets/prints/boardgames/spirit-island/jagged-tokens/983139fcb0e0058b.webp"
@@ -6483,7 +6487,7 @@
         }
       ],
       "collection": "decorations/coasters",
-      "image": "/assets/prints/decorations/halloween-coasters/593344f05761f672.webp"
+      "image": "/assets/prints/decorations/halloween-coasters/9f7da53949fdd7a2.webp"
     },
     {
       "id": "decorations/hollow-face-vase-brooch",
