@@ -97,9 +97,81 @@
     "Elegy: The Song That Waited",
     "Beacons Along the Aevirfast"
    ],
-   "links": {},
-   "embeds": {},
-   "track_embeds": []
+   "links": {
+    "spotify": "https://open.spotify.com/album/01GV7FDZ04191A0Dq0lCBo",
+    "youtube_tracks": [
+     "OLAK5uy_mb4TAwzYDtmWlqDbeHqqGc1i5OYarphzE",
+     [
+      "w_HZPfosGXE",
+      "xePeTRCl3Xs",
+      "yYY6-tx-nwU",
+      "DMJF5tAy97A",
+      "n7Vy-nVfzUQ",
+      "o9NqQlhC87I",
+      "FsOiQeaFPb8",
+      "C-_G-bM8RzM",
+      "3olH5ByfO4k",
+      "hcPi4POdxjM"
+     ]
+    ],
+    "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_mb4TAwzYDtmWlqDbeHqqGc1i5OYarphzE"
+   },
+   "embeds": {
+    "spotify": "https://open.spotify.com/embed/album/01GV7FDZ04191A0Dq0lCBo?theme=0",
+    "youtube": "https://www.youtube-nocookie.com/embed/w_HZPfosGXE?autoplay=1&list=OLAK5uy_mb4TAwzYDtmWlqDbeHqqGc1i5OYarphzE"
+   },
+   "track_embeds": [
+    {
+     "title": "Shrine on the Storm-Shelf",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/w_HZPfosGXE?autoplay=1&list=OLAK5uy_mb4TAwzYDtmWlqDbeHqqGc1i5OYarphzE"
+    },
+    {
+     "title": "Ten Breaths Before the Voice",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/xePeTRCl3Xs?autoplay=1&list=OLAK5uy_mb4TAwzYDtmWlqDbeHqqGc1i5OYarphzE"
+    },
+    {
+     "title": "Through the Headland Passage",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/yYY6-tx-nwU?autoplay=1&list=OLAK5uy_mb4TAwzYDtmWlqDbeHqqGc1i5OYarphzE"
+    },
+    {
+     "title": "Fugue for the Answer-Skarr",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/DMJF5tAy97A?autoplay=1&list=OLAK5uy_mb4TAwzYDtmWlqDbeHqqGc1i5OYarphzE"
+    },
+    {
+     "title": "Tarantella for a Mareth Night",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/n7Vy-nVfzUQ?autoplay=1&list=OLAK5uy_mb4TAwzYDtmWlqDbeHqqGc1i5OYarphzE"
+    },
+    {
+     "title": "Toccata on the Vrend-Count",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/o9NqQlhC87I?autoplay=1&list=OLAK5uy_mb4TAwzYDtmWlqDbeHqqGc1i5OYarphzE"
+    },
+    {
+     "title": "Muster-Feast at Holdskarr",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/FsOiQeaFPb8?autoplay=1&list=OLAK5uy_mb4TAwzYDtmWlqDbeHqqGc1i5OYarphzE"
+    },
+    {
+     "title": "Concerto for Storm and Strings",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/C-_G-bM8RzM?autoplay=1&list=OLAK5uy_mb4TAwzYDtmWlqDbeHqqGc1i5OYarphzE"
+    },
+    {
+     "title": "Elegy: The Song That Waited",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/3olH5ByfO4k?autoplay=1&list=OLAK5uy_mb4TAwzYDtmWlqDbeHqqGc1i5OYarphzE"
+    },
+    {
+     "title": "Beacons Along the Aevirfast",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/hcPi4POdxjM?autoplay=1&list=OLAK5uy_mb4TAwzYDtmWlqDbeHqqGc1i5OYarphzE"
+    }
+   ]
   },
   {
    "slug": "fires-at-midsummer",
