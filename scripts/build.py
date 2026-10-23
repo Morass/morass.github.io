@@ -14,6 +14,10 @@ P = json.loads((ROOT / 'content/projects.json').read_text())
 PRINTS = json.loads((ROOT / 'content/prints.json').read_text())['items']
 # Written by ambient-music's tools/release_links.py from each release's HyperFollow page.
 MUSIC = json.loads((ROOT / 'content/music.json').read_text())['albums']
+# Owner 2026-10-23: no pre-save listings. An album appears only once it is out, plays whole
+# tracks here (the YouTube album playlist) and has a store link.
+MUSIC = [a for a in MUSIC if a['release_date'] <= __import__('datetime').date.today().isoformat()
+         and any(t['store'] == 'youtube' for t in a['track_embeds']) and any(k != 'youtube_tracks' for k in a['links'])]
 TAXONOMY = json.loads((ROOT / 'content/print-collections.json').read_text())
 VOCAB = print_tags.load(ROOT / 'content/print-tags.json', [t for i in PRINTS for t in i.get('tags', [])])
 for item in PRINTS:
