@@ -114,10 +114,12 @@
       "hcPi4POdxjM"
      ]
     ],
-    "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_mb4TAwzYDtmWlqDbeHqqGc1i5OYarphzE"
+    "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_mb4TAwzYDtmWlqDbeHqqGc1i5OYarphzE",
+    "apple": "https://music.apple.com/us/album/ten-breaths-before-the-voice/6820625208"
    },
    "embeds": {
     "spotify": "https://open.spotify.com/embed/album/01GV7FDZ04191A0Dq0lCBo?theme=0",
+    "apple": "https://embed.music.apple.com/us/album/ten-breaths-before-the-voice/6820625208",
     "youtube": "https://www.youtube-nocookie.com/embed/w_HZPfosGXE?autoplay=1&list=OLAK5uy_mb4TAwzYDtmWlqDbeHqqGc1i5OYarphzE"
    },
    "track_embeds": [
