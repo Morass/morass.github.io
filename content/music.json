@@ -1,6 +1,32 @@
 {
  "albums": [
   {
+   "slug": "the-last-lantern",
+   "artist": "Corenveld Music Hall",
+   "album": "The Last Lantern",
+   "release_date": "2026-11-20",
+   "summary": "Twelve fantasy orchestral pieces for a winter siege of Corenveld, from the lamplighters at dusk through storm, siege engines and a sortie over the ice to the last lantern on the wall and the midwinter reel when the siege lifts.",
+   "cover": "/assets/music/the-last-lantern.webp",
+   "hyperfollow": "https://distrokid.com/hyperfollow/corenveldmusichall/the-last-lantern",
+   "tracks": [
+    "The Lamplighters",
+    "The Clocktower Stair",
+    "Black Banners on the North Road",
+    "The Fencing Master",
+    "The King's Hunt",
+    "Storm over the Spires",
+    "Siege Engines at the Wall",
+    "The Frozen Ferry",
+    "The Ice-Bridge Chase",
+    "Oath in the High Hall",
+    "The Last Lantern",
+    "Midwinter Reel"
+   ],
+   "links": {},
+   "embeds": {},
+   "track_embeds": []
+  },
+  {
    "slug": "the-wrack",
    "artist": "Skralvoss",
    "album": "The Wrack",
