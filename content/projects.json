@@ -206,6 +206,7 @@
       "title": "Další díl",
       "url": "https://github.com/Morass/dalsidil",
       "group": "browser-extensions",
+      "icon": "/assets/ui/dalsidil.png",
       "label": "Chrome extension · ČSFD",
       "summary": "Keep the next episode of every series you rate on ČSFD one click away."
     },
@@ -213,6 +214,7 @@
       "title": "nosave",
       "url": "https://github.com/Morass/nosave",
       "group": "browser-extensions",
+      "icon": "/assets/ui/nosave.png",
       "label": "Chrome extension · Google Images",
       "summary": "Remove the Save button Google Images puts over a picture, so a click opens it."
     },
