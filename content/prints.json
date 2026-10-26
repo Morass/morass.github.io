@@ -3317,6 +3317,10 @@
         {
           "platform": "printables",
           "url": "https://www.printables.com/model/1883457-spirit-island-blight-tokens-sculpted-dead-tree-mul"
+        },
+        {
+          "platform": "snapmaker",
+          "url": "https://space.snapmaker.com/en/model/45058"
         }
       ],
       "image": "/assets/prints/boardgames/spirit-island/blight-token/c22077eed7909ea8.webp"
@@ -3480,6 +3484,37 @@
       "image": "/assets/prints/boardgames/spirit-island/jagged-tokens/983139fcb0e0058b.webp"
     },
     {
+      "id": "boardgames/spirit-island/nature-tokens",
+      "title": "Spirit Island Nature Incarnate Tokens (Multicolour)",
+      "summary": "Vitality, deeps, quake and incarna tokens for Spirit Island Nature Incarnate, printed complete in four colours with no supports and the game icon underneath.",
+      "tags": [
+        "spiritisland",
+        "natureincarnate",
+        "boardgame",
+        "tabletop",
+        "token",
+        "tokens",
+        "vitality",
+        "deeps",
+        "quake",
+        "incarna",
+        "multicolor",
+        "ams",
+        "nosupports"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/game/spirit-island-nature-incarnate-tokens-multicolour"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1891288-spirit-island-nature-incarnate-tokens-multicolour"
+        }
+      ],
+      "image": "/assets/prints/boardgames/spirit-island/nature-tokens/8e10db099b73e8d8.webp"
+    },
+    {
       "id": "boardgames/spirit-island/scenario-relief-tokens",
       "title": "Spirit Island Scenario Markers, Sculpted Figures (Multicolour)",
       "summary": "Sculpted multicolour markers for six Spirit Island scenarios and the Habsburg Livestock Colony damage, printed complete with no supports.",
@@ -3507,6 +3542,10 @@
         {
           "platform": "printables",
           "url": "https://www.printables.com/model/1883315-spirit-island-scenario-markers-sculpted-figures-mu"
+        },
+        {
+          "platform": "snapmaker",
+          "url": "https://space.snapmaker.com/en/model/44538"
         }
       ],
       "image": "/assets/prints/boardgames/spirit-island/scenario-relief-tokens/2a6f80f12392f073.webp"
