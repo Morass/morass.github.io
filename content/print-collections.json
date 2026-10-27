@@ -76,6 +76,7 @@
     "boardgames/by-game/spirit-island": [
       "boardgames/spirit-island/blight-token",
       "boardgames/spirit-island/dahan",
+      "boardgames/spirit-island/defend-tokens",
       "boardgames/spirit-island/energy-counter",
       "boardgames/spirit-island/fear-tokens",
       "boardgames/spirit-island/invaders",

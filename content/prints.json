@@ -3370,6 +3370,40 @@
       "image": "/assets/prints/boardgames/spirit-island/dahan/95488079d263400a.webp"
     },
     {
+      "id": "boardgames/spirit-island/defend-tokens",
+      "title": "Spirit Island Defend Tokens (Multicolour, Stackable)",
+      "summary": "Defend 1, 2 and 4 shields for Spirit Island, printed complete in two colours with no supports, and nesting so a stack stays put.",
+      "tags": [
+        "spiritisland",
+        "defend",
+        "defense",
+        "shield",
+        "boardgame",
+        "tabletop",
+        "token",
+        "tokens",
+        "stackable",
+        "multicolor",
+        "ams",
+        "nosupports"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/game/spirit-island-defend-tokens-multicolour-stackable"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1893198-spirit-island-defend-tokens-multicolour-stackable"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3504955-spirit-island-defend-tokens"
+        }
+      ],
+      "image": "/assets/prints/boardgames/spirit-island/defend-tokens/59f23fab25c06a1e.webp"
+    },
+    {
       "id": "boardgames/spirit-island/energy-counter",
       "title": "Spirit Island Energy Counter (0-20 Dial)",
       "summary": "Snap-together rotating dial that tracks per-player energy (0..20) through a window under the eight Spirit Island element glyphs. Two physical parts, four STLs, two filaments via Bambu AMS.",
@@ -3436,6 +3470,14 @@
         {
           "platform": "printables",
           "url": "https://www.printables.com/model/1892512-spirit-island-fear-tokens-multicolour"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3502013-spirit-island-fear-tokens"
+        },
+        {
+          "platform": "snapmaker",
+          "url": "https://space.snapmaker.com/en/model/46244"
         }
       ],
       "image": "/assets/prints/boardgames/spirit-island/fear-tokens/1fe2c9a630cdc659.webp"
