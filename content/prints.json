@@ -3411,6 +3411,36 @@
       "image": "/assets/prints/boardgames/spirit-island/energy-counter/f6960582a6c0484a.webp"
     },
     {
+      "id": "boardgames/spirit-island/fear-tokens",
+      "title": "Spirit Island Fear Tokens (Multicolour)",
+      "summary": "One-fear and five-fear tokens for Spirit Island, printed complete in three colours with no supports: a skull over crossed bones, and a cairn of five skulls.",
+      "tags": [
+        "spiritisland",
+        "fear",
+        "feartoken",
+        "boardgame",
+        "tabletop",
+        "token",
+        "tokens",
+        "skull",
+        "skullandbones",
+        "multicolor",
+        "ams",
+        "nosupports"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/game/spirit-island-fear-tokens-multicolour"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1892512-spirit-island-fear-tokens-multicolour"
+        }
+      ],
+      "image": "/assets/prints/boardgames/spirit-island/fear-tokens/1fe2c9a630cdc659.webp"
+    },
+    {
       "id": "boardgames/spirit-island/invaders",
       "title": "Spirit Island Invaders — four-colour explorer, town and city, no supports",
       "summary": "Full set of multicolour invader pieces for Spirit Island: a colonist explorer in a tricorn hat, a half-timbered town and a guild-hall city with a clock tower. Each piece prints complete and coloured in one go, no supports, no glue. Ready plates with the filaments already assigned.",
