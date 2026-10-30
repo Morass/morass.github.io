@@ -99,9 +99,93 @@
     "One More Round",
     "Last Call"
    ],
-   "links": {},
-   "embeds": {},
-   "track_embeds": []
+   "links": {
+    "spotify": "https://open.spotify.com/album/3UwvyZOsG1VXRCb1TO5Rmk",
+    "youtube_tracks": [
+     "OLAK5uy_l8XbhwjMAD-b7R68pUJ-dd3lH_7dVH8rM",
+     [
+      "uoFy6lAeV7c",
+      "vDCgvpdO2MQ",
+      "7lk70MyCiOM",
+      "BYHI42pGBAs",
+      "NFTmS7ZiOX0",
+      "738JskDfg3M",
+      "GmUjbi_bKng",
+      "ebmmgNvVyvg",
+      "jKDufLEJGYs",
+      "N3rOV-iFjZQ",
+      "lkOxdQ47l_I",
+      "F9zEOjqXHBo"
+     ]
+    ],
+    "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_l8XbhwjMAD-b7R68pUJ-dd3lH_7dVH8rM"
+   },
+   "embeds": {
+    "spotify": "https://open.spotify.com/embed/album/3UwvyZOsG1VXRCb1TO5Rmk?theme=0",
+    "youtube": "https://www.youtube-nocookie.com/embed/uoFy6lAeV7c?autoplay=1&list=OLAK5uy_l8XbhwjMAD-b7R68pUJ-dd3lH_7dVH8rM"
+   },
+   "track_embeds": [
+    {
+     "title": "Boots on the Table",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/uoFy6lAeV7c?autoplay=1&list=OLAK5uy_l8XbhwjMAD-b7R68pUJ-dd3lH_7dVH8rM"
+    },
+    {
+     "title": "The Landlady's Jig",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/vDCgvpdO2MQ?autoplay=1&list=OLAK5uy_l8XbhwjMAD-b7R68pUJ-dd3lH_7dVH8rM"
+    },
+    {
+     "title": "Saltarello for a Full House",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/7lk70MyCiOM?autoplay=1&list=OLAK5uy_l8XbhwjMAD-b7R68pUJ-dd3lH_7dVH8rM"
+    },
+    {
+     "title": "The Juggler's Estampie",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/BYHI42pGBAs?autoplay=1&list=OLAK5uy_l8XbhwjMAD-b7R68pUJ-dd3lH_7dVH8rM"
+    },
+    {
+     "title": "The Leaping Wager",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/NFTmS7ZiOX0?autoplay=1&list=OLAK5uy_l8XbhwjMAD-b7R68pUJ-dd3lH_7dVH8rM"
+    },
+    {
+     "title": "Nine Steps to the Cellar",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/738JskDfg3M?autoplay=1&list=OLAK5uy_l8XbhwjMAD-b7R68pUJ-dd3lH_7dVH8rM"
+    },
+    {
+     "title": "Spilled Ale Polka",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/GmUjbi_bKng?autoplay=1&list=OLAK5uy_l8XbhwjMAD-b7R68pUJ-dd3lH_7dVH8rM"
+    },
+    {
+     "title": "Pipers on the Drev Bridge",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/ebmmgNvVyvg?autoplay=1&list=OLAK5uy_l8XbhwjMAD-b7R68pUJ-dd3lH_7dVH8rM"
+    },
+    {
+     "title": "The Salt Factor's Round",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/jKDufLEJGYs?autoplay=1&list=OLAK5uy_l8XbhwjMAD-b7R68pUJ-dd3lH_7dVH8rM"
+    },
+    {
+     "title": "The Sailor's Debt",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/N3rOV-iFjZQ?autoplay=1&list=OLAK5uy_l8XbhwjMAD-b7R68pUJ-dd3lH_7dVH8rM"
+    },
+    {
+     "title": "One More Round",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/lkOxdQ47l_I?autoplay=1&list=OLAK5uy_l8XbhwjMAD-b7R68pUJ-dd3lH_7dVH8rM"
+    },
+    {
+     "title": "Last Call",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/F9zEOjqXHBo?autoplay=1&list=OLAK5uy_l8XbhwjMAD-b7R68pUJ-dd3lH_7dVH8rM"
+    }
+   ]
   },
   {
    "slug": "ten-breaths-before-the-voice",
