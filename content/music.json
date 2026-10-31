@@ -118,10 +118,12 @@
       "F9zEOjqXHBo"
      ]
     ],
-    "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_l8XbhwjMAD-b7R68pUJ-dd3lH_7dVH8rM"
+    "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_l8XbhwjMAD-b7R68pUJ-dd3lH_7dVH8rM",
+    "apple": "https://music.apple.com/us/album/full-house-at-the-tholvaen/6821726670"
    },
    "embeds": {
     "spotify": "https://open.spotify.com/embed/album/3UwvyZOsG1VXRCb1TO5Rmk?theme=0",
+    "apple": "https://embed.music.apple.com/us/album/full-house-at-the-tholvaen/6821726670",
     "youtube": "https://www.youtube-nocookie.com/embed/uoFy6lAeV7c?autoplay=1&list=OLAK5uy_l8XbhwjMAD-b7R68pUJ-dd3lH_7dVH8rM"
    },
    "track_embeds": [
