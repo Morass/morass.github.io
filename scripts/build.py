@@ -172,7 +172,7 @@ home += '</div></section>'
 COVERS = [a['cover'] for a in MUSIC]
 home += '<section class="home-tools home-music"><a class="home-music-cover" href="/music/" tabindex="-1"><img src="'+E(COVERS[0])+'" data-covers="'+E(json.dumps(COVERS))+'" alt="" width="160" height="160"></a><div><p class="eyebrow">VI · MUSIC</p><h2>Music from the worlds.</h2><p>Soundtrack albums of sieges, wars and long nights. Listen here or on your streaming service.</p></div><a class="button secondary" href="/music/">Listen <span aria-hidden="true">→</span></a></section>'
 # A quiet seventh destination: free tools are not a project family, so a band, not a card.
-home += '<section class="home-tools"><div><p class="eyebrow">VII · FREE TOOLS</p><h2>Small tools, free to use.</h2><p>A command-line tool and a handful of Neovim plugins, all open source.</p></div><a class="button secondary" href="/tools/">See the tools <span aria-hidden="true">→</span></a></section>'
+home += '<section class="home-tools"><div><p class="eyebrow">VII · FREE TOOLS</p><h2>Small tools.</h2><p>A command-line tool and a handful of Neovim plugins, all open source.</p></div><a class="button secondary" href="/tools/">See the tools <span aria-hidden="true">→</span></a></section>'
 page('/', 'Games, prints & curious projects', 'Explore Morass: Steam games, free browser puzzles, Android and iOS projects, YouTube and an organized catalogue of 3D prints.', home)
 for key, title, description in [
     ('games', 'Worlds worth getting lost in.', 'The Morass Games collection. Strategy, survival and stories on Steam.'),
@@ -268,7 +268,7 @@ def tool_inline_mark(tool, group):
     if icon_path := tool.get('icon'):
         return f'<div class="tool-mark-inline"><img class="tool-app-icon" src="{E(icon_path)}" alt="" loading="lazy" width="64" height="64"></div>'
     return tool_mark(group).replace('tool-mark-art', 'tool-mark-inline')
-body = heading('FREE TOOLS', 'Small tools, free to use.', 'Open-source apps, command-line tools and Neovim plugins. Use them, change them, share them.')
+body = heading('FREE TOOLS', 'Small tools.', 'Open-source apps, command-line tools and Neovim plugins. Use them, change them, share them.')
 body += '<div class="cards tool-cards">'
 for group in P['toolGroups']:
     count = sum(t['group'] == group['slug'] for t in P['tools'])
