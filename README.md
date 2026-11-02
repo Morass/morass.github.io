@@ -43,6 +43,9 @@ Existing game routes and `app-ads.txt` remain stable.
   `privacy.html` uses the same shell. The playable minigame bundle is excluded.
 - `assets/ui/channel-*.svg`: vector redraws of each YouTube channel's avatar, named by
   `icon` in `content/projects.json`; redraw one when a channel changes its avatar.
+- `scripts/profile-cards.py`: renders the homepage destinations as the linked images of the
+  GitHub profile README (repo `Morass/Morass`, clone `~/programs/morass-profile`). Re-run it
+  and push that repo after the homepage cards change.
 - `assets/ui/manifest.json`: warehouse printshop icons, paper texture and
   subset EB Garamond provenance; font license is `assets/ui/OFL.txt`.
 - No game bundles live here: Borrowed Ink's old `small-games/borrowed-ink/play/` forwards to
