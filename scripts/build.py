@@ -166,18 +166,18 @@ home = '<section id="explore" class="collection home-crossroads"><div class="sec
 home += card('Games', '/games/', 'Strategy, strange worlds and stories worth getting lost in. Explore the Steam collection.', '/assets/projects/pyrewarden.webp', 'I · GAMES ON STEAM', True)
 home += card('Prints', '/prints/', 'Useful objects, playful mechanisms and tabletop companions. Find something to make.', print_image(print_cover), 'II · PRINTS', True)
 home += card('Small Games', ARCADE, 'A little play, straight from your browser, at morassgames.com.', '/assets/projects/borrowed-ink.webp', 'III · NO INSTALL NEEDED')
-home += card('Mobile', '/mobile/', 'Games and projects made for your pocket.', '/assets/projects/lanternward.webp', 'IV · ANDROID')
+home += card('Mobile', '/mobile/', 'Games and projects made for your pocket.', '/assets/projects/lanternward.webp', 'IV · ANDROID & IOS')
 home += card('YouTube', '/youtube/', 'Stories, objects and a look behind the projects.', label='V · WATCH & DISCOVER', art='<div class="channel-marks">'+''.join(channel_mark(c) for c in P['channels'])+'</div>')
 home += '</div></section>'
 COVERS = [a['cover'] for a in MUSIC]
 home += '<section class="home-tools home-music"><a class="home-music-cover" href="/music/" tabindex="-1"><img src="'+E(COVERS[0])+'" data-covers="'+E(json.dumps(COVERS))+'" alt="" width="160" height="160"></a><div><p class="eyebrow">VI · MUSIC</p><h2>Music from the worlds.</h2><p>Soundtrack albums of sieges, wars and long nights. Listen here or on your streaming service.</p></div><a class="button secondary" href="/music/">Listen <span aria-hidden="true">→</span></a></section>'
 # A quiet seventh destination: free tools are not a project family, so a band, not a card.
 home += '<section class="home-tools"><div><p class="eyebrow">VII · FREE TOOLS</p><h2>Small tools, free to use.</h2><p>A command-line tool and a handful of Neovim plugins, all open source.</p></div><a class="button secondary" href="/tools/">See the tools <span aria-hidden="true">→</span></a></section>'
-page('/', 'Games, prints & curious projects', 'Explore Morass: Steam games, free browser puzzles, Android projects, YouTube and an organized catalogue of 3D prints.', home)
+page('/', 'Games, prints & curious projects', 'Explore Morass: Steam games, free browser puzzles, Android and iOS projects, YouTube and an organized catalogue of 3D prints.', home)
 for key, title, description in [
     ('games', 'Worlds worth getting lost in.', 'The Morass Games collection. Strategy, survival and stories on Steam.'),
     ('small-games', 'Small games. Good company.', 'Thoughtful little games you play in your browser. They have their own arcade now: morassgames.com.'),
-    ('mobile', 'A little wonder, to go.', 'Games and projects for Android. Explore what is taking shape.')]:
+    ('mobile', 'A little wonder, to go.', 'Games and projects for Android and iOS. Explore what is taking shape.')]:
     body = heading(dict(NAV)[key], title, description) + (arcade_shortcut() if key == 'small-games' else project_cards(key))
     if key == 'games': body += '<div class="section-end">'+button('Explore Morass on Steam', 'https://store.steampowered.com/search/?developer=Morass', True)+'<p class="small-note">Playing one of them? Come say hello in the <a href="'+E(P['community']['url'])+'" rel="noopener">'+E(P['community']['label'])+'</a>.</p></div>'
     page('/'+key+'/', dict(NAV)[key], description, body, key, [(dict(NAV)[key], '/'+key+'/')])
