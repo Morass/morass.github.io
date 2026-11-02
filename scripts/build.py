@@ -170,7 +170,7 @@ home += card('Mobile', '/mobile/', 'Games and projects made for your pocket.', '
 home += card('YouTube', '/youtube/', 'Stories, objects and a look behind the projects.', label='V · WATCH & DISCOVER', art='<div class="channel-marks">'+''.join(channel_mark(c) for c in P['channels'])+'</div>')
 home += '</div></section>'
 COVERS = [a['cover'] for a in MUSIC]
-home += '<section class="home-tools home-music"><a class="home-music-cover" href="/music/" tabindex="-1"><img src="'+E(COVERS[0])+'" data-covers="'+E(json.dumps(COVERS))+'" alt="" width="160" height="160"></a><div><p class="eyebrow">VI · MUSIC</p><h2>Music from the worlds.</h2><p>Soundtrack albums of sieges, wars and long nights. Listen here or on your streaming service.</p></div><a class="button secondary" href="/music/">Listen <span aria-hidden="true">→</span></a></section>'
+home += '<section class="home-tools home-music"><a class="home-music-cover" href="/music/" tabindex="-1"><img src="'+E(COVERS[0])+'" data-covers="'+E(json.dumps(COVERS))+'" alt="" width="160" height="160"></a><div><p class="eyebrow">VI · MUSIC</p><h2>Music.</h2><p>Soundtrack albums of sieges, wars and long nights. Listen here or on your streaming service.</p></div><a class="button secondary" href="/music/">Listen <span aria-hidden="true">→</span></a></section>'
 # A quiet seventh destination: free tools are not a project family, so a band, not a card.
 home += '<section class="home-tools"><div><p class="eyebrow">VII · FREE TOOLS</p><h2>Small tools.</h2><p>A command-line tool and a handful of Neovim plugins, all open source.</p></div><a class="button secondary" href="/tools/">See the tools <span aria-hidden="true">→</span></a></section>'
 page('/', 'Games, prints & curious projects', 'Explore Morass: Steam games, free browser puzzles, Android and iOS projects, YouTube and an organized catalogue of 3D prints.', home)
@@ -223,7 +223,7 @@ def album_card(a):
     return card(a['album'], a['url'], a['summary'], a['cover'], f"{a['artist']} · {when(a)}")
 NOTE = '<p class="small-note music-note">Composed with the help of AI and performed with orchestral sample libraries. Every release is labelled as AI-assisted in the stores.</p>'
 
-body = heading('MUSIC', 'Music from the worlds.', 'Soundtrack albums from the lands behind our games and stories. Play them here, or follow the links to your streaming service.') + NOTE
+body = heading('MUSIC', 'Music.', 'Soundtrack albums from the lands behind our games and stories. Play them here, or follow the links to your streaming service.') + NOTE
 # One entry per track where the store has single-song players, else one per album.
 pool = []
 for a in MUSIC:
