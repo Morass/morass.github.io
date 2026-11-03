@@ -1,6 +1,32 @@
 {
  "albums": [
   {
+   "slug": "the-echo-goes-inland",
+   "artist": "Vrendskarr Echo",
+   "album": "The Echo Goes Inland",
+   "release_date": "2026-11-27",
+   "summary": "Twelve pieces of neoclassical metal that carry the fjord's song inland, from hold to hold: down the ore-descent, through the mountain passes and wayhouses, along the Krevorn Road, to the hearth that never went out.",
+   "cover": "/assets/music/the-echo-goes-inland.webp",
+   "hyperfollow": "https://distrokid.com/hyperfollow/vrendskarrecho/the-echo-goes-inland",
+   "tracks": [
+    "Elegy at Full Speed",
+    "Perpetual Motion Down the Ore-Descent",
+    "The Chain Ferry",
+    "Two Violins, One Grave",
+    "Toccata at the East Notch",
+    "The Hourglass Canon",
+    "Czardas at the Brekhnath Wayhouse",
+    "Seven Against Five",
+    "Stampede of the Ridge-Trekkers",
+    "Choir from Hold to Hold",
+    "The Krevorn Road",
+    "The Hearth Unbroken"
+   ],
+   "links": {},
+   "embeds": {},
+   "track_embeds": []
+  },
+  {
    "slug": "the-last-lantern",
    "artist": "Corenveld Music Hall",
    "album": "The Last Lantern",
