@@ -99,9 +99,67 @@
     "Grain Without a Reaper",
     "Two Seas at Once"
    ],
-   "links": {},
-   "embeds": {},
-   "track_embeds": []
+   "links": {
+    "spotify": "https://open.spotify.com/album/3szAO9gy9AXcrOeyQY2E6G",
+    "apple": "https://music.apple.com/us/album/sundered-places/6825013971",
+    "amazon": "https://www.amazon.com/gp/product/B0HNQ1PFPL"
+   },
+   "embeds": {
+    "spotify": "https://open.spotify.com/embed/album/3szAO9gy9AXcrOeyQY2E6G?theme=0",
+    "apple": "https://embed.music.apple.com/us/album/sundered-places/6825013971"
+   },
+   "track_embeds": [
+    {
+     "title": "The Ford That Runs Upstream",
+     "embed": "https://embed.music.apple.com/us/album/sundered-places/6825013971?i=6825014126",
+     "store": "apple-track"
+    },
+    {
+     "title": "Where Words Do Not Leave",
+     "embed": "https://embed.music.apple.com/us/album/sundered-places/6825013971?i=6825014127",
+     "store": "apple-track"
+    },
+    {
+     "title": "A Shadow Half a Pace Behind",
+     "embed": "https://embed.music.apple.com/us/album/sundered-places/6825013971?i=6825014128",
+     "store": "apple-track"
+    },
+    {
+     "title": "Fire Without Heat",
+     "embed": "https://embed.music.apple.com/us/album/sundered-places/6825013971?i=6825014129",
+     "store": "apple-track"
+    },
+    {
+     "title": "The Bridge That Cannot Stand",
+     "embed": "https://embed.music.apple.com/us/album/sundered-places/6825013971?i=6825014130",
+     "store": "apple-track"
+    },
+    {
+     "title": "The Silent River",
+     "embed": "https://embed.music.apple.com/us/album/sundered-places/6825013971?i=6825014131",
+     "store": "apple-track"
+    },
+    {
+     "title": "What You Speak Here Is Heard",
+     "embed": "https://embed.music.apple.com/us/album/sundered-places/6825013971?i=6825014132",
+     "store": "apple-track"
+    },
+    {
+     "title": "The Unfinished Hour",
+     "embed": "https://embed.music.apple.com/us/album/sundered-places/6825013971?i=6825014133",
+     "store": "apple-track"
+    },
+    {
+     "title": "Grain Without a Reaper",
+     "embed": "https://embed.music.apple.com/us/album/sundered-places/6825013971?i=6825014134",
+     "store": "apple-track"
+    },
+    {
+     "title": "Two Seas at Once",
+     "embed": "https://embed.music.apple.com/us/album/sundered-places/6825013971?i=6825014135",
+     "store": "apple-track"
+    }
+   ]
   },
   {
    "slug": "full-house-at-the-tholvaen",
