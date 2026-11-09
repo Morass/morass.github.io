@@ -102,62 +102,79 @@
    "links": {
     "spotify": "https://open.spotify.com/album/3szAO9gy9AXcrOeyQY2E6G",
     "apple": "https://music.apple.com/us/album/sundered-places/6825013971",
-    "amazon": "https://www.amazon.com/gp/product/B0HNQ1PFPL"
+    "amazon": "https://www.amazon.com/gp/product/B0HNQ1PFPL",
+    "youtube_tracks": [
+     "OLAK5uy_k5zoUG_03vqluzi5YRiibMaeBwONGuZ1E",
+     [
+      "YP2UgA9mNF0",
+      "OqiYj8qR4Yo",
+      "yOa5G0K06zk",
+      "p5Thz1JpY-c",
+      "wjyMOa6e2_M",
+      "9uoFeyieR78",
+      "ftZgbAI4zPs",
+      "uZiaCcRtv7U",
+      "ABAjs1Q_Sig",
+      "VPw5jIaWo7M"
+     ]
+    ],
+    "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_k5zoUG_03vqluzi5YRiibMaeBwONGuZ1E"
    },
    "embeds": {
     "spotify": "https://open.spotify.com/embed/album/3szAO9gy9AXcrOeyQY2E6G?theme=0",
-    "apple": "https://embed.music.apple.com/us/album/sundered-places/6825013971"
+    "apple": "https://embed.music.apple.com/us/album/sundered-places/6825013971",
+    "youtube": "https://www.youtube-nocookie.com/embed/YP2UgA9mNF0?autoplay=1&list=OLAK5uy_k5zoUG_03vqluzi5YRiibMaeBwONGuZ1E"
    },
    "track_embeds": [
     {
      "title": "The Ford That Runs Upstream",
-     "embed": "https://embed.music.apple.com/us/album/sundered-places/6825013971?i=6825014126",
-     "store": "apple-track"
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/YP2UgA9mNF0?autoplay=1&list=OLAK5uy_k5zoUG_03vqluzi5YRiibMaeBwONGuZ1E"
     },
     {
      "title": "Where Words Do Not Leave",
-     "embed": "https://embed.music.apple.com/us/album/sundered-places/6825013971?i=6825014127",
-     "store": "apple-track"
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/OqiYj8qR4Yo?autoplay=1&list=OLAK5uy_k5zoUG_03vqluzi5YRiibMaeBwONGuZ1E"
     },
     {
      "title": "A Shadow Half a Pace Behind",
-     "embed": "https://embed.music.apple.com/us/album/sundered-places/6825013971?i=6825014128",
-     "store": "apple-track"
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/yOa5G0K06zk?autoplay=1&list=OLAK5uy_k5zoUG_03vqluzi5YRiibMaeBwONGuZ1E"
     },
     {
      "title": "Fire Without Heat",
-     "embed": "https://embed.music.apple.com/us/album/sundered-places/6825013971?i=6825014129",
-     "store": "apple-track"
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/p5Thz1JpY-c?autoplay=1&list=OLAK5uy_k5zoUG_03vqluzi5YRiibMaeBwONGuZ1E"
     },
     {
      "title": "The Bridge That Cannot Stand",
-     "embed": "https://embed.music.apple.com/us/album/sundered-places/6825013971?i=6825014130",
-     "store": "apple-track"
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/wjyMOa6e2_M?autoplay=1&list=OLAK5uy_k5zoUG_03vqluzi5YRiibMaeBwONGuZ1E"
     },
     {
      "title": "The Silent River",
-     "embed": "https://embed.music.apple.com/us/album/sundered-places/6825013971?i=6825014131",
-     "store": "apple-track"
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/9uoFeyieR78?autoplay=1&list=OLAK5uy_k5zoUG_03vqluzi5YRiibMaeBwONGuZ1E"
     },
     {
      "title": "What You Speak Here Is Heard",
-     "embed": "https://embed.music.apple.com/us/album/sundered-places/6825013971?i=6825014132",
-     "store": "apple-track"
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/ftZgbAI4zPs?autoplay=1&list=OLAK5uy_k5zoUG_03vqluzi5YRiibMaeBwONGuZ1E"
     },
     {
      "title": "The Unfinished Hour",
-     "embed": "https://embed.music.apple.com/us/album/sundered-places/6825013971?i=6825014133",
-     "store": "apple-track"
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/uZiaCcRtv7U?autoplay=1&list=OLAK5uy_k5zoUG_03vqluzi5YRiibMaeBwONGuZ1E"
     },
     {
      "title": "Grain Without a Reaper",
-     "embed": "https://embed.music.apple.com/us/album/sundered-places/6825013971?i=6825014134",
-     "store": "apple-track"
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/ABAjs1Q_Sig?autoplay=1&list=OLAK5uy_k5zoUG_03vqluzi5YRiibMaeBwONGuZ1E"
     },
     {
      "title": "Two Seas at Once",
-     "embed": "https://embed.music.apple.com/us/album/sundered-places/6825013971?i=6825014135",
-     "store": "apple-track"
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/VPw5jIaWo7M?autoplay=1&list=OLAK5uy_k5zoUG_03vqluzi5YRiibMaeBwONGuZ1E"
     }
    ]
   },
