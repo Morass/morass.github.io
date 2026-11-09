@@ -1,6 +1,33 @@
 {
  "albums": [
   {
+   "slug": "harvest-night-at-the-vintners-inn",
+   "artist": "Taverns of Vorendia",
+   "album": "Harvest Night at the Vintner's Inn",
+   "release_date": "2026-12-04",
+   "summary": "Thirteen fast dances for one harvest night at a vintner's inn on the terraced vineyards, from the band arriving on the cart to the last round at dawn: tarantella, jota, muiñeira, farandole, fandango and more for mandolin, accordion, fiddle, guitar and castanets.",
+   "cover": "/assets/music/harvest-night-at-the-vintners-inn.webp",
+   "hyperfollow": "https://distrokid.com/hyperfollow/tavernsofvorendia/harvest-night-at-the-vintners-inn",
+   "tracks": [
+    "The Band on the Cart",
+    "Tarantella of the First Press",
+    "Pizzica of the Terraces",
+    "Jota of the Cellar Door",
+    "Muiñeira for the Pressmen",
+    "Corridinho of the Two Accordions",
+    "Seven Steps to the Well",
+    "Waltz of the Wet Reeds",
+    "The Shepherd's Leap",
+    "The Long Chain",
+    "Under the Vine Arbour",
+    "Fandango Until Dawn",
+    "The Last Round of the Harvest"
+   ],
+   "links": {},
+   "embeds": {},
+   "track_embeds": []
+  },
+  {
    "slug": "the-echo-goes-inland",
    "artist": "Vrendskarr Echo",
    "album": "The Echo Goes Inland",
