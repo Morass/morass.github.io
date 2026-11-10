@@ -142,6 +142,9 @@ that release explicitly implements ads; portal SDK builds belong on portals.
 Keep saved-game origins/routes stable. Portal links are added when their recorded
 `publicUrl` is verified, never while only a developer preview is available.
 
+Released games, production mobile apps, live extensions, albums and print listings
+that leave review are picked up daily by two hub jobs: [release sync](docs/release-sync.md).
+
 ## Adding free tools
 
 Free tools is one section, split into groups like the print collection: `/tools/`
