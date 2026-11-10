@@ -41,7 +41,8 @@ with tempfile.TemporaryDirectory() as tmp:
         {'id': 'hearth', 'title': 'Hearthfields', 'channels': {
             'google_play': pub('https://play.google.com/store/apps/details?id=games.morass.hearthfields')}},
     ]}))
-    got = {i['title']: i['action'] for i in rw.mobile_items(PAGES, PROJECTS, dist)}
+    live = rw.mobile_live(dist)
+    got = {i['title']: i['action'] for i in rw.mobile_items(PAGES, PROJECTS, live)}
     # Wardfall lacks its App Store link; a closed test is never listed; a new production app is created.
     assert got == {'Wardfall': 'release', 'Hearthfields': 'create'}, got
 
@@ -54,6 +55,12 @@ with tempfile.TemporaryDirectory() as tmp:
     (root / 'content/music-artists.json').write_text(json.dumps({'artists': [{'name': 'Skralvoss'}]}))
     got = rw.music_items(root, today='2026-11-10')
     assert [(i['title'], i['album']) for i in got] == [('New Hall', 'Out')], got
+
+released = [('4893010', 'Concord Quarter', '27 Jul, 2026')]
+got = {(i['kind'], i['title']) for i in rw.stale_items(PAGES, PROJECTS, released, {'Lanternward': {}})}
+# Bressnath has no released Steam app and Wardfall no production release: both go.
+assert got == {('steam', 'Bressnath'), ('mobile', 'Wardfall')}, got
+assert rw.stale_items(PAGES, PROJECTS, None, None) == [], 'an unread source never removes a card'
 
 item = [{'kind': 'steam', 'action': 'create', 'title': 'Morrowvane'}]
 run, _, st = rw.decide(item, [], {}, 1000)

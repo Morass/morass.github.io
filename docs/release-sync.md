@@ -3,7 +3,8 @@
 Two hub jobs keep the hub in step with the stores. Only **final products** appear:
 a released Steam game, a production mobile release, a live Chrome Web Store listing,
 an album that is out, a print listing that is public. Never add anything in review,
-in closed testing, pre-save or "coming soon"; never remove an existing card.
+in closed testing, pre-save or "coming soon". A card for something not final is taken
+down (owner, 2026-11-10: no future projects shown while in testing).
 
 | Job | Kind | What |
 |---|---|---|
@@ -37,6 +38,14 @@ Read the item list with `python3 scripts/release_watch.py scan`. For each item:
   and the `mobile` section; link only the store URLs in the item. One live store makes
   the label `Android` or `iOS`; both make `Android & iOS · Google Play & App Store`.
 - **extension / release**: set that tool's `url` in `content/projects.json` to the store URL.
+- **steam or mobile / remove**: the card is in `games`/`mobile` but Steam has no released
+  app for it, or the store collector has no production release. Delete the card from
+  `content/projects.json` (the sitemap follows the cards) and every other link to the page
+  (homepage, listing pages, `/mobile/`). If `store_refs` is empty, `git rm -r` the page
+  directory; git keeps it for the later `create`. If `store_refs` names a store config
+  (an App Store support or marketing URL must keep loading through review), keep the page
+  but add `<meta name="robots" content="noindex">` and take out "coming soon"/testing text.
+  Removal runs only on a successful read of that store; an outage never removes a card.
 - **music / create-artist**: an album is out under an artist the build does not know.
   Add the artist to `content/music-artists.json` (name, slug, one-sentence summary
   from `ambient-music`'s releases and docs), then run

@@ -73,10 +73,11 @@ def looks_unreleased(html, card):
     return bool(re.search(r'coming soon', label, re.I) or re.search(r'>\s*Coming Soon\s*<', html))
 
 
-def steam_items(pages, projects):
+def steam_released():
+    """[(appid, name, date)] of every released Morass game on Steam."""
     _, body = fetch('https://store.steampowered.com/search/results/?term=&developer='
                     f'{STEAM_DEVELOPER}&json=1&count=100&ignore_preferences=1')
-    items = []
+    out = []
     for hit in json.loads(body).get('items', []):
         m = re.search(r'/apps/(\d+)/', hit.get('logo', ''))
         if not m:
@@ -87,47 +88,96 @@ def steam_items(pages, projects):
         data = (json.loads(raw).get(appid) or {}).get('data') or {}
         if data.get('type') != 'game' or STEAM_DEVELOPER not in (data.get('developers') or []):
             continue
-        if (data.get('release_date') or {}).get('coming_soon', True):
-            continue
-        name = data['name']
+        if not (data.get('release_date') or {}).get('coming_soon', True):
+            out.append((appid, data['name'], data['release_date'].get('date')))
+    return out
+
+
+def steam_items(pages, projects, released):
+    items = []
+    for appid, name, date in released:
         store = f'https://store.steampowered.com/app/{appid}/'
         page = find_page(pages, projects, 'games', name, f'store.steampowered.com/app/{appid}')
         card = card_for(projects, 'games', name, page)
         if page is None or card is None:
-            items.append({'kind': 'steam', 'action': 'create', 'title': name, 'store': store,
-                          'page': page, 'released': data['release_date'].get('date')})
+            action = 'create'
         elif looks_unreleased(pages[page], card) or f'app/{appid}' not in pages[page]:
-            items.append({'kind': 'steam', 'action': 'release', 'title': name, 'store': store,
-                          'page': page, 'released': data['release_date'].get('date')})
+            action = 'release'
+        else:
+            continue
+        items.append({'kind': 'steam', 'action': action, 'title': name, 'store': store,
+                      'page': page, 'released': date})
     return items
 
 
-def mobile_items(pages, projects, distribution=DISTRIBUTION):
-    games = json.loads(Path(distribution).read_text()).get('games', [])
-    items = []
-    for g in games:
-        live = {}
+def mobile_live(distribution=DISTRIBUTION):
+    """{title: {channel: (public url, needle)}} for production mobile releases only."""
+    live = {}
+    for g in json.loads(Path(distribution).read_text()).get('games', []):
         for ch, host, key in (('google_play', 'play.google.com/store/apps/details', r'id=([\w.]+)'),
                               ('app_store', 'apps.apple.com/', r'id(\d+)')):
             c = g.get('channels', {}).get(ch) or {}
             url = c.get('url') or ''
             if c.get('state') == 'published' and host in url:
-                live[ch] = (url, re.search(key, url).group(0))
-        if not live:
-            continue
-        needles = [n for _, n in live.values()]
+                live.setdefault(g['title'], {})[ch] = (url, re.search(key, url).group(0))
+    return live
+
+
+def mobile_items(pages, projects, live):
+    items = []
+    for title, chans in live.items():
+        needles = [n for _, n in chans.values()]
         page = next((d for d, h in pages.items() if any(n in h for n in needles)), None)
-        page = page or find_page(pages, projects, 'mobile', g['title'], None)
-        card = card_for(projects, 'mobile', g['title'], page)
-        missing = [ch for ch, (_, n) in live.items() if page is None or n not in pages[page]]
+        page = page or find_page(pages, projects, 'mobile', title, None)
+        card = card_for(projects, 'mobile', title, page)
+        missing = [ch for ch, (_, n) in chans.items() if page is None or n not in pages[page]]
         if page is None or card is None:
             action = 'create'
         elif missing or looks_unreleased(pages[page], card):
             action = 'release'
         else:
             continue
-        items.append({'kind': 'mobile', 'action': action, 'title': g['title'], 'page': page,
-                      'repo': g.get('repo_path'), 'store': {ch: u for ch, (u, _) in live.items()}})
+        items.append({'kind': 'mobile', 'action': action, 'title': title, 'page': page,
+                      'store': {ch: u for ch, (u, _) in chans.items()}})
+    return items
+
+
+def store_refs(page, programs=PROGRAMS):
+    """Store configs naming this hub page (an App Store support URL must keep loading)."""
+    needle = f'morass.github.io/{page}/'
+    found = []
+    for f in [*programs.glob('*/store/*.json'), *programs.glob('*/games/*/store/*.json')]:
+        try:
+            if needle in f.read_text(errors='replace'):
+                found.append(str(f.relative_to(programs)))
+        except OSError:
+            pass
+    return found
+
+
+def stale_items(pages, projects, released=None, live=None):
+    """Cards for products that are not final yet: testing, review, coming soon.
+
+    A section is judged only when its source was read (None = fetch failed), so a
+    Steam or collector outage never takes a released game down."""
+    items = []
+    if released is not None:
+        ids = {a for a, _, _ in released}
+        names = {norm(n) for _, n, _ in released}
+        for card in projects.get('games', []):
+            html = pages.get(card.get('path', '').strip('/'), '')
+            linked = set(re.findall(r'store\.steampowered\.com/app/(\d+)', html))
+            if not (linked & ids or norm(card['title']) in names):
+                items.append({'kind': 'steam', 'action': 'remove', 'title': card['title'],
+                              'page': card.get('path', '').strip('/') or None})
+    if live is not None:
+        needles = [n for chans in live.values() for _, n in chans.values()]
+        titles = {norm(t) for t in live}
+        for card in projects.get('mobile', []):
+            html = pages.get(card.get('path', '').strip('/'), '')
+            if not (any(n in html for n in needles) or norm(card['title']) in titles):
+                items.append({'kind': 'mobile', 'action': 'remove', 'title': card['title'],
+                              'page': card.get('path', '').strip('/') or None})
     return items
 
 
@@ -176,14 +226,24 @@ def scan():
     projects = json.loads((ROOT / 'content/projects.json').read_text())
     pages = hub_pages()
     items, errors = [], []
-    for name, fn in (('steam', lambda: steam_items(pages, projects)),
-                     ('mobile', lambda: mobile_items(pages, projects)),
-                     ('extension', lambda: extension_items(projects)),
-                     ('music', music_items)):
+    released = live = None
+
+    def run(name, fn):
         try:
-            items += fn()
+            return fn()
         except Exception as e:
             errors.append(f'{name}: {type(e).__name__}: {e}'[:300])
+            return None
+
+    released = run('steam', steam_released)
+    live = run('mobile', mobile_live)
+    items += steam_items(pages, projects, released) if released is not None else []
+    items += mobile_items(pages, projects, live) if live is not None else []
+    for item in stale_items(pages, projects, released, live):
+        item['store_refs'] = store_refs(item['page']) if item['page'] else []
+        items.append(item)
+    items += run('extension', lambda: extension_items(projects)) or []
+    items += run('music', music_items) or []
     return items, errors
 
 
