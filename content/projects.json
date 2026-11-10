@@ -71,13 +71,6 @@
       "image": "/wardfall/assets/icon.png",
       "label": "Android & iOS · Google Play & App Store",
       "summary": "Survive a ten-minute magical siege. Draft spells, rekindle the wards and explore a 42-stage fantasy campaign."
-    },
-    {
-      "title": "Lanternkeep",
-      "path": "/lanternkeep/",
-      "image": "/lanternkeep/assets/icon.png",
-      "label": "Android & iOS · Coming soon — closed testing",
-      "summary": "An offline initiative tracker with timers, dice and rules for table nights."
     }
   ],
   "channels": [
