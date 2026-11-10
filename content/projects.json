@@ -32,15 +32,29 @@
       "title": "Bressnath",
       "path": "/bressnath/",
       "image": "/bressnath/assets/capsule.png",
-      "label": "Settlement builder · Coming soon",
+      "label": "Settlement builder · Steam",
       "summary": "Refound a holding in the drowned fens. Haul every load home, hold off what crawls out of the Sundered Places and win by laying a causeway."
     },
     {
       "title": "Krevholt",
       "path": "/krevholt/",
       "image": "/krevholt/assets/capsule.png",
-      "label": "Roguelite tomb-delve · Coming soon",
+      "label": "Roguelite tomb-delve · Steam",
       "summary": "Rob the famous Krevorn tombs of the Iron-Fog Coast. Draft your abilities, wear what you loot and go down as far as your build allows."
+    },
+    {
+      "title": "Morrowvane",
+      "path": "/morrowvane/",
+      "image": "/morrowvane/assets/capsule.png",
+      "label": "Action RPG · Steam",
+      "summary": "A gothic isometric action RPG you can finish in an evening. Eight classes, 128 spells and no dice in the choosing."
+    },
+    {
+      "title": "Emberveth",
+      "path": "/emberveth/",
+      "image": "/emberveth/assets/capsule.png",
+      "label": "Couch co-op spellcaster · Steam",
+      "summary": "Aim every spell by hand, jump what you cannot walk around and read fifteen bosses. Friendly fire is always on."
     }
   ],
   "mobile": [
