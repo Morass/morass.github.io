@@ -71,6 +71,13 @@
       "image": "/wardfall/assets/icon.png",
       "label": "Android & iOS · Google Play & App Store",
       "summary": "Survive a ten-minute magical siege. Draft spells, rekindle the wards and explore a 42-stage fantasy campaign."
+    },
+    {
+      "title": "Hearthfields",
+      "path": "/hearthfields/",
+      "image": "/hearthfields/assets/icon.png",
+      "label": "Android · Google Play",
+      "summary": "Lay hexagonal landscape tiles so their edges meet and wake 210 sleeping vales. A calm, untimed puzzle with free undo."
     }
   ],
   "channels": [
