@@ -1,6 +1,32 @@
 {
  "albums": [
   {
+   "slug": "a-year-in-orenvalt",
+   "artist": "Orenvalt Archive",
+   "album": "A Year in Orenvalt",
+   "release_date": "2026-12-07",
+   "summary": "Twelve months of one valley's year, from frost on the road to the long night fire, each with its own weather and its own tune.",
+   "cover": "/assets/music/a-year-in-orenvalt.webp",
+   "hyperfollow": "https://distrokid.com/hyperfollow/orenvaltarchive/a-year-in-orenvalt",
+   "tracks": [
+    "Frost on the Long Road",
+    "The Passes Close",
+    "The Ice Lets Go",
+    "Rain on the Eaves",
+    "The First Birds",
+    "The Longest Day",
+    "Thunder over the Fields",
+    "Crickets in the Stubble",
+    "The Last Sheaf",
+    "The Geese Go South",
+    "Fog on the Low Road",
+    "The Long Night Fire"
+   ],
+   "links": {},
+   "embeds": {},
+   "track_embeds": []
+  },
+  {
    "slug": "harvest-night-at-the-vintners-inn",
    "artist": "Taverns of Vorendia",
    "album": "Harvest Night at the Vintner's Inn",
