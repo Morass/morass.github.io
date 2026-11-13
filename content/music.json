@@ -128,8 +128,13 @@
     "The Breakwater Holds",
     "Last Ship out of Holdskarr"
    ],
-   "links": {},
-   "embeds": {},
+   "links": {
+    "spotify": "https://open.spotify.com/album/4PmNjcNz5LwFmQ39K01ypB",
+    "amazon": "https://www.amazon.com/gp/product/B0HNQ1QFK7"
+   },
+   "embeds": {
+    "spotify": "https://open.spotify.com/embed/album/4PmNjcNz5LwFmQ39K01ypB?theme=0"
+   },
    "track_embeds": []
   },
   {
