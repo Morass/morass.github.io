@@ -130,12 +130,100 @@
    ],
    "links": {
     "spotify": "https://open.spotify.com/album/4PmNjcNz5LwFmQ39K01ypB",
-    "amazon": "https://www.amazon.com/gp/product/B0HNQ1QFK7"
+    "amazon": "https://www.amazon.com/gp/product/B0HNQ1QFK7",
+    "apple": "https://music.apple.com/us/album/the-wrack/6825023035",
+    "youtube_tracks": [
+     "OLAK5uy_k5M63zAxxQAijoAOykdD5Lf97i1Q9DGBA",
+     [
+      "_S6EKwGMNwg",
+      "PNcKEe05buY",
+      "dTSZ2NrYvYE",
+      "asA3zAYHWy4",
+      "KNcZbtuF794",
+      "6uBXjDLNpVM",
+      "meEdvb5wV1U",
+      "uAFv1P01sXw",
+      "J47-Dm4iZNQ",
+      "1Da5l5lOHDw",
+      "mPZRartV6lg",
+      "fbHsp_YNZQI",
+      "9ItRohYOd3w"
+     ]
+    ],
+    "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_k5M63zAxxQAijoAOykdD5Lf97i1Q9DGBA"
    },
    "embeds": {
-    "spotify": "https://open.spotify.com/embed/album/4PmNjcNz5LwFmQ39K01ypB?theme=0"
+    "spotify": "https://open.spotify.com/embed/album/4PmNjcNz5LwFmQ39K01ypB?theme=0",
+    "apple": "https://embed.music.apple.com/us/album/the-wrack/6825023035",
+    "youtube": "https://www.youtube-nocookie.com/embed/_S6EKwGMNwg?autoplay=1&list=OLAK5uy_k5M63zAxxQAijoAOykdD5Lf97i1Q9DGBA"
    },
-   "track_embeds": []
+   "track_embeds": [
+    {
+     "title": "The Wrack-Herald",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/_S6EKwGMNwg?autoplay=1&list=OLAK5uy_k5M63zAxxQAijoAOykdD5Lf97i1Q9DGBA"
+    },
+    {
+     "title": "Up with the Wrack-Line",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/PNcKEe05buY?autoplay=1&list=OLAK5uy_k5M63zAxxQAijoAOykdD5Lf97i1Q9DGBA"
+    },
+    {
+     "title": "Oars against the Tide",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/dTSZ2NrYvYE?autoplay=1&list=OLAK5uy_k5M63zAxxQAijoAOykdD5Lf97i1Q9DGBA"
+    },
+    {
+     "title": "Corsairs of the Salt Road",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/asA3zAYHWy4?autoplay=1&list=OLAK5uy_k5M63zAxxQAijoAOykdD5Lf97i1Q9DGBA"
+    },
+    {
+     "title": "Harpoons in the Shallows",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/KNcZbtuF794?autoplay=1&list=OLAK5uy_k5M63zAxxQAijoAOykdD5Lf97i1Q9DGBA"
+    },
+    {
+     "title": "Into the Sea-Cave",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/6uBXjDLNpVM?autoplay=1&list=OLAK5uy_k5M63zAxxQAijoAOykdD5Lf97i1Q9DGBA"
+    },
+    {
+     "title": "The Drowned Bells",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/meEdvb5wV1U?autoplay=1&list=OLAK5uy_k5M63zAxxQAijoAOykdD5Lf97i1Q9DGBA"
+    },
+    {
+     "title": "The Siren over Open Water",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/uAFv1P01sXw?autoplay=1&list=OLAK5uy_k5M63zAxxQAijoAOykdD5Lf97i1Q9DGBA"
+    },
+    {
+     "title": "The Holdskarr Muster",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/J47-Dm4iZNQ?autoplay=1&list=OLAK5uy_k5M63zAxxQAijoAOykdD5Lf97i1Q9DGBA"
+    },
+    {
+     "title": "Anchors Down",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/1Da5l5lOHDw?autoplay=1&list=OLAK5uy_k5M63zAxxQAijoAOykdD5Lf97i1Q9DGBA"
+    },
+    {
+     "title": "Rain over the Breakwater",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/mPZRartV6lg?autoplay=1&list=OLAK5uy_k5M63zAxxQAijoAOykdD5Lf97i1Q9DGBA"
+    },
+    {
+     "title": "The Breakwater Holds",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/fbHsp_YNZQI?autoplay=1&list=OLAK5uy_k5M63zAxxQAijoAOykdD5Lf97i1Q9DGBA"
+    },
+    {
+     "title": "Last Ship out of Holdskarr",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/9ItRohYOd3w?autoplay=1&list=OLAK5uy_k5M63zAxxQAijoAOykdD5Lf97i1Q9DGBA"
+    }
+   ]
   },
   {
    "slug": "the-registry-of-sundered-places",
