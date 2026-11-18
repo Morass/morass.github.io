@@ -302,7 +302,8 @@ def removal_confirmations(pages, projects, released, live, observed, distributio
                     if not identifier or identifier.group(1) != appid:
                         raise ValueError('withdrawal identity does not match public app')
                     _, raw = fetch('https://itunes.apple.com/lookup?id=' + appid + '&country=us')
-                    if json.loads(raw).get('resultCount') != 0:
+                    lookup = json.loads(raw)
+                    if type(lookup.get('resultCount')) is not int or lookup['resultCount'] != 0 or lookup.get('results') != []:
                         raise ValueError('public Apple catalogue still lists app')
                 else:
                     package = re.search(r'[?&]id=([\w.]+)', url).group(1)

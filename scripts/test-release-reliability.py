@@ -83,9 +83,12 @@ class Reliability(unittest.TestCase):
                 proof = rw.removal_confirmations(pages, projects, [], {}, {}, path, errors)
             self.assertFalse(proof)
             self.assertTrue(errors)
-            with patch.object(rw, 'fetch', return_value=(200, '{"resultCount":0}')):
+            with patch.object(rw, 'fetch', return_value=(200, '{"resultCount":0,"results":[]}')):
                 proof = rw.removal_confirmations(pages, projects, [], {}, {}, path, [])
             self.assertEqual(rw.stale_items(pages, projects, confirmations=proof)[0]['action'], 'remove')
+            for malformed in [{'resultCount': False, 'results': []}, {'resultCount': 0, 'results': [{'trackId': 123}]}]:
+                with self.subTest(malformed=malformed), patch.object(rw, 'fetch', return_value=(200, json.dumps(malformed))):
+                    self.assertFalse(rw.removal_confirmations(pages, projects, [], {}, {}, path, []))
             cell['state'] = 'not-submitted'
             path.write_text(json.dumps(data))
             with patch.object(rw, 'fetch', side_effect=AssertionError('unknown is not withdrawal')):
