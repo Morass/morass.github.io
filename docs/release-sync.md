@@ -11,17 +11,50 @@ down (owner, 2026-11-10: no future projects shown while in testing).
 | `pages-links` | command, daily 12:20, no model | [`scripts/links_daily.sh`](../scripts/links_daily.sh): music store links (`ambient-music/tools/release_links.py`), MakerWorld URLs of listings that left review (`prints/publisher/audit_makerworld.py --only-missing --write-urls`), prints re-import, build, check, commit, push. |
 | `pages-sync` | Sonnet agent, any seat, daily 05:25 | Gate `scripts/release_watch.py gate` skips it unless there is new work. The agent follows the section below. |
 
-`release_watch.py scan` prints the open items as JSON. The gate fires on a new set of
-items, again after 7 days if the same items stay open, and after 3 days of scan errors.
-Sources: the Steam developer search and `appdetails` (public), the hub's distribution
-snapshot (`claude_server/data/distribution.json`, collected 03:40; production-only
-public URLs), a `chromewebstore.google.com/detail/...` URL in an extension repo's
-README or `store/` that answers 200, and `content/music.json` against
-`content/music-artists.json`.
+`release_watch.py scan` prints open items with stable IDs and explicit errors. The gate
+records at most five due item IDs in `~/.local/state/pages-sync/state.json`; unresolved
+items retry after 20 hours, so they are eligible at the next daily slot. New URL/channel
+payloads get their own identity. Dispatch is an attempt, never completion. Error-only and
+partial scans can wake a diagnostic pass immediately, then at most once per 20 hours for
+the same errors, independently of publication items.
+
+Every CLI scan has a 70-second whole-scan wall budget (POSIX timer) and each request has a
+10-second maximum timeout, below the Hub's 120-second gate limit. Completed source results
+survive a later source timeout; errors stay visible. Steam API `success:false`, truncated
+searches, unhealthy/stale mobile observations and extension request failures are not empty
+successes. A source failure never establishes withdrawal. Mobile input must be generated
+within 36 hours and each accepted cell must have a fresh successful check.
+
+Sources: public Steam developer search and product details; the Hub distribution snapshot;
+store links in known extension repos; released albums and the artist registry. Discovery
+is intentionally scoped. Missing inventory rows cannot prove that a product is unreleased.
+A Steam removal needs positive `coming_soon` product metadata and public-page corroboration.
+A mobile removal needs fresh, identity-matched explicit `removed` status and independent
+public absence for every linked store; a live store on either platform preserves the page.
+Unknown, missing, not-submitted, rejected or unreadable status preserves existing content
+and reports the unresolved evidence. Public Apple lookup must explicitly return zero results;
+Play must return HTTP 404. Timeouts, HTTP 200 shells and other failures do not prove absence.
+
+State writes are locked and atomic. `scan.json` is the gate's observation receipt;
+`state.json` retains attempts, blocked work and up to 1000 completion/blocker receipts.
+A clean scan only changes unseen entries to `not-observed`, never `verified`; partial scans
+retain unseen work. Legacy `gate.json` is not used for the new per-item queue and is preserved.
+Tests: `scripts/test-release-watch.py` and `scripts/test-release-reliability.py`.
+
+Deployment may pin a verified script and this policy outside the checkout. In that case
+use the deployed command from the live job prompt, with `PAGES_SYNC_ROOT` pointing at the
+site checkout and `PAGES_SYNC_PROGRAMS` at the actual fleet root. Never use the deployment
+directory or an external task worktree as the fleet root.
 
 ## The agent, per item
 
-Read the item list with `python3 scripts/release_watch.py scan`. For each item:
+Read the gate's `scan.json` and `state.json` dispatch first. Revalidate the dispatched
+items with the deployed `scan` command before edits; work only its due IDs, at most five.
+When the dispatch is diagnostic-only, report the exact upstream failure without inventing
+content changes. Inspect existing branches/worktrees and retained receipts first; resume
+an existing valid publication candidate before starting unrelated items. Respect live owners.
+If a candidate is blocked, retain its exact tip, gate and next action in the receipt and Git
+integrity note. Never hide or discard another agent's work. For each due item:
 
 - **steam / release**: the page exists. Replace the coming-soon CTA and "Coming soon"
   text (body and meta descriptions) with the released form used by
@@ -34,26 +67,43 @@ Read the item list with `python3 scripts/release_watch.py scan`. For each item:
   `appdetails` (`short_description`, genres) and the game repo
   (`~/programs/<slug>`, its `AIM.md`/`README.md`, `store/` files); never invent a
   feature.
-- **mobile / release or create**: as above with [`wardfall/index.html`](../wardfall/index.html)
+- **mobile / release, create or merge**: as above with [`wardfall/index.html`](../wardfall/index.html)
   and the `mobile` section; link only the store URLs in the item. One live store makes
   the label `Android` or `iOS`; both make `Android & iOS · Google Play & App Store`.
+  `merge` means a page already exists, possibly in the Steam section: preserve its content,
+  Steam card/CTA and art, then add the confirmed mobile links and mobile card to that same
+  route. Never replace a page just because one platform card is missing. Existing store
+  links are preserved unless their withdrawal is independently confirmed.
 - **extension / release**: set that tool's `url` in `content/projects.json` to the store URL.
-- **steam or mobile / remove**: the card is in `games`/`mobile` but Steam has no released
-  app for it, or the store collector has no production release. Delete the card from
-  `content/projects.json` (the sitemap follows the cards) and every other link to the page
-  (homepage, listing pages, `/mobile/`). If `store_refs` is empty, `git rm -r` the page
-  directory; git keeps it for the later `create`. If `store_refs` names a store config
-  (an App Store support or marketing URL must keep loading through review), keep the page
-  but add `<meta name="robots" content="noindex">` and take out "coming soon"/testing text.
-  Removal runs only on a successful read of that store; an outage never removes a card.
+- **steam or mobile / remove**: only items carrying the watcher’s product-specific
+  `evidence` are eligible. Recheck that evidence immediately before editing; never infer
+  withdrawal from inventory absence, a source error or testing/rejected status alone.
+  Remove the card and generated listing links. Preserve the authored page and support URL;
+  keep an active platform's page/indexing unchanged. If all platforms are corroborated as
+  nonfinal, retain the page with `noindex` and remove misleading release text. Do not delete
+  a product directory: store-config discovery cannot prove a support URL has no consumers.
+  A malformed or missing evidence object means blocked, not permission to remove.
 - **music / create-artist**: an album is out under an artist the build does not know.
   Add the artist to `content/music-artists.json` (name, slug, one-sentence summary
   from `ambient-music`'s releases and docs), then run
   `/opt/homebrew/bin/python3 /Volumes/BACKUP-1/programs/ambient-music/tools/release_links.py --hub .`
   (needs the CDP Chrome; run it over `ssh -o BatchMode=yes localhost` on a TCC refusal).
 
-Then `python3.13 scripts/build.py && python3.13 scripts/check.py`, stage only the paths
-you changed, commit, push, and verify the live page with `curl` once Pages deploys
-(about a minute). `release_watch.py scan` must no longer list the item. An item you
-cannot finish (missing art or facts) stays open; report what is missing instead of
-guessing. Finish with one line per item: done with its live URL, or why not.
+Then `python3.13 scripts/build.py && python3.13 scripts/check.py`, stage exact paths,
+commit and push. Verify the commit on remote default with the shared Git integrity checker.
+Poll live deployment with a bounded deadline; do not launch an unbounded background wait.
+Re-scan: the item must no longer be open. Then record its actual disposition using the
+same deployed script and state path:
+
+```bash
+python3 <deployed-script> record <id> blocked '<exact blocker; candidate tip; next acceptance check>'
+python3 <deployed-script> record <id> verified '<what changed and live check>' --commit <full-sha> --path <relative-page-directory>
+```
+
+The verified helper fetches remote default, verifies commit ancestry, checks the item's
+page/card identity, and compares the live HTML with the integrated page bytes. Publication
+is not verified on HTTP 200 alone. It rejects a wrong page, unlanded SHA or stale deployment.
+For extension items use the public tools group page; for artist items use `music/<slug>`.
+Failures remain blocked with concrete next action; do not call an attempted update done.
+A genuine complete scan with no work skips the model. Finish one line per item: verified
+live URL and remote-default SHA, or retained candidate/blocker and next acceptance check.

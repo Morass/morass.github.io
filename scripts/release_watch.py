@@ -10,6 +10,7 @@ live Chrome Web Store listing, an album that is out. Contract: docs/release-sync
 import argparse
 import datetime as dt
 import hashlib
+import html
 import json
 import os
 import signal
@@ -473,20 +474,23 @@ def record(state, ident, outcome, reason, commit=None, path=None):
             if not commit or not re.fullmatch(r'[0-9a-f]{40}', commit) or not path:
                 raise ValueError('verified requires full remote-default SHA and public relative page path')
             relative = Path(path)
-            if relative.is_absolute() or '..' in relative.parts:
+            if relative.is_absolute() or '..' in relative.parts or not relative.parts:
                 raise ValueError('public path must stay within the site')
             subprocess.run(['git', '-C', str(ROOT), 'fetch', '-q', 'origin'], check=True, timeout=15)
             base = subprocess.check_output(['git', '-C', str(ROOT), 'symbolic-ref', 'refs/remotes/origin/HEAD'], text=True).strip()
             subprocess.run(['git', '-C', str(ROOT), 'merge-base', '--is-ancestor', commit, base], check=True, timeout=5)
             item = entry['item']
-            if item.get('page'):
-                if relative.as_posix().strip('/') != item['page']:
-                    raise ValueError('receipt path does not match item')
-            elif item['kind'] in ('steam', 'mobile'):
+            if item.get('page') and relative.as_posix().strip('/') != item['page']:
+                raise ValueError('receipt path does not match item')
+            catalog = None
+            if item['kind'] in ('steam', 'mobile'):
                 catalog = json.loads(subprocess.check_output(['git', '-C', str(ROOT), 'show', f'{commit}:content/projects.json']))
                 section = 'games' if item['kind'] == 'steam' else 'mobile'
                 card = card_for(catalog, section, item['title'], None)
-                if not card or card.get('path', '').strip('/') != relative.as_posix().strip('/'):
+                if item['action'] == 'remove':
+                    if card or not item.get('evidence'):
+                        raise ValueError('removal requires absent card and corroborated evidence')
+                elif not card or card.get('path', '').strip('/') != relative.as_posix().strip('/'):
                     raise ValueError('integrated card does not match receipt path')
             elif item['kind'] == 'extension':
                 catalog = json.loads(subprocess.check_output(['git', '-C', str(ROOT), 'show', f'{commit}:content/projects.json']))
@@ -500,18 +504,22 @@ def record(state, ident, outcome, reason, commit=None, path=None):
                     raise ValueError('integrated artist/path mismatch')
             source_path = str(relative / 'index.html')
             expected = subprocess.run(['git', '-C', str(ROOT), 'show', f'{commit}:{source_path}'], capture_output=True)
+            if expected.returncode != 0:
+                raise ValueError('integrated support/product page must be retained')
+            text = html.unescape(expected.stdout.decode())
+            stores = item.get('store', {})
+            stores = list(stores.values()) if isinstance(stores, dict) else [stores]
+            if item['action'] != 'remove' and any(store.rstrip('/') not in text for store in stores):
+                raise ValueError('integrated page lacks an offered store link')
+            if item['action'] == 'remove':
+                active = any(row.get('path', '').strip('/') == relative.as_posix().strip('/')
+                             for section in ('games', 'mobile') for row in catalog.get(section, []))
+                if not active and not re.search(r'<meta[^>]+name=["\']robots["\'][^>]+noindex', text, re.I):
+                    raise ValueError('retained nonfinal page must be noindex')
             url = 'https://morass.github.io/' + relative.as_posix().strip('/') + '/'
-            try:
-                _, body = fetch(url)
-            except urllib.error.HTTPError as exc:
-                if exc.code != 404 or expected.returncode == 0 or entry['item']['action'] != 'remove':
-                    raise
-                body = None
-            if expected.returncode == 0:
-                if body is None or hashlib.sha256(body.encode()).digest() != hashlib.sha256(expected.stdout).digest():
-                    raise ValueError('live page does not match integrated source')
-            elif entry['item']['action'] != 'remove' or body is not None:
-                raise ValueError('missing integrated page is not verified publication')
+            _, body = fetch(url)
+            if hashlib.sha256(body.encode()).digest() != hashlib.sha256(expected.stdout).digest():
+                raise ValueError('live page does not match integrated source')
             evidence.update(commit=commit, url=url)
         now = time.time()
         entry.update(status=outcome, evidence=evidence, retry_at=now + 20 * 3600)
