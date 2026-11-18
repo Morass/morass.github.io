@@ -31,13 +31,13 @@ assert rw.find_page(PAGES, PROJECTS, 'games', 'Morrowvane', 'store.steampowered.
 
 with tempfile.TemporaryDirectory() as tmp:
     dist = Path(tmp) / 'distribution.json'
-    pub = lambda url: {'state': 'published', 'url': url}
-    dist.write_text(json.dumps({'games': [
+    pub = lambda url: {'state': 'published', 'url': url, 'check': {'status': 'ok', 'checked_at': rw.dt.datetime.now(rw.dt.timezone.utc).isoformat()}}
+    dist.write_text(json.dumps({'generated_at': rw.dt.datetime.now(rw.dt.timezone.utc).isoformat(), 'sources': {ch: {'status': 'ok'} for ch in ('google_play', 'app_store')}, 'games': [
         {'id': 'wardfall', 'title': 'Wardfall', 'channels': {
             'google_play': pub('https://play.google.com/store/apps/details?id=games.morass.wardfall'),
             'app_store': pub('https://apps.apple.com/app/id6819553168')}},
         {'id': 'curio', 'title': 'Curio Cabinet', 'channels': {
-            'google_play': {'state': 'accepted', 'url': 'https://play.google.com/console/'}}},
+            'google_play': {'state': 'accepted', 'url': 'https://play.google.com/console/', 'check': {'status': 'ok', 'checked_at': rw.dt.datetime.now(rw.dt.timezone.utc).isoformat()}}}},
         {'id': 'hearth', 'title': 'Hearthfields', 'channels': {
             'google_play': pub('https://play.google.com/store/apps/details?id=games.morass.hearthfields')}},
     ]}))
@@ -58,21 +58,23 @@ with tempfile.TemporaryDirectory() as tmp:
 
 released = [('4893010', 'Concord Quarter', '27 Jul, 2026')]
 got = {(i['kind'], i['title']) for i in rw.stale_items(PAGES, PROJECTS, released, {'Lanternward': {}})}
-# Bressnath has no released Steam app and Wardfall no production release: both go.
-assert got == {('steam', 'Bressnath'), ('mobile', 'Wardfall')}, got
+# Missing discovery evidence must preserve existing pages.
+assert got == set(), got
+proof = {('steam', 'Bressnath'): [{'appid': '1', 'status': 'coming_soon', 'public_confirmation': True}]}
+assert rw.stale_items(PAGES, PROJECTS, confirmations=proof)[0]['title'] == 'Bressnath'
 assert rw.stale_items(PAGES, PROJECTS, None, None) == [], 'an unread source never removes a card'
 
 item = [{'kind': 'steam', 'action': 'create', 'title': 'Morrowvane'}]
 run, _, st = rw.decide(item, [], {}, 1000)
-assert run and st['fingerprint']
+assert run and any(row['item']['title'] == 'Morrowvane' and row['attempts'] == 1 for row in st['items'].values())
 run, why, _ = rw.decide(item, [], st, 1000 + 3600)
-assert not run and 'retry' in why
+assert not run and 'due' in why
 run, _, _ = rw.decide(item, [], st, 1000 + 8 * 86400)
 assert run, 'unresolved work is retried after RETRY_DAYS'
 run, _, st = rw.decide([], [], st, 2000)
 assert not run
 state = {}
 for day in range(rw.ERROR_DAYS):
-    run, why, state = rw.decide([], ['steam: URLError'], state, day)
-assert run and 'failing' in why, 'a scan that keeps failing wakes the agent instead of staying silent'
+    run, why, state = rw.decide([], ['steam: URLError'], state, day * 86400)
+assert run and 'partial' in why, 'a scan that keeps failing wakes the agent instead of staying silent'
 print('release_watch: ok')
