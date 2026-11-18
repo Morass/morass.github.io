@@ -55,6 +55,13 @@
       "image": "/emberveth/assets/capsule.png",
       "label": "Couch co-op spellcaster · Steam",
       "summary": "Aim every spell by hand, jump what you cannot walk around and read fifteen bosses. Friendly fire is always on."
+    },
+    {
+      "title": "Scripts of Power",
+      "path": "/scripts-of-power/",
+      "image": "/scripts-of-power/assets/capsule.png",
+      "label": "Programming puzzle · Steam",
+      "summary": "Write the script, then watch your fantasy hero carry it out. Four heroes, 200 deterministic rooms."
     }
   ],
   "mobile": [
