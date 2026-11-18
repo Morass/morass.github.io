@@ -149,7 +149,11 @@ class Reliability(unittest.TestCase):
             subprocess.run(['git', '-C', str(repo), 'remote', 'set-head', 'origin', 'main'], check=True)
             item = {'kind': 'steam', 'action': 'create', 'title': 'Game'}
             state = root / 'state.json'
-            state.write_text(json.dumps(rw.decide([item], [], {}, 1000)[2]))
+            missing_link = dict(item, store='https://store.steampowered.com/app/123/')
+            state.write_text(json.dumps(rw.decide([item, missing_link], [], {}, 1000)[2]))
+            with patch.object(rw, 'ROOT', repo), patch.object(rw, 'fetch', return_value=(200, '<h1>Released Game</h1>')):
+                with self.assertRaisesRegex(ValueError, 'lacks an offered store link'):
+                    rw.record(state, rw.key(missing_link), 'verified', 'store omitted', sha, 'game')
             with patch.object(rw, 'ROOT', repo), patch.object(rw, 'fetch', return_value=(200, '<h1>Old Page</h1>')):
                 with self.assertRaises(ValueError):
                     rw.record(state, rw.key(item), 'verified', 'published', sha, 'game')
@@ -170,6 +174,16 @@ class Reliability(unittest.TestCase):
         _, _, state = rw.decide([], ['steam: unavailable'], {}, 1000)
         self.assertFalse(rw.decide([], ['steam: unavailable'], state, 1001)[0])
         self.assertTrue(rw.decide([], ['steam: unavailable'], state, 1000 + 86400)[0])
+
+    def test_partial_or_absent_observation_is_not_a_verified_receipt(self):
+        item = {'kind': 'steam', 'action': 'create', 'title': 'Game'}
+        _, _, state = rw.decide([item], [], {}, 1000)
+        self.assertEqual(state['items'][rw.key(item)]['status'], 'attempted')
+        _, _, partial = rw.decide([], ['steam: unavailable'], state, 1001)
+        self.assertEqual(partial['items'][rw.key(item)]['status'], 'attempted')
+        _, _, clean = rw.decide([], [], state, 1001)
+        self.assertEqual(clean['items'][rw.key(item)]['status'], 'not-observed')
+        self.assertNotIn('receipts', clean)
 
     def test_extension_failure_is_visible(self):
         with tempfile.TemporaryDirectory() as d:
