@@ -11,6 +11,47 @@ down (owner, 2026-11-10: no future projects shown while in testing).
 | `pages-links` | command, daily 12:20, no model | [`scripts/links_daily.sh`](../scripts/links_daily.sh): music store links (`ambient-music/tools/release_links.py`), MakerWorld URLs of listings that left review (`prints/publisher/audit_makerworld.py --only-missing --write-urls`), prints re-import, build, check, commit, push. |
 | `pages-sync` | Sonnet agent, any seat, daily 05:25 | Gate `scripts/release_watch.py gate` skips it unless there is new work. The agent follows the section below. |
 
+## Store-link command
+
+`pages-links` uses `scripts/links_daily.py` through the shell entrypoint. It makes no AI
+calls; zero tokens describes its implementation, not whether it found work. The daily
+12:20 cadence and one-hour scheduler ceiling remain; the coordinator has its own
+20-minute wall budget and bounded subprocess groups. Browser collectors use
+`scripts/store_browser.py` with a dedicated seed tab, bounded attachment/navigation,
+and cleanup of that tab only. Chrome must already be running; the job never restarts it.
+
+The coordinator uses three owned candidates under
+`/Volumes/BACKUP-1/worktrees/pages-links/`, one per source/site repository. It never stages
+from shared canonical checkouts. Prints candidates omit large CAD/video/archive files.
+The existing Git integrity checker records ownership and verifies remote-default ancestry.
+Commit, merge, push, gate and live-check failures return nonzero and retain the candidate
+with the exact commit/blocker. Every run first recovers existing candidates; a blocked site
+publication defers fresh discovery. Independent source work cannot change a blocked source
+candidate. No force push, stash, automatic conflict resolution or gate weakening is allowed.
+Successful candidates are released and removed with their branches in the same run.
+
+`~/.local/state/pages-links/state.json` is locked and atomic; it retains candidate ownership
+and the latest 500 phase receipts. `music-scan.json` and `prints-scan.json` checkpoint item
+outcomes. Known music links survive incomplete discovery; one failed album does not stop
+later albums. MakerWorld request/schema failures are errors, while no verified match is
+`unknown` with a next action. A known-public search control must work before URL recovery;
+only unique creator/title or slug identity qualifies, never a sole unrelated hit. Variant
+ambiguity stays unresolved. `--list` avoids unrelated description audits in the daily job.
+
+Sources publish before site export. The site is built and checked on the integrated
+candidate before push, then each changed HTML page must match the live bytes within a
+bounded deadline. HTTP 200 alone is insufficient. A failed push retries even when the
+candidate checkout is clean. Source collectors and the coordinator write partial diagnostics
+on failure; a successful observation with unknown MakerWorld rows is not a recovered URL.
+
+Tests: `python3.13 scripts/test-links-daily.py`, `scripts/test-store-browser.py`,
+`ambient-music/tools/test_release_links.py`, and `prints/publisher/test_makerworld_links.py`.
+When deploying immutable runner/helper files, use a verified remote-default site commit and
+keep their paths together; `STORE_BROWSER_TOOLS` points collectors at that pinned helper.
+The data collectors themselves run from their freshly fetched source candidate.
+
+## Release watcher
+
 `release_watch.py scan` prints open items with stable IDs and explicit errors. The gate
 records at most five due item IDs in `~/.local/state/pages-sync/state.json`; unresolved
 items retry after 20 hours, so they are eligible at the next daily slot. New URL/channel
