@@ -47,9 +47,12 @@ def links_for(record):
 def slug(path):
     return '/'.join(re.sub(r'[^a-z0-9]+', '-', part.lower()).strip('-') for part in path.parts)
 
-def export(source, destination):
+def export(source, destination, refresh_links=False):
     source = source.resolve()
     items, skipped, seen = [], [], set()
+    previous_path = destination / 'content/prints.json'
+    previous = {item['id']: item for item in json.loads(previous_path.read_text())['items']} if refresh_links and previous_path.exists() else {}
+    retained_missing = []
     for record in sorted(source.rglob('published_urls.json')):
         if any(part.startswith('.') for part in record.relative_to(source).parts):
             continue
@@ -69,6 +72,11 @@ def export(source, destination):
         if identifier in seen or not identifier or '..' in identifier:
             raise ValueError(f'Ambiguous catalogue route: {identifier}')
         seen.add(identifier)
+        if identifier in previous:
+            item = dict(previous[identifier])
+            item['links'] = item['links'] + [link for link in links if link not in item['links']]
+            items.append(item)
+            continue
         config = meta.get('website', {})
         item = {'id': identifier, 'title': config.get('title') or meta.get('title') or folder.name.replace('_', ' ').title(),
                 'summary': config.get('summary') or meta.get('summary', ''),
@@ -94,17 +102,33 @@ def export(source, destination):
                     im.save(target, 'WEBP', quality=82, method=4)
             item['image'] = '/' + relative
         items.append(item)
+    for identifier, item in previous.items():
+        if identifier not in seen:
+            items.append(item)
+            retained_missing.append(identifier)
     if not items:
         raise ValueError('No public prints found; refusing to replace the catalogue')
     target = destination / 'content/prints.json'
     target.parent.mkdir(parents=True, exist_ok=True)
+    if refresh_links:
+        by_id = {item['id']: item for item in items}
+        items = [by_id[key] for key in previous if key in by_id] + [item for item in items if item['id'] not in previous]
     target.write_text(json.dumps({'items': items}, ensure_ascii=False, indent=2) + '\n')
     print(f'Exported {len(items)} prints; skipped {len(skipped)} records without metadata/public links')
     for path in skipped: print('  skipped:', path)
+    for identifier in retained_missing: print('  source-not-observed; retained existing publication:', identifier)
+    return {'items': len(items), 'retained_missing': retained_missing}
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--source', type=Path, default=ROOT.parent / 'prints')
     parser.add_argument('--destination', type=Path, default=ROOT)
+    parser.add_argument('--refresh-links', action='store_true', help='add confirmed links; preserve existing publications and metadata')
+    parser.add_argument('--receipt', type=Path)
     args = parser.parse_args()
-    export(args.source, args.destination)
+    result = export(args.source, args.destination, args.refresh_links)
+    if args.receipt:
+        args.receipt.parent.mkdir(parents=True, exist_ok=True)
+        temporary = args.receipt.with_suffix('.tmp')
+        temporary.write_text(json.dumps(result, indent=2) + '\n')
+        temporary.replace(args.receipt)

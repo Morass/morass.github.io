@@ -314,11 +314,14 @@ def run(args, journal):
         try:
             # Independent repositories can deliver without enlarging a blocked source candidate.
             if 'music' in candidates:
-                command([sys.executable, 'tools/release_links.py', '--export-only', '--hub', site.path],
+                command([sys.executable, 'tools/release_links.py', '--export-only', '--preserve-existing', '--hub', site.path],
                         cwd=candidates['music'].path, env=env, timeout=120)
             if 'prints' in candidates:
                 command([sys.executable, site.path / 'scripts/import-prints.py', '--source', candidates['prints'].path,
-                         '--destination', site.path], cwd=site.path, timeout=180)
+                         '--destination', site.path, '--refresh-links', '--receipt', args.state.parent / 'prints-export.json'], cwd=site.path, timeout=180)
+                export_receipt = json.loads((args.state.parent / 'prints-export.json').read_text())
+                journal.record('prints-export', 'observed', **export_receipt,
+                               next_action='Retain missing-source publications; publisher owns source metadata and explicit withdrawals')
             site.publish()
             verify_live(site, args.live_url, args.live_timeout)
         except Exception as error:

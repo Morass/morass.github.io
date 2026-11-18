@@ -38,6 +38,12 @@ later albums. MakerWorld request/schema failures are errors, while no verified m
 only unique creator/title or slug identity qualifies, never a sole unrelated hit. Variant
 ambiguity stays unresolved. `--list` avoids unrelated description audits in the daily job.
 
+Daily exports are additive: missing source records preserve existing albums, print entries
+and store links. Print link refresh retains existing photos/descriptions; only a genuinely
+new public item imports full metadata. An empty snapshot cannot withdraw a published item.
+`prints-export.json` records retained IDs whose committed source metadata is absent.
+Explicit catalogue removal remains the publisher's separate reviewed export operation.
+
 Sources publish before site export. The site is built and checked on the integrated
 candidate before push, then each changed HTML page must match the live bytes within a
 bounded deadline. HTTP 200 alone is insufficient. A failed push retries even when the

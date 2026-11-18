@@ -200,7 +200,7 @@ class Pipeline(unittest.TestCase):
             repos={}; remotes={}
             source=r"""import argparse,json,sys
 from pathlib import Path
-p=argparse.ArgumentParser();p.add_argument('--receipt',type=Path);p.add_argument('--export-only',action='store_true');p.add_argument('--hub',type=Path);a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--receipt',type=Path);p.add_argument('--export-only',action='store_true');p.add_argument('--preserve-existing',action='store_true');p.add_argument('--hub',type=Path);a=p.parse_args()
 if a.export_only:
  (a.hub/'content/music.json').write_text((Path('releases/a/links.json')).read_text())
 else:
@@ -214,7 +214,7 @@ else:
                 files={'site':{'content/music.json':'{"label":"old"}', 'content/prints.json':'{}', 'index.html':'<html>old</html>',
                     'scripts/build.py':"import json\nfrom pathlib import Path\nx=json.loads(Path('content/music.json').read_text())\nPath('index.html').write_text('<html>'+x['label']+'</html>')\n",
                     'scripts/check.py':'pass\n',
-                    'scripts/import-prints.py':"import argparse\nfrom pathlib import Path\np=argparse.ArgumentParser();p.add_argument('--source');p.add_argument('--destination',type=Path);a=p.parse_args();(a.destination/'content/prints.json').write_text('{}')\n"},
+                    'scripts/import-prints.py':"import argparse\nfrom pathlib import Path\np=argparse.ArgumentParser();p.add_argument('--source');p.add_argument('--destination',type=Path);p.add_argument('--refresh-links',action='store_true');p.add_argument('--receipt',type=Path);a=p.parse_args();(a.destination/'content/prints.json').write_text('{}');a.receipt.write_text('{}')\n"},
                     'music':{'releases/a/links.json':'{"label":"old"}', 'tools/release_links.py':source},
                     'prints':{'publisher/audit_makerworld.py':"import argparse,json\nfrom pathlib import Path\np=argparse.ArgumentParser();p.add_argument('--only-missing',action='store_true');p.add_argument('--write-urls',action='store_true');p.add_argument('--list',action='store_true');p.add_argument('--receipt',type=Path);a=p.parse_args();a.receipt.write_text(json.dumps({'status':'complete','items':[]}))\n"}}[kind]
                 for name,value in files.items():
