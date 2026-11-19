@@ -64,6 +64,28 @@ proof = {('steam', 'Bressnath'): [{'appid': '1', 'status': 'coming_soon', 'publi
 assert rw.stale_items(PAGES, PROJECTS, confirmations=proof)[0]['title'] == 'Bressnath'
 assert rw.stale_items(PAGES, PROJECTS, None, None) == [], 'an unread source never removes a card'
 
+# itch: profile cells become link/create items; a linked page is done; an empty profile is an error.
+ITCH_HTML = (
+    '<a href="https://morassgames.itch.io/the-concord-quarter" data-label="game:1:title" class="title game_link">The Concord Quarter</a>'
+    '<a href="https://morassgames.itch.io/one-more-take" data-label="game:2:title" class="title game_link">One More Take</a>')
+real_fetch = rw.fetch
+rw.fetch = lambda url, timeout=10: (200, ITCH_HTML)
+found = rw.itch_released()
+assert found == [('https://morassgames.itch.io/the-concord-quarter', 'The Concord Quarter'),
+                 ('https://morassgames.itch.io/one-more-take', 'One More Take')], found
+got = {i['title']: i for i in rw.itch_items(PAGES, PROJECTS, found)}
+assert got['The Concord Quarter']['action'] == 'link' and got['The Concord Quarter']['page'] == 'concord'
+assert got['One More Take']['action'] == 'create' and got['One More Take']['page'] is None
+linked = dict(PAGES, concord=PAGES['concord'] + '<a href="https://morassgames.itch.io/the-concord-quarter">itch.io</a>')
+assert 'The Concord Quarter' not in {i['title'] for i in rw.itch_items(linked, PROJECTS, found)}
+rw.fetch = lambda url, timeout=10: (200, '<html>maintenance</html>')
+try:
+    rw.itch_released()
+    raise AssertionError('an itch page with no games must be an error, not an empty catalogue')
+except ValueError:
+    pass
+rw.fetch = real_fetch
+
 item = [{'kind': 'steam', 'action': 'create', 'title': 'Morrowvane'}]
 run, _, st = rw.decide(item, [], {}, 1000)
 assert run and any(row['item']['title'] == 'Morrowvane' and row['attempts'] == 1 for row in st['items'].values())

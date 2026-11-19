@@ -30,6 +30,7 @@ PROGRAMS = Path(os.environ.get('PAGES_SYNC_PROGRAMS', ROOT.parent))
 DISTRIBUTION = PROGRAMS / 'claude_server/data/distribution.json'
 STATE = Path.home() / '.local/state/pages-sync/state.json'
 STEAM_DEVELOPER = 'Morass'
+ITCH_PROFILE = 'https://morassgames.itch.io/'
 RETRY_DAYS = 1
 ERROR_DAYS = 1
 DEADLINE = None
@@ -146,6 +147,36 @@ def steam_items(pages, projects, released):
             continue
         items.append({'kind': 'steam', 'action': action, 'title': name, 'store': store,
                       'page': page, 'released': date})
+    return items
+
+
+def itch_released():
+    """[(url, title)] for every game the itch profile lists; drafts never appear there."""
+    _, body = fetch(ITCH_PROFILE)
+    host = re.escape(ITCH_PROFILE.rstrip('/'))
+    rows = re.findall(r'<a href="(' + host + r'/[a-z0-9-]+)"[^>]*class="title game_link"[^>]*>([^<]+)</a>', body)
+    if not rows:
+        raise ValueError('itch profile lists no games; markup changed or page unreadable')
+    seen, out = set(), []
+    for url, title in rows:
+        if url not in seen:
+            seen.add(url)
+            out.append((url, html.unescape(title).strip()))
+    return out
+
+
+def itch_items(pages, projects, released):
+    items = []
+    for url, name in released:
+        page = find_page(pages, projects, 'games', name, url)
+        card = card_for(projects, 'games', name, page)
+        if page is None or card is None:
+            action = 'create'
+        elif url not in pages[page]:
+            action = 'link'
+        else:
+            continue
+        items.append({'kind': 'itch', 'action': action, 'title': name, 'store': url, 'page': page})
     return items
 
 
@@ -378,8 +409,10 @@ def scan():
 
     released = run('steam', lambda: steam_released(errors=errors, observed=observed))
     live = run('mobile', lambda: mobile_live(errors=errors))
+    itch = run('itch', itch_released)
     items += steam_items(pages, projects, released) if released is not None else []
     items += mobile_items(pages, projects, live) if live is not None else []
+    items += itch_items(pages, projects, itch) if itch is not None else []
     confirmations = run('withdrawal-check', lambda: removal_confirmations(pages, projects, released, live, observed, DISTRIBUTION, errors))
     for item in stale_items(pages, projects, released, live, confirmations):
         item['store_refs'] = store_refs(item['page']) if item['page'] else []
@@ -484,9 +517,9 @@ def record(state, ident, outcome, reason, commit=None, path=None):
             if item.get('page') and relative.as_posix().strip('/') != item['page']:
                 raise ValueError('receipt path does not match item')
             catalog = None
-            if item['kind'] in ('steam', 'mobile'):
+            if item['kind'] in ('steam', 'mobile', 'itch'):
                 catalog = json.loads(subprocess.check_output(['git', '-C', str(ROOT), 'show', f'{commit}:content/projects.json']))
-                section = 'games' if item['kind'] == 'steam' else 'mobile'
+                section = 'mobile' if item['kind'] == 'mobile' else 'games'
                 card = card_for(catalog, section, item['title'], None)
                 if item['action'] == 'remove':
                     if card or not item.get('evidence'):
