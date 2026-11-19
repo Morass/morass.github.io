@@ -3399,6 +3399,10 @@
         {
           "platform": "makerworld",
           "url": "https://makerworld.com/en/models/3504955-spirit-island-defend-tokens"
+        },
+        {
+          "platform": "snapmaker",
+          "url": "https://space.snapmaker.com/en/model/46380"
         }
       ],
       "image": "/assets/prints/boardgames/spirit-island/defend-tokens/59f23fab25c06a1e.webp"
@@ -3641,6 +3645,40 @@
         }
       ],
       "image": "/assets/prints/boardgames/spirit-island/scenario-relief-tokens/2a6f80f12392f073.webp"
+    },
+    {
+      "id": "boardgames/spirit-island/storage",
+      "title": "Spirit Island Storage Box with Drawers (Multicolour)",
+      "summary": "Five-drawer box for all of Spirit Island: token cups, spirit caddies, and a rulebook frame under a picture lid.",
+      "tags": [
+        "spiritisland",
+        "boardgame",
+        "boardgameinsert",
+        "organizer",
+        "storage",
+        "box",
+        "drawers",
+        "tokens",
+        "tabletop",
+        "multicolor",
+        "magnets",
+        "nosupports"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/game/spirit-island-storage-box-with-drawers-multicolour"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1921880-spirit-island-storage-box-with-drawers-multicolour"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3644226-spirit-island-storage-box-with-drawers"
+        }
+      ],
+      "image": "/assets/prints/boardgames/spirit-island/storage/68bb537ba4a65848.webp"
     },
     {
       "id": "boardgames/spirit-island/token-set",
