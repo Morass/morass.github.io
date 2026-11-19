@@ -72,7 +72,8 @@ searches, unhealthy/stale mobile observations and extension request failures are
 successes. A source failure never establishes withdrawal. Mobile input must be generated
 within 36 hours and each accepted cell must have a fresh successful check.
 
-Sources: public Steam developer search and product details; the Hub distribution snapshot;
+Sources: public Steam developer search and product details; the public itch.io profile
+(`morassgames.itch.io`, which lists only published games); the Hub distribution snapshot;
 store links in known extension repos; released albums and the artist registry. Discovery
 is intentionally scoped. Missing inventory rows cannot prove that a product is unreleased.
 A Steam removal needs positive `coming_soon` product metadata and public-page corroboration.
@@ -114,6 +115,15 @@ integrity note. Never hide or discard another agent's work. For each due item:
   `appdetails` (`short_description`, genres) and the game repo
   (`~/programs/<slug>`, its `AIM.md`/`README.md`, `store/` files); never invent a
   feature.
+- **itch / link**: the game's page and card exist but do not link its itch.io URL. Add a
+  secondary CTA "Get it on itch.io" (`cta cta-secondary`, `target="_blank" rel="noopener"`)
+  right after the Steam CTA, linking the item's store URL; keep every Steam link. The card
+  label in `content/projects.json` becomes `<genre> · Steam & itch.io`.
+- **itch / create**: a public itch game with no page or card. Build it like **steam / create**
+  with the itch CTA as the primary one and label `<genre> · itch.io`. Facts come from the itch
+  page and the game repo; the capsule is the itch cover image. If no repo or verifiable
+  description exists, record the item blocked with that reason rather than inventing copy.
+  Itch absence never removes a card or a link.
 - **mobile / release, create or merge**: as above with [`wardfall/index.html`](../wardfall/index.html)
   and the `mobile` section; link only the store URLs in the item. One live store makes
   the label `Android` or `iOS`; both make `Android & iOS · Google Play & App Store`.
