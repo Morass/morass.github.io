@@ -4718,6 +4718,46 @@
       "image": "/assets/prints/containers/lego-box/6c77a8869ed6ad7b.webp"
     },
     {
+      "id": "containers/maya-pyramid-box",
+      "title": "Maya Pyramid Box — El Castillo that opens, magnets sealed inside",
+      "summary": "A 150 mm El Castillo pyramid box. The top lifts off as a lid, held by 8 sealed-in magnets.",
+      "tags": [
+        "box",
+        "container",
+        "magnetic",
+        "magnet",
+        "pyramid",
+        "maya",
+        "mayan",
+        "chichenitza",
+        "elcastillo",
+        "aztec",
+        "temple",
+        "trinketbox",
+        "jewelrybox",
+        "dicebox",
+        "architecture",
+        "nosupports",
+        "parametric",
+        "openscad"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/home/maya-pyramid-box-el-castillo-that-opens-magnets-sealed-inside"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1921940-maya-pyramid-box-el-castillo-that-opens-magnets-se"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3644756-maya-pyramid-magnet-box"
+        }
+      ],
+      "image": "/assets/prints/containers/maya-pyramid-box/3b460e6cad3a8a1b.webp"
+    },
+    {
       "id": "containers/mead-hall-box",
       "title": "Mead hall box — a Viking longhouse whose whole roof lifts off",
       "summary": "A 199 mm Viking longhouse whose whole shingled roof lifts off, leaving a 177 x 83 x 31 mm box with the hollow roof above it. Two prints in one wood-fill filament, no supports, no hardware, nothing to glue. Every plank, knot and shingle is cut and jittered from one seed, so it reads hand-built. The roof rests on a tongue, it does not latch, so it is a table box, not a travelling one.",
