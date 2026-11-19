@@ -85,6 +85,13 @@
       "image": "/hearthfields/assets/icon.png",
       "label": "Android · Google Play",
       "summary": "Lay hexagonal landscape tiles so their edges meet and wake 210 sleeping vales. A calm, untimed puzzle with free undo."
+    },
+    {
+      "title": "Scripts of Power",
+      "path": "/scripts-of-power/",
+      "image": "/scripts-of-power/assets/capsule.png",
+      "label": "Android · Google Play",
+      "summary": "Write the script, then watch your fantasy hero carry it out. Four heroes, 200 deterministic rooms."
     }
   ],
   "channels": [
