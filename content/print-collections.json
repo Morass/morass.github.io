@@ -133,6 +133,7 @@
       "boardgames/breach/marsh"
     ],
     "containers/keepsake-boxes/fantasy": [
+      "containers/d20-pedestal-box",
       "containers/alexandria-library-box",
       "containers/castle-keep-box",
       "containers/coffin-pencil-case",

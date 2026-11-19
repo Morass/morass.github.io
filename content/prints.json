@@ -4310,6 +4310,42 @@
       "image": "/assets/prints/containers/cubby-shelf/6678f20e74cd9796.webp"
     },
     {
+      "id": "containers/d20-pedestal-box",
+      "title": "D20 Dice Box on a Talon Pedestal (Two-Colour, Twist-Lock)",
+      "summary": "A d20-shaped dice box on a five-talon pedestal with monster busts. Two prints, two colours, twist-lock lid, no glue.",
+      "tags": [
+        "d20",
+        "dice",
+        "dicebox",
+        "dnd",
+        "rpg",
+        "tabletop",
+        "box",
+        "container",
+        "pedestal",
+        "dragon",
+        "fantasy",
+        "multicolor",
+        "twistlock",
+        "nosupports"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/home/d20-dice-box-on-a-talon-pedestal-two-colour-twist-lock"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1921909-d20-dice-box-on-a-talon-pedestal-two-colour-twist"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3644498-d20-dice-box-on-a-talon-pedestal"
+        }
+      ],
+      "image": "/assets/prints/containers/d20-pedestal-box/311fce178e89cee8.webp"
+    },
+    {
       "id": "containers/decorative-box",
       "title": "Decorative Honeycomb Box (Parametric)",
       "summary": "Open-top storage box with a hex pattern engraved on every wall — fully parametric OpenSCAD source.",
