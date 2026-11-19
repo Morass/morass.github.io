@@ -1,6 +1,33 @@
 {
  "albums": [
   {
+   "slug": "the-hollow-answered",
+   "artist": "Skralvoss",
+   "album": "The Hollow Answered",
+   "release_date": "2026-12-11",
+   "summary": "Thirteen battle pieces from a mountain war, where a dwarven keep holds against berserkers coming down from the storm-peaks, from the war horns on the crown-reaches to the hollow that answers in the deep.",
+   "cover": "/assets/music/the-hollow-answered.webp",
+   "hyperfollow": "https://distrokid.com/hyperfollow/skralvoss/the-hollow-answered",
+   "tracks": [
+    "Thunder on the Crown-Reaches",
+    "Downhill, in Weather",
+    "The Stair-Road",
+    "Hammers of the Anvil-Tier",
+    "The Grudge-Slate",
+    "Deeper Rather than Wider",
+    "The Wedge-Singers",
+    "Shield-Wall at the Surface Gate",
+    "The Bound-Oath",
+    "Avalanche at the East Notch",
+    "Lanterns in the Middle Halls",
+    "The Second Line Is Cut",
+    "The Hollow Answered"
+   ],
+   "links": {},
+   "embeds": {},
+   "track_embeds": []
+  },
+  {
    "slug": "a-year-in-orenvalt",
    "artist": "Orenvalt Archive",
    "album": "A Year in Orenvalt",
