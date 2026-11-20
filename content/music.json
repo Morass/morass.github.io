@@ -128,8 +128,13 @@
     "The Last Lantern",
     "Midwinter Reel"
    ],
-   "links": {},
-   "embeds": {},
+   "links": {
+    "spotify": "https://open.spotify.com/album/5huaohrq7uq6dvhkMEBbVM",
+    "amazon": "https://www.amazon.com/gp/product/B0HP8MKLYM"
+   },
+   "embeds": {
+    "spotify": "https://open.spotify.com/embed/album/5huaohrq7uq6dvhkMEBbVM?theme=0"
+   },
    "track_embeds": []
   },
   {
