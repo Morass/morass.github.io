@@ -9791,6 +9791,43 @@
       "image": "/assets/prints/desk/hedgehog-pen-holder/91873becfa0db709.webp"
     },
     {
+      "id": "desk/ink-cartridge-case",
+      "title": "Ink Cartridge Rack with Dragon Scales (10 Bays, Two-Colour)",
+      "summary": "An open-top rack for ten inkjet cartridges. Each front window shows the cartridge's colour, and a dragon-scale relief covers the other walls.",
+      "tags": [
+        "ink",
+        "cartridge",
+        "inkjet",
+        "printer",
+        "rack",
+        "holder",
+        "organizer",
+        "desk",
+        "office",
+        "storage",
+        "dragon",
+        "scales",
+        "multicolor",
+        "nosupports"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/home/ink-cartridge-rack-with-dragon-scales-10-bays-two-colour"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1923089-ink-cartridge-rack-with-dragon-scales-10-bays-two"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3649691-ink-cartridge-rack-with-dragon-scales"
+        }
+      ],
+      "collection": "desk/organizers/paper-notes",
+      "image": "/assets/prints/desk/ink-cartridge-case/7f5461a4f5a43475.webp"
+    },
+    {
       "id": "desk/keyboard-riser",
       "title": "Keyboard Riser — Split, Dovetail-Joined, Parametric (60 / 100 / 180 mm Lift)",
       "summary": "Open-frame stand that lifts a keyboard off the desk, leaving the space underneath clear. Three ready-to-print configurations: 60 and 100 mm lift for a 440 × 135 mm board, and 180 mm for a 313 × 123 mm 75 % board (Keychron K2 size). A 3 mm rim keeps the board from sliding off; a honeycomb deck spreads its weight. Too long for a 256 mm bed, so it splits into two halves that re-join with a drop-in dovetail key — no glue, no tools. Fully parametric: change one variable for any other board or height.",
