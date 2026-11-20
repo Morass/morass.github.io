@@ -104,7 +104,9 @@ def card(title, url, summary, image=None, label='', feature=False, art=None):
     return f'<a class="card{" featured" if feature else ""}" href="{E(url)}"><div class="card-art">{art}<span class="card-arrow" aria-hidden="true">↗</span></div><div class="card-copy"><p class="eyebrow">{E(label)}</p><h2>{E(title)}</h2><p>{E(summary)}</p></div></a>'
 
 def project_cards(key):
-    return '<div class="cards">'+''.join(card(p['title'], p['path'], p['summary'], p['image'], p['label']) for p in P[key])+'</div>'
+    # Mobile is alphabetical (owner, 2026-11-20) so the release sync can append cards anywhere.
+    projects = sorted(P[key], key=lambda p: p['title'].casefold()) if key == 'mobile' else P[key]
+    return '<div class="cards">'+''.join(card(p['title'], p['path'], p['summary'], p['image'], p['label']) for p in projects)+'</div>'
 
 
 def print_image(item):
