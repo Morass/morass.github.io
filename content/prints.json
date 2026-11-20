@@ -3922,6 +3922,39 @@
       "image": "/assets/prints/containers/alexandria-library-box/0643ce16244404b5.webp"
     },
     {
+      "id": "containers/astronomer-instrument-case",
+      "title": "Astronomer's Star-Chart Keepsake Case (Two-Colour, Lift-Off Lid)",
+      "summary": "A twelve-lobed round keepsake case with a star-chart lid: sun, orbital rings, planets and stars in a second colour. The lid rests on the body and does not lock.",
+      "tags": [
+        "box",
+        "case",
+        "keepsake",
+        "trinket",
+        "jewelry",
+        "astronomy",
+        "stars",
+        "starchart",
+        "celestial",
+        "sun",
+        "planets",
+        "lid",
+        "multicolor",
+        "nosupports"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/home/astronomer-s-star-chart-keepsake-case-two-colour-lift-off-lid"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1923654-astronomers-star-chart-keepsake-case-two-colour-li"
+        }
+      ],
+      "collection": "containers/keepsake-boxes/fantasy",
+      "image": "/assets/prints/containers/astronomer-instrument-case/451f798fa75a9261.webp"
+    },
+    {
       "id": "containers/basket-weave-box-large",
       "title": "Honeycomb Hinged Storage Box — Large (PIP, 3 sizes)",
       "summary": "Big rectangular storage box with hex pattern on every wall + print-in-place piano hinge — prints OPEN, snaps shut, no assembly. Three sizes bundled.",
