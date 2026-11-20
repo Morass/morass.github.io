@@ -92,6 +92,13 @@
       "image": "/scripts-of-power/assets/capsule.png",
       "label": "Android · Google Play",
       "summary": "Write the script, then watch your fantasy hero carry it out. Four heroes, 200 deterministic rooms."
+    },
+    {
+      "title": "Lanternkeep",
+      "path": "/lanternkeep/",
+      "image": "/lanternkeep/assets/icon.png",
+      "label": "Android · Google Play",
+      "summary": "A free, offline table helper for tabletop role-playing and board-game nights."
     }
   ],
   "channels": [
