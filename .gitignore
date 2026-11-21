@@ -6,3 +6,5 @@
 # a new 20-65 MB blob. Upload with aws s3 cp to s3://morass-games/media/trailers/
 # and reference the absolute URL.
 *.mp4
+__pycache__/
+*.pyc
