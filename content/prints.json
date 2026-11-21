@@ -3953,6 +3953,10 @@
         {
           "platform": "makerworld",
           "url": "https://makerworld.com/en/models/3652104-astronomer-s-star-chart-keepsake-case"
+        },
+        {
+          "platform": "snapmaker",
+          "url": "https://space.snapmaker.com/en/model/52593"
         }
       ],
       "collection": "containers/keepsake-boxes/fantasy",
@@ -4415,6 +4419,37 @@
         }
       ],
       "image": "/assets/prints/containers/decorative-box/a21431e0276e1d5f.webp"
+    },
+    {
+      "id": "containers/dwarven-treasury",
+      "title": "Dwarven treasury — four-colour drawer box with stepped roof",
+      "summary": "Four-colour dwarven stone treasury, 240 x 200 x 70 mm, with a stepped roof, rune frieze and a gate-front pull-out drawer. Ten prints, no supports, joined with 5-minute epoxy. Ready Bambu 3MFs included.",
+      "tags": [
+        "dwarven",
+        "dwarf",
+        "fantasy",
+        "drawer",
+        "box",
+        "storage",
+        "jewelrybox",
+        "treasury",
+        "runes",
+        "multicolour",
+        "ams",
+        "nosupports",
+        "dnd"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/home/dwarven-treasury-four-colour-drawer-box-with-stepped-roof"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1924233-dwarven-treasury-four-colour-drawer-box-with-stepp"
+        }
+      ],
+      "image": "/assets/prints/containers/dwarven-treasury/f165f946f13afbfd.webp"
     },
     {
       "id": "containers/elven-motif-box",
@@ -9859,6 +9894,10 @@
         {
           "platform": "makerworld",
           "url": "https://makerworld.com/en/models/3649691-ink-cartridge-rack-with-dragon-scales"
+        },
+        {
+          "platform": "snapmaker",
+          "url": "https://space.snapmaker.com/en/model/52537"
         }
       ],
       "collection": "desk/organizers/paper-notes",
