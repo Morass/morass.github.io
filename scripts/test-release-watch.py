@@ -67,7 +67,8 @@ assert rw.stale_items(PAGES, PROJECTS, None, None) == [], 'an unread source neve
 # itch: profile cells become link/create items; a linked page is done; an empty profile is an error.
 ITCH_HTML = (
     '<a href="https://morassgames.itch.io/the-concord-quarter" data-label="game:1:title" class="title game_link">The Concord Quarter</a>'
-    '<a href="https://morassgames.itch.io/one-more-take" data-label="game:2:title" class="title game_link">One More Take</a>')
+    '<a data-label="game:2:title" data-action="game_grid" class="title game_link" href="https://morassgames.itch.io/one-more-take">One More Take</a>'
+    '<a class="title game_link" href="https://elsewhere.itch.io/other-game">Other Game</a>')
 real_fetch = rw.fetch
 rw.fetch = lambda url, timeout=10: (200, ITCH_HTML)
 found = rw.itch_released()

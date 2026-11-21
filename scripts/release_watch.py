@@ -154,7 +154,9 @@ def itch_released():
     """[(url, title)] for every game the itch profile lists; drafts never appear there."""
     _, body = fetch(ITCH_PROFILE)
     host = re.escape(ITCH_PROFILE.rstrip('/'))
-    rows = re.findall(r'<a href="(' + host + r'/[a-z0-9-]+)"[^>]*class="title game_link"[^>]*>([^<]+)</a>', body)
+    # itch orders the grid anchor's attributes freely (live: data-label, class, href).
+    rows = [(href.group(1), title) for attrs, title in re.findall(r'<a\s([^>]*\bclass="title game_link"[^>]*)>([^<]+)</a>', body)
+            if (href := re.search(r'\bhref="(' + host + r'/[a-z0-9-]+)"', attrs))]
     if not rows:
         raise ValueError('itch profile lists no games; markup changed or page unreadable')
     seen, out = set(), []
