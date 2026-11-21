@@ -130,12 +130,75 @@
    ],
    "links": {
     "spotify": "https://open.spotify.com/album/5huaohrq7uq6dvhkMEBbVM",
-    "amazon": "https://www.amazon.com/gp/product/B0HP8MKLYM"
+    "amazon": "https://www.amazon.com/gp/product/B0HP8MKLYM",
+    "apple": "https://music.apple.com/us/album/the-last-lantern/6826890489"
    },
    "embeds": {
-    "spotify": "https://open.spotify.com/embed/album/5huaohrq7uq6dvhkMEBbVM?theme=0"
+    "spotify": "https://open.spotify.com/embed/album/5huaohrq7uq6dvhkMEBbVM?theme=0",
+    "apple": "https://embed.music.apple.com/us/album/the-last-lantern/6826890489"
    },
-   "track_embeds": []
+   "track_embeds": [
+    {
+     "title": "The Lamplighters",
+     "embed": "https://embed.music.apple.com/us/album/the-last-lantern/6826890489?i=6826890490",
+     "store": "apple-track"
+    },
+    {
+     "title": "The Clocktower Stair",
+     "embed": "https://embed.music.apple.com/us/album/the-last-lantern/6826890489?i=6826890491",
+     "store": "apple-track"
+    },
+    {
+     "title": "Black Banners on the North Road",
+     "embed": "https://embed.music.apple.com/us/album/the-last-lantern/6826890489?i=6826890492",
+     "store": "apple-track"
+    },
+    {
+     "title": "The Fencing Master",
+     "embed": "https://embed.music.apple.com/us/album/the-last-lantern/6826890489?i=6826890493",
+     "store": "apple-track"
+    },
+    {
+     "title": "The King's Hunt",
+     "embed": "https://embed.music.apple.com/us/album/the-last-lantern/6826890489?i=6826890494",
+     "store": "apple-track"
+    },
+    {
+     "title": "Storm over the Spires",
+     "embed": "https://embed.music.apple.com/us/album/the-last-lantern/6826890489?i=6826890495",
+     "store": "apple-track"
+    },
+    {
+     "title": "Siege Engines at the Wall",
+     "embed": "https://embed.music.apple.com/us/album/the-last-lantern/6826890489?i=6826890497",
+     "store": "apple-track"
+    },
+    {
+     "title": "The Frozen Ferry",
+     "embed": "https://embed.music.apple.com/us/album/the-last-lantern/6826890489?i=6826890498",
+     "store": "apple-track"
+    },
+    {
+     "title": "The Ice-Bridge Chase",
+     "embed": "https://embed.music.apple.com/us/album/the-last-lantern/6826890489?i=6826890499",
+     "store": "apple-track"
+    },
+    {
+     "title": "Oath in the High Hall",
+     "embed": "https://embed.music.apple.com/us/album/the-last-lantern/6826890489?i=6826890500",
+     "store": "apple-track"
+    },
+    {
+     "title": "The Last Lantern",
+     "embed": "https://embed.music.apple.com/us/album/the-last-lantern/6826890489?i=6826890501",
+     "store": "apple-track"
+    },
+    {
+     "title": "Midwinter Reel",
+     "embed": "https://embed.music.apple.com/us/album/the-last-lantern/6826890489?i=6826890502",
+     "store": "apple-track"
+    }
+   ]
   },
   {
    "slug": "the-wrack",
