@@ -2102,6 +2102,37 @@
       "image": "/assets/prints/boardgames/general/rune-dice/6f1889ac28a9a94e.webp"
     },
     {
+      "id": "boardgames/general/rune-duel",
+      "title": "Rune Duel — wizards' board game in a box that is the board",
+      "summary": "A secret-pick wizards' duel for 2-4 players, age 8+, 10-15 minutes. Forty inked runes, four wizards and a round box whose lid is the board.",
+      "tags": [
+        "board game",
+        "wizard",
+        "rune",
+        "magic",
+        "family game",
+        "simultaneous",
+        "bluff",
+        "box",
+        "multicolor",
+        "print and play",
+        "strategy game",
+        "four player"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/game/rune-duel-wizards-board-game-in-a-box-that-is-the-board"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1924456-rune-duel-wizards-board-game-in-a-box-that-is-the"
+        }
+      ],
+      "collection": "boardgames/original-games",
+      "image": "/assets/prints/boardgames/general/rune-duel/20e4ef9aa14254c9.webp"
+    },
+    {
       "id": "boardgames/general/scarwalk",
       "title": "Scarwalk — complete cooperative printed dungeon crawl",
       "summary": "A complete 1–4 player cooperative crawl: six classes, a shuffled three-act map, shared-element combos, loot, bosses and a fitted storage box.",
@@ -4447,6 +4478,10 @@
         {
           "platform": "printables",
           "url": "https://www.printables.com/model/1924233-dwarven-treasury-four-colour-drawer-box-with-stepp"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3655998"
         }
       ],
       "image": "/assets/prints/containers/dwarven-treasury/f165f946f13afbfd.webp"
