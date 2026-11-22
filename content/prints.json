@@ -5388,6 +5388,38 @@
       "image": "/assets/prints/containers/sugar-skull-box/bdd475958bc34447.webp"
     },
     {
+      "id": "containers/supreme-harmony-box",
+      "title": "Imperial hall box — inspired by the Hall of Supreme Harmony, the double roof lifts off",
+      "summary": "A 222 x 172 x 74 mm Chinese imperial hall on a three-tier marble terrace, inspired by the Hall of Supreme Harmony. The double roof is the lid and lifts off a hidden pocket. Two prints, four colours, no supports, no hardware.",
+      "tags": [
+        "china",
+        "beijing",
+        "forbiddencity",
+        "pagoda",
+        "temple",
+        "architecture",
+        "box",
+        "secretbox",
+        "storage",
+        "decor",
+        "multicolour",
+        "ams",
+        "nosupports"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/home/imperial-hall-box-inspired-by-the-hall-of-supreme-harmony-the-double-roof-lif"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1925489-imperial-hall-box-inspired-by-the-hall-of-supreme"
+        }
+      ],
+      "collection": "containers/keepsake-boxes/fantasy",
+      "image": "/assets/prints/containers/supreme-harmony-box/5a3e5d6bb060d78e.webp"
+    },
+    {
       "id": "containers/trojan-horse-box",
       "title": "Trojan Horse Box — rolling, openable treasure horse",
       "summary": "A wooden Trojan-horse keepsake box on real rolling wheels, with a hinged belly compartment — open it to reveal what you smuggled inside. NOTE: the hidden compartment is TINY (31 × 15 × 13 mm) — ring / note / tooth sized, not a storage box.",
@@ -7653,10 +7685,6 @@
         {
           "platform": "makerworld",
           "url": "https://makerworld.com/en/models/3071980"
-        },
-        {
-          "platform": "snapmaker",
-          "url": "https://space.snapmaker.com/en/model/35989"
         }
       ],
       "image": "/assets/prints/decorations/parasaurolophus-capsule/d4d99ffe57128891.webp"
