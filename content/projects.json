@@ -4,14 +4,14 @@
       "title": "Pyrewarden",
       "path": "/pyrewarden/",
       "image": "/pyrewarden/assets/capsule.png",
-      "label": "Tower defense · Steam",
+      "label": "Tower defense · Steam & itch.io",
       "summary": "Build a defense from twelve schools of magic. Discover spell synergies and hold the line together in co-op."
     },
     {
       "title": "The Concord Quarter",
       "path": "/concord/",
       "image": "/concord/assets/capsule.png",
-      "label": "City-life sim · Steam",
+      "label": "City-life sim · Steam & itch.io",
       "summary": "Start as nobody in a medieval city. Trade, bargain and scheme your way into a life of your own."
     },
     {
@@ -62,6 +62,20 @@
       "image": "/scripts-of-power/assets/capsule.png",
       "label": "Programming puzzle · Steam",
       "summary": "Write the script, then watch your fantasy hero carry it out. Four heroes, 200 deterministic rooms."
+    },
+    {
+      "title": "Pocket Moons",
+      "path": "/pocket-moons/",
+      "image": "/pocket-moons/assets/capsule.png",
+      "label": "Puzzle · itch.io",
+      "summary": "Fling a moon slowly past a planet until it starts to circle. 90 handcrafted orbit puzzles."
+    },
+    {
+      "title": "One More Take",
+      "path": "/one-more-take/",
+      "image": "/one-more-take/assets/capsule.png",
+      "label": "Puzzle · itch.io",
+      "summary": "Edit everyone's script at once to get Maelis to the X. Timed hazards keep their own beat."
     }
   ],
   "mobile": [
@@ -99,6 +113,13 @@
       "image": "/lanternkeep/assets/icon.png",
       "label": "Android · Google Play",
       "summary": "A free, offline table helper for tabletop role-playing and board-game nights."
+    },
+    {
+      "title": "Curio Cabinet",
+      "path": "/curio-cabinet/",
+      "image": "/curio-cabinet/assets/capsule.png",
+      "label": "Android · Google Play",
+      "summary": "Find hidden curios in 200 scenes across twenty crowded fantasy rooms."
     }
   ],
   "channels": [
