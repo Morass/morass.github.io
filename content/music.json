@@ -1,6 +1,34 @@
 {
  "albums": [
   {
+   "slug": "the-old-grounds-of-corenveld",
+   "artist": "Corenveld Music Hall",
+   "album": "The Old Grounds of Corenveld",
+   "release_date": "2026-12-18",
+   "summary": "Fourteen fantasy orchestral pieces for one winter festival night in the Old Grounds below Corenveld's guildhall: lanterns lit at dusk, the night market and the watch's round, travellers off the salt road, midnight on the guild clock, smugglers and corsairs in the small hours, then the torch race and the last Folia at dawn.",
+   "cover": "/assets/music/the-old-grounds-of-corenveld.webp",
+   "hyperfollow": "https://distrokid.com/hyperfollow/corenveldmusichall/the-old-grounds-of-corenveld",
+   "tracks": [
+    "The Old Grounds",
+    "The Oud at the Well",
+    "Tarantella of the Lantern-Bearers",
+    "The Bow-Makers' Romanesca",
+    "Arcade of the Castanets",
+    "Fandango of the Night Market",
+    "The Watch's Spagnoletta",
+    "The Salt Road Romanesca",
+    "Midnight at the Lantern Market",
+    "The Clock at Midnight",
+    "The Smugglers' Stair",
+    "Corsairs in the Harbour Lanes",
+    "The Torch Race",
+    "The Last Folia"
+   ],
+   "links": {},
+   "embeds": {},
+   "track_embeds": []
+  },
+  {
    "slug": "the-hollow-answered",
    "artist": "Skralvoss",
    "album": "The Hollow Answered",
