@@ -39,7 +39,7 @@
       "title": "Krevholt",
       "path": "/krevholt/",
       "image": "/krevholt/assets/capsule.png",
-      "label": "Roguelite tomb-delve · Steam",
+      "label": "Roguelite tomb-delve · Steam & itch.io",
       "summary": "Rob the famous Krevorn tombs of the Iron-Fog Coast. Draft your abilities, wear what you loot and go down as far as your build allows."
     },
     {
@@ -53,7 +53,7 @@
       "title": "Emberveth",
       "path": "/emberveth/",
       "image": "/emberveth/assets/capsule.png",
-      "label": "Couch co-op spellcaster · Steam",
+      "label": "Couch co-op spellcaster · Steam & itch.io",
       "summary": "Aim every spell by hand, jump what you cannot walk around and read fifteen bosses. Friendly fire is always on."
     },
     {
@@ -76,6 +76,13 @@
       "image": "/one-more-take/assets/capsule.png",
       "label": "Puzzle · itch.io",
       "summary": "Edit everyone's script at once to get Maelis to the X. Timed hazards keep their own beat."
+    },
+    {
+      "title": "Twenty Winters",
+      "path": "/twenty-winters/",
+      "image": "/twenty-winters/assets/capsule.png",
+      "label": "Village builder · itch.io",
+      "summary": "Be the mayor of a Westmarches village for twenty winters: one council each season, every household a name. Free."
     }
   ],
   "mobile": [
