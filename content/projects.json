@@ -60,7 +60,7 @@
       "title": "Scripts of Power",
       "path": "/scripts-of-power/",
       "image": "/scripts-of-power/assets/capsule.png",
-      "label": "Programming puzzle · Steam",
+      "label": "Programming puzzle · Steam & itch.io",
       "summary": "Write the script, then watch your fantasy hero carry it out. Four heroes, 200 deterministic rooms."
     },
     {
@@ -83,6 +83,20 @@
       "image": "/twenty-winters/assets/capsule.png",
       "label": "Village builder · itch.io",
       "summary": "Be the mayor of a Westmarches village for twenty winters: one council each season, every household a name. Free."
+    },
+    {
+      "title": "The Bell That Rang Twice",
+      "path": "/the-bell-that-rang-twice/",
+      "image": "/the-bell-that-rang-twice/assets/capsule.png",
+      "label": "Logic puzzle · itch.io",
+      "summary": "Six beats of dusk. Re-time the lantern grid and ring the Salt-Bell into dawn. Free to play in the browser."
+    },
+    {
+      "title": "The Last Guest of Winter",
+      "path": "/the-last-guest-of-winter/",
+      "image": "/the-last-guest-of-winter/assets/capsule.png",
+      "label": "Interactive mystery · itch.io",
+      "summary": "One sealed letter. A snowbound inn. A mystery that unfolds through conversation, clues, and a twelve-sided die."
     }
   ],
   "mobile": [
