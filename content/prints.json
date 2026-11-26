@@ -2131,6 +2131,10 @@
         {
           "platform": "makerworld",
           "url": "https://makerworld.com/en/models/3662308"
+        },
+        {
+          "platform": "snapmaker",
+          "url": "https://space.snapmaker.com/en/model/52905"
         }
       ],
       "collection": "boardgames/original-games",
@@ -4486,6 +4490,10 @@
         {
           "platform": "makerworld",
           "url": "https://makerworld.com/en/models/3655998"
+        },
+        {
+          "platform": "snapmaker",
+          "url": "https://space.snapmaker.com/en/model/52876"
         }
       ],
       "image": "/assets/prints/containers/dwarven-treasury/f165f946f13afbfd.webp"
@@ -5574,6 +5582,44 @@
         }
       ],
       "image": "/assets/prints/containers/tudor-house-box/a258a214711c2dda.webp"
+    },
+    {
+      "id": "containers/winter-icehouse",
+      "title": "Winter Icehouse Storage Box: Turf-Roofed Stone Hut with Hidden Magnetic Lid",
+      "summary": "A stone icehouse under a turf mound. The roof lifts off and is held by three hidden magnet pairs. Fits a 100 mm tube.",
+      "tags": [
+        "box",
+        "storage",
+        "container",
+        "icehouse",
+        "house",
+        "hut",
+        "turf",
+        "stone",
+        "fantasy",
+        "magnetic",
+        "magnets",
+        "lid",
+        "multicolor",
+        "nosupports",
+        "tabletop"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/home/winter-icehouse-storage-box-turf-roofed-stone-hut-with-hidden-magnetic-lid"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1930612-winter-icehouse-storage-box-turf-roofed-stone-hut"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3691308-winter-icehouse-box-with-magnetic-turf-roof"
+        }
+      ],
+      "collection": "containers/keepsake-boxes/fantasy",
+      "image": "/assets/prints/containers/winter-icehouse/3bfa82c60e084a69.webp"
     },
     {
       "id": "decorations/amber-mosquito-pendant",
@@ -7693,6 +7739,10 @@
         {
           "platform": "makerworld",
           "url": "https://makerworld.com/en/models/3071980"
+        },
+        {
+          "platform": "snapmaker",
+          "url": "https://space.snapmaker.com/en/model/35989"
         }
       ],
       "image": "/assets/prints/decorations/parasaurolophus-capsule/d4d99ffe57128891.webp"
