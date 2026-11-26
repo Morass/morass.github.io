@@ -97,6 +97,13 @@
       "image": "/the-last-guest-of-winter/assets/capsule.png",
       "label": "Interactive mystery · itch.io",
       "summary": "One sealed letter. A snowbound inn. A mystery that unfolds through conversation, clues, and a twelve-sided die."
+    },
+    {
+      "title": "Loop Gobbler",
+      "path": "/loop-gobbler/",
+      "image": "/loop-gobbler/assets/capsule.png",
+      "label": "Puzzle · itch.io",
+      "summary": "Rewind time and team up with your past self: gobble through 194 hand-checked levels in 5 worlds. Free."
     }
   ],
   "mobile": [
@@ -141,6 +148,13 @@
       "image": "/curio-cabinet/assets/capsule.png",
       "label": "Android · Google Play",
       "summary": "Find hidden curios in 200 scenes across twenty crowded fantasy rooms."
+    },
+    {
+      "title": "Wendwake",
+      "path": "/wendwake/",
+      "image": "/wendwake/assets/capsule.png",
+      "label": "Android · Google Play",
+      "summary": "Offline survivor action: build weapons, read haunted ground, return home."
     }
   ],
   "channels": [
