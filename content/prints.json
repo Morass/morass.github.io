@@ -9946,6 +9946,42 @@
       "image": "/assets/prints/desk/gyroscope/83c1d3e57df12156.webp"
     },
     {
+      "id": "desk/hdd-hex-airflow-cage",
+      "title": "Hex Airflow Cage: Vented Dual External Drive Dock (SSD + Stick, No Supports)",
+      "summary": "A slim vented dock that holds a 60 x 10 mm external drive and a 30 x 10 mm stick side by side, with hex windows and floor vents for airflow.",
+      "tags": [
+        "ssd",
+        "hdd",
+        "external drive",
+        "drive holder",
+        "drive dock",
+        "usb stick",
+        "vented",
+        "hexagon",
+        "cooling",
+        "desk",
+        "office",
+        "multicolor",
+        "nosupports"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/gadget/hex-airflow-cage-vented-dual-external-drive-dock-ssd-stick-no-supports"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1931186-hex-airflow-cage-vented-dual-external-drive-dock-s"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3694485-hex-airflow-cage-for-two-external-drives"
+        }
+      ],
+      "collection": "desk/electronics/stands",
+      "image": "/assets/prints/desk/hdd-hex-airflow-cage/c7824faba9b4ad5a.webp"
+    },
+    {
       "id": "desk/hdd-stepped-monolith",
       "title": "Stepped Monolith Dock: Dual External Drive Stand (SSD + Stick, No Supports)",
       "summary": "A compact stepped desk stand that holds a 60 x 10 mm external drive and a 30 x 10 mm stick upright, cables still plugged in.",
@@ -9975,6 +10011,10 @@
         {
           "platform": "makerworld",
           "url": "https://makerworld.com/en/models/3694086-stepped-monolith-dock-for-two-external-drives"
+        },
+        {
+          "platform": "snapmaker",
+          "url": "https://space.snapmaker.com/en/model/55230"
         }
       ],
       "collection": "desk/electronics/stands",
