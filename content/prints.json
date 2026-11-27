@@ -9946,6 +9946,41 @@
       "image": "/assets/prints/desk/gyroscope/83c1d3e57df12156.webp"
     },
     {
+      "id": "desk/hdd-stepped-monolith",
+      "title": "Stepped Monolith Dock: Dual External Drive Stand (SSD + Stick, No Supports)",
+      "summary": "A compact stepped desk stand that holds a 60 x 10 mm external drive and a 30 x 10 mm stick upright, cables still plugged in.",
+      "tags": [
+        "ssd",
+        "hdd",
+        "external drive",
+        "drive stand",
+        "drive holder",
+        "usb stick",
+        "dock",
+        "desk",
+        "office",
+        "organizer",
+        "multicolor",
+        "nosupports"
+      ],
+      "links": [
+        {
+          "platform": "cults3d",
+          "url": "https://cults3d.com/en/3d-model/gadget/stepped-monolith-dock-dual-external-drive-stand-ssd-stick-no-supports"
+        },
+        {
+          "platform": "printables",
+          "url": "https://www.printables.com/model/1931113-stepped-monolith-dock-dual-external-drive-stand-ss"
+        },
+        {
+          "platform": "makerworld",
+          "url": "https://makerworld.com/en/models/3694086-stepped-monolith-dock-for-two-external-drives"
+        }
+      ],
+      "collection": "desk/electronics/stands",
+      "image": "/assets/prints/desk/hdd-stepped-monolith/b926ea31f0915c03.webp"
+    },
+    {
       "id": "desk/hedgehog-pen-holder",
       "title": "Hedgehog Pen & Pencil Holder — your pens become the quills",
       "summary": "A bald little hedgehog whose quills are YOUR pens and pencils. The smooth dome body has an angled fan of 11 blind bores drilled into its back; plug pens and pencils in and they radiate outward exactly like real quills. Dimple eyes and a snout finish the face. Prints belly-flat on the bed with zero supports — the dome is the top half of an ellipsoid so every wall leans inward going up. Single part, single colour, just print and load it up.",
