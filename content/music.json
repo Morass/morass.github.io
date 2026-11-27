@@ -130,9 +130,94 @@
     "The Krevorn Road",
     "The Hearth Unbroken"
    ],
-   "links": {},
-   "embeds": {},
-   "track_embeds": []
+   "links": {
+    "spotify": "https://open.spotify.com/album/0gHWUiyIMdwkb5EL7DJgyd",
+    "amazon": "https://www.amazon.com/gp/product/B0HQ7M5H3V",
+    "youtube_tracks": [
+     "OLAK5uy_lmRPjL3UugLHBzoD7a_KAysFbOerEGjkU",
+     [
+      "GZvbSm7KjMA",
+      "T1J0drdscCc",
+      "idMScs8zHmE",
+      "on8WZyaqaF0",
+      "-kHRcMcZoUo",
+      "vcEV5hIYEpI",
+      "hhpxfa2Lv3Y",
+      "T-g4zGw3xwM",
+      "Kmeqx3gYxzE",
+      "9WhGRopQMSU",
+      "pXDVN1PGEfg",
+      "WSFkIQV0aYM"
+     ]
+    ],
+    "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_lmRPjL3UugLHBzoD7a_KAysFbOerEGjkU"
+   },
+   "embeds": {
+    "spotify": "https://open.spotify.com/embed/album/0gHWUiyIMdwkb5EL7DJgyd?theme=0",
+    "youtube": "https://www.youtube-nocookie.com/embed/GZvbSm7KjMA?autoplay=1&list=OLAK5uy_lmRPjL3UugLHBzoD7a_KAysFbOerEGjkU"
+   },
+   "track_embeds": [
+    {
+     "title": "Elegy at Full Speed",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/GZvbSm7KjMA?autoplay=1&list=OLAK5uy_lmRPjL3UugLHBzoD7a_KAysFbOerEGjkU"
+    },
+    {
+     "title": "Perpetual Motion Down the Ore-Descent",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/T1J0drdscCc?autoplay=1&list=OLAK5uy_lmRPjL3UugLHBzoD7a_KAysFbOerEGjkU"
+    },
+    {
+     "title": "The Chain Ferry",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/idMScs8zHmE?autoplay=1&list=OLAK5uy_lmRPjL3UugLHBzoD7a_KAysFbOerEGjkU"
+    },
+    {
+     "title": "Two Violins, One Grave",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/on8WZyaqaF0?autoplay=1&list=OLAK5uy_lmRPjL3UugLHBzoD7a_KAysFbOerEGjkU"
+    },
+    {
+     "title": "Toccata at the East Notch",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/-kHRcMcZoUo?autoplay=1&list=OLAK5uy_lmRPjL3UugLHBzoD7a_KAysFbOerEGjkU"
+    },
+    {
+     "title": "The Hourglass Canon",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/vcEV5hIYEpI?autoplay=1&list=OLAK5uy_lmRPjL3UugLHBzoD7a_KAysFbOerEGjkU"
+    },
+    {
+     "title": "Czardas at the Brekhnath Wayhouse",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/hhpxfa2Lv3Y?autoplay=1&list=OLAK5uy_lmRPjL3UugLHBzoD7a_KAysFbOerEGjkU"
+    },
+    {
+     "title": "Seven Against Five",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/T-g4zGw3xwM?autoplay=1&list=OLAK5uy_lmRPjL3UugLHBzoD7a_KAysFbOerEGjkU"
+    },
+    {
+     "title": "Stampede of the Ridge-Trekkers",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/Kmeqx3gYxzE?autoplay=1&list=OLAK5uy_lmRPjL3UugLHBzoD7a_KAysFbOerEGjkU"
+    },
+    {
+     "title": "Choir from Hold to Hold",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/9WhGRopQMSU?autoplay=1&list=OLAK5uy_lmRPjL3UugLHBzoD7a_KAysFbOerEGjkU"
+    },
+    {
+     "title": "The Krevorn Road",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/pXDVN1PGEfg?autoplay=1&list=OLAK5uy_lmRPjL3UugLHBzoD7a_KAysFbOerEGjkU"
+    },
+    {
+     "title": "The Hearth Unbroken",
+     "store": "youtube",
+     "embed": "https://www.youtube-nocookie.com/embed/WSFkIQV0aYM?autoplay=1&list=OLAK5uy_lmRPjL3UugLHBzoD7a_KAysFbOerEGjkU"
+    }
+   ]
   },
   {
    "slug": "the-last-lantern",
