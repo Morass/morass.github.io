@@ -10390,6 +10390,10 @@
         {
           "platform": "makerworld",
           "url": "https://makerworld.com/en/models/3692198-observatory-dome-phone-stand-cable-pass-through"
+        },
+        {
+          "platform": "snapmaker",
+          "url": "https://space.snapmaker.com/en/model/55171"
         }
       ],
       "collection": "desk/electronics/stands",
