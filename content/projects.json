@@ -104,6 +104,13 @@
       "image": "/loop-gobbler/assets/capsule.png",
       "label": "Puzzle · itch.io",
       "summary": "Rewind time and team up with your past self: gobble through 194 hand-checked levels in 5 worlds. Free."
+    },
+    {
+      "title": "Greybox Quarry",
+      "path": "/greybox-quarry/",
+      "image": "/greybox-quarry/assets/capsule.png",
+      "label": "Platformer · itch.io",
+      "summary": "Run and jump up a grey quarry as telegraphed water layers rise behind you. Jewels are worth the detour."
     }
   ],
   "mobile": [
@@ -155,6 +162,13 @@
       "image": "/wendwake/assets/capsule.png",
       "label": "Android · Google Play",
       "summary": "Offline survivor action: build weapons, read haunted ground, return home."
+    },
+    {
+      "title": "Warband Trail",
+      "path": "/warband-trail/",
+      "image": "/warband-trail/assets/icon.png",
+      "label": "Android · Google Play",
+      "summary": "March a warband down fantasy trails. Draft companions, beat the warden."
     }
   ],
   "channels": [
