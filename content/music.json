@@ -150,10 +150,12 @@
       "WSFkIQV0aYM"
      ]
     ],
-    "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_lmRPjL3UugLHBzoD7a_KAysFbOerEGjkU"
+    "youtube": "https://music.youtube.com/playlist?list=OLAK5uy_lmRPjL3UugLHBzoD7a_KAysFbOerEGjkU",
+    "apple": "https://music.apple.com/us/album/the-echo-goes-inland/6830257633"
    },
    "embeds": {
     "spotify": "https://open.spotify.com/embed/album/0gHWUiyIMdwkb5EL7DJgyd?theme=0",
+    "apple": "https://embed.music.apple.com/us/album/the-echo-goes-inland/6830257633",
     "youtube": "https://www.youtube-nocookie.com/embed/GZvbSm7KjMA?autoplay=1&list=OLAK5uy_lmRPjL3UugLHBzoD7a_KAysFbOerEGjkU"
    },
    "track_embeds": [
